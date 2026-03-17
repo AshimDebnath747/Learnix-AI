@@ -20,3 +20,11 @@ export const loginSchema = z.object({
     .string()
     .min(6, "Password must be at least 6 characters")
 });
+
+export const googleAuthSchema = z.object({
+  idToken: z
+    .string({
+      required_error: "Google idToken is required",
+      invalid_type_error: "idToken must be a string",
+    })
+    .min(1, "Invalid idToken")})

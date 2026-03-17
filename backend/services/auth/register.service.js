@@ -11,7 +11,8 @@ export const register = async ({ email, username, password }) => {
  const existingUser = await db
     .select()
     .from(users)
-    .where(eq(users.email, email));
+    .where(eq(users.email, email))
+    .limit(1);
 
   if (existingUser.length > 0) {
     throw new AppError("Email already registered", 409);

@@ -1,7 +1,7 @@
 import { email } from "zod";
-import { login, register } from "../../services/auth/register.services.js";
+import { login, register } from "../../services/auth/register.service.js";
 
-export const registerUser = async (req, res, next) => {
+export const registerUser = async (req, res,) => {
 
     const result = await register(req.validated);
 
@@ -12,7 +12,7 @@ export const registerUser = async (req, res, next) => {
     });
 };
 
-export const loginUser = async (req, res, next) => {
+export const loginUser = async (req, res, ) => {
 
     const result = await login(req.validated);
 
