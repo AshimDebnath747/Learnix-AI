@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+output/
+data/raw/
+model/checkpoints/
+.DS_Store
+*.egg-info/

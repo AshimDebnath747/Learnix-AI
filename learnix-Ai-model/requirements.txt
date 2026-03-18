@@ -1,0 +1,14 @@
+# ── Stage 1: PDF & OCR ──────────────────
+pymupdf
+pytesseract
+Pillow
+# ── Stage 2: NLP & parsing ──────────────
+numpy
+# ── Stage 3: Model training ─────────────
+torch
+torchvision
+# ── Stage 5: App UI ─────────────────────
+gradio
+# ── Dev tools ───────────────────────────
+jupyter
+matplotlib
