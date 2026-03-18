@@ -1,7 +1,9 @@
-import postgres from 'postgres'
-import dotenv from "dotenv";
-dotenv.config({ path: ".env.development" });
-const connectionString = process.env.DATABASE_URL
-const sql = postgres(connectionString)
+import postgres from "postgres"
+import { drizzle } from "drizzle-orm/postgres-js"
+import dotenv from "dotenv"
 
-export default sql
+dotenv.config()
+
+const client = postgres(process.env.SUPABASE_URL)
+
+export const db = drizzle(client)
