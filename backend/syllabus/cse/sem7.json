@@ -1,0 +1,463 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 7,
+  "total_credits": 18,
+  "full_marks": 800,
+  "note": "Semester contains 2 program electives, 2 open electives, project work, internship and seminar.",
+  "subjects": [
+    {
+      "code": "PE CS 701",
+      "title": "Program Elective 2",
+      "category": "Program Elective",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "elective_options": [
+        {
+          "code": "PE CS 701/1",
+          "title": "Internet of Things (IoT)",
+          "modules": [
+            {
+              "module_id": "CS701A_M1",
+              "title": "Introduction to IoT",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "IoT definition, architecture, and applications",
+                "IoT physical design: sensors, actuators, microcontrollers",
+                "IoT logical design: protocols and APIs",
+                "Communication models: request-response, publish-subscribe",
+                "IoT enabling technologies: RFID, NFC, WSN"
+              ]
+            },
+            {
+              "module_id": "CS701A_M2",
+              "title": "IoT Communication Protocols",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Wireless protocols: Bluetooth, Zigbee, Z-wave, LoRa",
+                "Internet protocols for IoT: 6LoWPAN, CoAP, MQTT, AMQP",
+                "Wi-Fi and cellular (4G/5G) for IoT",
+                "Message brokering and lightweight messaging"
+              ]
+            },
+            {
+              "module_id": "CS701A_M3",
+              "title": "IoT Platforms and Cloud",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "IoT cloud platforms: AWS IoT, Google IoT, Azure IoT",
+                "Edge computing in IoT",
+                "Raspberry Pi and Arduino for IoT",
+                "IoT data management and analytics",
+                "Fog computing"
+              ]
+            },
+            {
+              "module_id": "CS701A_M4",
+              "title": "IoT Security and Applications",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Security challenges in IoT",
+                "Authentication and authorization",
+                "Secure communication in IoT",
+                "Smart home, smart city, industrial IoT",
+                "Healthcare IoT applications"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 701/2",
+          "title": "Kotlin Programming",
+          "modules": [
+            {
+              "module_id": "CS701B_M1",
+              "title": "Kotlin Fundamentals",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Introduction to Kotlin and JVM",
+                "Kotlin vs Java",
+                "Variables, data types, type inference",
+                "Control flow: if, when, for, while",
+                "Functions: default parameters, named arguments, extension functions"
+              ]
+            },
+            {
+              "module_id": "CS701B_M2",
+              "title": "OOP in Kotlin",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Classes and objects",
+                "Data classes, sealed classes, enum classes",
+                "Inheritance and interfaces",
+                "Companion objects and object declarations",
+                "Null safety: nullable types, safe calls, Elvis operator"
+              ]
+            },
+            {
+              "module_id": "CS701B_M3",
+              "title": "Functional Programming in Kotlin",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Lambda expressions and higher-order functions",
+                "Collections: List, Set, Map and operations",
+                "Sequences",
+                "Scope functions: let, run, with, apply, also",
+                "Coroutines: basics, suspend functions, launch and async"
+              ]
+            },
+            {
+              "module_id": "CS701B_M4",
+              "title": "Android Development with Kotlin",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Android project structure",
+                "Activities and fragments",
+                "UI: layouts, views, RecyclerView",
+                "Intents and navigation",
+                "Room database, ViewModel, LiveData"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 701/3",
+          "title": "Blockchain Technology",
+          "modules": [
+            {
+              "module_id": "CS701C_M1",
+              "title": "Introduction to Blockchain",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Distributed ledger technology overview",
+                "History and evolution of blockchain",
+                "Core concepts: blocks, chain, nodes, consensus",
+                "Types of blockchain: public, private, consortium",
+                "Cryptographic foundations: hash functions, digital signatures"
+              ]
+            },
+            {
+              "module_id": "CS701C_M2",
+              "title": "Bitcoin and Cryptocurrency",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Bitcoin: architecture and mining",
+                "UTXO model and transactions",
+                "Consensus algorithms: PoW, PoS, DPoS",
+                "Wallets and addresses",
+                "Cryptocurrency exchanges"
+              ]
+            },
+            {
+              "module_id": "CS701C_M3",
+              "title": "Ethereum and Smart Contracts",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Ethereum architecture and EVM",
+                "Solidity programming language",
+                "Writing and deploying smart contracts",
+                "DApps: decentralized applications",
+                "Tokens: ERC-20, ERC-721 (NFTs)"
+              ]
+            },
+            {
+              "module_id": "CS701C_M4",
+              "title": "Blockchain Applications and Challenges",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Supply chain management",
+                "Healthcare and identity management",
+                "DeFi: decentralized finance",
+                "Scalability: sharding, layer 2 solutions",
+                "Legal and regulatory challenges"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PE CS 702",
+      "title": "Program Elective 3",
+      "category": "Program Elective",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "elective_options": [
+        {
+          "code": "PE CS 702/1",
+          "title": "Soft Computing",
+          "modules": [
+            {
+              "module_id": "CS702A_M1",
+              "title": "Fuzzy Logic",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Fuzzy sets: membership functions, operations",
+                "Linguistic variables",
+                "Fuzzy rules and inference: Mamdani and Sugeno",
+                "Defuzzification methods",
+                "Fuzzy control systems"
+              ]
+            },
+            {
+              "module_id": "CS702A_M2",
+              "title": "Neural Networks",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Biological and artificial neurons",
+                "Perceptron and multilayer perceptron",
+                "Backpropagation algorithm",
+                "Radial basis function networks",
+                "Hopfield network"
+              ]
+            },
+            {
+              "module_id": "CS702A_M3",
+              "title": "Evolutionary Computing",
+              "hours": 6,
+              "is_important": false,
+              "topics": [
+                "Genetic algorithms: encoding, selection, crossover, mutation",
+                "Genetic programming",
+                "Evolution strategies",
+                "Particle swarm optimization"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 702/2",
+          "title": "Machine Learning",
+          "modules": [
+            {
+              "module_id": "CS702B_M1",
+              "title": "Introduction and Supervised Learning",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "ML types: supervised, unsupervised, reinforcement",
+                "Linear regression: simple and multiple",
+                "Logistic regression",
+                "Decision trees and random forests",
+                "Support vector machines"
+              ]
+            },
+            {
+              "module_id": "CS702B_M2",
+              "title": "Unsupervised and Deep Learning",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Clustering: k-Means, hierarchical",
+                "Dimensionality reduction: PCA",
+                "Deep learning: CNN, RNN basics",
+                "Autoencoders",
+                "Transfer learning"
+              ]
+            },
+            {
+              "module_id": "CS702B_M3",
+              "title": "Model Evaluation and Applications",
+              "hours": 6,
+              "is_important": true,
+              "topics": [
+                "Cross-validation, bias-variance tradeoff",
+                "Evaluation metrics: accuracy, precision, recall, F1, ROC-AUC",
+                "Feature engineering and selection",
+                "Hyperparameter tuning: grid search, random search",
+                "ML applications: NLP, computer vision, recommendation"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 702/3",
+          "title": "Cloud Computing",
+          "modules": [
+            {
+              "module_id": "CS702C_M1",
+              "title": "Cloud Computing Fundamentals",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Cloud definition, characteristics, and benefits",
+                "Service models: IaaS, PaaS, SaaS",
+                "Deployment models: public, private, hybrid, community",
+                "Virtualization: types and hypervisors",
+                "Cloud architecture: front-end, back-end, middleware"
+              ]
+            },
+            {
+              "module_id": "CS702C_M2",
+              "title": "Cloud Services and Platforms",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "AWS: EC2, S3, RDS, Lambda",
+                "Google Cloud Platform overview",
+                "Microsoft Azure overview",
+                "Containerization: Docker and Kubernetes",
+                "Serverless computing"
+              ]
+            },
+            {
+              "module_id": "CS702C_M3",
+              "title": "Cloud Security and Management",
+              "hours": 6,
+              "is_important": false,
+              "topics": [
+                "Cloud security challenges",
+                "Identity and access management (IAM)",
+                "SLA and cloud governance",
+                "Cloud storage and CDN",
+                "Cost optimization strategies"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OE 703",
+      "title": "Open Elective 1",
+      "category": "Open Elective",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "note": "Refer Annexure 1 of the official syllabus for subject options",
+      "modules": [
+        {
+          "module_id": "OE703_M1",
+          "title": "Open Elective - As per chosen subject",
+          "hours": 36,
+          "is_important": false,
+          "topics": ["Depends on selected open elective subject from Annexure 1"]
+        }
+      ]
+    },
+    {
+      "code": "OE 704",
+      "title": "Open Elective 2",
+      "category": "Open Elective",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "note": "Refer Annexure 2 of the official syllabus for subject options",
+      "modules": [
+        {
+          "module_id": "OE704_M1",
+          "title": "Open Elective - As per chosen subject",
+          "hours": 24,
+          "is_important": false,
+          "topics": ["Depends on selected open elective subject from Annexure 2"]
+        }
+      ]
+    },
+    {
+      "code": "PR CS 705",
+      "title": "Project Work Intermediate",
+      "category": "Project",
+      "credits": 6,
+      "contact_hours": 12,
+      "type": "project",
+      "is_lab": false,
+      "full_marks": 200,
+      "modules": [
+        {
+          "module_id": "CS705_P1",
+          "title": "Project Work - Intermediate Phase",
+          "hours": 144,
+          "is_important": true,
+          "topics": [
+            "Literature review and problem refinement",
+            "System design and architecture finalization",
+            "Implementation: module development",
+            "Testing: unit and integration testing",
+            "Mid-project progress report",
+            "Interim presentation and review"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SI CS 706",
+      "title": "Internship - II",
+      "category": "Summer Internship",
+      "credits": 1,
+      "contact_hours": 0,
+      "type": "internship",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS706_SI1",
+          "title": "Industry Internship - II",
+          "hours": 0,
+          "is_important": false,
+          "topics": [
+            "Advanced industry exposure",
+            "Applied technical skills in real projects",
+            "Team collaboration and professional ethics"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SE CS 707",
+      "title": "Seminar on Contemporary Engineering Topics - I",
+      "category": "Seminar",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "seminar",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS707_SE1",
+          "title": "Seminar",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Selection of contemporary engineering topic",
+            "Literature review on chosen topic",
+            "Seminar report preparation",
+            "Presentation and Q&A"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "project_full_marks": 200,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 5,
+  "total_credits": 22,
+  "full_marks": 1000,
+  "subjects": [
+    {
+      "code": "HS 501",
+      "title": "Professional Practice, Law and Ethics",
+      "category": "Humanities Science",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HS501_M1",
+          "title": "Professionalism, Values and Ethics",
+          "hours": 6,
+          "is_important": false,
+          "topics": [
+            "Professional characteristics and development",
+            "Values and ethics in profession: goodness, means and ends",
+            "Moral and ego, right and virtue ethics",
+            "Privacy and Internet privacy",
+            "Professional ethics: engineering, business, corporate",
+            "Conflict of interest, whistleblowing, vigilance mechanism"
+          ]
+        },
+        {
+          "module_id": "HS501_M2",
+          "title": "Contracts Management and Arbitration",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Indian Contract Act 1972: general principles",
+            "Valid and voidable contracts",
+            "Tenders, bids, proposals, bid evaluation",
+            "Cost escalation, delays, liquidated damages",
+            "Arbitration: meaning, types, awards",
+            "ADR: conciliation and mediation"
+          ]
+        },
+        {
+          "module_id": "HS501_M3",
+          "title": "Labour and Construction Laws",
+          "hours": 5,
+          "is_important": false,
+          "topics": [
+            "Industrial Disputes Act 1947",
+            "Workmen's Compensation Act 1923",
+            "Building and Construction Workers Act 1996",
+            "RERA Act 2017"
+          ]
+        },
+        {
+          "module_id": "HS501_M4",
+          "title": "Intellectual Property Rights",
+          "hours": 5,
+          "is_important": false,
+          "topics": [
+            "Meaning of intellectual property",
+            "Copyright Act 1957: computer programs, piracy",
+            "Patents Act 1970: application process, infringement",
+            "Trademarks and trade secrets"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 502",
+      "title": "Design and Analysis of Algorithm",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS502_M1",
+          "title": "Introduction and Algorithm Analysis",
+          "hours": 5,
+          "is_important": true,
+          "topics": [
+            "Characteristics of algorithms",
+            "Asymptotic analysis: best, average, worst case",
+            "Big-O, Omega, Theta notations",
+            "Time and space trade-offs",
+            "Recurrence relations: substitution method, recursion tree, Master theorem"
+          ]
+        },
+        {
+          "module_id": "CS502_M2",
+          "title": "Divide and Conquer",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Divide and conquer paradigm",
+            "Binary search",
+            "Quick sort",
+            "Merge sort and Heap sort",
+            "Strassen's matrix multiplication",
+            "Recurrence relation analysis"
+          ]
+        },
+        {
+          "module_id": "CS502_M3",
+          "title": "Dynamic Programming and Backtracking",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Principles of dynamic programming",
+            "Factorial calculation (DP way)",
+            "Rod cutting problem",
+            "Floyd-Warshall all-pairs shortest paths",
+            "Matrix chain multiplication",
+            "Longest Common Subsequence",
+            "Travelling Salesman Problem (DP)",
+            "Backtracking: find all subsequences, 8-queens problem",
+            "0/1 Knapsack using backtracking"
+          ]
+        },
+        {
+          "module_id": "CS502_M4",
+          "title": "Greedy Algorithms and Complexity",
+          "hours": 14,
+          "is_important": true,
+          "topics": [
+            "Greedy paradigm: overview",
+            "Minimum spanning tree: Kruskal's and Prim's algorithms",
+            "Single source shortest paths: Dijkstra's, Bellman-Ford",
+            "Huffman coding",
+            "Activity selection problem",
+            "Fractional knapsack",
+            "Complexity classes: P, NP, NP-complete, NP-hard",
+            "Cook's theorem",
+            "Standard NP-complete problems and reductions"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 503",
+      "title": "Database Management Systems",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS503_M1",
+          "title": "Introduction to DBMS",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "Database system architecture",
+            "Data abstraction and data independence",
+            "DDL and DML",
+            "Data models: ER model, network, relational, object-oriented",
+            "Integrity constraints",
+            "ER diagram: entities, attributes, relationships"
+          ]
+        },
+        {
+          "module_id": "CS503_M2",
+          "title": "Relational Model",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Relational algebra: select, project, join, union, intersection",
+            "Tuple and domain relational calculus",
+            "SQL3: DDL and DML",
+            "MySQL, Oracle basics",
+            "Normalization: 1NF, 2NF, 3NF, BCNF",
+            "Armstrong's axioms, dependency preservation, lossless design",
+            "Query processing and optimization",
+            "Join strategies"
+          ]
+        },
+        {
+          "module_id": "CS503_M3",
+          "title": "Transaction Processing",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "ACID properties",
+            "Concurrency control: serializability",
+            "Locking: 2PL, shared and exclusive locks",
+            "Timestamp-based schedulers",
+            "Multi-version and optimistic concurrency control",
+            "Database recovery: log-based recovery, checkpointing",
+            "Recovery with concurrent transactions"
+          ]
+        },
+        {
+          "module_id": "CS503_M4",
+          "title": "Database Security and Advanced Topics",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Authentication, authorization, access control",
+            "DAC, MAC and RBAC models",
+            "SQL injection and intrusion detection",
+            "Object-relational databases",
+            "Web databases",
+            "Distributed databases",
+            "Data warehousing and data mining overview"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 504",
+      "title": "Formal Language and Automata Theory",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS504_M1",
+          "title": "Regular Languages and Finite Automata",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Alphabets, languages, grammars, Chomsky hierarchy",
+            "Regular expressions and regular languages",
+            "Deterministic Finite Automata (DFA)",
+            "Non-deterministic Finite Automata (NFA)",
+            "NFA to DFA conversion (subset construction)",
+            "Regular grammars and equivalence with FA",
+            "Properties of regular languages",
+            "Pumping lemma for regular languages",
+            "Minimization of finite automata"
+          ]
+        },
+        {
+          "module_id": "CS504_M2",
+          "title": "Context Free Languages and PDA",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Context-free grammars (CFG) and languages (CFL)",
+            "Chomsky Normal Form (CNF)",
+            "Greibach Normal Form (GNF)",
+            "Pushdown Automata (PDA): nondeterministic",
+            "Equivalence of CFG and PDA",
+            "Parse trees and derivations",
+            "Ambiguity in CFG",
+            "Pumping lemma for CFLs",
+            "Closure properties of CFLs"
+          ]
+        },
+        {
+          "module_id": "CS504_M3",
+          "title": "Turing Machines",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Context-sensitive grammars (CSG) and linear bounded automata",
+            "Turing machine: basic model",
+            "Turing recognizable and Turing decidable languages",
+            "Variants of Turing machines",
+            "Nondeterministic TMs",
+            "Unrestricted grammars and equivalence with TMs",
+            "TMs as enumerators"
+          ]
+        },
+        {
+          "module_id": "CS504_M4",
+          "title": "Undecidability",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "Church-Turing thesis",
+            "Universal Turing machine",
+            "Diagonalization language",
+            "Reduction between languages",
+            "Rice's theorem",
+            "Undecidable problems about languages"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 505",
+      "title": "Artificial Intelligence",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS505_M1",
+          "title": "Introduction to AI and Search",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Concept of AI, history, and current status",
+            "State space search",
+            "Uninformed search: BFS, DFS",
+            "Heuristic search: Hill Climbing, Best-First, A* algorithm",
+            "Problem reduction, AO* algorithm",
+            "Stochastic annealing",
+            "Minimax search, Alpha-Beta Pruning",
+            "Learning: Decision Trees, ANN, Back-propagation",
+            "Fuzzy logic, Genetic algorithms"
+          ]
+        },
+        {
+          "module_id": "CS505_M2",
+          "title": "Knowledge Representation",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Issues in knowledge representation",
+            "Knowledge-based system structure",
+            "Propositional logic",
+            "First Order Predicate Logic (FOPL): syntax and semantics",
+            "Normal forms, unification and resolution",
+            "Natural deduction",
+            "Semantic nets, frames, conceptual dependency, scripts"
+          ]
+        },
+        {
+          "module_id": "CS505_M3",
+          "title": "Expert Systems",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Overview and structure of expert systems",
+            "Rule-based, model-based, case-based, hybrid expert systems",
+            "Knowledge acquisition and validation",
+            "Blackboard architecture",
+            "Expert system shells",
+            "Fuzzy expert systems"
+          ]
+        },
+        {
+          "module_id": "CS505_M4",
+          "title": "Reasoning Under Uncertainty",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Probabilistic reasoning",
+            "Belief networks and hidden Markov model",
+            "Truth maintenance systems",
+            "Non-monotonic reasoning",
+            "Bayes theorem and certainty factors",
+            "Bayesian networks",
+            "Dempster-Shafer theory",
+            "Fuzzy logic: crisp sets, fuzzy sets, fuzzy control, fuzzy inference"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 506",
+      "title": "Computer Networks",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS506_M1",
+          "title": "Networking Principles and Layered Architecture",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Data communications model",
+            "Evolution and requirements of networks",
+            "Network topologies",
+            "OSI model: 7 layers and functions",
+            "TCP/IP model",
+            "Circuit switching vs packet switching",
+            "Transmission impairment, data rate, performance"
+          ]
+        },
+        {
+          "module_id": "CS506_M2",
+          "title": "Data Link Layer",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Error detection: Hamming code, CRC, Checksum",
+            "Flow control: sliding window protocol",
+            "Go-Back-N and Selective Repeat",
+            "Multiple access: ALOHA, Slotted ALOHA, CSMA, CSMA/CD",
+            "IEEE 802.3 (Ethernet), 802.5 (Token Ring)",
+            "Wireless networks: IEEE 802.11, 802.15"
+          ]
+        },
+        {
+          "module_id": "CS506_M3",
+          "title": "Network Layer",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "IPv4 address space: classful and classless addressing",
+            "NAT: Network Address Translation",
+            "IPv6 address structure",
+            "IPv4 and IPv6 header formats",
+            "Routing: link state and distance vector protocols",
+            "Performance analysis with Packet Tracer"
+          ]
+        },
+        {
+          "module_id": "CS506_M4",
+          "title": "Transport and Application Layer",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "TCP and UDP protocols",
+            "Congestion control: TCP congestion control",
+            "Congestion avoidance, queuing mechanisms",
+            "QoS parameters",
+            "Application layer: DNS, FTP, HTTP, SMTP, SNMP",
+            "Recent trends in computer networks"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 507",
+      "title": "Algorithm Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS507_L1",
+          "title": "Algorithm Lab Experiments",
+          "hours": 24,
+          "is_important": true,
+          "topics": [
+            "Binary search, Merge sort, Quick sort (Divide and Conquer)",
+            "Search and replace using divide and conquer",
+            "Find subsequences using divide and conquer",
+            "Max and min from array using D&C",
+            "Matrix chain multiplication",
+            "N-Queens problem",
+            "Travelling Salesman Problem",
+            "0/1 Knapsack problem",
+            "Factorial using dynamic programming",
+            "Graph search problems",
+            "Dynamic programming problems"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 508",
+      "title": "Database Management System Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS508_L1",
+          "title": "DBMS Lab Experiments",
+          "hours": 30,
+          "is_important": true,
+          "topics": [
+            "Creating databases, tables, specifying constraints, indexes",
+            "INSERT, UPDATE, DELETE, TRUNCATE, DROP, ALTER",
+            "SELECT with WHERE, logical operators, IN, BETWEEN, LIKE, ORDER BY, GROUP BY, HAVING",
+            "Aggregate functions",
+            "JOINS and subqueries",
+            "Views and column aliases",
+            "GRANT and REVOKE",
+            "Cursors in Oracle PL/SQL",
+            "Database triggers and functions",
+            "PL/SQL stored procedures"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 509",
+      "title": "Computer Hardware and Network Lab",
+      "category": "Program Core",
+      "credits": 2,
+      "contact_hours": 4,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS509_L1",
+          "title": "Networking Lab Experiments",
+          "hours": 44,
+          "is_important": false,
+          "topics": [
+            "Cross-wired and straight-through cable making",
+            "Network IP study and configuration commands",
+            "Network devices study",
+            "Socket programming (Java/C)",
+            "LAN connection setup",
+            "Network topology using Packet Tracer",
+            "Distance vector and link state routing protocols",
+            "Static routing, RIP, RIP v2 configuration",
+            "Firewall configuration using IP tables",
+            "Server configuration: Web, Mail, FTP, DHCP, NFS",
+            "PC hardware: motherboard, ports, CMOS, disk partitioning",
+            "Installing OS, drivers, antivirus"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SI CS 510",
+      "title": "Industry Internship - I",
+      "category": "Summer Internship",
+      "credits": 1,
+      "contact_hours": 0,
+      "type": "internship",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS510_SI1",
+          "title": "Summer Internship",
+          "hours": 20,
+          "is_important": false,
+          "topics": [
+            "Real-world problem solving in industry",
+            "Professional work attitude and teamwork",
+            "Technical communication in workplace",
+            "Career exploration and pre-employment training"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

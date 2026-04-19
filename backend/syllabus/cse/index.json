@@ -1,0 +1,105 @@
+{
+  "university": "Tripura University (A Central University)",
+  "program": "B.Tech",
+  "branch": "CSE",
+  "total_semesters": 8,
+  "total_credits": 162,
+  "syllabus_year": 2021,
+  "source": "https://titagartala.ac.in/wp-content/uploads/2023/06/Computer-Science-and-Engineering.pdf",
+  "semesters": [
+    {
+      "semester": 1,
+      "file": "sem1.json",
+      "total_credits": 17.5,
+      "full_marks": 800,
+      "note": "Common syllabus. Includes Induction Program.",
+      "theory_subjects": ["Mathematics-I", "Physics", "Basic Electrical Engineering", "Engineering Graphics and Design"],
+      "lab_subjects": ["Physics Lab", "Engineering Graphics Practice", "BEE Lab"]
+    },
+    {
+      "semester": 2,
+      "file": "sem2.json",
+      "total_credits": 20.5,
+      "full_marks": 1000,
+      "note": "Common syllabus.",
+      "theory_subjects": ["English", "Mathematics-II", "Chemistry", "Programming for Problem Solving", "Manufacturing Practices", "Environmental Engineering"],
+      "lab_subjects": ["Language Lab", "Chemistry Lab", "Programming Lab", "Workshop"]
+    },
+    {
+      "semester": 3,
+      "file": "sem3.json",
+      "total_credits": 22,
+      "full_marks": 1000,
+      "theory_subjects": ["Effective Technical Communication", "Mathematics-III", "Biology for Engineers", "Engineering Mechanics", "Digital Logic & Microprocessor", "Data Structure & Algorithm"],
+      "lab_subjects": ["Java Programming Lab", "Data Structure Lab", "Digital Electronics & Microprocessor Lab"],
+      "mandatory": ["Indian Constitution"]
+    },
+    {
+      "semester": 4,
+      "file": "sem4.json",
+      "total_credits": 23,
+      "full_marks": 1000,
+      "theory_subjects": ["Engineering Economics & Accountancy", "Universal Human Values-II", "Discrete Mathematics", "Computer Organization & Architecture", "Operating Systems", "Object Oriented Programming"],
+      "lab_subjects": ["IT Workshop (Python/R)", "OS Lab", "OOP Lab"],
+      "mandatory": ["Essence of Indian Knowledge Tradition"]
+    },
+    {
+      "semester": 5,
+      "file": "sem5.json",
+      "total_credits": 22,
+      "full_marks": 1000,
+      "theory_subjects": ["Professional Practice, Law & Ethics", "Design & Analysis of Algorithm", "Database Management Systems", "Formal Language & Automata Theory", "Artificial Intelligence", "Computer Networks"],
+      "lab_subjects": ["Algorithm Lab", "DBMS Lab", "Computer Hardware & Network Lab"],
+      "internship": ["Industry Internship - I"]
+    },
+    {
+      "semester": 6,
+      "file": "sem6.json",
+      "total_credits": 21,
+      "full_marks": 900,
+      "theory_subjects": ["Digital Image Processing", "Compiler Design", "Cryptography & Network Security", "Software Engineering"],
+      "lab_subjects": ["Advanced Java Lab", "Web Technology Lab", "Image Processing Lab"],
+      "electives": ["Advanced Computer Architecture / Data Mining / Web Technology"],
+      "project": ["Mini Project"]
+    },
+    {
+      "semester": 7,
+      "file": "sem7.json",
+      "total_credits": 18,
+      "full_marks": 800,
+      "electives": [
+        "PE2: IoT / Kotlin Programming / Blockchain Technology",
+        "PE3: Soft Computing / Machine Learning / Cloud Computing",
+        "OE1: Refer Annexure 1",
+        "OE2: Refer Annexure 2"
+      ],
+      "project": ["Project Work Intermediate"],
+      "internship": ["Internship - II"],
+      "seminar": ["Seminar on Contemporary Engineering Topics - I"]
+    },
+    {
+      "semester": 8,
+      "file": "sem8.json",
+      "total_credits": 18,
+      "full_marks": 800,
+      "electives": [
+        "PE4: Distributed Systems / Mobile Computing / Big Data Analytics",
+        "PE5: Pattern Recognition / NLP / Android OS",
+        "OE3: Refer Annexure 3",
+        "OE4: Refer Annexure 4"
+      ],
+      "project": ["Project Work Final"],
+      "seminar": ["Seminar on Contemporary Engineering Topics - II"],
+      "online": ["SWAYAM Courses"]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "project_full_marks": 200,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

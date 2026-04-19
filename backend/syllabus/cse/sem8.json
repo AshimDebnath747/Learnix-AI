@@ -1,0 +1,466 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 8,
+  "total_credits": 18,
+  "full_marks": 800,
+  "note": "Final semester. Contains 2 program electives, 2 open electives, final project, seminar and SWAYAM course.",
+  "subjects": [
+    {
+      "code": "PE CS 801",
+      "title": "Program Elective 4",
+      "category": "Program Elective",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "elective_options": [
+        {
+          "code": "PE CS 801/1",
+          "title": "Distributed Systems",
+          "modules": [
+            {
+              "module_id": "CS801A_M1",
+              "title": "Introduction to Distributed Systems",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Definition and goals of distributed systems",
+                "Transparency: access, location, replication, failure",
+                "Types: client-server, peer-to-peer, cloud",
+                "Communication: sockets, RPC, RMI, message-passing",
+                "Naming in distributed systems"
+              ]
+            },
+            {
+              "module_id": "CS801A_M2",
+              "title": "Synchronization and Consistency",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Clock synchronization: Lamport and vector clocks",
+                "Mutual exclusion in distributed systems",
+                "Election algorithms: Bully, Ring",
+                "Consistency models: strict, sequential, causal",
+                "Replication and consistency protocols"
+              ]
+            },
+            {
+              "module_id": "CS801A_M3",
+              "title": "Fault Tolerance and Transactions",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Failure models: crash, omission, Byzantine",
+                "Process resilience and group communication",
+                "Distributed commit: 2-phase commit (2PC), 3-phase commit",
+                "Distributed deadlock detection",
+                "Recovery and checkpointing"
+              ]
+            },
+            {
+              "module_id": "CS801A_M4",
+              "title": "Distributed File Systems and Security",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Distributed file systems: NFS, HDFS",
+                "MapReduce programming model",
+                "Security in distributed systems: authentication, authorization",
+                "Distributed denial of service (DDoS)",
+                "Case study: Zookeeper, Apache Kafka"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 801/2",
+          "title": "Mobile Computing",
+          "modules": [
+            {
+              "module_id": "CS801B_M1",
+              "title": "Mobile Computing Fundamentals",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Mobile computing architecture and challenges",
+                "Cellular networks: 2G, 3G, 4G LTE, 5G",
+                "Mobile IP: architecture, handoff, tunneling",
+                "Wireless LANs: IEEE 802.11",
+                "Bluetooth and personal area networks"
+              ]
+            },
+            {
+              "module_id": "CS801B_M2",
+              "title": "Mobile Application Development",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Android architecture: Dalvik/ART, application layer",
+                "Android components: Activity, Service, BroadcastReceiver, ContentProvider",
+                "UI design: layouts, views, event handling",
+                "Data storage: SQLite, SharedPreferences, files",
+                "Networking: REST APIs, JSON parsing"
+              ]
+            },
+            {
+              "module_id": "CS801B_M3",
+              "title": "Location Services and Sensors",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "GPS and location-based services",
+                "Google Maps API integration",
+                "Sensors: accelerometer, gyroscope, magnetometer",
+                "Context-aware computing",
+                "Mobile augmented reality basics"
+              ]
+            },
+            {
+              "module_id": "CS801B_M4",
+              "title": "Mobile Security and Cloud Integration",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Mobile security threats and countermeasures",
+                "Secure coding practices for Android",
+                "Firebase: authentication, Firestore, storage",
+                "Push notifications",
+                "Mobile app testing and deployment"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 801/3",
+          "title": "Big Data Analytics",
+          "modules": [
+            {
+              "module_id": "CS801C_M1",
+              "title": "Introduction to Big Data",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Big Data characteristics: 5 Vs (Volume, Velocity, Variety, Veracity, Value)",
+                "Big Data ecosystem: Hadoop, Spark",
+                "HDFS: architecture, read/write operations",
+                "MapReduce: programming model and examples",
+                "YARN: resource management"
+              ]
+            },
+            {
+              "module_id": "CS801C_M2",
+              "title": "Apache Spark and NoSQL",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Spark architecture: RDD, DataFrame, Dataset",
+                "Spark SQL and Spark Streaming",
+                "NoSQL databases: key-value (Redis), document (MongoDB), column-family (Cassandra), graph (Neo4j)",
+                "CAP theorem",
+                "HBase: architecture and operations"
+              ]
+            },
+            {
+              "module_id": "CS801C_M3",
+              "title": "Big Data Analytics and Visualization",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Descriptive, predictive, and prescriptive analytics",
+                "Machine learning on big data: Spark MLlib",
+                "Stream processing: Apache Kafka, Flink",
+                "Data visualization: Tableau, D3.js",
+                "Real-time analytics"
+              ]
+            },
+            {
+              "module_id": "CS801C_M4",
+              "title": "Big Data Applications and Cloud",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Big Data in healthcare, finance, social media",
+                "AWS big data services: EMR, Redshift, Athena",
+                "Google BigQuery and Dataflow",
+                "Data lakes vs data warehouses",
+                "Privacy and ethics in big data"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PE CS 802",
+      "title": "Program Elective 5",
+      "category": "Program Elective",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "elective_options": [
+        {
+          "code": "PE CS 802/1",
+          "title": "Pattern Recognition",
+          "modules": [
+            {
+              "module_id": "CS802A_M1",
+              "title": "Pattern Recognition Fundamentals",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Introduction to pattern recognition and applications",
+                "Pattern classes, features, and classifiers",
+                "Statistical pattern recognition: Bayes decision theory",
+                "Maximum likelihood and Bayesian estimation",
+                "Discriminant functions"
+              ]
+            },
+            {
+              "module_id": "CS802A_M2",
+              "title": "Classification Methods",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "k-Nearest Neighbour classifier",
+                "Linear classifiers: perceptron, Fisher's discriminant",
+                "SVM for pattern classification",
+                "Neural network classifiers",
+                "Ensemble methods: bagging, boosting"
+              ]
+            },
+            {
+              "module_id": "CS802A_M3",
+              "title": "Feature Extraction and Clustering",
+              "hours": 6,
+              "is_important": false,
+              "topics": [
+                "Feature extraction: PCA, LDA",
+                "Feature selection methods",
+                "Clustering: k-means, hierarchical, fuzzy clustering",
+                "Structural pattern recognition",
+                "Pattern recognition applications: OCR, speech, face recognition"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 802/2",
+          "title": "Natural Language Processing",
+          "modules": [
+            {
+              "module_id": "CS802B_M1",
+              "title": "NLP Fundamentals",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Introduction to NLP and linguistics",
+                "Tokenization, stemming, lemmatization",
+                "POS tagging",
+                "Named entity recognition (NER)",
+                "Regular expressions for NLP"
+              ]
+            },
+            {
+              "module_id": "CS802B_M2",
+              "title": "Language Modeling and NLP Tasks",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "N-gram language models",
+                "Text classification: Naive Bayes, SVM",
+                "Sentiment analysis",
+                "Information retrieval: TF-IDF, BM25",
+                "Machine translation basics"
+              ]
+            },
+            {
+              "module_id": "CS802B_M3",
+              "title": "Deep Learning for NLP",
+              "hours": 6,
+              "is_important": true,
+              "topics": [
+                "Word embeddings: Word2Vec, GloVe",
+                "Recurrent Neural Networks for NLP: LSTM, GRU",
+                "Attention mechanism",
+                "Transformer architecture",
+                "Pre-trained models: BERT overview"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 802/3",
+          "title": "Android Operating System",
+          "modules": [
+            {
+              "module_id": "CS802C_M1",
+              "title": "Android OS Architecture",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Android stack: Linux kernel, HAL, ART/Dalvik, framework",
+                "Android boot process",
+                "Binder IPC mechanism",
+                "Android security model: permissions, sandboxing",
+                "System services"
+              ]
+            },
+            {
+              "module_id": "CS802C_M2",
+              "title": "Android Internals",
+              "hours": 7,
+              "is_important": true,
+              "topics": [
+                "Activity manager and task management",
+                "Window manager",
+                "Power management",
+                "Memory management in Android",
+                "Android file system"
+              ]
+            },
+            {
+              "module_id": "CS802C_M3",
+              "title": "Android Customization and Security",
+              "hours": 6,
+              "is_important": false,
+              "topics": [
+                "AOSP: Android Open Source Project",
+                "Customizing Android OS: building from source",
+                "Android SELinux policies",
+                "Android root and custom ROMs",
+                "Advanced app security: SafetyNet, key attestation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OE 803",
+      "title": "Open Elective 3",
+      "category": "Open Elective",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "note": "Refer Annexure 3 of the official syllabus for subject options",
+      "modules": [
+        {
+          "module_id": "OE803_M1",
+          "title": "Open Elective - As per chosen subject",
+          "hours": 36,
+          "is_important": false,
+          "topics": ["Depends on selected open elective subject from Annexure 3"]
+        }
+      ]
+    },
+    {
+      "code": "OE 804",
+      "title": "Open Elective 4",
+      "category": "Open Elective",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "note": "Refer Annexure 4 of the official syllabus for subject options",
+      "modules": [
+        {
+          "module_id": "OE804_M1",
+          "title": "Open Elective - As per chosen subject",
+          "hours": 24,
+          "is_important": false,
+          "topics": ["Depends on selected open elective subject from Annexure 4"]
+        }
+      ]
+    },
+    {
+      "code": "PR CS 805",
+      "title": "Project Work Final",
+      "category": "Project",
+      "credits": 6,
+      "contact_hours": 12,
+      "type": "project",
+      "is_lab": false,
+      "full_marks": 200,
+      "modules": [
+        {
+          "module_id": "CS805_P1",
+          "title": "Final Project Completion",
+          "hours": 144,
+          "is_important": true,
+          "topics": [
+            "Final implementation and integration",
+            "Comprehensive testing: unit, integration, system, UAT",
+            "Performance optimization",
+            "Project documentation: SRS, design docs, user manual",
+            "Final project report preparation",
+            "Project demonstration and viva-voce"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SE CS 806",
+      "title": "Seminar on Contemporary Engineering Topics - II",
+      "category": "Seminar",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "seminar",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS806_SE1",
+          "title": "Seminar II",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Advanced contemporary engineering topic selection",
+            "In-depth literature survey",
+            "Seminar paper writing",
+            "Presentation and peer discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SW CS 807",
+      "title": "SWAYAM Courses",
+      "category": "Online Course",
+      "credits": 1,
+      "contact_hours": 0,
+      "type": "online",
+      "is_lab": false,
+      "full_marks": 100,
+      "note": "Students must complete an approved SWAYAM/NPTEL online course",
+      "modules": [
+        {
+          "module_id": "CS807_SW1",
+          "title": "SWAYAM Online Course",
+          "hours": 0,
+          "is_important": false,
+          "topics": [
+            "Student selects an approved SWAYAM/NPTEL course",
+            "Completes assignments and proctored examination",
+            "Course certificate submitted for credit transfer"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "project_full_marks": 200,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

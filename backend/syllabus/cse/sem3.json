@@ -1,0 +1,555 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 3,
+  "total_credits": 22,
+  "full_marks": 1000,
+  "subjects": [
+    {
+      "code": "HU 301",
+      "title": "Effective Technical Communication",
+      "category": "Humanities Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HU301_M1",
+          "title": "Essentials of Communication",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "What is Communication, Process and levels of communication",
+            "Flow of Communication: Downward, Upward, Lateral/Horizontal",
+            "Barriers to communication",
+            "Non-verbal Communication",
+            "Technology-enabled communication",
+            "Importance of Technical Communication",
+            "Differences between general and technical communication"
+          ]
+        },
+        {
+          "module_id": "HU301_M2",
+          "title": "Technical Writing Skills",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Technical writing process: choosing words, clarity, formatting, proofreading",
+            "Technical Reports and Proposals",
+            "Thesis/Project writing: structure",
+            "Synopsis writing methods",
+            "Technical research paper writing",
+            "Business letters: Sales, Credit, Claim, Enquiry",
+            "Email writing: guiding principles, etiquette"
+          ]
+        },
+        {
+          "module_id": "HU301_M3",
+          "title": "Workplace Communication",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Writing job applications, CV, Resume",
+            "Group Discussions: types, key skills, Dos and Don'ts",
+            "Job Interviews: types and stages",
+            "Business Presentations: planning, organizing, delivering",
+            "Visual aids and PowerPoint presentations",
+            "Ethics in Communication"
+          ]
+        },
+        {
+          "module_id": "HU301_M4",
+          "title": "Developing Soft Skills and Life Skills",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Introduction to soft skills",
+            "Time management, attitude, responsibility",
+            "Ethics and values, self-confidence, teamwork",
+            "Personality Development: types and attributes",
+            "Leadership qualities",
+            "Body language: types and significance"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 302",
+      "title": "Mathematics - III",
+      "category": "Basic Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS302_M1",
+          "title": "Partial Differential Equations",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "First order PDEs",
+            "Linear and quasi-linear PDEs: Lagrange method (Pp + Qq = R)",
+            "Homogeneous second order linear DE with constant coefficients",
+            "Non-homogeneous second order linear DE",
+            "Complementary function and particular integral method"
+          ]
+        },
+        {
+          "module_id": "BS302_M2",
+          "title": "Fourier Series",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "Fourier series expansion of a function",
+            "Half range sine and cosine expansions",
+            "One-dimensional wave equation",
+            "One-dimensional heat flow equation",
+            "Method of separation of variables",
+            "Fourier series solution of PDEs"
+          ]
+        },
+        {
+          "module_id": "BS302_M3",
+          "title": "Probability",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "Classical and axiomatic definition of probability",
+            "Conditional probability, Bayes' theorem",
+            "Independent events, random variables",
+            "Expectation and moments",
+            "Probability mass function and density function",
+            "Normal, Poisson, Binomial distributions"
+          ]
+        },
+        {
+          "module_id": "BS302_M4",
+          "title": "Numerical Analysis",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Regula-Falsi method, Newton-Raphson method",
+            "Newton's forward and backward difference interpolation",
+            "Lagrange interpolation",
+            "Trapezoidal rule, Simpson's 1/3 and 3/8 rules",
+            "Taylor's series method, Euler's method",
+            "Modified Euler's method, Runge-Kutta 4th order method"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 303",
+      "title": "Biology for Engineers",
+      "category": "Basic Science",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS303_M1",
+          "title": "Introduction to Biology, Classification and Biomolecules",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Introduction to Biology and its branches",
+            "Three major kingdoms: prokaryotic and eukaryotic cells",
+            "Animal and plant cell structures and functions",
+            "Cell cycle and cell division",
+            "Molecules of life: sugars, lipids, amino acids, nucleotides",
+            "Proteins: structure, function, enzymes"
+          ]
+        },
+        {
+          "module_id": "BS303_M2",
+          "title": "Fundamentals of Genetics",
+          "hours": 6,
+          "is_important": false,
+          "topics": [
+            "Principles of genetics: segregation and independent assortment",
+            "DNA as genetic material, genetic code",
+            "Mutation and recombination",
+            "Recombinant DNA technology and gene mapping"
+          ]
+        },
+        {
+          "module_id": "BS303_M3",
+          "title": "Microbiology and Applications",
+          "hours": 6,
+          "is_important": false,
+          "topics": [
+            "Identification and classification of microorganisms",
+            "Growth kinetics and nutrition",
+            "Isolation and pure culture techniques",
+            "Sterilization methods",
+            "Control of microorganisms"
+          ]
+        },
+        {
+          "module_id": "BS303_M4",
+          "title": "Energy Transaction and Metabolism",
+          "hours": 6,
+          "is_important": false,
+          "topics": [
+            "Thermodynamics in biological systems",
+            "Glycolysis and Krebs cycle",
+            "Role of ATP",
+            "Physiological steady-state",
+            "Body fluid balance and transport"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 304",
+      "title": "Engineering Mechanics",
+      "category": "Engineering Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES304_M1",
+          "title": "Fundamentals of Engineering Mechanics",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Force systems: coplanar and concurrent forces",
+            "Particle equilibrium in 2D and 3D",
+            "Moments and couples",
+            "Free body diagrams",
+            "Equations of equilibrium",
+            "Friction: types, laws, wedge friction, screw jack"
+          ]
+        },
+        {
+          "module_id": "ES304_M2",
+          "title": "Centre of Gravity and Moment of Inertia",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Centroid of simple and composite figures",
+            "Centre of gravity",
+            "Area moment of inertia: first principles",
+            "Parallel and perpendicular axis theorems",
+            "Mass moment of inertia: cylinder, sphere, cone"
+          ]
+        },
+        {
+          "module_id": "ES304_M3",
+          "title": "Trusses, Frames and Virtual Work",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Analysis of simple and compound trusses",
+            "Method of sections and method of joints",
+            "Frames and machines",
+            "Virtual work principle",
+            "Stability of equilibrium"
+          ]
+        },
+        {
+          "module_id": "ES304_M4",
+          "title": "Dynamics and Mechanical Vibrations",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Kinematics: types of motion",
+            "D'Alembert's principle",
+            "Work-energy principle",
+            "Longitudinal, transverse, and torsional vibrations",
+            "Free and forced vibration, resonance, damping"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 305",
+      "title": "Digital Logic and Microprocessor",
+      "category": "Program Core",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS305_M1",
+          "title": "Boolean Algebra and Combinational Logic",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Binary systems and code conversion (BCD, Gray, ASCII)",
+            "Boolean Algebra and Logic Gates",
+            "Universal gates: NAND, NOR",
+            "Simplification: SOP, POS, K-map",
+            "Combinational circuits: Adders, Subtractors",
+            "Multiplexer, Demultiplexer, Encoder, Decoder"
+          ]
+        },
+        {
+          "module_id": "CS305_M2",
+          "title": "Sequential Logic",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "RS, Clocked RS, D, JK, Master-Slave JK, T Flip-Flops",
+            "Shift Registers: types and applications",
+            "Counters: Ripple, Synchronous, Up-Down Counter"
+          ]
+        },
+        {
+          "module_id": "CS305_M3",
+          "title": "8085 Microprocessor Architecture",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Introduction to microprocessors and microcomputers",
+            "8085 architecture and operations",
+            "Memory and I/O devices",
+            "8085 instruction set: data transfer, arithmetic, logic",
+            "Addressing modes",
+            "Writing assembly language programs"
+          ]
+        },
+        {
+          "module_id": "CS305_M4",
+          "title": "8085 Programming and Interfacing",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Time delay programs",
+            "Stack and subroutines",
+            "BCD to Binary, BCD to HEX, Binary to ASCII conversions",
+            "BCD addition and subtraction",
+            "8085 interrupts: vectored interrupts",
+            "Interfacing I/O devices: basic concepts, memory-mapped I/O"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 306",
+      "title": "Data Structure and Algorithm",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS306_M1",
+          "title": "Introduction",
+          "hours": 5,
+          "is_important": true,
+          "topics": [
+            "Basic terminologies: data, data structure, ADT",
+            "Data structure operations: insertion, deletion, traversal",
+            "Algorithm analysis: asymptotic notations (O, Ω, Θ)",
+            "Time-space trade-off",
+            "Linear and Binary Search with complexity analysis"
+          ]
+        },
+        {
+          "module_id": "CS306_M2",
+          "title": "Stacks and Queues",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "ADT Stack and operations",
+            "Applications: expression conversion (infix to postfix) and evaluation",
+            "ADT Queue: Simple, Circular, Priority Queue",
+            "Operations and analysis of all queue types"
+          ]
+        },
+        {
+          "module_id": "CS306_M3",
+          "title": "Linked Lists and Trees",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Singly linked list: traversal, search, insert, delete",
+            "Doubly linked list: operations and analysis",
+            "Circular linked list",
+            "Linked representation of stack and queue",
+            "Trees: binary tree, threaded binary tree, BST, AVL tree",
+            "Tree operations and complexity",
+            "B Tree and B+ Tree"
+          ]
+        },
+        {
+          "module_id": "CS306_M4",
+          "title": "Sorting, Hashing and Graph",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Sorting: Selection, Bubble, Insertion, Quick, Merge, Heap Sort",
+            "Performance comparison of sorting algorithms",
+            "Hashing: hash functions, collision resolution",
+            "Graph: basic terminologies, representations",
+            "Graph traversal: BFS and DFS with complexity"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 307",
+      "title": "Java Programming Lab",
+      "category": "Program Core",
+      "credits": 2,
+      "contact_hours": 4,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS307_L1",
+          "title": "Java Programming Lab Experiments",
+          "hours": 40,
+          "is_important": true,
+          "topics": [
+            "Method overloading and method overriding",
+            "Java packages and access specifiers",
+            "Constructors: default and parameterized",
+            "Arrays and matrix operations",
+            "Inheritance and super keyword",
+            "Interfaces and runtime polymorphism",
+            "Java Applets and digital clock",
+            "Swing: JTextArea, JCombo, JTable",
+            "JDBC: connecting Java with MySQL",
+            "Transaction management using PreparedStatement"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 308",
+      "title": "Data Structure Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS308_L1",
+          "title": "Data Structure Lab Experiments",
+          "hours": 24,
+          "is_important": true,
+          "topics": [
+            "Array operations",
+            "Stack and Queue implementation",
+            "Circular Queue",
+            "Linked list: single, double, circular",
+            "Sorting algorithms implementation",
+            "Graph implementation",
+            "Graph search: BFS and DFS"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 309",
+      "title": "Digital Electronics and Microprocessor Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS309_L1",
+          "title": "Digital Electronics and Microprocessor Lab",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Truth table verification: AND, OR, NOT, NAND, NOR, XOR",
+            "Gate realization using NAND/NOR",
+            "K-map reduction",
+            "Half adder, Full adder, Subtractor implementation",
+            "Multiplexer design",
+            "Flip-flop circuits",
+            "8085: arithmetic operations, BCD operations",
+            "8085: searching and sorting"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MC 310",
+      "title": "Indian Constitution",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "contact_hours": 2,
+      "type": "mandatory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "MC310_M1",
+          "title": "Constitutional Framework",
+          "hours": 5,
+          "is_important": false,
+          "topics": [
+            "Meaning of Constitutional Law",
+            "Historical perspective of Indian Constitution",
+            "Salient features of the Constitution"
+          ]
+        },
+        {
+          "module_id": "MC310_M2",
+          "title": "Fundamental Rights, Duties and DPSP",
+          "hours": 6,
+          "is_important": false,
+          "topics": [
+            "Fundamental Rights: Articles 14, 19, 21",
+            "Fundamental Duties",
+            "Directive Principles of State Policy"
+          ]
+        },
+        {
+          "module_id": "MC310_M3",
+          "title": "India's Political System",
+          "hours": 7,
+          "is_important": false,
+          "topics": [
+            "Federal structure and distribution of powers",
+            "Parliamentary Government: President's powers",
+            "Emergency provisions",
+            "Amendment procedure"
+          ]
+        },
+        {
+          "module_id": "MC310_M4",
+          "title": "Local Self Government",
+          "hours": 7,
+          "is_important": false,
+          "topics": [
+            "73rd Amendment: Panchayati Raj",
+            "74th Amendment: Urban local bodies",
+            "TTAADC (Tripura Tribal Areas Autonomous District Council)"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

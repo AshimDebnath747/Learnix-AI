@@ -1,0 +1,340 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 1,
+  "total_credits": 17.5,
+  "full_marks": 800,
+  "note": "Common syllabus for all branches. Includes 3-week Induction Program at start.",
+  "subjects": [
+    {
+      "code": "BS 101",
+      "title": "Mathematics - I",
+      "category": "Basic Science",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS101_M1",
+          "title": "Differential Calculus",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Limits and continuity",
+            "Differentiation: rules, chain rule",
+            "Successive differentiation, Leibnitz theorem",
+            "Partial differentiation, Euler's theorem",
+            "Maxima and minima of functions of two variables",
+            "Lagrange multipliers"
+          ]
+        },
+        {
+          "module_id": "BS101_M2",
+          "title": "Integral Calculus",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Definite and indefinite integrals",
+            "Integration techniques: substitution, by parts, partial fractions",
+            "Beta and Gamma functions",
+            "Double and triple integrals",
+            "Applications: area, volume"
+          ]
+        },
+        {
+          "module_id": "BS101_M3",
+          "title": "Matrices and Linear Algebra",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Types of matrices, matrix operations",
+            "Determinants: properties and evaluation",
+            "Inverse of a matrix",
+            "Rank of a matrix",
+            "System of linear equations: Cramer's rule, Gauss elimination",
+            "Eigenvalues and eigenvectors",
+            "Cayley-Hamilton theorem"
+          ]
+        },
+        {
+          "module_id": "BS101_M4",
+          "title": "Differential Equations",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "First order ODEs: variable separable, homogeneous, linear",
+            "Exact equations and integrating factors",
+            "Second order linear ODEs with constant coefficients",
+            "Complementary function and particular integral",
+            "Applications of ODEs"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 102",
+      "title": "Physics",
+      "category": "Basic Science",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS102_M1",
+          "title": "Oscillations and Waves",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Simple harmonic motion",
+            "Damped and forced oscillations",
+            "Resonance",
+            "Wave motion: transverse and longitudinal",
+            "Superposition of waves, standing waves"
+          ]
+        },
+        {
+          "module_id": "BS102_M2",
+          "title": "Optics",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Interference: Young's double slit, Newton's rings",
+            "Diffraction: Fresnel and Fraunhofer",
+            "Polarization: types and Malus's law",
+            "Lasers: principles and types",
+            "Optical fibres: principle and applications"
+          ]
+        },
+        {
+          "module_id": "BS102_M3",
+          "title": "Quantum Mechanics",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Blackbody radiation, photoelectric effect",
+            "de Broglie hypothesis",
+            "Heisenberg's uncertainty principle",
+            "Schrödinger's wave equation",
+            "Particle in a box"
+          ]
+        },
+        {
+          "module_id": "BS102_M4",
+          "title": "Solid State Physics and Electromagnetism",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Crystal structure: unit cell, Bravais lattices",
+            "X-ray diffraction, Bragg's law",
+            "Semiconductors: intrinsic and extrinsic",
+            "Dielectrics and magnetic materials",
+            "Maxwell's equations (overview)"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 103",
+      "title": "Basic Electrical Engineering",
+      "category": "Engineering Science",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES103_M1",
+          "title": "DC Circuits",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Ohm's law, KVL, KCL",
+            "Series and parallel circuits",
+            "Mesh analysis and node analysis",
+            "Thevenin's and Norton's theorems",
+            "Superposition theorem",
+            "Maximum power transfer theorem"
+          ]
+        },
+        {
+          "module_id": "ES103_M2",
+          "title": "AC Circuits",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "AC fundamentals: phasors, RMS and peak values",
+            "Impedance and admittance",
+            "Series and parallel RLC circuits",
+            "Resonance: series and parallel",
+            "Power factor and power in AC circuits"
+          ]
+        },
+        {
+          "module_id": "ES103_M3",
+          "title": "Transformers and Machines",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Transformer: principle, construction, EMF equation",
+            "Efficiency and voltage regulation",
+            "DC machines: types and working principle",
+            "AC motors: induction motor basics",
+            "Three-phase systems"
+          ]
+        },
+        {
+          "module_id": "ES103_M4",
+          "title": "Electrical Measurements and Safety",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Measuring instruments: ammeter, voltmeter, wattmeter",
+            "CRO: principle and applications",
+            "Earthing and electrical safety",
+            "Semiconductor diodes and rectifiers",
+            "BJT basics"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 104",
+      "title": "Engineering Graphics and Design",
+      "category": "Engineering Science",
+      "credits": 1,
+      "contact_hours": 1,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES104_M1",
+          "title": "Engineering Drawing Basics",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Introduction to drawing instruments and conventions",
+            "Lines, lettering, and dimensioning",
+            "Orthographic projections",
+            "Isometric views",
+            "Sectional views"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 105",
+      "title": "Physics Laboratory",
+      "category": "Basic Science",
+      "credits": 1.5,
+      "contact_hours": 3,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS105_L1",
+          "title": "Physics Lab Experiments",
+          "hours": 36,
+          "is_important": false,
+          "topics": [
+            "Measurement of Young's modulus",
+            "Determination of wavelength using diffraction grating",
+            "Verification of Ohm's law",
+            "Study of resonance using sonometer",
+            "Newton's rings experiment",
+            "Laser spot size and divergence measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 106",
+      "title": "Engineering Graphics Practice",
+      "category": "Engineering Science",
+      "credits": 2,
+      "contact_hours": 4,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES106_L1",
+          "title": "Engineering Drawing Practice",
+          "hours": 48,
+          "is_important": false,
+          "topics": [
+            "Free hand sketching",
+            "Projection exercises",
+            "Isometric drawing practice",
+            "CAD software basics (AutoCAD/SolidWorks)"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 107",
+      "title": "Basic Electrical Engineering Laboratory",
+      "category": "Engineering Science",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES107_L1",
+          "title": "Electrical Engineering Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Verification of KVL and KCL",
+            "Thevenin's and Norton's theorem verification",
+            "Resonance in RLC circuits",
+            "Transformer characteristics",
+            "Semiconductor diode characteristics"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MC 108",
+      "title": "Induction Program",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "contact_hours": 0,
+      "type": "mandatory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "MC108_M1",
+          "title": "Induction Program Activities",
+          "hours": 0,
+          "is_important": false,
+          "topics": [
+            "Campus orientation and familiarization",
+            "Physical activity and sports",
+            "Creative arts",
+            "Universal human values sessions",
+            "Proficiency modules",
+            "Lectures by eminent people"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

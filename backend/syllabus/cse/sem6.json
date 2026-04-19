@@ -1,0 +1,605 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 6,
+  "total_credits": 21,
+  "full_marks": 900,
+  "subjects": [
+    {
+      "code": "PC CS 601",
+      "title": "Digital Image Processing",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS601_M1",
+          "title": "Digital Image Fundamentals",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Introduction to Digital Image Processing",
+            "Components of an Image Processing System",
+            "Sampling and Quantization",
+            "Pixel relationships - neighbours, adjacency, connectivity",
+            "Distance measures",
+            "Image operations: arithmetic, logical",
+            "Gray level transformations",
+            "Histogram processing and equalization"
+          ]
+        },
+        {
+          "module_id": "CS601_M2",
+          "title": "Image Enhancement",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Spatial domain filtering: smoothing, sharpening",
+            "Linear and non-linear filters",
+            "Frequency domain: DFT and its properties",
+            "Ideal, Butterworth and Gaussian low-pass and high-pass filters",
+            "Homomorphic filtering",
+            "Color image processing basics"
+          ]
+        },
+        {
+          "module_id": "CS601_M3",
+          "title": "Image Restoration and Compression",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Image degradation/restoration model",
+            "Noise models",
+            "Inverse filtering, Wiener filtering",
+            "Image compression fundamentals: redundancy types",
+            "Huffman, RLE, LZW coding",
+            "JPEG compression standard",
+            "Lossy vs lossless compression"
+          ]
+        },
+        {
+          "module_id": "CS601_M4",
+          "title": "Image Segmentation and Morphology",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Edge detection: Roberts, Sobel, Prewitt, Laplacian, Canny",
+            "Thresholding techniques",
+            "Region-based segmentation: region growing, splitting and merging",
+            "Morphological operations: erosion, dilation, opening, closing",
+            "Hit-or-miss transformation",
+            "Boundary extraction",
+            "Object recognition basics"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 602",
+      "title": "Compiler Design",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS602_M1",
+          "title": "Introduction and Lexical Analysis",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Phases of a compiler: overview",
+            "Lexical analysis: role of lexical analyser",
+            "Input buffering, specification of tokens",
+            "Recognition of tokens using DFA",
+            "LEX tool",
+            "Symbol table: structure and organization"
+          ]
+        },
+        {
+          "module_id": "CS602_M2",
+          "title": "Syntax Analysis",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Context-Free Grammars (CFG)",
+            "Parse trees and derivations",
+            "Ambiguity in grammars",
+            "Top-down parsing: recursive descent, predictive parsing",
+            "FIRST and FOLLOW sets",
+            "LL(1) parsing",
+            "Bottom-up parsing: LR, SLR, LALR, CLR parsing",
+            "YACC tool"
+          ]
+        },
+        {
+          "module_id": "CS602_M3",
+          "title": "Semantic Analysis and Intermediate Code Generation",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Syntax-directed definitions and translation",
+            "S-attributed and L-attributed definitions",
+            "Type checking",
+            "Three-address code",
+            "Quadruples, triples, indirect triples",
+            "Backpatching",
+            "Translation of expressions, control flow, procedure calls"
+          ]
+        },
+        {
+          "module_id": "CS602_M4",
+          "title": "Code Optimization and Code Generation",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Optimization: local, loop, global",
+            "Basic blocks and flow graphs",
+            "Common subexpression elimination",
+            "Dead code elimination, constant folding",
+            "Loop optimization: code motion, induction variable elimination",
+            "Code generation: issues, machine model",
+            "Register allocation and assignment",
+            "Simple code generation algorithm"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 603",
+      "title": "Cryptography and Network Security",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS603_M1",
+          "title": "Introduction to Cryptography and Classical Ciphers",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Security goals: confidentiality, integrity, authentication, non-repudiation",
+            "Classical encryption techniques: Caesar, Monoalphabetic, Polyalphabetic, Vigenere",
+            "Transposition ciphers",
+            "Symmetric vs Asymmetric cryptography",
+            "Number theory: modular arithmetic, GCD, Euler's theorem"
+          ]
+        },
+        {
+          "module_id": "CS603_M2",
+          "title": "Symmetric Key Cryptography",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "DES: structure, rounds, S-boxes, key generation",
+            "Triple DES",
+            "AES: structure and rounds",
+            "Modes of operation: ECB, CBC, CFB, OFB, CTR",
+            "Block vs stream ciphers",
+            "RC4"
+          ]
+        },
+        {
+          "module_id": "CS603_M3",
+          "title": "Asymmetric Cryptography and Hash Functions",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "RSA algorithm: key generation, encryption, decryption",
+            "RSA security and attacks",
+            "Diffie-Hellman key exchange",
+            "ElGamal cryptosystem",
+            "Hash functions: MD5, SHA-1, SHA-256",
+            "Digital signatures: RSA, DSA",
+            "Digital certificates and PKI"
+          ]
+        },
+        {
+          "module_id": "CS603_M4",
+          "title": "Network Security Protocols and Applications",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Kerberos authentication",
+            "SSL/TLS protocol",
+            "IPSec: AH and ESP",
+            "PGP for email security",
+            "Firewalls: packet filter, stateful, application-level gateway",
+            "Intrusion detection systems",
+            "Denial of Service attacks",
+            "VPN"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 604",
+      "title": "Software Engineering",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS604_M1",
+          "title": "Software Process and Requirements Engineering",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Software development life cycle (SDLC)",
+            "Process models: Waterfall, Incremental, Spiral, Agile",
+            "Requirements engineering: elicitation, analysis, specification",
+            "Software Requirement Specification (SRS) document",
+            "Functional and non-functional requirements",
+            "Use case modeling"
+          ]
+        },
+        {
+          "module_id": "CS604_M2",
+          "title": "Software Design",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Design concepts: abstraction, modularity, coupling, cohesion",
+            "Architectural design: data-flow, object-oriented, component-based",
+            "UML diagrams: class, sequence, activity, state",
+            "Design patterns: creational, structural, behavioral",
+            "User Interface design principles"
+          ]
+        },
+        {
+          "module_id": "CS604_M3",
+          "title": "Software Testing",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Testing levels: unit, integration, system, acceptance",
+            "Black-box testing: equivalence partitioning, boundary value analysis",
+            "White-box testing: statement, branch, path coverage",
+            "Test case design",
+            "Regression testing",
+            "Test-driven development (TDD)",
+            "Software reliability"
+          ]
+        },
+        {
+          "module_id": "CS604_M4",
+          "title": "Software Project Management and Quality",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Software cost estimation: COCOMO model",
+            "Project scheduling: Gantt charts, PERT/CPM",
+            "Risk management in software projects",
+            "Software quality: SQA, CMM/CMMI levels",
+            "Configuration management: version control, SCM",
+            "Software maintenance: types and process",
+            "Agile methodologies: Scrum, Kanban"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 605",
+      "title": "Advanced Java Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS605_L1",
+          "title": "Advanced Java Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Servlets: lifecycle, GET/POST handling",
+            "JSP: scriptlets, expressions, directives",
+            "JDBC: database connectivity, CRUD operations",
+            "Java Beans and Session Management",
+            "Hibernate ORM basics",
+            "Spring framework introduction",
+            "RESTful web services using JAX-RS",
+            "File upload and download",
+            "Exception handling in web applications"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 606",
+      "title": "Web Technology Lab (PHP/JavaScript)",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS606_L1",
+          "title": "Web Technology Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "HTML5 and CSS3 page structure",
+            "JavaScript: DOM manipulation, events",
+            "JavaScript: AJAX and Fetch API",
+            "PHP: syntax, variables, arrays, functions",
+            "PHP: form handling and validation",
+            "PHP: sessions and cookies",
+            "PHP: MySQL integration (CRUD)",
+            "PHP: file handling",
+            "Building a complete small web application"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 607",
+      "title": "Image Processing Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS607_L1",
+          "title": "Image Processing Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Image reading, display, and basic operations (MATLAB/Python)",
+            "Histogram equalization",
+            "Spatial filtering: mean, median, Gaussian",
+            "Edge detection: Sobel, Canny",
+            "Image segmentation using thresholding",
+            "Frequency domain filtering: DFT, LPF, HPF",
+            "Morphological operations",
+            "Image compression (RLE/DCT)"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PE CS 608",
+      "title": "Program Elective 1",
+      "category": "Program Elective",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "elective_options": [
+        {
+          "code": "PE CS 608/1",
+          "title": "Advanced Computer Architecture",
+          "modules": [
+            {
+              "module_id": "CS608A_M1",
+              "title": "Instruction Level Parallelism",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Pipeline hazards and solutions",
+                "Dynamic scheduling: Tomasulo's algorithm",
+                "Branch prediction: static and dynamic",
+                "Superscalar processors",
+                "VLIW architecture"
+              ]
+            },
+            {
+              "module_id": "CS608A_M2",
+              "title": "Memory Hierarchy and Cache",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Cache organization and performance",
+                "Cache coherence protocols: MSI, MESI",
+                "Write policies: write-through, write-back",
+                "Virtual memory: TLB and page table",
+                "Memory bandwidth and latency"
+              ]
+            },
+            {
+              "module_id": "CS608A_M3",
+              "title": "Parallel Architectures",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Flynn's taxonomy: SISD, SIMD, MIMD",
+                "Shared memory vs distributed memory",
+                "Interconnection networks",
+                "GPU architecture overview",
+                "Multi-core processor design"
+              ]
+            },
+            {
+              "module_id": "CS608A_M4",
+              "title": "I/O and Storage Systems",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "I/O system design: buses, controllers",
+                "DMA and interrupts",
+                "RAID levels",
+                "Storage technologies: SSD, HDD",
+                "Performance benchmarking"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 608/2",
+          "title": "Data Mining",
+          "modules": [
+            {
+              "module_id": "CS608B_M1",
+              "title": "Introduction and Data Preprocessing",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "KDD process and data mining tasks",
+                "Data types and attributes",
+                "Data cleaning: missing values, noise, outliers",
+                "Data integration and transformation",
+                "Data reduction: PCA, feature selection",
+                "Data discretization"
+              ]
+            },
+            {
+              "module_id": "CS608B_M2",
+              "title": "Classification and Prediction",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Decision trees: ID3, C4.5, CART",
+                "Naive Bayes classifier",
+                "k-Nearest Neighbours (kNN)",
+                "Support Vector Machines (SVM)",
+                "Artificial Neural Networks for classification",
+                "Ensemble methods: Bagging, Boosting",
+                "Model evaluation: accuracy, precision, recall, ROC"
+              ]
+            },
+            {
+              "module_id": "CS608B_M3",
+              "title": "Clustering and Association Rules",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Association rule mining: Apriori algorithm",
+                "FP-Growth algorithm",
+                "Partitioning clustering: k-Means",
+                "Hierarchical clustering: agglomerative, divisive",
+                "DBSCAN",
+                "Cluster evaluation"
+              ]
+            },
+            {
+              "module_id": "CS608B_M4",
+              "title": "Advanced Topics in Data Mining",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Text mining and web mining",
+                "Spatial data mining",
+                "Time series mining",
+                "Data warehousing concepts",
+                "OLAP operations: roll-up, drill-down, slice, dice",
+                "Privacy-preserving data mining"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PE CS 608/3",
+          "title": "Web Technology",
+          "modules": [
+            {
+              "module_id": "CS608C_M1",
+              "title": "Web Fundamentals and HTML/CSS",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "Evolution of the Web and HTTP protocol",
+                "HTML5: semantic elements, forms, multimedia",
+                "CSS3: selectors, box model, flexbox, grid",
+                "Responsive web design",
+                "Browser rendering model"
+              ]
+            },
+            {
+              "module_id": "CS608C_M2",
+              "title": "JavaScript and Frontend Frameworks",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "JavaScript: closures, prototypes, ES6+",
+                "DOM manipulation and events",
+                "AJAX and Fetch API",
+                "Introduction to React or Angular",
+                "Single Page Applications (SPA)"
+              ]
+            },
+            {
+              "module_id": "CS608C_M3",
+              "title": "Server-Side Programming",
+              "hours": 9,
+              "is_important": true,
+              "topics": [
+                "PHP or Node.js server-side scripting",
+                "MVC architecture",
+                "Session management and cookies",
+                "RESTful API design",
+                "Authentication: JWT, OAuth"
+              ]
+            },
+            {
+              "module_id": "CS608C_M4",
+              "title": "Web Security and Modern Trends",
+              "hours": 9,
+              "is_important": false,
+              "topics": [
+                "Web security: XSS, CSRF, SQL injection",
+                "HTTPS and SSL/TLS",
+                "Web performance optimization",
+                "Progressive Web Apps (PWA)",
+                "Introduction to cloud deployment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PR CS 609",
+      "title": "Mini Project",
+      "category": "Project",
+      "credits": 3,
+      "contact_hours": 6,
+      "type": "project",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS609_P1",
+          "title": "Mini Project Work",
+          "hours": 72,
+          "is_important": true,
+          "topics": [
+            "Problem identification and scope definition",
+            "Literature survey and feasibility analysis",
+            "System design and architecture",
+            "Implementation and coding",
+            "Testing and validation",
+            "Documentation and report writing",
+            "Project presentation and viva"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

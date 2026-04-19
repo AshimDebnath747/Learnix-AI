@@ -1,0 +1,541 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 4,
+  "total_credits": 23,
+  "full_marks": 1000,
+  "subjects": [
+    {
+      "code": "HU 401",
+      "title": "Engineering Economics and Accountancy",
+      "category": "Humanities Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HU401_M1",
+          "title": "Engineering Economics",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Engineering economy and its importance",
+            "Demand and supply: elasticity of demand, supply chain economy",
+            "Factors of production: land, labor, capital, entrepreneurship",
+            "Laws of returns",
+            "Value of money, quantity theory, inflation and deflation"
+          ]
+        },
+        {
+          "module_id": "HU401_M2",
+          "title": "Business Skills for Engineers",
+          "hours": 9,
+          "is_important": false,
+          "topics": [
+            "Business structures: proprietorship, partnership, joint stock company",
+            "Basic functions of management",
+            "Risk management: types and steps",
+            "Leadership styles and qualities",
+            "Sources of funds",
+            "Basics of Income Tax and GST"
+          ]
+        },
+        {
+          "module_id": "HU401_M3",
+          "title": "Financial Accounting",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Financial transactions and recording",
+            "Ledger and trial balance",
+            "Cash book (double column)",
+            "Final accounts: Trading A/C, Profit & Loss A/C, Balance Sheet"
+          ]
+        },
+        {
+          "module_id": "HU401_M4",
+          "title": "Managerial Accounting",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Cost classifications and cost sheet preparation",
+            "Capital budgeting: payback period, NPV",
+            "Working capital management",
+            "Ratio analysis: current ratio, debt-equity, profit ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HU 402",
+      "title": "Universal Human Values-II: Understanding Harmony",
+      "category": "Humanities Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HU402_M1",
+          "title": "Introduction to Value Education",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Self-exploration: content and process",
+            "Natural acceptance and experiential validation",
+            "Continuous happiness and prosperity",
+            "Right understanding, relationship, and physical facility"
+          ]
+        },
+        {
+          "module_id": "HU402_M2",
+          "title": "Harmony in Human Being",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Human being as co-existence of 'I' and 'Body'",
+            "Needs of self and body",
+            "Values in human relationships: justice, trust, respect",
+            "Harmony in society"
+          ]
+        },
+        {
+          "module_id": "HU402_M3",
+          "title": "Harmony in Nature and Existence",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Interconnectedness in nature",
+            "Recyclability and self-regulation",
+            "Existence as co-existence",
+            "Holistic perception of harmony"
+          ]
+        },
+        {
+          "module_id": "HU402_M4",
+          "title": "Professional Ethics",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Natural acceptance of human values",
+            "Ethical human conduct",
+            "Humanistic education and order",
+            "Eco-friendly and people-friendly production systems",
+            "Appropriate technologies and management"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 403",
+      "title": "Discrete Mathematics",
+      "category": "Program Core",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS403_M1",
+          "title": "Sets, Relations, Functions and Mathematical Induction",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Operations and laws of sets, Cartesian products",
+            "Binary relation, partial ordering, equivalence relation",
+            "Bijective, inverse and composite functions",
+            "Countable and uncountable sets, Cantor's diagonal argument",
+            "Mathematical induction, Well Ordering Principle",
+            "Division algorithm, GCD, Euclidean algorithm",
+            "Fundamental Theorem of Arithmetic"
+          ]
+        },
+        {
+          "module_id": "CS403_M2",
+          "title": "Counting, Logic and Proof Techniques",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Inclusion-exclusion principle, pigeonhole principle",
+            "Permutations and combinations",
+            "Propositional Logic: syntax, semantics, truth tables",
+            "Logical equivalence, implication, rules of inference",
+            "Quantifiers: universal and existential",
+            "Proof techniques: contradiction, contraposition, necessity and sufficiency"
+          ]
+        },
+        {
+          "module_id": "CS403_M3",
+          "title": "Algebraic Structures and Boolean Algebra",
+          "hours": 15,
+          "is_important": true,
+          "topics": [
+            "Algebraic structures: semigroups, monoids, groups",
+            "Congruence relation, quotient structures",
+            "Cyclic groups, permutation groups",
+            "Normal subgroups, rings, integral domains, fields",
+            "Boolean Algebra: identities, duality",
+            "Representation of Boolean functions",
+            "Disjunctive and Conjunctive Normal Forms"
+          ]
+        },
+        {
+          "module_id": "CS403_M4",
+          "title": "Graphs and Trees",
+          "hours": 13,
+          "is_important": true,
+          "topics": [
+            "Graph properties: degree, connectivity, path, cycle, subgraph",
+            "Isomorphism, Eulerian and Hamiltonian walks",
+            "Graph coloring: vertices, edges, maps, planar graphs",
+            "Perfect graphs",
+            "Trees: rooted trees, weighted trees, prefix codes",
+            "Bi-connected components and articulation points",
+            "Shortest distances"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 404",
+      "title": "Computer Organization and Architecture",
+      "category": "Program Core",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS404_M1",
+          "title": "CPU Architecture and Data Representation",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Functional blocks: CPU, memory, I/O, control unit",
+            "Instruction set architecture: registers, execution cycle, addressing modes",
+            "Signed number representation, fixed and floating-point",
+            "Computer arithmetic: adders, Booth multiplier, carry save multiplier",
+            "Division: restoring and non-restoring techniques",
+            "Floating point arithmetic"
+          ]
+        },
+        {
+          "module_id": "CS404_M2",
+          "title": "Control Unit and I/O",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "x86 architecture introduction",
+            "CPU control unit: hardwired and microprogrammed design",
+            "Semiconductor memory technologies",
+            "I/O subsystems: program controlled, interrupt driven, DMA",
+            "Software interrupts and exceptions",
+            "I/O interfaces: SCSI, USB"
+          ]
+        },
+        {
+          "module_id": "CS404_M3",
+          "title": "Pipelining and Parallel Processing",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Pipelining: basic concepts, throughput and speedup",
+            "Pipeline hazards: data, control, structural",
+            "Introduction to parallel processors",
+            "Concurrent memory access",
+            "Cache coherency"
+          ]
+        },
+        {
+          "module_id": "CS404_M4",
+          "title": "Memory Organization",
+          "hours": 12,
+          "is_important": true,
+          "topics": [
+            "Memory interleaving",
+            "Hierarchical memory organization",
+            "Cache memory: size, block size, mapping functions",
+            "Replacement algorithms: LRU, FIFO, LFU",
+            "Write policies: write-through, write-back",
+            "Virtual memory: mapping and management techniques",
+            "Page replacement policies"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 405",
+      "title": "Operating Systems",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS405_M1",
+          "title": "Introduction to OS",
+          "hours": 8,
+          "is_important": true,
+          "topics": [
+            "Concept, generations, and types of OS",
+            "OS services and system calls",
+            "OS structure: layered, monolithic, microkernel",
+            "Virtual machine concept",
+            "Case study: UNIX and Windows"
+          ]
+        },
+        {
+          "module_id": "CS405_M2",
+          "title": "Processes, Threads and Scheduling",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Process: states, PCB, context switching",
+            "Threads: types, benefits, multithreading",
+            "Process scheduling: FCFS, SJF, Round Robin, Priority",
+            "Multiprocessor scheduling, real-time scheduling (RM, EDF)",
+            "IPC: critical section, mutual exclusion, semaphores",
+            "Classical problems: Producer-Consumer, Readers-Writers, Dining Philosophers"
+          ]
+        },
+        {
+          "module_id": "CS405_M3",
+          "title": "Deadlocks and Memory Management",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Deadlock: necessary conditions, prevention, avoidance (Banker's algorithm)",
+            "Deadlock detection and recovery",
+            "Memory allocation: contiguous, fixed and variable partition",
+            "Fragmentation and compaction",
+            "Paging: page table, hardware support",
+            "Virtual memory: demand paging, page fault",
+            "Page replacement: Optimal, FIFO, LRU, NRU, SC"
+          ]
+        },
+        {
+          "module_id": "CS405_M4",
+          "title": "I/O and File Management",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "I/O hardware: devices, controllers, DMA",
+            "Interrupt handlers, device drivers",
+            "File concepts: access methods, types, operations",
+            "Directory structures",
+            "File system: allocation methods (contiguous, linked, indexed)",
+            "Free space management",
+            "Disk scheduling: FCFS, SSTF, SCAN, C-SCAN"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 406",
+      "title": "Object Oriented Programming",
+      "category": "Program Core",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS406_M1",
+          "title": "Abstract Data Types",
+          "hours": 5,
+          "is_important": true,
+          "topics": [
+            "Abstract data types and specifications",
+            "Implementing an ADT",
+            "Concrete state space and invariant",
+            "Abstraction function"
+          ]
+        },
+        {
+          "module_id": "CS406_M2",
+          "title": "OOP Features",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Encapsulation and information hiding",
+            "Object identity",
+            "Polymorphism: overloading and overriding",
+            "Classes and objects in Java"
+          ]
+        },
+        {
+          "module_id": "CS406_M3",
+          "title": "Inheritance and Design Patterns",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Inheritance in OO design",
+            "Design patterns: introduction and classification",
+            "Iterator pattern",
+            "Model-View-Controller (MVC) pattern",
+            "Commands as methods and objects",
+            "Memory management in OO languages"
+          ]
+        },
+        {
+          "module_id": "CS406_M4",
+          "title": "Generic Types, Collections and GUI",
+          "hours": 13,
+          "is_important": true,
+          "topics": [
+            "Generic types in Java",
+            "Java Collections Framework",
+            "Graphical programming with Scala and Swing",
+            "Event-driven programming",
+            "Software development process overview"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 407",
+      "title": "IT Workshop (Python/R)",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS407_L1",
+          "title": "Python Programming Lab",
+          "hours": 24,
+          "is_important": true,
+          "topics": [
+            "Python installation, syntax, keywords, variables",
+            "Data types, user input, operators",
+            "Python modules",
+            "Control flow: decision making, loops",
+            "Functions",
+            "Numbers, lists, tuples, strings, sets, dictionaries",
+            "OOP: classes, objects, constructors",
+            "Inheritance and polymorphism",
+            "Regular expressions",
+            "Database access",
+            "NumPy, SciPy, Matplotlib, Pandas",
+            "Scikit-learn and Scikit-image"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 408",
+      "title": "Operating Systems Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS408_L1",
+          "title": "OS Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "UNIX commands basics",
+            "Shell programming",
+            "User management and permissions",
+            "CPU scheduling: Round Robin, SJF, FCFS, Priority",
+            "File allocation strategies",
+            "IPC: pipes, FIFOs, message passing, shared memory",
+            "Semaphores",
+            "File organization techniques",
+            "Banker's algorithm",
+            "Page replacement: FIFO, LRU, LFU",
+            "Disk management algorithms"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PC CS 409",
+      "title": "Object Oriented Programming Lab",
+      "category": "Program Core",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "CS409_L1",
+          "title": "OOP Lab Experiments",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Class, constructor, overloading, inheritance, overriding",
+            "Wrapper class and arrays",
+            "Interfaces and multiple inheritance",
+            "Packages",
+            "Third-party libraries",
+            "Multithreaded programming"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MC 410",
+      "title": "Essence of Indian Knowledge Tradition",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "contact_hours": 2,
+      "type": "mandatory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "MC410_M1",
+          "title": "Vedic Literature and Dharmashastra",
+          "hours": 8,
+          "is_important": false,
+          "topics": ["Vedic literature overview", "Dharmashastra", "Puranas", "Educational system in Vedic times"]
+        },
+        {
+          "module_id": "MC410_M2",
+          "title": "Indian Knowledge System and Yoga",
+          "hours": 6,
+          "is_important": false,
+          "topics": ["Concept of Dharma", "Patanjala Yoga", "Ayurveda and its relevance"]
+        },
+        {
+          "module_id": "MC410_M3",
+          "title": "Indian Philosophy",
+          "hours": 6,
+          "is_important": false,
+          "topics": ["Orthodox and heterodox systems", "Purusharthas", "Upanishadic literature", "Relevance in modern science"]
+        },
+        {
+          "module_id": "MC410_M4",
+          "title": "Indian Linguistic and Artistic Tradition",
+          "hours": 6,
+          "is_important": false,
+          "topics": ["Science of language", "Vedic and classical Sanskrit", "Sanskrit grammar", "Artistic tradition"]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}

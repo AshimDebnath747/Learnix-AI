@@ -1,0 +1,423 @@
+{
+  "university": "Tripura University (A Central University)",
+  "branch": "CSE",
+  "semester": 2,
+  "total_credits": 20.5,
+  "full_marks": 1000,
+  "note": "Common syllabus for all branches.",
+  "subjects": [
+    {
+      "code": "HS 201",
+      "title": "English",
+      "category": "Humanities Science",
+      "credits": 2,
+      "contact_hours": 2,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HS201_M1",
+          "title": "Reading and Comprehension",
+          "hours": 6,
+          "is_important": true,
+          "topics": [
+            "Reading skills: skimming and scanning",
+            "Comprehension passages",
+            "Vocabulary building",
+            "Note-making and summarizing"
+          ]
+        },
+        {
+          "module_id": "HS201_M2",
+          "title": "Writing Skills",
+          "hours": 6,
+          "is_important": true,
+          "topics": [
+            "Paragraph writing",
+            "Essay writing",
+            "Letter writing: formal and informal",
+            "Report writing basics"
+          ]
+        },
+        {
+          "module_id": "HS201_M3",
+          "title": "Grammar",
+          "hours": 6,
+          "is_important": true,
+          "topics": [
+            "Parts of speech",
+            "Tenses and aspect",
+            "Active and passive voice",
+            "Direct and indirect speech",
+            "Common errors and corrections"
+          ]
+        },
+        {
+          "module_id": "HS201_M4",
+          "title": "Communication and Presentation",
+          "hours": 8,
+          "is_important": false,
+          "topics": [
+            "Oral communication skills",
+            "Presentation techniques",
+            "Group discussion basics",
+            "Interview skills"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 202",
+      "title": "Mathematics - II",
+      "category": "Basic Science",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS202_M1",
+          "title": "Vector Calculus",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Scalar and vector fields",
+            "Gradient, divergence, curl",
+            "Line integrals, surface integrals, volume integrals",
+            "Green's theorem, Stokes' theorem, Gauss divergence theorem"
+          ]
+        },
+        {
+          "module_id": "BS202_M2",
+          "title": "Laplace Transforms",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Definition and existence conditions",
+            "Standard Laplace transforms",
+            "Properties: linearity, shifting, scaling",
+            "Inverse Laplace transform",
+            "Application to solving ODEs"
+          ]
+        },
+        {
+          "module_id": "BS202_M3",
+          "title": "Complex Analysis",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Complex numbers and functions",
+            "Analytic functions, Cauchy-Riemann equations",
+            "Complex integration, Cauchy's theorem",
+            "Laurent series and residues",
+            "Contour integration"
+          ]
+        },
+        {
+          "module_id": "BS202_M4",
+          "title": "Series and Sequences",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Convergence of sequences and series",
+            "Tests: ratio, root, integral test",
+            "Power series and radius of convergence",
+            "Taylor and Maclaurin series",
+            "Fourier series introduction"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 203",
+      "title": "Chemistry",
+      "category": "Basic Science",
+      "credits": 4,
+      "contact_hours": 4,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS203_M1",
+          "title": "Atomic Structure and Chemical Bonding",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Quantum numbers and atomic orbitals",
+            "Electronic configuration and periodic properties",
+            "Ionic, covalent, and metallic bonding",
+            "VSEPR theory and molecular geometry",
+            "Hybridization"
+          ]
+        },
+        {
+          "module_id": "BS203_M2",
+          "title": "Thermodynamics and Equilibrium",
+          "hours": 10,
+          "is_important": true,
+          "topics": [
+            "Laws of thermodynamics",
+            "Enthalpy, entropy, and Gibbs free energy",
+            "Chemical equilibrium: Le Chatelier's principle",
+            "Phase rule",
+            "Electrochemistry: EMF, Nernst equation"
+          ]
+        },
+        {
+          "module_id": "BS203_M3",
+          "title": "Polymers and Materials",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Types of polymers: addition and condensation",
+            "Properties of engineering polymers",
+            "Ceramics and composites",
+            "Nanomaterials: synthesis and properties",
+            "Corrosion: types and prevention"
+          ]
+        },
+        {
+          "module_id": "BS203_M4",
+          "title": "Water Technology and Environment",
+          "hours": 10,
+          "is_important": false,
+          "topics": [
+            "Water quality parameters: hardness, BOD, COD",
+            "Water treatment processes",
+            "Sewage treatment",
+            "Air and soil pollution",
+            "Green chemistry principles"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 204",
+      "title": "Programming for Problem Solving",
+      "category": "Engineering Science",
+      "credits": 3,
+      "contact_hours": 3,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES204_M1",
+          "title": "Introduction to Programming and C Basics",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Problem solving and algorithm design",
+            "Flowcharts and pseudocode",
+            "C language: history and structure",
+            "Data types, variables, constants",
+            "Operators: arithmetic, relational, logical, bitwise",
+            "Input/output: printf, scanf"
+          ]
+        },
+        {
+          "module_id": "ES204_M2",
+          "title": "Control Flow",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Decision making: if, if-else, switch",
+            "Loops: for, while, do-while",
+            "Nested loops and break/continue",
+            "goto statement"
+          ]
+        },
+        {
+          "module_id": "ES204_M3",
+          "title": "Functions and Arrays",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Functions: definition, declaration, call",
+            "Parameter passing: call by value",
+            "Recursion",
+            "Arrays: 1D and 2D",
+            "Strings and string functions",
+            "Storage classes"
+          ]
+        },
+        {
+          "module_id": "ES204_M4",
+          "title": "Pointers and Structures",
+          "hours": 9,
+          "is_important": true,
+          "topics": [
+            "Pointers: declaration, dereferencing, pointer arithmetic",
+            "Pointers and arrays",
+            "Dynamic memory allocation: malloc, calloc, free",
+            "Structures and unions",
+            "File I/O: fopen, fclose, fscanf, fprintf"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 205",
+      "title": "Manufacturing Practices",
+      "category": "Engineering Science",
+      "credits": 1,
+      "contact_hours": 1,
+      "type": "theory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES205_M1",
+          "title": "Manufacturing Processes Overview",
+          "hours": 12,
+          "is_important": false,
+          "topics": [
+            "Casting processes",
+            "Welding techniques",
+            "Machining and forming",
+            "Additive manufacturing (3D printing)",
+            "Quality control concepts"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HS 206",
+      "title": "Language Laboratory",
+      "category": "Humanities Science",
+      "credits": 1,
+      "contact_hours": 2,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "HS206_L1",
+          "title": "Language Lab Sessions",
+          "hours": 24,
+          "is_important": false,
+          "topics": [
+            "Pronunciation and phonetics practice",
+            "Listening comprehension exercises",
+            "Spoken English practice",
+            "Group discussion simulation",
+            "Mock interviews"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BS 207",
+      "title": "Chemistry Laboratory",
+      "category": "Basic Science",
+      "credits": 1.5,
+      "contact_hours": 3,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "BS207_L1",
+          "title": "Chemistry Lab Experiments",
+          "hours": 36,
+          "is_important": false,
+          "topics": [
+            "Estimation of hardness of water",
+            "Determination of dissolved oxygen (BOD)",
+            "Preparation of polymer",
+            "pH measurement and acid-base titration",
+            "Colorimetric analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 208",
+      "title": "Programming for Problem Solving Lab",
+      "category": "Engineering Science",
+      "credits": 2,
+      "contact_hours": 4,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES208_L1",
+          "title": "C Programming Lab",
+          "hours": 48,
+          "is_important": true,
+          "topics": [
+            "Basic I/O programs",
+            "Control flow programs",
+            "Functions and recursion",
+            "Array manipulation",
+            "String handling",
+            "Pointers and dynamic memory",
+            "Structures and file handling"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ES 209",
+      "title": "Workshop on Manufacturing Practices",
+      "category": "Engineering Science",
+      "credits": 2,
+      "contact_hours": 4,
+      "type": "lab",
+      "is_lab": true,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "ES209_L1",
+          "title": "Workshop Practice",
+          "hours": 48,
+          "is_important": false,
+          "topics": [
+            "Fitting and bench work",
+            "Carpentry",
+            "Welding",
+            "Sheet metal work",
+            "Foundry practice"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MC 210",
+      "title": "Environmental Engineering",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "contact_hours": 3,
+      "type": "mandatory",
+      "is_lab": false,
+      "full_marks": 100,
+      "modules": [
+        {
+          "module_id": "MC210_M1",
+          "title": "Environmental Engineering",
+          "hours": 36,
+          "is_important": false,
+          "topics": [
+            "Ecosystems and biodiversity",
+            "Air, water, and soil pollution",
+            "Environmental impact assessment",
+            "Renewable energy resources",
+            "Environmental laws and regulations"
+          ]
+        }
+      ]
+    }
+  ],
+  "exam_pattern": {
+    "university": "Tripura University",
+    "theory_full_marks": 100,
+    "internal_marks": 30,
+    "external_marks": 70,
+    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "modules_per_subject": 4
+  }
+}
