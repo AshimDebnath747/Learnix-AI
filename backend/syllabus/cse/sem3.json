@@ -547,9 +547,13 @@
   "exam_pattern": {
     "university": "Tripura University",
     "theory_full_marks": 100,
-    "internal_marks": 30,
-    "external_marks": 70,
-    "question_types": ["MCQ", "Short Answer (2-5 marks)", "Long Answer (10 marks)"],
+    "internal_marks": 40,
+    "external_marks": 60,
+    "question_types": [
+      "MCQ",
+      "Short Answer (2-5 marks)",
+      "Long Answer (10 marks)"
+    ],
     "modules_per_subject": 4
   }
 }
