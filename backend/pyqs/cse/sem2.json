@@ -1,0 +1,525 @@
+{
+  "university": "Tripura Institute of Technology / Tripura University (A Central University)",
+  "semester": 2,
+  "exam": "B.Tech 2nd Semester Exam 2022 + Mid-Term Exam 2022",
+  "purpose": "fine-tuning training data",
+  "format": "alpaca",
+  "subjects": [
+    {
+      "subject_code": "MC-210",
+      "subject_title": "Environmental Science",
+      "training_data": [
+        {
+          "instruction": "What is shifting cultivation?",
+          "module_id": "MC210_M1",
+          "topic": "Natural Resources",
+          "type": "short",
+          "marks": 2,
+          "output": "Shifting cultivation (also called 'slash and burn' agriculture) is a type of farming where a plot of land is cleared by cutting and burning the vegetation, cultivated for a few years until the soil fertility declines, and then abandoned. The farmer then moves to a new plot and repeats the process. It is commonly practised in tribal and forested regions of Northeast India."
+        },
+        {
+          "instruction": "What is nuclear energy?",
+          "module_id": "MC210_M1",
+          "topic": "Energy Resources",
+          "type": "short",
+          "marks": 2,
+          "output": "Nuclear energy is the energy released during nuclear reactions — either fission (splitting of heavy atomic nuclei like uranium-235 or plutonium-239) or fusion (combining light nuclei). In nuclear power plants, controlled fission reactions generate heat, which produces steam to drive turbines and generate electricity. It is a high-density energy source but produces radioactive waste."
+        },
+        {
+          "instruction": "Define ecology and ecosystems.",
+          "module_id": "MC210_M1",
+          "topic": "Ecosystems",
+          "type": "short",
+          "marks": 2,
+          "output": "Ecology: The scientific study of the relationships between living organisms and their physical environment, and the interactions among organisms themselves.\n\nEcosystem: A functional unit of nature where living organisms (biotic components — producers, consumers, decomposers) interact with each other and with their non-living (abiotic) environment (air, water, soil, sunlight) through energy flow and nutrient cycling. Examples: pond ecosystem, forest ecosystem, grassland ecosystem."
+        },
+        {
+          "instruction": "What are meant by in situ and ex situ conservations of biodiversity?",
+          "module_id": "MC210_M2",
+          "topic": "Biodiversity and Conservation",
+          "type": "short",
+          "marks": 2,
+          "output": "In situ conservation: Protection of species within their natural habitats. Examples include national parks, wildlife sanctuaries, biosphere reserves, and protected areas (e.g., Kaziranga National Park, Jim Corbett).\n\nEx situ conservation: Protection of species outside their natural habitats. Examples include zoos, botanical gardens, seed banks, gene banks, tissue culture repositories, and captive breeding programmes (e.g., National Seed Bank, Arignar Anna Zoological Park)."
+        },
+        {
+          "instruction": "What is waste water treatment?",
+          "module_id": "MC210_M3",
+          "topic": "Water Pollution and Control",
+          "type": "short",
+          "marks": 2,
+          "output": "Waste water treatment is the process of removing contaminants from sewage and industrial effluents before discharge into water bodies or reuse. It involves three stages:\n1. Primary treatment: Physical removal of large solids by screening and sedimentation.\n2. Secondary treatment: Biological treatment using microorganisms to break down organic matter (activated sludge process, trickling filters).\n3. Tertiary treatment: Advanced treatment to remove nutrients (N, P), pathogens, and dissolved chemicals using chemical precipitation, filtration, and disinfection (chlorination/UV)."
+        },
+        {
+          "instruction": "What is rainwater harvesting?",
+          "module_id": "MC210_M3",
+          "topic": "Water Conservation",
+          "type": "short",
+          "marks": 2,
+          "output": "Rainwater harvesting is the collection and storage of rainwater from rooftops, land surfaces, or other catchment areas for future use. It helps recharge groundwater and provides water for irrigation, domestic, and industrial purposes. Common methods include rooftop rainwater harvesting, check dams, percolation pits, and recharge wells. It is especially important in water-scarce regions and helps reduce runoff and flooding."
+        },
+        {
+          "instruction": "Explain the concepts of food chains, food webs and ecological pyramids.",
+          "module_id": "MC210_M1",
+          "topic": "Ecosystems",
+          "type": "long",
+          "marks": 12,
+          "output": "Food Chain:\nA food chain is a linear sequence showing the transfer of energy and nutrients from one organism to another through the process of eating and being eaten. Each step is called a trophic level.\nExample (Grassland): Grass → Grasshopper → Frog → Snake → Eagle\n- Producers (plants) → Primary consumers (herbivores) → Secondary consumers → Tertiary consumers\n\nFood Web:\nA food web is a network of interconnected food chains within an ecosystem. It is a more realistic representation of feeding relationships because most organisms feed on multiple species.\n- A food web shows the complex interrelationships among all the organisms in an ecosystem.\n- It provides stability to the ecosystem; if one species is removed, others can adjust.\nExample: In a pond ecosystem, small fish eat zooplankton AND insects; large fish eat small fish AND frogs — forming a web.\n\nEcological Pyramids:\nAn ecological pyramid is a graphical representation of the relationship between different trophic levels in an ecosystem with respect to number, biomass, or energy. The base always represents producers and the apex represents top carnivores.\n\n1. Pyramid of Numbers: Shows the number of individuals at each trophic level.\n   - Usually upright (grassland, pond); can be inverted (tree ecosystem — one tree supports many insects).\n\n2. Pyramid of Biomass: Shows total dry weight (biomass) of organisms at each trophic level.\n   - Upright in most terrestrial ecosystems; inverted in aquatic ecosystems (phytoplankton biomass < zooplankton biomass at a given time).\n\n3. Pyramid of Energy: Always upright. Shows the amount of energy present at each trophic level. Energy decreases at each successive level (about 10% transferred — the 10% law). This is the most fundamental pyramid."
+        },
+        {
+          "instruction": "What is deforestation? What are the major causes of deforestation? Write about the Forest Conservation Act in India.",
+          "module_id": "MC210_M1",
+          "topic": "Forest Resources",
+          "type": "long",
+          "marks": 12,
+          "output": "Deforestation:\nDeforestation is the permanent removal of trees and forest cover from an area for non-forest use such as agriculture, urbanisation, or industrialisation. India has lost significant forest cover due to various human activities.\n\nMajor Causes of Deforestation:\n1. Agricultural expansion — clearing forests for farmland and shifting cultivation.\n2. Commercial logging — felling trees for timber, paper, and wood products.\n3. Infrastructure development — construction of roads, dams, railways, and buildings.\n4. Mining — clearing forests for mineral extraction.\n5. Urbanisation — rapid growth of cities and towns.\n6. Overgrazing — destruction of forest regeneration by livestock.\n7. Fuel wood collection — cutting trees for firewood and charcoal.\n8. Forest fires — both natural and human-caused.\n\nForest Conservation Act, 1980 (India):\n- Enacted to check rapid deforestation and protect forest resources.\n- Under this Act, no state government can divert forest land for non-forest purposes without prior approval of the Central Government.\n- Non-forest purposes include agriculture, industry, mining, and construction.\n- The Act requires compensatory afforestation when forest land is diverted.\n- It established the Forest Advisory Committee to advise the Central Government on forest land diversion.\n- The Act was amended in 1988 to make provisions stricter.\n- It has been instrumental in slowing down the rate of deforestation in India.\n\nConsequences of Deforestation: Loss of biodiversity, soil erosion, flooding, climate change, disruption of water cycle, and loss of tribal livelihoods."
+        },
+        {
+          "instruction": "Briefly discuss the following movements: (i) Bishnoi Movement (ii) Chipko Movement (iii) Appiko Movement",
+          "module_id": "MC210_M1",
+          "topic": "Environmental Movements",
+          "type": "long",
+          "marks": 6,
+          "output": "(i) Bishnoi Movement:\n- Origin: Rajasthan, 1730 AD.\n- Amrita Devi Bishnoi and 363 Bishnois sacrificed their lives hugging khejri trees to prevent them from being cut by soldiers of the King of Jodhpur.\n- The Bishnoi community considers trees and animals sacred and prohibits their killing.\n- It is considered one of the earliest environmental movements in India.\n- The Indian government awards the Amrita Devi Bishnoi Wildlife Protection Award in her memory.\n\n(ii) Chipko Movement:\n- Origin: Uttarakhand (then Uttar Pradesh), 1973.\n- Led by Chandi Prasad Bhatt and later popularised by Sundarlal Bahuguna.\n- Village women hugged (chipko = to hug/stick) trees to prevent contractors from felling them for commercial logging.\n- Started in Gopeshwar/Chamoli; spread to Reni village.\n- It led to a ban on felling of trees in the Himalayan forests of UP for 15 years.\n- The movement established the principle that local communities have rights over natural resources.\n\n(iii) Appiko Movement:\n- Origin: Karnataka (Western Ghats), 1983.\n- 'Appiko' means 'to hug' in Kannada — inspired by the Chipko movement.\n- Led by Panduranga Hegde in Salkani village.\n- Triggered by commercial felling of trees in the Uttara Kannada district.\n- Villagers hugged trees to protect the forests.\n- The movement spread awareness about the ecological importance of the Western Ghats and led to greater protection of those forests."
+        },
+        {
+          "instruction": "What are hotspots of biodiversity? Which are the hotspots found in India? Discuss their salient features.",
+          "module_id": "MC210_M2",
+          "topic": "Biodiversity and Conservation",
+          "type": "long",
+          "marks": 12,
+          "output": "Biodiversity Hotspots:\nBiodiversity hotspots are biogeographic regions that contain exceptionally high levels of species richness (especially endemic species — species found nowhere else) but have lost more than 70% of their original habitat due to human activities.\nCriteria (defined by Norman Myers, 1988):\n1. Must contain at least 1,500 endemic vascular plant species (≥0.5% of total).\n2. Must have lost at least 70% of its original habitat.\nCurrently there are 36 globally recognised biodiversity hotspots.\n\nHotspots in India:\nIndia has two major biodiversity hotspots:\n\n1. Western Ghats and Sri Lanka:\n- Runs along the west coast of India (Gujarat to Kerala), about 1,600 km long.\n- Contains over 5,000 species of flowering plants, 139 mammal species, 508 bird species, 179 amphibian species.\n- High endemism: Lion-tailed macaque, Nilgiri tahr, Malabar giant squirrel are endemic mammals.\n- About 77% of the original vegetation has been lost.\n- Threatened by plantation crops (tea, coffee, rubber), urbanisation, and encroachment.\n\n2. Indo-Burma (Eastern Himalayas + parts of Northeast India):\n- Extends across Northeast India (Assam, Meghalaya, Arunachal Pradesh, Manipur, Mizoram, Nagaland, Tripura), Myanmar, and parts of China.\n- Rich in orchids, rhododendrons, and primitive angiosperms.\n- Contains one-horned rhinoceros (Kaziranga), clouded leopard, hoolock gibbon (only ape in India).\n- High endemism in freshwater turtles and fish.\n- Threatened by shifting cultivation, hunting, and logging.\n\nSignificance: Hotspots cover only about 2.4% of Earth's land area but support more than 50% of the world's endemic plant species and about 42% of endemic terrestrial vertebrates."
+        },
+        {
+          "instruction": "What is meant by alpha, beta and gamma richness? Discuss giving examples. What are the major biogeographical regions of India?",
+          "module_id": "MC210_M2",
+          "topic": "Biodiversity",
+          "type": "long",
+          "marks": 12,
+          "output": "Species Richness Levels:\n\nAlpha (α) Diversity:\n- The species richness within a single habitat or community (local diversity).\n- Measured as the number of species per unit area at a single site.\n- Example: Number of tree species in a 1-hectare plot in Kaziranga forest.\n\nBeta (β) Diversity:\n- The change in species composition between different habitats or along an environmental gradient (between-habitat diversity).\n- It measures how different two communities are from each other.\n- High beta diversity means two areas have very different species; low beta diversity means they share many species.\n- Example: Comparing species composition of a mangrove forest vs a tropical rainforest in the same region.\n\nGamma (γ) Diversity:\n- The total species richness across a large landscape or region (regional diversity).\n- It encompasses both alpha and beta diversity.\n- Example: Total number of bird species found across all forests of Northeast India.\n- Relationship: γ = α × β\n\nMajor Biogeographical Regions of India (as classified by Rodgers & Panwar, 1988):\nIndia has 10 biogeographic zones:\n1. Trans-Himalayan Zone — cold desert (Ladakh, Spiti)\n2. Himalayan Zone — Alpine and subalpine vegetation\n3. Indian Desert — Thar desert (Rajasthan)\n4. Semi-arid Zone — Aravalli ranges, Punjab plains\n5. Western Ghats — Tropical wet forests\n6. Deccan Peninsula — Dry deciduous forests\n7. Gangetic Plain — Alluvial plains, flood plains\n8. North-east India — Tropical/subtropical wet forests, extremely rich in biodiversity\n9. Coastal Zone — Mangroves, beaches, estuaries\n10. Islands — Andaman & Nicobar, Lakshadweep"
+        },
+        {
+          "instruction": "Enumerate various methods for control of air pollution. Define radioactivity. Mention the sources of radioactivity.",
+          "module_id": "MC210_M3",
+          "topic": "Air Pollution and Control",
+          "type": "long",
+          "marks": 9,
+          "output": "Methods for Control of Air Pollution:\n\nSource Control (preventing emission):\n1. Use of cleaner fuels (CNG, LPG, natural gas instead of coal/diesel).\n2. Catalytic converters in automobiles to convert CO, NOx, and hydrocarbons to harmless gases.\n3. Shift to renewable energy (solar, wind, hydroelectric) to replace fossil fuels.\n4. Improved combustion efficiency in industrial furnaces.\n5. Green belt development — planting trees around industrial areas.\n\nEngineering/Equipment-based Control:\n6. Electrostatic precipitators (ESP) — remove particulates from industrial flue gas.\n7. Cyclone separators — separate particulate matter by centrifugal force.\n8. Bag filters/fabric filters — trap fine dust particles.\n9. Wet scrubbers — remove gaseous pollutants (SO2, HF) by contact with water spray.\n10. Tall chimneys — dilute and disperse pollutants (though this does not eliminate pollution).\n\nLegal and Administrative Measures:\n11. Enforcement of air quality standards (e.g., National Ambient Air Quality Standards — NAAQS).\n12. Air (Prevention and Control of Pollution) Act, 1981 (India).\n\nRadioactivity:\nRadioactivity is the spontaneous disintegration of unstable atomic nuclei with the emission of radiation — alpha (α) particles, beta (β) particles, and gamma (γ) rays. Discovered by Henri Becquerel (1896).\n\nSources of Radioactivity:\nNatural Sources:\n- Cosmic radiation from outer space.\n- Terrestrial radiation from radioactive elements in rocks and soil (uranium, thorium, radium).\n- Internal radiation from radioactive isotopes (K-40, C-14) naturally present in the body.\n- Radon gas (from granite and soil).\n\nArtificial/Man-made Sources:\n- Nuclear power plants and nuclear reactors.\n- Nuclear weapons testing.\n- Medical applications (X-rays, radiotherapy, nuclear medicine).\n- Industrial uses (radiography, gauging).\n- Radioactive waste from nuclear facilities."
+        },
+        {
+          "instruction": "Discuss the natural formation and occurrence of ozone in the stratosphere. Which are the agents responsible for ozone depletion?",
+          "module_id": "MC210_M4",
+          "topic": "Global Environmental Issues",
+          "type": "long",
+          "marks": 6,
+          "output": "Formation of Ozone in the Stratosphere:\n- The stratospheric ozone layer is located approximately 15–35 km above Earth's surface.\n- Formation (Chapman Cycle):\n  Step 1: O₂ + UV radiation (λ < 242 nm) → 2O (atomic oxygen)\n  Step 2: O + O₂ + M → O₃ + M (M = third body absorbing excess energy)\n- Ozone absorbs harmful UV-B (280–320 nm) and UV-C radiation, protecting life on Earth.\n- A dynamic balance exists between ozone formation and its natural destruction:\n  O₃ + O → 2O₂ (catalysed by NO, OH, Cl radicals)\n- The 'ozone layer' refers to the region of highest ozone concentration (the ozone shield).\n\nAgents Responsible for Ozone Depletion:\n1. Chlorofluorocarbons (CFCs) — used in refrigerants, aerosols, foam blowing (e.g., Freon-11, Freon-12).\n   CFCl₃ + UV → CFCl₂ + Cl•; Cl• + O₃ → ClO• + O₂ (chain reaction depleting O₃)\n2. Halons — used in fire extinguishers (contain bromine).\n3. Hydrochlorofluorocarbons (HCFCs) — partial CFC substitutes, still ozone-depleting.\n4. Methyl bromide — used as a pesticide/fumigant.\n5. Nitrous oxide (N₂O) — from agricultural fertilisers and combustion.\n6. Carbon tetrachloride (CCl₄) and methyl chloroform — industrial solvents.\n- The Montreal Protocol (1987) is the international treaty to phase out ozone-depleting substances."
+        },
+        {
+          "instruction": "What is meant by acid rain? How does it form? What are the major impacts of acid rain?",
+          "module_id": "MC210_M4",
+          "topic": "Global Environmental Issues",
+          "type": "long",
+          "marks": 6,
+          "output": "Acid Rain:\nAcid rain refers to any form of precipitation (rain, snow, sleet, fog) with a pH below 5.6 (normal rain pH ≈ 5.6 due to dissolved CO₂ forming carbonic acid).\n\nFormation:\nPrimary pollutants released (mostly from burning fossil fuels):\n- Sulphur dioxide: S + O₂ → SO₂ (coal-burning power plants, industries)\n- Nitrogen oxides: N₂ + O₂ → 2NO; 2NO + O₂ → 2NO₂ (vehicles, industries)\n\nAtmospheric reactions:\n- SO₂ + H₂O + ½O₂ → H₂SO₄ (sulphuric acid)\n- 3NO₂ + H₂O → 2HNO₃ + NO (nitric acid)\nThese acids dissolve in rainwater and fall as acid rain (pH 4–5 or lower).\n\nMajor Impacts:\n1. Aquatic ecosystems: Acidification of lakes and rivers; kills fish, amphibians, and aquatic insects. (pH < 5 is lethal to most fish.)\n2. Forests and vegetation: Leaches nutrients (Ca, Mg) from soil; damages leaves and inhibits photosynthesis; forest decline.\n3. Soil: Mobilises toxic metals (Al, Cd, Pb) from soil, harming roots and groundwater.\n4. Human health: Drinking acidified water; respiratory problems from sulphate/nitrate aerosols.\n5. Buildings and monuments: Corrodes limestone and marble structures (e.g., Taj Mahal is affected by acid rain from Mathura refinery).\n6. Acid rain crosses national boundaries (transboundary pollution) — industrial emissions in one country cause acid rain in another."
+        },
+        {
+          "instruction": "Draw a diagram of water cycle and explain it.",
+          "module_id": "MC210_M1",
+          "topic": "Water Resources",
+          "type": "short",
+          "marks": 2,
+          "output": "The water cycle (hydrological cycle) describes the continuous movement of water through the Earth's systems:\n\nKey Processes:\n1. Evaporation: Water from oceans, lakes, rivers is converted to water vapour by solar energy.\n2. Transpiration: Plants release water vapour through stomata (combined: evapotranspiration).\n3. Condensation: Water vapour rises, cools, and condenses to form clouds (water droplets around dust particles).\n4. Precipitation: Water falls as rain, snow, sleet, or hail.\n5. Surface runoff: Water flows over land into streams and rivers, eventually reaching the ocean.\n6. Infiltration: Some water percolates into the ground, recharging groundwater/aquifers.\n7. Groundwater flow: Slow movement of water through rock/soil back to oceans or springs.\n\nDiagram (Textual Representation):\nSun → Evaporation (Ocean/Lakes) → Water Vapour → Condensation (Clouds) → Precipitation → Surface Runoff (Rivers) → Ocean\n                                                                                    ↓\n                                                                              Infiltration → Groundwater"
+        },
+        {
+          "instruction": "What is the scope of Environmental Studies?",
+          "module_id": "MC210_M1",
+          "topic": "Introduction to Environmental Science",
+          "type": "short",
+          "marks": 2,
+          "output": "Scope of Environmental Studies:\n1. Understanding the natural environment — ecosystems, biodiversity, natural resources.\n2. Study of environmental problems — pollution, deforestation, climate change, ozone depletion.\n3. Policy and law — environmental legislation, conservation strategies.\n4. Human-environment interactions — impact of development activities on the environment.\n5. Resource management — sustainable use of water, forests, minerals, and energy.\n6. Environmental monitoring and assessment — EIA (Environmental Impact Assessment).\n7. Creating environmental awareness — training citizens, policymakers, and engineers.\n8. Interdisciplinary nature — integrates biology, chemistry, physics, geography, economics, and law.\n\nEnvironmental Studies is mandatory for all B.Tech students (as per UGC/AICTE guidelines) to create environmentally responsible engineers."
+        },
+        {
+          "instruction": "What are the major threats to biodiversity?",
+          "module_id": "MC210_M2",
+          "topic": "Biodiversity and Conservation",
+          "type": "short",
+          "marks": 2,
+          "output": "Major Threats to Biodiversity (HIPPO):\n1. Habitat destruction and fragmentation — deforestation, urbanisation, agriculture (the single biggest threat).\n2. Invasive alien species — introduced species outcompeting native species (e.g., water hyacinth, lantana).\n3. Pollution — soil, water, and air pollution affecting organisms.\n4. Population growth and overexploitation — overhunting, overfishing, overgrazing.\n5. Climate change — altering habitats, changing seasonal patterns, coral bleaching.\n\nAdditional threats:\n- Poaching and illegal wildlife trade.\n- Natural disasters.\n- Genetic erosion (loss of genetic diversity in crops and livestock).\n\nConsequences: Species extinction, collapse of ecosystem services, loss of medicinal plants, and food insecurity."
+        }
+      ]
+    },
+    {
+      "subject_code": "BS-203",
+      "subject_title": "Chemistry",
+      "training_data": [
+        {
+          "instruction": "Which outer electronic configuration represents the element with the lowest ionization enthalpy among 4s¹, 4p⁶, 3p⁶, 2p⁶?",
+          "module_id": "BS203_M1",
+          "topic": "Periodic Properties",
+          "type": "short",
+          "marks": 2,
+          "output": "Answer: 4p⁶\nReason: 4p⁶ corresponds to Kr (Krypton), but among the options, 4s¹ corresponds to K (Potassium), which actually has the lowest ionisation enthalpy because it has a single electron in the outermost shell (4s¹) that is far from the nucleus and shielded by inner electrons — making it easiest to remove.\n\nCorrect answer: (i) 4s¹ — Potassium (K), Group 1, Period 4 has the lowest ionisation enthalpy because:\n- It has only 1 valence electron in a large 4s orbital.\n- High shielding by inner electrons.\n- Low effective nuclear charge on the outermost electron."
+        },
+        {
+          "instruction": "What is the spin-only magnetic moment value (in BM) of Cr(CO)₆?",
+          "module_id": "BS203_M1",
+          "topic": "Coordination Chemistry",
+          "type": "short",
+          "marks": 2,
+          "output": "Answer: 0 BM\n\nReason:\n- Cr is in 0 oxidation state in Cr(CO)₆.\n- Electronic configuration of Cr: [Ar] 3d⁵ 4s¹ → as Cr(0): [Ar] 3d⁶\n- CO is a strong field ligand causing maximum pairing.\n- In Cr(CO)₆ (d⁶, strong field, octahedral): all 6 d-electrons are paired → n = 0 unpaired electrons.\n- Spin-only magnetic moment: μ = √[n(n+2)] = √[0] = 0 BM\n- Cr(CO)₆ is diamagnetic."
+        },
+        {
+          "instruction": "Arrange the following carbocations in increasing order of stability: (i) CH₃CH₂CH₂CH₂⁺ (ii) (CH₃)₃C⁺ (iii) CH₃⁺ (iv) CH₃CH₂CHCH₃⁺",
+          "module_id": "BS203_M2",
+          "topic": "Organic Chemistry — Reaction Mechanisms",
+          "type": "short",
+          "marks": 2,
+          "output": "Stability of carbocations increases with increasing degree of substitution (hyperconjugation and induction):\n\nOrder of increasing stability:\nCH₃⁺ (methyl, 1°) < CH₃CH₂CH₂CH₂⁺ (1°) < CH₃CH₂CHCH₃⁺ (2°) < (CH₃)₃C⁺ (3°)\n\nReason: More alkyl groups donate electrons (hyperconjugation + inductive effect), stabilising the positive charge on carbon.\nSo: (iii) < (i) < (iv) < (ii)"
+        },
+        {
+          "instruction": "The proton magnetic resonance is studied in which region?",
+          "module_id": "BS203_M3",
+          "topic": "Spectroscopy — NMR",
+          "type": "short",
+          "marks": 2,
+          "output": "Answer: Radio frequency region\n\nProton NMR (¹H NMR) spectroscopy involves the absorption of radiofrequency (RF) radiation (frequency range: ~60 MHz to 900 MHz, corresponding to wavelengths of ~0.33–5 m) by protons placed in a strong external magnetic field. The energy difference between spin states (α and β) corresponds to the RF region of the electromagnetic spectrum."
+        },
+        {
+          "instruction": "In practical organic chemistry, tetramethylsilane (TMS) is used mainly for what purpose?",
+          "module_id": "BS203_M3",
+          "topic": "Spectroscopy — NMR",
+          "type": "short",
+          "marks": 2,
+          "output": "Answer: A spectroscopic standard (reference standard in NMR)\n\nTMS [Si(CH₃)₄] is used as the internal reference standard in ¹H and ¹³C NMR spectroscopy. Its chemical shift is defined as δ = 0 ppm.\nReasons for its use:\n1. All 12 protons are equivalent — gives a single sharp peak.\n2. Chemically inert and does not react with sample.\n3. Highly volatile — easily removed from sample after measurement.\n4. Absorbs at a higher field than most organic protons, so it does not interfere with sample signals.\n5. Miscible with most organic solvents."
+        },
+        {
+          "instruction": "Write the important postulates of Werner's coordination theory.",
+          "module_id": "BS203_M1",
+          "topic": "Coordination Chemistry",
+          "type": "long",
+          "marks": 3,
+          "output": "Werner's Coordination Theory (1893) — Key Postulates:\n\n1. Metals exhibit two types of valency:\n   - Primary valency (ionisable/principal valency): Corresponds to the oxidation state of the metal. Satisfied by negative ions.\n   - Secondary valency (non-ionisable/coordination valency): Fixed for a given metal. Satisfied by neutral molecules or negative ions (ligands). Corresponds to the coordination number.\n\n2. Every metal tends to satisfy both its primary and secondary valencies.\n\n3. The groups satisfying secondary valency are directed in space around the central metal ion, giving the complex a definite geometry:\n   - Coordination number 6 → Octahedral geometry\n   - Coordination number 4 → Tetrahedral or Square planar geometry\n\n4. Primary valencies are non-directional; secondary valencies are directional.\n\nExample: In [Co(NH₃)₆]Cl₃:\n- Co has primary valency = 3 (satisfied by 3 Cl⁻)\n- Co has secondary valency = 6 (satisfied by 6 NH₃ molecules)\n- Geometry: Octahedral"
+        },
+        {
+          "instruction": "Define with example: (i) Chelating ligand (ii) Ambidentate ligand",
+          "module_id": "BS203_M1",
+          "topic": "Coordination Chemistry",
+          "type": "long",
+          "marks": 3,
+          "output": "(i) Chelating Ligand:\nA polydentate ligand that bonds to the central metal ion at two or more donor sites simultaneously, forming a ring structure called a chelate ring.\n- The resulting complex is called a chelate complex.\n- Chelates are more stable than complexes with monodentate ligands (chelate effect).\nExamples:\n- Ethylenediamine (en): H₂N-CH₂-CH₂-NH₂ — bidentate, binds through both N atoms.\n- EDTA (ethylenediaminetetraacetic acid): hexadentate — binds through 2N and 4O atoms.\n- Oxalate ion (C₂O₄²⁻): bidentate, binds through 2O atoms.\n\n(ii) Ambidentate Ligand:\nA monodentate ligand that can bond to the metal through two different donor atoms (but bonds through only one at a time), giving rise to linkage isomerism.\nExamples:\n- NO₂⁻ (nitrite ion): can bond through N (nitro, -NO₂) or O (nitrito, -ONO).\n  Example: [Co(NH₃)₅(NO₂)]²⁺ vs [Co(NH₃)₅(ONO)]²⁺\n- SCN⁻ (thiocyanate): can bond through S (-SCN, thiocyanato) or N (-NCS, isothiocyanato).\n- CN⁻: can bond through C (cyano) or N (isocyano)."
+        },
+        {
+          "instruction": "How would you decide whether the reaction CH₃Br + OH⁻ → CH₃OH + Br⁻ proceeds through SN1 or SN2 mechanism?",
+          "module_id": "BS203_M2",
+          "topic": "Reaction Mechanisms",
+          "type": "long",
+          "marks": 4,
+          "output": "Analysis: CH₃Br + OH⁻ → CH₃OH + Br⁻\n\nThis reaction proceeds through SN2 mechanism. Evidence:\n\n1. Substrate structure: CH₃Br is methyl bromide — a primary (1°) substrate with no branching. SN2 is favoured at primary carbons due to low steric hindrance.\n\n2. Nucleophile: OH⁻ is a strong, hard nucleophile. Strong nucleophiles favour SN2.\n\n3. Kinetics: The reaction is second order overall:\n   Rate = k[CH₃Br][OH⁻]\n   SN2 rate depends on both substrate and nucleophile concentration.\n\n4. Stereochemistry: SN2 proceeds with inversion of configuration (Walden inversion) at the carbon centre — backside attack by OH⁻ on the C-Br bond.\n\n5. No carbocation intermediate: CH₃⁺ (methyl carbocation) is extremely unstable — SN1 is not feasible.\n\nSN2 Mechanism:\n- One step: concerted backside attack of OH⁻ on C, simultaneous departure of Br⁻.\n- Transition state: [HO---CH₃---Br]⁻ (trigonal bipyramidal, pentacoordinate)\n\nConclusion: SN2 — evidenced by primary substrate, strong nucleophile, second-order kinetics, and inversion of configuration."
+        },
+        {
+          "instruction": "Write the mathematical form of Lambert-Beer law and mention the significance of each term involved.",
+          "module_id": "BS203_M3",
+          "topic": "Spectroscopy — UV-Visible",
+          "type": "long",
+          "marks": 2,
+          "output": "Lambert-Beer Law:\nA = ε × c × l\nor equivalently: A = log(I₀/I) = ε c l\n\nWhere:\n- A = Absorbance (optical density) — dimensionless; A = log(I₀/I)\n- I₀ = Intensity of incident light\n- I = Intensity of transmitted light\n- ε (epsilon) = Molar absorption coefficient (molar absorptivity) — units: L mol⁻¹ cm⁻¹; characteristic of the substance at a given wavelength; indicates how strongly the substance absorbs light.\n- c = Molar concentration of the absorbing species (mol L⁻¹)\n- l = Path length of light through the solution (cm)\n\nSignificance:\n- The law states that absorbance is directly proportional to both the concentration of the absorbing substance and the path length.\n- It forms the basis of quantitative UV-Visible spectrophotometry.\n- Limitations: Valid only for dilute solutions; breaks down at high concentrations, polychromatic light, or when fluorescence/scattering occurs."
+        },
+        {
+          "instruction": "Define the terms chromophore and auxochrome in UV spectroscopy with suitable examples.",
+          "module_id": "BS203_M3",
+          "topic": "Spectroscopy — UV-Visible",
+          "type": "long",
+          "marks": 4,
+          "output": "Chromophore:\nA chromophore is a group or bond in a molecule responsible for the absorption of UV or visible radiation due to electronic transitions (π→π*, n→π*, n→σ*).\n- Chromophores contain multiple bonds or lone pairs that allow electronic excitation.\n- They do not require an ionic character to absorb.\nExamples:\n- C=C (alkene): π→π* transition, λmax ≈ 170–180 nm\n- C=O (carbonyl): n→π* transition, λmax ≈ 270–280 nm\n- C=N (imine): n→π* transition\n- N=O (nitroso): n→π* transition\n- Aromatic rings (benzene): π→π*, λmax ≈ 254 nm\n- Nitro group (-NO₂): strong absorber\n\nAuxochrome:\nAn auxochrome is a functional group attached to a chromophore that, by itself, does not absorb UV-visible light but when attached to a chromophore:\n1. Shifts the absorption to longer wavelength (bathochromic/red shift)\n2. Increases the intensity of absorption (hyperchromic effect)\n- Auxochromes typically contain lone pairs that can conjugate with the chromophore's π system.\nExamples:\n- -OH (hydroxyl group)\n- -NH₂ (amino group)\n- -OR (alkoxy group)\n- -NR₂ (dialkylamino group)\n- Halogens (-Cl, -Br)\n\nExample: Aniline (C₆H₅-NH₂) — the -NH₂ auxochrome shifts benzene's absorption from 254 nm to 280 nm."
+        },
+        {
+          "instruction": "Draw the schematic representation of the building up of nanostructures by bottom-up and top-down approaches.",
+          "module_id": "BS203_M4",
+          "topic": "Nanoscience and Nanotechnology",
+          "type": "long",
+          "marks": 3,
+          "output": "Top-Down Approach:\n- Starts with bulk material and progressively reduces it to nanoscale dimensions.\n- Analogous to carving — starting with a large block and chipping away.\n- Techniques: Ball milling, lithography (photolithography, electron beam lithography), etching, laser ablation, arc discharge.\n- Limitation: Difficult to achieve precise control below 100 nm; generates defects.\n\nSchematic (Top-Down):\nBulk Material → Cutting/Milling/Etching → Microstructures → Further reduction → Nanostructures\n\nBottom-Up Approach:\n- Starts with individual atoms or molecules and builds up nanostructures by assembling them.\n- Analogous to building with bricks — assembling from the smallest units.\n- Techniques: Chemical vapour deposition (CVD), sol-gel process, self-assembly, molecular beam epitaxy, electrodeposition.\n- Advantage: Better control over size, shape, and composition; fewer defects.\n\nSchematic (Bottom-Up):\nAtoms/Molecules → Clusters → Nanoparticles/Nanostructures → Bulk\n\nApplications of Nanotechnology:\n- Medicine: Drug delivery, cancer therapy, diagnostics.\n- Electronics: Nanowires, nanotransistors, memory storage.\n- Environment: Nano-catalysts for pollution control.\n- Materials: Nanocomposites, stronger and lighter materials."
+        },
+        {
+          "instruction": "What are biological nanomaterials? Mention their applications.",
+          "module_id": "BS203_M4",
+          "topic": "Nanoscience and Nanotechnology",
+          "type": "long",
+          "marks": 4,
+          "output": "Biological Nanomaterials:\nBiological nanomaterials are nano-sized structures synthesised by or derived from biological systems (plants, microorganisms, animals), or designed to interact with biological systems. They include:\n- Proteins and peptides (nanoscale structure: e.g., collagen, keratin)\n- DNA and RNA nanostructures (DNA origami)\n- Lipid nanoparticles (liposomes) — used in mRNA vaccine delivery (e.g., COVID-19 vaccines)\n- Viral nanoparticles (VNPs) — virus-like particles used in drug delivery\n- Ferritin (protein nanocage)\n- Green-synthesised nanoparticles — using plant extracts (AgNPs from neem, AuNPs from tulsi)\n\nApplications:\n1. Drug delivery: Liposomes and polymeric nanoparticles deliver drugs specifically to cancer cells (targeted therapy), reducing side effects.\n2. Diagnostics: Gold nanoparticles used in biosensors and lateral flow assays (e.g., rapid COVID tests).\n3. Gene therapy: Lipid nanoparticles deliver DNA/RNA into cells.\n4. Antimicrobials: Silver nanoparticles (AgNPs) are potent antibacterial agents used in wound dressings.\n5. Tissue engineering: Nano-scaffolds for growing replacement tissues and organs.\n6. Bioimaging: Quantum dots and gold nanoparticles as contrast agents in MRI and fluorescence imaging.\n7. Vaccine development: Virus-like particles and lipid nanoparticles as vaccine platforms."
+        }
+      ]
+    },
+    {
+      "subject_code": "ES-204",
+      "subject_title": "Programming for Problem Solving",
+      "training_data": [
+        {
+          "instruction": "What do you mean by algorithm and flowchart?",
+          "module_id": "ES204_M1",
+          "topic": "Algorithms and Flowcharts",
+          "type": "short",
+          "marks": 2,
+          "output": "Algorithm:\nAn algorithm is a finite, ordered set of well-defined instructions or steps to solve a specific problem or accomplish a task. Characteristics of a good algorithm:\n1. Finiteness — must terminate after a finite number of steps.\n2. Definiteness — each step must be clearly defined.\n3. Input — zero or more inputs.\n4. Output — at least one output.\n5. Effectiveness — each step must be feasible and simple enough to be carried out.\n\nFlowchart:\nA flowchart is a graphical/pictorial representation of an algorithm using standard symbols:\n- Oval/Rounded rectangle: Start/End (terminal)\n- Rectangle: Process/Operation\n- Diamond: Decision (Yes/No)\n- Parallelogram: Input/Output\n- Arrow: Flow of control\n\nFlowcharts make it easy to visualise the logic of a program before coding."
+        },
+        {
+          "instruction": "Define built-in data type, derived data type and user-defined data type. Give examples.",
+          "module_id": "ES204_M1",
+          "topic": "Data Types in C",
+          "type": "short",
+          "marks": 2,
+          "output": "Built-in (Primitive/Fundamental) Data Types:\nPre-defined data types provided by the programming language itself.\nExamples in C:\n- int (integer): 2 or 4 bytes, e.g., int x = 10;\n- float (floating point): 4 bytes, e.g., float pi = 3.14;\n- double (double precision): 8 bytes\n- char (character): 1 byte, e.g., char ch = 'A';\n- void (no value)\n\nDerived Data Types:\nConstructed from built-in types.\nExamples:\n- Arrays: int arr[10];\n- Pointers: int *ptr;\n- Functions: int add(int a, int b);\n\nUser-defined Data Types:\nDefined by the programmer using built-in types.\nExamples:\n- Structure (struct): Groups different data types under one name.\n  struct Student { int roll; char name[50]; float marks; };\n- Union: Similar to struct but shares memory.\n- Enum (enumeration): enum day {Mon, Tue, Wed};\n- Typedef: Creates an alias for existing type. typedef int INTEGER;"
+        },
+        {
+          "instruction": "What is the difference between entry-controlled loop and exit-controlled loop? Give examples.",
+          "module_id": "ES204_M1",
+          "topic": "Control Structures — Loops",
+          "type": "long",
+          "marks": 6,
+          "output": "Entry-Controlled Loop (Pre-test loop):\n- The condition is checked BEFORE the loop body executes.\n- If the condition is false initially, the loop body never executes (0 iterations possible).\n- Examples: for loop, while loop\n\nExample (while loop):\nint i = 1;\nwhile (i <= 5) {        // condition checked first\n    printf(\"%d\\n\", i);\n    i++;\n}                       // executes 5 times\n\nExample (for loop):\nfor (int i = 1; i <= 5; i++) {\n    printf(\"%d\\n\", i);\n}\n\nExit-Controlled Loop (Post-test loop):\n- The condition is checked AFTER the loop body executes.\n- The loop body always executes at least ONCE, even if the condition is false initially.\n- Example: do-while loop\n\nExample (do-while):\nint i = 10;\ndo {\n    printf(\"%d\\n\", i);  // executes at least once\n    i++;\n} while (i <= 5);       // condition checked after — false, so only 1 iteration\n\nKey Difference:\n| Feature           | Entry-controlled (while/for) | Exit-controlled (do-while) |\n|-------------------|------------------------------|----------------------------|\n| Condition checked | Before loop body             | After loop body            |\n| Min. iterations   | 0                            | 1 (always executes once)   |"
+        },
+        {
+          "instruction": "Write a function in C which will take input an array (1D) and size of the array. The array consists of distinct integer values only. Find out the largest number in the array and return that number from function. Draw a flowchart for the procedure.",
+          "module_id": "ES204_M2",
+          "topic": "Arrays and Functions",
+          "type": "long",
+          "marks": 12,
+          "output": "C Function:\n\n#include <stdio.h>\n\nint findLargest(int arr[], int n) {\n    int max = arr[0];        // assume first element is max\n    for (int i = 1; i < n; i++) {\n        if (arr[i] > max) {\n            max = arr[i];    // update max if current element is larger\n        }\n    }\n    return max;\n}\n\nint main() {\n    int n;\n    printf(\"Enter size of array: \");\n    scanf(\"%d\", &n);\n    int arr[n];\n    printf(\"Enter %d distinct integers:\\n\", n);\n    for (int i = 0; i < n; i++) {\n        scanf(\"%d\", &arr[i]);\n    }\n    int largest = findLargest(arr, n);\n    printf(\"Largest number = %d\\n\", largest);\n    return 0;\n}\n\nFlowchart (textual):\nSTART\n  ↓\nInput array arr[], size n\n  ↓\nmax = arr[0], i = 1\n  ↓\n[i < n?] → NO → Return max → END\n  ↓ YES\n[arr[i] > max?] → YES → max = arr[i]\n  ↓ NO (both paths)          ↓\ni = i + 1 ←─────────────────\n  ↓\n(loop back to condition)"
+        },
+        {
+          "instruction": "Write a function in C which will take input an array (1D) and size of the array as input. Use bubble sort algorithm to sort the array. Apply bubble sort on the array [5, 4, 3, 2, 1] and show only two passes.",
+          "module_id": "ES204_M2",
+          "topic": "Sorting Algorithms",
+          "type": "long",
+          "marks": 12,
+          "output": "C Function for Bubble Sort:\n\n#include <stdio.h>\n\nvoid bubbleSort(int arr[], int n) {\n    for (int i = 0; i < n-1; i++) {          // n-1 passes\n        for (int j = 0; j < n-1-i; j++) {   // compare adjacent\n            if (arr[j] > arr[j+1]) {\n                int temp = arr[j];           // swap\n                arr[j] = arr[j+1];\n                arr[j+1] = temp;\n            }\n        }\n    }\n}\n\nint main() {\n    int arr[] = {5, 4, 3, 2, 1};\n    int n = 5;\n    bubbleSort(arr, n);\n    printf(\"Sorted array: \");\n    for (int i = 0; i < n; i++) printf(\"%d \", arr[i]);\n    return 0;\n}\n\nTwo Passes on [5, 4, 3, 2, 1]:\n\nPass 1 (i=0): Compare adjacent elements, largest bubbles to end.\n  [5,4] → swap → [4,5,3,2,1]\n  [5,3] → swap → [4,3,5,2,1]\n  [5,2] → swap → [4,3,2,5,1]\n  [5,1] → swap → [4,3,2,1,5]\nAfter Pass 1: [4, 3, 2, 1, 5]\n\nPass 2 (i=1): Second largest bubbles to second-to-last position.\n  [4,3] → swap → [3,4,2,1,5]\n  [4,2] → swap → [3,2,4,1,5]\n  [4,1] → swap → [3,2,1,4,5]\nAfter Pass 2: [3, 2, 1, 4, 5]"
+        },
+        {
+          "instruction": "Write a function in C to find n, the Fibonacci number using recursion. The number starts from 0.",
+          "module_id": "ES204_M3",
+          "topic": "Recursion",
+          "type": "long",
+          "marks": 6,
+          "output": "#include <stdio.h>\n\nint fibonacci(int n) {\n    if (n == 0) return 0;          // base case\n    if (n == 1) return 1;          // base case\n    return fibonacci(n-1) + fibonacci(n-2); // recursive case\n}\n\nint main() {\n    int n;\n    printf(\"Enter position n: \");\n    scanf(\"%d\", &n);\n    printf(\"Fibonacci(%d) = %d\\n\", n, fibonacci(n));\n    return 0;\n}\n\nFibonacci sequence (starting from 0):\nn:    0  1  2  3  4  5  6   7   8 ...\nF(n): 0  1  1  2  3  5  8  13  21 ...\n\nRecursion trace for fibonacci(5):\nfib(5) = fib(4) + fib(3)\n       = (fib(3)+fib(2)) + (fib(2)+fib(1))\n       = ((fib(2)+fib(1))+(fib(1)+fib(0))) + ((fib(1)+fib(0))+1)\n       = 5\n\nNote: Recursive Fibonacci has O(2ⁿ) time complexity — inefficient for large n. Iterative or memoized versions are preferred for large n."
+        },
+        {
+          "instruction": "How to use the Python import statement? Give example.",
+          "module_id": "ES204_M4",
+          "topic": "Python Programming",
+          "type": "long",
+          "marks": 2,
+          "output": "Python import Statement:\nThe import statement is used to include external modules/libraries into a Python program, giving access to their functions, classes, and variables.\n\nSyntax forms:\n\n1. Import entire module:\nimport math\nresult = math.sqrt(16)   # 4.0\nprint(math.pi)           # 3.14159...\n\n2. Import specific function/class:\nfrom math import sqrt, pi\nresult = sqrt(25)        # 5.0 (no need for math.)\n\n3. Import with alias:\nimport numpy as np\narr = np.array([1, 2, 3])\n\n4. Import all (not recommended):\nfrom math import *\nresult = sin(3.14)\n\n5. Import user-defined module:\n# File: mymodule.py\ndef greet(name):\n    return f'Hello, {name}!'\n\n# Main file:\nimport mymodule\nprint(mymodule.greet('Alice'))   # Hello, Alice!\n\nCommon built-in modules:\n- math (mathematical functions)\n- random (random numbers)\n- os (operating system interface)\n- sys (system-specific functions)\n- datetime (date and time)\n- json (JSON handling)"
+        },
+        {
+          "instruction": "Write a program in Python to check if a number is positive or negative or zero and display appropriate message.",
+          "module_id": "ES204_M4",
+          "topic": "Python Programming",
+          "type": "long",
+          "marks": 3,
+          "output": "# Python program to check positive, negative, or zero\n\nnum = float(input(\"Enter a number: \"))\n\nif num > 0:\n    print(f\"{num} is a Positive number.\")\nelif num < 0:\n    print(f\"{num} is a Negative number.\")\nelse:\n    print(\"The number is Zero.\")\n\nSample outputs:\nEnter a number: 15\n15.0 is a Positive number.\n\nEnter a number: -7\n-7.0 is a Negative number.\n\nEnter a number: 0\nThe number is Zero."
+        },
+        {
+          "instruction": "What is the difference between del, remove and pop in Python lists?",
+          "module_id": "ES204_M4",
+          "topic": "Python Programming",
+          "type": "long",
+          "marks": 3,
+          "output": "Python List Element Removal — del, remove(), pop():\n\n1. del statement:\n- Removes an element by INDEX or deletes the entire list.\n- Does NOT return the deleted value.\n- Syntax: del list[index] or del list[start:end]\nExample:\nlst = [10, 20, 30, 40]\ndel lst[1]        # removes element at index 1 (value 20)\nprint(lst)        # [10, 30, 40]\ndel lst           # deletes entire list\n\n2. remove() method:\n- Removes the FIRST occurrence of a specified VALUE.\n- Does NOT return the removed element.\n- Raises ValueError if value not found.\n- Syntax: list.remove(value)\nExample:\nlst = [10, 20, 30, 20]\nlst.remove(20)    # removes first occurrence of 20\nprint(lst)        # [10, 30, 20]\n\n3. pop() method:\n- Removes and RETURNS the element at a given index (default: last element).\n- Syntax: list.pop(index)  — default index = -1 (last)\nExample:\nlst = [10, 20, 30, 40]\nval = lst.pop()    # removes & returns last element: 40\nprint(val)         # 40\nprint(lst)         # [10, 20, 30]\nval2 = lst.pop(1)  # removes & returns index 1: 20\nprint(lst)         # [10, 30]\n\nSummary:\n| Feature | del | remove() | pop() |\n|---------|-----|----------|-------|\n| By index| Yes | No | Yes |\n| By value| No | Yes | No |\n| Returns value | No | No | Yes |\n| Default (last)| No | No | Yes |"
+        },
+        {
+          "instruction": "Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary. Draw the flow chart of the solution and write down the code.",
+          "module_id": "ES204_M1",
+          "topic": "Basic Programming — C",
+          "type": "long",
+          "marks": 4,
+          "output": "#include <stdio.h>\n\nint main() {\n    float basic, da, hra, gross;\n    printf(\"Enter basic salary: \");\n    scanf(\"%f\", &basic);\n    da = 0.40 * basic;      // 40% of basic\n    hra = 0.20 * basic;     // 20% of basic\n    gross = basic + da + hra;\n    printf(\"Basic Salary    = %.2f\\n\", basic);\n    printf(\"DA (40%%)        = %.2f\\n\", da);\n    printf(\"HRA (20%%)       = %.2f\\n\", hra);\n    printf(\"Gross Salary    = %.2f\\n\", gross);\n    return 0;\n}\n\nFlowchart (textual):\nSTART\n  ↓\nInput: basic\n  ↓\nda = 0.40 × basic\n  ↓\nhra = 0.20 × basic\n  ↓\ngross = basic + da + hra\n  ↓\nOutput: gross\n  ↓\nEND\n\nSample Output:\nEnter basic salary: 10000\nBasic Salary = 10000.00\nDA (40%)     = 4000.00\nHRA (20%)    = 2000.00\nGross Salary = 16000.00"
+        },
+        {
+          "instruction": "Take number N as input from the user and check if that number is prime or not. Print 'yes' if the number is prime else print 'No'. Assume N >= 2. Draw a flow chart of the solution and show the code.",
+          "module_id": "ES204_M1",
+          "topic": "Basic Programming — C",
+          "type": "long",
+          "marks": 4,
+          "output": "#include <stdio.h>\n#include <math.h>\n\nint main() {\n    int N, isPrime = 1;\n    printf(\"Enter N (>= 2): \");\n    scanf(\"%d\", &N);\n    for (int i = 2; i <= sqrt(N); i++) {\n        if (N % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n    if (isPrime)\n        printf(\"yes\\n\");\n    else\n        printf(\"No\\n\");\n    return 0;\n}\n\nFlowchart (textual):\nSTART\n  ↓\nInput: N\n  ↓\nisPrime = 1, i = 2\n  ↓\n[i <= √N?] → NO → [isPrime == 1?] → YES → Print \"yes\" → END\n  ↓ YES                             ↓ NO\n[N % i == 0?] → YES → isPrime=0 → Print \"No\" → END\n  ↓ NO\ni = i + 1 → (loop back)"
+        }
+      ]
+    },
+    {
+      "subject_code": "ES-205",
+      "subject_title": "Manufacturing Practices",
+      "training_data": [
+        {
+          "instruction": "Write the important safety rules for welding shop.",
+          "module_id": "ES205_M4",
+          "topic": "Welding — Safety",
+          "type": "short",
+          "marks": 2,
+          "output": "Important Safety Rules for Welding Shop:\n1. Always wear appropriate Personal Protective Equipment (PPE): welding helmet/face shield with dark glass (shade 10–14), leather gloves, welding apron, and safety boots.\n2. Never look at the welding arc with naked eyes — UV and IR radiation can cause arc eye (photokeratitis).\n3. Ensure good ventilation to avoid inhaling welding fumes (CO, NOx, metal vapours).\n4. Keep flammable materials away from the welding area.\n5. Use a fire extinguisher and fire blankets nearby.\n6. Inspect cables and electrode holders for damage before use.\n7. Do not weld near pressurised containers or in confined spaces without proper precautions.\n8. Use earthing/grounding properly to prevent electric shock.\n9. Handle electrodes and rods carefully — hot metal is not visually distinguishable from cool metal.\n10. Disconnect equipment when not in use."
+        },
+        {
+          "instruction": "What are the purposes of a shaper machine?",
+          "module_id": "ES205_M1",
+          "topic": "Machine Tools — Shaper",
+          "type": "short",
+          "marks": 2,
+          "output": "Purposes/Uses of a Shaper Machine:\n1. Machining flat/plane surfaces (horizontal, vertical, and inclined).\n2. Cutting keyways and slots in shafts and machine parts.\n3. Machining internal and external grooves.\n4. Producing dovetail slides and T-slots.\n5. Machining irregular or curved surfaces using special form tools.\n6. Making splines and gear teeth profiles.\n7. Squaring up surfaces of a workpiece.\n8. Light cutting operations in tool rooms and repair shops.\n\nPrinciple: The shaper uses a reciprocating cutting tool (single-point tool) that cuts on the forward stroke and returns on the idle/return stroke. The workpiece is fed transversely after each return stroke."
+        },
+        {
+          "instruction": "What are the operations performed by a milling machine?",
+          "module_id": "ES205_M1",
+          "topic": "Machine Tools — Milling",
+          "type": "short",
+          "marks": 2,
+          "output": "Operations Performed by a Milling Machine:\n1. Plain/slab milling — producing flat, horizontal surfaces.\n2. Face milling — machining flat surfaces perpendicular to the cutter axis.\n3. Side milling — machining vertical flat surfaces.\n4. Straddle milling — machining two parallel vertical surfaces simultaneously.\n5. Gang milling — using multiple cutters on the same arbor simultaneously.\n6. Slot/groove milling — cutting T-slots, dovetail slots, keyways.\n7. Form milling — producing irregular contour surfaces using form cutters.\n8. Gear cutting — using index head and gear cutter.\n9. Thread milling — cutting internal/external threads.\n10. End milling — profiling, contouring, pocket milling."
+        },
+        {
+          "instruction": "Differentiate between cold and hot working process. Write the important steps of a hot working process.",
+          "module_id": "ES205_M4",
+          "topic": "Metal Working Processes",
+          "type": "long",
+          "marks": 8,
+          "output": "Differences between Cold Working and Hot Working:\n\n| Parameter | Cold Working | Hot Working |\n|-----------|-------------|-------------|\n| Temperature | Below recrystallisation temperature | Above recrystallisation temperature |\n| Grain structure | Distorted, work-hardening occurs | Fine equiaxed grains (recrystallisation) |\n| Strength | Increases (strain hardening) | No strain hardening |\n| Ductility | Decreases | Maintained/improved |\n| Surface finish | Better finish | Poorer finish (oxide scale) |\n| Power required | More (at room temp) | Less (metal is soft at high temp) |\n| Dimensional accuracy | Higher | Lower |\n| Examples | Wire drawing, cold rolling, cold forging | Hot rolling, hot forging, extrusion |\n\nImportant Steps of Hot Working Process (e.g., Hot Forging):\n1. Selection of raw material: Choose appropriate metal/alloy (steel, aluminium, copper).\n2. Heating: Heat the metal in a furnace to the working temperature (for steel: 1100–1300°C, above recrystallisation temperature ≈ 0.6 × Melting point in Kelvin).\n3. Temperature control: Ensure uniform heating to avoid hot spots or overheating; avoid exceeding the burning temperature.\n4. Transfer to working area: Quickly transfer the hot metal to the forging press/hammer to minimise heat loss.\n5. Forming/Shaping: Apply the required working process (forging, rolling, extrusion) to shape the metal.\n6. Reheating if required: If the metal cools below the working temperature during processing, reheat before continuing.\n7. Finishing: Remove oxide scale by pickling (acid treatment) or shot blasting.\n8. Cooling: Allow the workpiece to cool in air or anneal for stress relief."
+        },
+        {
+          "instruction": "Classify the welding processes. Discuss the procedure of single butt joint making with manual metal arc welding process and suitable sketches.",
+          "module_id": "ES205_M4",
+          "topic": "Welding",
+          "type": "long",
+          "marks": 8,
+          "output": "Classification of Welding Processes:\n\nA. Fusion Welding (metals are melted and joined):\n  1. Arc Welding:\n     - Manual Metal Arc Welding (MMAW) / Shielded Metal Arc Welding (SMAW)\n     - Gas Metal Arc Welding (GMAW/MIG)\n     - Gas Tungsten Arc Welding (GTAW/TIG)\n     - Submerged Arc Welding (SAW)\n     - Plasma Arc Welding\n  2. Gas Welding: Oxy-acetylene welding\n  3. Resistance Welding: Spot, seam, projection welding\n  4. Thermit Welding\n  5. Laser/Electron Beam Welding\n\nB. Solid State Welding (no melting):\n  - Friction welding, ultrasonic welding, diffusion bonding, cold welding\n\nSingle Butt Joint by MMAW — Procedure:\nPreparation:\n1. Clean the base metal surfaces using wire brush/grinder to remove rust, paint, and oil.\n2. Prepare the joint edges — for a single V-butt joint: bevel each plate edge to approximately 30–35° (total included angle: 60–70°).\n3. Set the root gap (approximately 2–3 mm) and tack weld at both ends to maintain alignment.\n\nWelding:\n4. Select appropriate electrode (e.g., E6013 for mild steel) and set current (80–120 A for 3.2 mm electrode).\n5. Strike the arc by touching the electrode to the workpiece and quickly withdrawing slightly (2–4 mm arc length).\n6. Lay the root pass (first pass): Fill the root gap with a stringer bead. Ensure full penetration.\n7. Clean the root pass with a chipping hammer to remove slag, then wire brush.\n8. Lay subsequent fill passes: Add fill layers to fill the V-groove, overlapping each bead by 1/3–1/2.\n9. Lay the final capping/cover pass: Slightly wider than the groove for reinforcement.\n10. Final cleaning: Remove all slag, inspect for defects (cracks, porosity, undercut).\n\nSafety: Wear welding helmet, leather gloves, and apron throughout the process."
+        },
+        {
+          "instruction": "What means safety measures? What are the important safety rules we should follow in the workshop? Discuss.",
+          "module_id": "ES205_M1",
+          "topic": "Workshop Safety",
+          "type": "long",
+          "marks": 8,
+          "output": "Safety Measures:\nSafety measures are precautionary steps and procedures taken to prevent accidents, injuries, and health hazards in a workplace. They include rules, equipment, training, and environmental controls.\n\nImportant Safety Rules in the Workshop:\n\nPersonal Protective Equipment (PPE):\n1. Always wear safety goggles/glasses to protect eyes from chips, sparks, and dust.\n2. Wear safety shoes to protect feet from falling heavy objects.\n3. Wear appropriate gloves when handling sharp or hot materials.\n4. Do not wear loose clothing, jewellery, or ties that can get caught in machinery.\n5. Tie long hair securely.\n\nMachinery Safety:\n6. Never operate a machine without proper training and supervisor permission.\n7. Ensure all guards and safety devices are in place before operating machines.\n8. Switch off machines when not in use; never leave a running machine unattended.\n9. Do not adjust or repair a machine while it is running.\n10. Ensure the workpiece is properly clamped before machining.\n\nGeneral Workshop Safety:\n11. Keep the workshop clean and tidy; clean up oil spills immediately to prevent slipping.\n12. Know the location of fire extinguishers, first aid box, and emergency exits.\n13. Do not run in the workshop.\n14. Store tools properly in their designated places after use.\n15. Dispose of waste materials properly — sharp swarf/chips must be handled with tools, not bare hands.\n16. Follow all posted signs and instructions.\n17. Report any unsafe condition or accident to the instructor/supervisor immediately."
+        },
+        {
+          "instruction": "How can you identify a machine? Explain. Draw the neat sketch of a Lathe Machine and discuss the function of important parts.",
+          "module_id": "ES205_M1",
+          "topic": "Lathe Machine",
+          "type": "long",
+          "marks": 10,
+          "output": "Identifying a Machine:\nA machine can be identified by:\n1. Its nameplate (manufacturer, model, serial number, year of manufacture).\n2. Type of operations it performs (e.g., turning, drilling, milling).\n3. Its physical appearance and construction (shape, size, and arrangement of parts).\n4. The type of cutting tool it uses.\n5. Its drive mechanism (belt drive, gear drive, etc.).\n\nLathe Machine — Important Parts and Functions:\n\nMain Parts:\n1. Bed:\n   - The main base/foundation of the lathe made of cast iron.\n   - Provides a rigid, precise guide for all other parts.\n   - Has guideways (flat or V-shaped) on which the carriage and tailstock slide.\n\n2. Headstock:\n   - Fixed at the left end of the bed.\n   - Contains the main spindle, chuck, and speed-changing gears.\n   - The spindle rotates the workpiece at required speeds.\n\n3. Tailstock:\n   - Moveable; slides along the bed guideways; located on the right end.\n   - Supports the right end of long workpieces using a live or dead centre.\n   - Can hold drills, reamers, and taps for drilling operations.\n\n4. Carriage:\n   - Slides along the bed between headstock and tailstock.\n   - Holds and moves the cutting tool.\n   - Sub-parts:\n     a. Saddle: Fits over the bed guideways; provides cross-slide support.\n     b. Cross-slide: Moves perpendicular to the bed axis (in-out feed).\n     c. Compound rest: Can be swivelled at any angle; holds the tool post.\n     d. Tool post: Holds the cutting tool.\n     e. Apron: Contains gears, clutches for automatic feed and thread cutting.\n\n5. Lead Screw:\n   - A long precision screw used to move the carriage automatically for thread cutting.\n\n6. Feed Rod:\n   - Transmits power to the carriage for turning and facing operations (not thread cutting).\n\n7. Chuck:\n   - Mounted on the spindle nose to grip the workpiece.\n   - Types: 3-jaw self-centring chuck (round work) and 4-jaw independent chuck (irregular shapes)."
+        }
+      ]
+    },
+    {
+      "subject_code": "BS-202",
+      "subject_title": "Engineering Mathematics-II",
+      "training_data": [
+        {
+          "instruction": "Find the constant b so that u(x, y) = bx² − y² + xy is harmonic.",
+          "module_id": "BS202_M1",
+          "topic": "Complex Analysis — Analytic Functions",
+          "type": "short",
+          "marks": 2,
+          "output": "For u(x, y) to be harmonic, it must satisfy Laplace's equation: ∂²u/∂x² + ∂²u/∂y² = 0\n\n∂u/∂x = 2bx + y\n∂²u/∂x² = 2b\n\n∂u/∂y = -2y + x\n∂²u/∂y² = -2\n\nLaplace's equation: 2b + (-2) = 0\n2b = 2\nb = 1"
+        },
+        {
+          "instruction": "When is a vector said to be solenoidal? Give an example.",
+          "module_id": "BS202_M4",
+          "topic": "Vector Calculus",
+          "type": "short",
+          "marks": 2,
+          "output": "A vector field F⃗ is said to be solenoidal (divergence-free) if its divergence is zero everywhere:\ndiv F⃗ = ∇·F⃗ = 0\n\nPhysical meaning: No net flux emerges from any volume — no sources or sinks (like incompressible fluid flow or magnetic fields, where magnetic monopoles don't exist).\n\nExample: F⃗ = (x² - y)i⃗ + (y² - z)j⃗ + (z² - x)k⃗... (verify by computing divergence)\n\nSimple example: F⃗ = yi⃗ - xj⃗\n∇·F⃗ = ∂(y)/∂x + ∂(-x)/∂y = 0 + 0 = 0 → Solenoidal\n\nMore classic: The magnetic field B⃗ is always solenoidal: ∇·B⃗ = 0 (Maxwell's equation)."
+        },
+        {
+          "instruction": "Show that Γ(1/2) = √π.",
+          "module_id": "BS202_M3",
+          "topic": "Gamma and Beta Functions",
+          "type": "short",
+          "marks": 2,
+          "output": "Proof that Γ(1/2) = √π:\n\nBy definition: Γ(1/2) = ∫₀^∞ t^(1/2-1) e^(-t) dt = ∫₀^∞ t^(-1/2) e^(-t) dt\n\nSubstitute t = u²: dt = 2u du, t^(-1/2) = 1/u\n\nΓ(1/2) = ∫₀^∞ (1/u) e^(-u²) · 2u du = 2∫₀^∞ e^(-u²) du\n\nLet I = ∫₀^∞ e^(-u²) du (Gaussian integral)\n\nI² = [∫₀^∞ e^(-x²) dx][∫₀^∞ e^(-y²) dy] = ∫₀^∞∫₀^∞ e^(-(x²+y²)) dx dy\n\nConverting to polar (first quadrant only): x = r cosθ, y = r sinθ\nI² = ∫₀^(π/2)∫₀^∞ e^(-r²) r dr dθ = (π/2)·(1/2) = π/4\n\nSo I = √π/2\n\nTherefore: Γ(1/2) = 2I = 2·(√π/2) = √π  ∎"
+        },
+        {
+          "instruction": "Find the amplitude of -1 + i.",
+          "module_id": "BS202_M2",
+          "topic": "Complex Numbers",
+          "type": "short",
+          "marks": 2,
+          "output": "For complex number z = -1 + i:\nx = -1, y = 1 (Second quadrant: x < 0, y > 0)\n\nReference angle: α = arctan(|y|/|x|) = arctan(1/1) = π/4\n\nSince the point is in the second quadrant:\nAmplitude (argument) = π - α = π - π/4 = 3π/4\n\nAmplitude of (-1 + i) = 3π/4 (or 135°)"
+        },
+        {
+          "instruction": "Find all possible local maxima, local minima and saddle points of f(x, y) = x² + 3xy + 3y² - 6x + 3y - 6.",
+          "module_id": "BS202_M1",
+          "topic": "Partial Differentiation — Maxima and Minima",
+          "type": "long",
+          "marks": 4,
+          "output": "Step 1: Find critical points — set fx = 0 and fy = 0\nfx = 2x + 3y - 6 = 0  ...(1)\nfy = 3x + 6y + 3 = 0  → x + 2y + 1 = 0  ...(2)\n\nFrom (2): x = -2y - 1\nSubstitute in (1): 2(-2y-1) + 3y - 6 = 0\n-4y - 2 + 3y - 6 = 0\n-y = 8 → y = -8\nx = -2(-8) - 1 = 15\n\nCritical point: (15, -8)\n\nStep 2: Second-order test\nfxx = 2, fyy = 6, fxy = 3\nD = fxx·fyy - (fxy)² = 2·6 - 9 = 12 - 9 = 3 > 0\n\nSince D > 0 and fxx = 2 > 0:\nThe critical point (15, -8) is a LOCAL MINIMUM.\n\nf(15, -8) = 225 + 3(15)(-8) + 3(64) - 6(15) + 3(-8) - 6\n= 225 - 360 + 192 - 90 - 24 - 6 = -63\n\nConclusion: Local minimum at (15, -8) with value -63. No local maxima or saddle points."
+        },
+        {
+          "instruction": "Evaluate by using Green's theorem: ∮_C [(2xy³ + y)dx + (3x²y² + 2x)dy] where C is the circle x² + y² = 1 taken in anticlockwise direction.",
+          "module_id": "BS202_M4",
+          "topic": "Vector Calculus — Green's Theorem",
+          "type": "long",
+          "marks": 4,
+          "output": "Green's Theorem: ∮_C [P dx + Q dy] = ∬_D (∂Q/∂x - ∂P/∂y) dA\n\nHere: P = 2xy³ + y, Q = 3x²y² + 2x\n\n∂Q/∂x = 6xy² + 2\n∂P/∂y = 6xy² + 1\n\n∂Q/∂x - ∂P/∂y = (6xy² + 2) - (6xy² + 1) = 1\n\nSo: ∮ = ∬_D 1 · dA = Area of the region D\n\nD is the unit circle x² + y² ≤ 1\nArea = π(1)² = π\n\n∮_C [(2xy³ + y)dx + (3x²y² + 2x)dy] = π"
+        },
+        {
+          "instruction": "Find the directional derivative of f(x, y, z) = 2x² + 3y² + z² at the point (2, 1, 3) in the direction of the vector a⃗ = i⃗ - 2k⃗.",
+          "module_id": "BS202_M4",
+          "topic": "Vector Calculus — Gradient",
+          "type": "long",
+          "marks": 4,
+          "output": "Step 1: Find gradient ∇f\nfx = 4x, fy = 6y, fz = 2z\nAt (2, 1, 3): ∇f = (4·2)i⃗ + (6·1)j⃗ + (2·3)k⃗ = 8i⃗ + 6j⃗ + 6k⃗\n\nStep 2: Unit vector in direction of a⃗ = i⃗ - 2k⃗ = (1, 0, -2)\n|a⃗| = √(1 + 0 + 4) = √5\nâ = (1/√5)i⃗ + 0j⃗ - (2/√5)k⃗\n\nStep 3: Directional derivative\nDₐf = ∇f · â = (8)(1/√5) + (6)(0) + (6)(-2/√5)\n= 8/√5 - 12/√5\n= -4/√5\n= -4√5/5\n\nDirectional derivative = -4/√5 = -4√5/5 ≈ -1.789"
+        },
+        {
+          "instruction": "Prove that 2ⁿ Γ(n + 1/2) = 1·3·5·...·(2n-1)√π",
+          "module_id": "BS202_M3",
+          "topic": "Gamma and Beta Functions",
+          "type": "long",
+          "marks": 4,
+          "output": "Proof by using the recurrence relation Γ(n+1) = n·Γ(n) and Γ(1/2) = √π:\n\nFor Γ(n + 1/2), using Γ(n+1) = n·Γ(n) repeatedly:\n\nΓ(n + 1/2) = (n - 1/2)·Γ(n - 1/2)\n            = (n - 1/2)(n - 3/2)·Γ(n - 3/2)\n            = (n - 1/2)(n - 3/2)···(3/2)(1/2)·Γ(1/2)\n\nWriting as fractions:\n= [(2n-1)/2]·[(2n-3)/2]·...·[3/2]·[1/2]·√π\n= [1·3·5···(2n-1)] / 2ⁿ · √π\n\nTherefore:\n2ⁿ · Γ(n + 1/2) = 1·3·5···(2n-1)·√π  ∎\n\nVerification for n=1:\nLHS: 2¹·Γ(3/2) = 2·(1/2)·Γ(1/2) = 2·(1/2)·√π = √π\nRHS: 1·√π = √π ✓"
+        }
+      ]
+    },
+    {
+      "subject_code": "HS-201",
+      "subject_title": "English",
+      "training_data": [
+        {
+          "instruction": "How does John Ruskin define 'true happiness'? Elaborate your answer by providing adequate inputs from the text 'Modern Improvements'.",
+          "module_id": "HS201_M1",
+          "topic": "Prose — Modern Improvements by John Ruskin",
+          "type": "long",
+          "marks": 6,
+          "output": "John Ruskin's Concept of True Happiness in 'Modern Improvements':\n\nJohn Ruskin, the eminent Victorian art critic and social thinker, presents a profound critique of modern civilisation in 'Modern Improvements'. He argues that true happiness does NOT lie in material progress, technological advancement, speed, or comfort — the hallmarks of modern improvements.\n\nKey arguments:\n1. Against speed: Ruskin argues that the desire to travel fast (by rail, steamship) is a fool's desire — a fool wants to 'kill space and time'. True happiness comes from experiencing the journey, nature, and human connections — not from arriving faster.\n\n2. Against materialism: Modern improvements focus on accumulation of wealth and comfort but neglect the inner life, spirituality, and appreciation of beauty. These cannot bring lasting happiness.\n\n3. Religious and spiritual dimension: Ruskin observes that the greatest religious communication he remembers happened on foot — walking brings one in touch with nature, God, and fellow human beings. He values contemplative slowness over hurried progress.\n\n4. Role of nature and beauty: True happiness, for Ruskin, is found in the appreciation of natural beauty, art, and craftsmanship — not in mechanical production and consumption.\n\n5. Community and human connection: Happiness is rooted in meaningful human relationships and community — which are eroded by the impersonal rush of modern life.\n\nConclusion: Ruskin defines true happiness as the ability to live wisely, appreciate beauty, foster meaningful relationships, and connect with nature and the divine — which, he laments, modern improvements are actively destroying."
+        },
+        {
+          "instruction": "What do you mean by effective reading skill? Discuss at least three major benefits of effective reading and three major differences between efficient readers and inefficient readers.",
+          "module_id": "HS201_M2",
+          "topic": "Reading Skills",
+          "type": "long",
+          "marks": 12,
+          "output": "Effective Reading Skill:\nEffective reading is the ability to read purposefully, comprehend the text deeply, retain information, critically evaluate content, and use it productively. It involves understanding not just the words but the ideas, tone, and purpose of the text.\n\nThree Major Benefits of Effective Reading:\n1. Enhanced comprehension and knowledge: Effective readers understand complex texts quickly and retain key ideas, building a broader knowledge base useful in academics and professional life.\n\n2. Improved vocabulary and language skills: Regular effective reading exposes the reader to varied sentence structures, vocabulary, and writing styles, improving communication (spoken and written).\n\n3. Critical thinking and analytical skills: Effective reading trains the mind to question, evaluate, compare, and synthesise information — essential skills for an engineer and professional problem-solver.\n\nThree Major Differences between Efficient and Inefficient Readers:\n\n1. Purpose and strategy:\n- Efficient reader: Reads with a clear purpose; uses strategies like skimming (for overview), scanning (for specific info), and close reading.\n- Inefficient reader: Reads word-by-word without purpose; treats all texts the same way.\n\n2. Comprehension and retention:\n- Efficient reader: Identifies the main idea, supporting details, and structure; relates new content to prior knowledge; better retention.\n- Inefficient reader: Gets lost in details; fails to distinguish main ideas from examples; poor retention.\n\n3. Speed and flexibility:\n- Efficient reader: Adjusts reading speed to text difficulty and purpose; reads technical texts slowly, light material quickly.\n- Inefficient reader: Reads everything at the same slow speed; often re-reads the same lines (regression); poor speed."
+        },
+        {
+          "instruction": "Differentiate between active and passive listening skill.",
+          "module_id": "HS201_M3",
+          "topic": "Listening Skills",
+          "type": "long",
+          "marks": 4,
+          "output": "Active Listening vs Passive Listening:\n\nActive Listening:\n- The listener is fully engaged, mentally and physically, with the speaker.\n- Involves paying close attention, processing the message, and providing feedback.\n- The listener asks clarifying questions, paraphrases, and responds appropriately.\n- Requires conscious effort and concentration.\n- Leads to better understanding, retention, and communication.\n- Example: In a lecture, taking notes, nodding, asking questions, making eye contact.\n\nPassive Listening:\n- The listener hears the speaker without full attention or engagement.\n- No or minimal feedback; the message may not be fully processed or retained.\n- Can be intentional (e.g., listening to background music) or unintentional (daydreaming during a lecture).\n- Requires little cognitive effort.\n- Often leads to misunderstanding or forgetting the message.\n- Example: Hearing a lecture while browsing on the phone.\n\nKey differences:\n| Feature | Active Listening | Passive Listening |\n|---------|-----------------|-------------------|\n| Engagement | High — full attention | Low — partial/no attention |\n| Feedback | Provided (verbal/non-verbal) | Minimal or none |\n| Retention | High | Low |\n| Understanding | Deep, critical | Superficial |\n| Purpose | To understand and respond | To hear, not necessarily understand |"
+        },
+        {
+          "instruction": "In your own words, explain the role of appropriate body language for effective public speaking.",
+          "module_id": "HS201_M3",
+          "topic": "Communication Skills",
+          "type": "long",
+          "marks": 4,
+          "output": "Role of Body Language in Effective Public Speaking:\n\nBody language refers to non-verbal communication — gestures, posture, eye contact, facial expressions, and movement. Research suggests that in face-to-face communication, words carry only about 7% of the message, while tone carries 38% and body language carries 55%.\n\nKey elements and their roles:\n\n1. Eye Contact:\n- Establishes connection and credibility with the audience.\n- Shows confidence and honesty.\n- Engages different sections of the audience — avoids the 'talking to the ceiling/floor' mistake.\n\n2. Posture:\n- Standing upright conveys confidence and authority.\n- Slouching or fidgeting signals nervousness or disinterest.\n- An open posture (uncrossed arms) is welcoming and confident.\n\n3. Gestures:\n- Hand gestures emphasise key points and make the speech more dynamic.\n- Too many gestures can be distracting; too few make the speaker seem stiff.\n- Natural, purposeful gestures reinforce verbal messages.\n\n4. Facial Expressions:\n- Should match the content — smiling when appropriate builds rapport.\n- A blank or confused expression can confuse the audience.\n\n5. Movement:\n- Moving purposefully (not pacing nervously) on stage holds attention.\n- Moving towards the audience increases engagement.\n\n6. Proximity and space:\n- Respecting audience space while being physically present and engaged.\n\nConclusion: Appropriate body language enhances the speaker's credibility, keeps the audience engaged, reinforces the verbal message, and conveys confidence — making it an indispensable tool for effective public speaking."
+        },
+        {
+          "instruction": "What does the 'road' in the poem 'The Road Not Taken' stand for? What does the word 'paraphernalia' refer to?",
+          "module_id": "HS201_M4",
+          "topic": "Poetry — The Road Not Taken by Robert Frost",
+          "type": "short",
+          "marks": 2,
+          "output": "The Road in 'The Road Not Taken' by Robert Frost:\nThe 'road' is a central metaphor in this poem. It symbolises the choices and decisions we face in life. The traveller (narrator) stands at a fork in the road (a point of decision) and must choose one path. The two roads represent the different options or directions available to a person at a critical juncture in life. The choice of road symbolises the choices we make, and the 'road not taken' represents the options we leave behind — and how we often wonder about the path not chosen.\n\nNote: The poem is often misread as celebrating individualism ('I took the less-travelled road'); in fact, Frost suggests the traveller's choice was somewhat arbitrary, yet they will later rationalise it as meaningful — a commentary on self-deception and nostalgia.\n\nParaphernalia (from the poem 'In The Bazaars of Hyderabad' by Sarojini Naidu):\n'Paraphernalia' refers to the miscellaneous equipment, accessories, articles, and ornamental objects associated with a particular activity or person. In the context of the poem, it refers to the various articles and accessories sold and made in the bazaar — the goods of the fruitsellers, the items of decoration, and the equipment of the craftsmen of Hyderabad."
+        }
+      ]
+    }
+  ]
+}
