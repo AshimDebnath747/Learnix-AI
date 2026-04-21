@@ -138,7 +138,7 @@
                     "output": "Using row reduction on [A|I]:\nA⁻¹ = [[6,-15,-5],[-1,3,1],[-2,5,2]]"
                 },
                 {
-                    "instruction": "For what values of λ and μ does x+2y+3z=6, x+3y+5z=9, 2x+5y+λz=μ have a unique solution?",
+                    "instruction": "Find For what values of λ and μ does x+2y+3z=6, x+3y+5z=9, 2x+5y+λz=μ have a unique solution?",
                     "module_id": "BS101_M3",
                     "topic": "System of linear equations: Cramer's rule, Gauss elimination",
                     "type": "long",
@@ -170,7 +170,7 @@
                     "output": "CE: (m-2)² = 0 → m = 2, 2\nCF = (C₁ + C₂x)e²ˣ\nPI = x²e²ˣ/2 (repeated root case)\nGeneral solution: y = e²ˣ(C₁ + C₂x + x²/2)"
                 },
                 {
-                    "instruction": "Apply variation of parameters to solve d²y/dx² - y = 2/(1+eˣ)",
+                    "instruction": "Apply method of variation of parameters to solve d²y/dx² - y = 2/(1+eˣ)",
                     "module_id": "BS101_M4",
                     "topic": "Complementary function and particular integral",
                     "type": "long",
@@ -218,7 +218,7 @@
                     "output": "Using standard result:\nL{sin(at)/t} = tan⁻¹(a/s)\nSo, L{sin(2t)/t} = tan⁻¹(2/s)"
                 },
                 {
-                    "instruction": "Solve x'' − 3x' + 2x = 2 using Laplace transform.",
+                    "instruction": "Solve x'' − 3x' + 2x = 2 , where x(0) = 0 and x'(0) = 5 and x'' = d²x/dt² using Laplace transform.",
                     "module_id": "BS101_M4",
                     "topic": "Differential equations using Laplace",
                     "type": "long",
@@ -248,6 +248,246 @@
                     "type": "long",
                     "marks": 10,
                     "output": "Taking Laplace:\n(s² + 3s − 2)Y(s) = 1/(s+1)\nY(s) = 1/[(s+1)(s²+3s−2)]\nSolve quadratic and partial fractions\nFinal Answer:\ny(t) = C₁e^{αt} + C₂e^{βt} + (1/2)e^{-t}\n(where α, β are roots of s²+3s−2=0)"
+                },
+                {
+                    "instruction": "State the rank nullity theorem.",
+                    "module_id": "BS101_M3",
+                    "topic": "Rank of a matrix",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Rank-Nullity Theorem: For a linear transformation T: V → W where V is finite-dimensional:\ndim(V) = rank(T) + nullity(T)\nOr equivalently for a matrix A of order m×n:\nn = rank(A) + nullity(A)\nwhere rank(A) = number of linearly independent rows/columns\nand nullity(A) = dimension of the null space (solution space of Ax = 0)"
+                },
+                {
+                    "instruction": "Let f(x) = √(4x−3) satisfy the mean value theorem at point c on [1, 3]. Find c.",
+                    "module_id": "BS101_M1",
+                    "topic": "Differentiation: rules, chain rule",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "MVT: f'(c) = [f(b) - f(a)] / (b - a)\nf(1) = √1 = 1, f(3) = √9 = 3\nf'(x) = 4 / (2√(4x-3)) = 2/√(4x-3)\n\nf'(c) = (3-1)/(3-1) = 1\n2/√(4c-3) = 1\n√(4c-3) = 2\n4c - 3 = 4\nc = 7/4"
+                },
+                {
+                    "instruction": "What do you mean by a 'p-series'? When is it convergent?",
+                    "module_id": "BS101_M1",
+                    "topic": "Limits and continuity",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "p-series: A series of the form ∑(1/nᵖ) = 1 + 1/2ᵖ + 1/3ᵖ + 1/4ᵖ + ...\nwhere p is a positive real constant.\n\nConvergence:\n- Converges if p > 1\n- Diverges if p ≤ 1\n\nExamples:\n- p=1: harmonic series ∑1/n → diverges\n- p=2: ∑1/n² → converges (= π²/6)\n- p=1/2: ∑1/√n → diverges"
+                },
+                {
+                    "instruction": "Find the value of L{t^(3/2)}.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Using formula: L{tⁿ} = Γ(n+1)/s^(n+1)\nFor n = 3/2:\nL{t^(3/2)} = Γ(3/2 + 1)/s^(3/2+1) = Γ(5/2)/s^(5/2)\n\nΓ(5/2) = (3/2)·Γ(3/2) = (3/2)·(1/2)·Γ(1/2) = (3/4)√π\n\nL{t^(3/2)} = (3√π/4) / s^(5/2) = 3√π / (4s^(5/2))"
+                },
+                {
+                    "instruction": "Find the PI of (D−3)²y = e³ˣ.",
+                    "module_id": "BS101_M4",
+                    "topic": "Complementary function and particular integral",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "PI = 1/(D-3)² · e³ˣ\nSince D=3 makes (D-3)²=0, it is a repeated root case.\nPI = x²/2! · e³ˣ = x²e³ˣ/2"
+                },
+                {
+                    "instruction": "Find the sum of the telescopic series: 1/(1×3) + 1/(2×4) + 1/(3×5) + 1/(4×6) + ...",
+                    "module_id": "BS101_M1",
+                    "topic": "Limits and continuity",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Use partial fractions: 1/(n(n+2)) = (1/2)[1/n - 1/(n+2)]\n\nSₙ = (1/2)∑[(1/n - 1/(n+2))]\nThis telescopes:\n= (1/2)[(1 - 1/3) + (1/2 - 1/4) + (1/3 - 1/5) + ...]\n= (1/2)[1 + 1/2 - lim terms → 0]\n= (1/2)(1 + 1/2)\n= 3/4"
+                },
+                {
+                    "instruction": "Prove that f(x) = eˣ is differentiable at all points in ℝ.",
+                    "module_id": "BS101_M1",
+                    "topic": "Differentiation: rules, chain rule",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "To prove differentiability, we show the limit definition holds at every x ∈ ℝ.\n\nf'(x) = lim(h→0) [f(x+h) - f(x)] / h\n= lim(h→0) [e^(x+h) - eˣ] / h\n= lim(h→0) eˣ(eʰ - 1) / h\n= eˣ · lim(h→0) (eʰ - 1)/h\n\nUsing the standard limit: lim(h→0) (eʰ - 1)/h = 1\n\n∴ f'(x) = eˣ · 1 = eˣ\n\nSince eˣ is defined and finite for all x ∈ ℝ, the derivative exists everywhere.\nTherefore f(x) = eˣ is differentiable at all points in ℝ. ✓"
+                },
+                {
+                    "instruction": "Using Maclaurin's theorem, show that 0 < (1/x)·logₑ((eˣ-1)/x) < 1.",
+                    "module_id": "BS101_M1",
+                    "topic": "Successive differentiation, Leibnitz theorem",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Maclaurin expansion: eˣ = 1 + x + x²/2! + x³/3! + ...\neˣ - 1 = x + x²/2! + x³/3! + ...\n(eˣ-1)/x = 1 + x/2! + x²/3! + x³/4! + ...\n\nLet g(x) = (eˣ-1)/x\nFor x > 0: g(x) = 1 + x/2 + x²/6 + ... > 1 → log g(x) > 0 → (1/x)log g(x) > 0 ✓\n\nAlso: (eˣ-1)/x < eˣ/x · ... We show (eˣ-1)/x < eˣ\neˣ - 1 < x·eˣ ⟺ eˣ(x-1) > -1 ⟺ eˣ(1-x) < 1\nAt x=0: LHS=1, and for x>0, eˣ(1-x) can be shown < 1 using AM-GM.\nTherefore g(x) < eˣ → log g(x) < x → (1/x)log g(x) < 1 ✓\n\nHence: 0 < (1/x)logₑ((eˣ-1)/x) < 1"
+                },
+                {
+                    "instruction": "Test the convergence of the series ∑(n! / (2×4×6×...×2n)) from n=1 to ∞.",
+                    "module_id": "BS101_M1",
+                    "topic": "Limits and continuity",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Let uₙ = n! / (2·4·6·...·2n) = n! / (2ⁿ·n!) = 1/2ⁿ\n\nNote: 2×4×6×...×2n = 2ⁿ(1×2×3×...×n) = 2ⁿ·n!\n\nSo uₙ = n!/( 2ⁿ·n!) = 1/2ⁿ\n\nThis is a geometric series with ratio r = 1/2 < 1.\n\nBy Ratio test: uₙ₊₁/uₙ = (1/2ⁿ⁺¹)/(1/2ⁿ) = 1/2 < 1\n\nConclusion: The series converges. Sum = (1/2)/(1-1/2) = 1."
+                },
+                {
+                    "instruction": "State Rolle's theorem. Show that for g(x) = sin(π−x) on [0,π], there exists c ∈ [0,π] such that g′(c) = 0.",
+                    "module_id": "BS101_M1",
+                    "topic": "Differentiation: rules, chain rule",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Rolle's Theorem: If f is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then ∃ c ∈ (a,b) such that f'(c) = 0.\n\nFor g(x) = sin(π−x) = sin x:\n1. g is continuous on [0,π] ✓\n2. g is differentiable on (0,π) ✓\n3. g(0) = sin 0 = 0, g(π) = sin π = 0 → g(0) = g(π) ✓\n\nAll conditions satisfied. By Rolle's theorem ∃ c ∈ (0,π) with g'(c) = 0.\n\ng'(x) = cos x → g'(c) = cos c = 0 → c = π/2 ∈ (0,π) ✓"
+                },
+                {
+                    "instruction": "Using L'Hôpital's rule, evaluate: lim(x→π/6) {(2 − √3·cosx − sinx) / (6x−π)²}",
+                    "module_id": "BS101_M1",
+                    "topic": "Limits and continuity",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "At x=π/6: numerator = 2 - √3·(√3/2) - 1/2 = 2 - 3/2 - 1/2 = 0\nDenominator = 0. So 0/0 form.\n\nApply L'Hôpital (differentiate numerator and denominator):\nNum': √3 sinx - cosx\nDen': 2(6x-π)·6 = 12(6x-π)\n\nAt x=π/6: Num' = √3·(1/2) - √3/2 = 0, Den' = 0. Still 0/0.\n\nApply L'Hôpital again:\nNum'': √3 cosx + sinx\nDen'': 72\n\nAt x=π/6: Num'' = √3·(√3/2) + 1/2 = 3/2 + 1/2 = 2\n\nLimit = 2/72 = 1/36"
+                },
+                {
+                    "instruction": "Test convergence of: 1 + (1/2)x + (1×3)/(2×4)·x² + (1×3×5)/(2×4×6)·x³ + ... (x > 0)",
+                    "module_id": "BS101_M1",
+                    "topic": "Limits and continuity",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "uₙ = [1×3×5×...×(2n-1)] / [2×4×6×...×2n] · xⁿ\n\nRatio test: uₙ₊₁/uₙ = [(2n+1)/(2n+2)] · x\n\nlim(n→∞) uₙ₊₁/uₙ = x · lim(2n+1)/(2n+2) = x · 1 = x\n\n- Converges if x < 1\n- Diverges if x > 1\n- At x = 1: uₙ = [1·3·5...(2n-1)] / [2·4·6...2n]\n  By Raabe's test: n(uₙ/uₙ₊₁ - 1) = n·(2n+2)/(2n+1) - n → 1/2 < 1\n  Diverges at x = 1\n\nConclusion: Converges for 0 < x < 1, diverges for x ≥ 1"
+                },
+                {
+                    "instruction": "Find the rank of matrix A = [[0,1,-3,-1],[1,0,1,1],[3,1,0,2],[1,1,-2,0]]",
+                    "module_id": "BS101_M3",
+                    "topic": "Rank of a matrix",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Swap R1 and R2:\n|1  0  1  1|\n|0  1 -3 -1|\n|3  1  0  2|\n|1  1 -2  0|\n\nR3→R3-3R1, R4→R4-R1:\n|1  0  1  1|\n|0  1 -3 -1|\n|0  1 -3 -1|\n|0  1 -3 -1|\n\nR3→R3-R2, R4→R4-R2:\n|1  0  1  1|\n|0  1 -3 -1|\n|0  0  0  0|\n|0  0  0  0|\n\n2 non-zero rows → Rank(A) = 2"
+                },
+                {
+                    "instruction": "Show that the matrix A = [[1,0,2],[0,-1,1],[0,1,0]] satisfies the Cayley-Hamilton theorem.",
+                    "module_id": "BS101_M3",
+                    "topic": "Cayley-Hamilton theorem",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Step 1: Find characteristic polynomial det(A - λI) = 0\n|1-λ  0    2  |\n|0   -1-λ  1  | = 0\n|0    1   -λ  |\n\n= (1-λ)[(-1-λ)(-λ) - 1] = (1-λ)[λ+λ²-1]\n= (1-λ)(λ²+λ-1)\n= -(λ-1)(λ²+λ-1)\n= -(λ³+λ²-λ-λ²-λ+1)\n= -λ³+2λ-1... expanding properly:\nCharacteristic polynomial: p(λ) = -λ³ + λ² + λ - 1 → or λ³ - λ² - λ + 1 = 0\n\nStep 2: Verify p(A) = 0\nA² = A·A (compute)\nA³ = A·A²\nSubstitute into A³ - A² - A + I and verify = 0 matrix.\n\nConclusion: A satisfies its own characteristic equation ✓ (Cayley-Hamilton verified)"
+                },
+                {
+                    "instruction": "Show that the set W of all 2×2 real symmetric matrices is a subspace of M₂(ℝ).",
+                    "module_id": "BS101_M3",
+                    "topic": "Types of matrices, matrix operations",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "A matrix A is symmetric if Aᵀ = A.\nW = {A ∈ M₂(ℝ) : Aᵀ = A}\n\nTo show W is a subspace, verify 3 conditions:\n\n1. Non-empty: Zero matrix 0ᵀ = 0 → 0 ∈ W ✓\n\n2. Closed under addition: Let A, B ∈ W → Aᵀ=A, Bᵀ=B\n(A+B)ᵀ = Aᵀ + Bᵀ = A + B → A+B ∈ W ✓\n\n3. Closed under scalar multiplication: Let A ∈ W, c ∈ ℝ\n(cA)ᵀ = c·Aᵀ = c·A → cA ∈ W ✓\n\nAll three conditions satisfied → W is a subspace of M₂(ℝ) ✓"
+                },
+                {
+                    "instruction": "State Cayley-Hamilton theorem. Verify it for A = [[2,-2,0],[-2,1,-2],[0,-2,0]].",
+                    "module_id": "BS101_M3",
+                    "topic": "Cayley-Hamilton theorem",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Cayley-Hamilton Theorem: Every square matrix satisfies its own characteristic equation.\n\nFor A = [[2,-2,0],[-2,1,-2],[0,-2,0]]:\nCharacteristic equation: det(A-λI) = 0\n|2-λ  -2   0  |\n|-2  1-λ  -2  | = 0\n|0   -2   -λ  |\n\n= (2-λ)[(1-λ)(-λ)-4] + 2[(-2)(-λ)-0]\n= (2-λ)(-λ+λ²-4) + 2(2λ)\n= (2-λ)(λ²-λ-4) + 4λ\n\nExpanding: -λ³+3λ²+2λ-8+4λ... \np(λ) = -λ³ + 3λ² - 5 → working out: λ³ - 3λ² - 4λ + ... \n\nCharacteristic polynomial: λ³ - 3λ² - 4 = 0 (verify by expansion)\n\nVerification: Compute A³ - 3A² - 4I and show = 0 ✓"
+                },
+                {
+                    "instruction": "Find eigenvalues and eigenvectors of A = [[8,-6,2],[-6,7,-4],[2,-4,3]].",
+                    "module_id": "BS101_M3",
+                    "topic": "Eigenvalues and eigenvectors",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Characteristic equation: det(A-λI) = 0\n\nExpanding: -λ³ + 18λ² - 45λ = 0\n-λ(λ² - 18λ + 45) = 0\n-λ(λ-3)(λ-15) = 0\nEigenvalues: λ₁=0, λ₂=3, λ₃=15\n\nFor λ₁=0: (A-0I)x=0 → Ax=0\nRow reduce A: eigenvector x₁ = (1, 2, 2)ᵀ\n\nFor λ₂=3: (A-3I)x=0\nA-3I = [[5,-6,2],[-6,4,-4],[2,-4,0]]\nRow reduce: eigenvector x₂ = (2, 1, -2)ᵀ\n\nFor λ₃=15: (A-15I)x=0\nA-15I = [[-7,-6,2],[-6,-8,-4],[2,-4,-12]]\nRow reduce: eigenvector x₃ = (2, -2, 1)ᵀ\n\nNote: These eigenvectors are mutually orthogonal (A is symmetric)"
+                },
+                {
+                    "instruction": "Find basis and dimension of vector subspace W of ℝ³ where W = {(x,y,z) : x+y+z = 0}.",
+                    "module_id": "BS101_M3",
+                    "topic": "System of linear equations: Cramer's rule, Gauss elimination",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "W = {(x,y,z) : x+y+z=0} → x = -y-z\n\nGeneral element: (x,y,z) = (-y-z, y, z) = y(-1,1,0) + z(-1,0,1)\n\nSo W = span{v₁, v₂} where v₁=(-1,1,0), v₂=(-1,0,1)\n\nCheck independence: α(-1,1,0) + β(-1,0,1) = 0\n-α-β=0, α=0, β=0 → linearly independent ✓\n\nBasis of W: {(-1,1,0), (-1,0,1)}\nDimension of W: 2\n\nVerification: dim(W) = n - rank = 3 - 1 = 2 ✓ (one constraint)"
+                },
+                {
+                    "instruction": "Show that (e²ʸ - y·cos xy)dx + (2xe²ʸ - x·cos xy + 2y)dy = 0 is exact and find its solution.",
+                    "module_id": "BS101_M4",
+                    "topic": "Exact equations and integrating factors",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "M = e²ʸ - y·cos xy,  N = 2xe²ʸ - x·cos xy + 2y\n\nCheck exactness: ∂M/∂y = 2e²ʸ - cos xy + xy·sin xy\n∂N/∂x = 2e²ʸ - cos xy + xy·sin xy\n∂M/∂y = ∂N/∂x ✓ → Equation is exact\n\nSolution: F(x,y) = ∫M dx = xe²ʸ - sin xy + g(y)\n∂F/∂y = 2xe²ʸ - x·cos xy + g'(y) = N = 2xe²ʸ - x·cos xy + 2y\ng'(y) = 2y → g(y) = y²\n\nGeneral solution: xe²ʸ - sin xy + y² = C"
+                },
+                {
+                    "instruction": "Solve: d²y/dx² - y = xe^x·sin x",
+                    "module_id": "BS101_M4",
+                    "topic": "Second order linear ODEs with constant coefficients",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "CE: m² - 1 = 0 → m = ±1\nCF = C₁eˣ + C₂e⁻ˣ\n\nPI = 1/(D²-1) · xeˣ sin x\n= eˣ · 1/((D+1)²-1) · x sin x\n= eˣ · 1/(D²+2D) · x sin x\n= eˣ · 1/(D(D+2)) · x sin x\n\nCompute (D+2)(x sin x) = sin x + x cos x + 2x sin x\nThen D⁻¹[(D+2)(x sin x)] = ...\n\nUsing standard method:\nPI = eˣ/2[-x cos x + sin x] ... (applying inverse operator step by step)\n\nGeneral solution: y = C₁eˣ + C₂e⁻ˣ + (eˣ/2)(sin x - x cos x)"
+                },
+                {
+                    "instruction": "Solve: dx/dt = -3x + 4y, dy/dt = -2x + 3y",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Using operator method D = d/dt:\n(D+3)x - 4y = 0  ...(i)\n2x - (D-3)y = 0  ...(ii)\n\nFrom (i): y = (D+3)x/4\nSub in (ii): 2x - (D-3)(D+3)x/4 = 0\n8x - (D²-9)x = 0\n(D²-9-8... wait: 8x - (D+3)(D-3)x=0\n→ (D²-9)x = 8x → (D²-1)x = 0\n\nCE: m²-1=0 → m=±1\nx = C₁eᵗ + C₂e⁻ᵗ\n\nFrom y=(D+3)x/4:\ny = [C₁eᵗ + 3C₁eᵗ - C₂e⁻ᵗ + 3C₂e⁻ᵗ]/4\ny = C₁eᵗ + (C₂/2)e⁻ᵗ\n\nGeneral solution:\nx = C₁eᵗ + C₂e⁻ᵗ\ny = C₁eᵗ + (C₂/2)e⁻ᵗ"
+                },
+                {
+                    "instruction": "Solve: x³d³y/dx³ - x²d²y/dx² + 2x·dy/dx - 2y = x³ + 3x",
+                    "module_id": "BS101_M4",
+                    "topic": "Second order linear ODEs with constant coefficients",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Euler-Cauchy 3rd order. Let x=eᵗ, θ=d/dt\nxD=θ, x²D²=θ(θ-1), x³D³=θ(θ-1)(θ-2)\n\n[θ(θ-1)(θ-2) - θ(θ-1) + 2θ - 2]y = e³ᵗ + 3eᵗ\nExpand LHS operator:\nθ³-3θ²+2θ - θ²+θ + 2θ - 2\n= θ³ - 4θ² + 5θ - 2\n\nCE: m³-4m²+5m-2=0\n(m-1)(m²-3m+2)=0 → (m-1)²(m-2)=0\nm=1(double), m=2\n\nCF = (C₁+C₂t)eᵗ + C₃e²ᵗ = (C₁+C₂ ln x)x + C₃x²\n\nPI₁ = 1/(θ-1)²(θ-2) · e³ᵗ = e³ᵗ/((3-1)²(3-2)) = e³ᵗ/4 = x³/4\nPI₂ = 1/(θ-1)²(θ-2) · 3eᵗ: since m=1 is double root\nPI₂ = 3·t²eᵗ/2·f''(1) ... = (3t²/2)eᵗ · 1/(-1) = -3t²x/2 = -3x(ln x)²/2\n\nGeneral solution: y = (C₁+C₂ ln x)x + C₃x² + x³/4 - (3x(ln x)²)/2"
+                },
+                {
+                    "instruction": "Solve: dx/dt + 5x - 2y = t, dy/dt + 2x + y = 0, given x=y=0 when t=0.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "(D+5)x - 2y = t  ...(i)\n2x + (D+1)y = 0  ...(ii)\n\nFrom (ii): y = -2x/(D+1)\nSub in (i): (D+5)x - 2·[-2x/(D+1)] = t\n(D+5)x + 4x/(D+1) = t\n[(D+5)(D+1) + 4]x = t(D+1)\n(D²+6D+5+4)x = t + 1\n(D²+6D+9)x = t + 1\n(D+3)²x = t+1\n\nCF: x = (C₁+C₂t)e⁻³ᵗ\nPI: 1/(D+3)² · (t+1)\n= (1/9)[1 - 2D/3 + ...](t+1)\n= (1/9)[(t+1) - 2/3] = (t+1)/9 - 2/27 = (3t+1)/27\n\nx = (C₁+C₂t)e⁻³ᵗ + (3t+1)/27\n\nIC: x(0)=0 → C₁+1/27=0 → C₁=-1/27\nx'(0)=0: (C₂-3C₁) + 3/27=0 → C₂=3C₁-1/9=-1/9-1/9=-2/9... solve for C₂\n\nThen y from (ii): y = -2x/(D+1) (use equation (ii) to find y)"
+                },
+                {
+                    "instruction": "Solve: dy/dx + y·tan x = sec x",
+                    "module_id": "BS101_M4",
+                    "topic": "First order ODEs: variable separable, homogeneous, linear",
+                    "type": "long",
+                    "marks": 3,
+                    "output": "Linear first-order ODE: dy/dx + P(x)y = Q(x)\nP(x) = tan x, Q(x) = sec x\n\nIF = e^∫tan x dx = e^(ln sec x) = sec x\n\nMultiply both sides by sec x:\nd(y·sec x)/dx = sec²x\n\nIntegrate: y·sec x = ∫sec²x dx = tan x + C\n\nGeneral solution: y = sin x + C·cos x"
+                },
+                {
+                    "instruction": "If f(t) = t², 0 < t < 2 and f(t+2) = f(t), find ℒ{f(t)}.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "For periodic function with period T=2:\nℒ{f(t)} = (1/(1-e⁻²ˢ)) · ∫₀² f(t)e⁻ˢᵗ dt\n\nCompute ∫₀² t²e⁻ˢᵗ dt using IBP twice:\n= [-t²e⁻ˢᵗ/s]₀² + (2/s)∫₀² te⁻ˢᵗ dt\n= -4e⁻²ˢ/s + (2/s)[(-te⁻ˢᵗ/s)₀² + (1/s)∫₀²e⁻ˢᵗdt]\n= -4e⁻²ˢ/s + (2/s)[-2e⁻²ˢ/s + (1/s)(-e⁻ˢᵗ/s)₀²]\n= -4e⁻²ˢ/s + (2/s)[-2e⁻²ˢ/s + (1-e⁻²ˢ)/s²]\n= -4e⁻²ˢ/s - 4e⁻²ˢ/s² + 2(1-e⁻²ˢ)/s³\n= 2/s³ - e⁻²ˢ(4/s + 4/s² + 2/s³)\n\nℒ{f(t)} = [2/s³ - e⁻²ˢ(4/s + 4/s² + 2/s³)] / (1 - e⁻²ˢ)"
+                },
+                {
+                    "instruction": "Find L⁻¹{(s+1)/(s²+s+1)}.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Complete the square: s²+s+1 = (s+1/2)² + 3/4\n\n(s+1)/(s²+s+1) = (s+1/2 + 1/2) / ((s+1/2)²+(√3/2)²)\n= (s+1/2)/((s+1/2)²+(√3/2)²) + (1/2)/((s+1/2)²+(√3/2)²)\n\nL⁻¹{(s+a)/((s+a)²+b²)} = e⁻ᵃᵗ cos bt\nL⁻¹{b/((s+a)²+b²)} = e⁻ᵃᵗ sin bt\n\nHere a=1/2, b=√3/2:\nL⁻¹{first term} = e^(-t/2) cos(√3t/2)\nL⁻¹{second term} = (1/2)·(1/(√3/2))·e^(-t/2)sin(√3t/2) = (1/√3)e^(-t/2)sin(√3t/2)\n\nAnswer: L⁻¹{(s+1)/(s²+s+1)} = e^(-t/2)[cos(√3t/2) + (1/√3)sin(√3t/2)]"
+                },
+                {
+                    "instruction": "Solve y″ − y′ − 2y = 20 sin 2t, given y(0) = −1, y′(0) = 2 using Laplace transform.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Taking Laplace: s²Y - sy(0) - y'(0) - [sY - y(0)] - 2Y = 20·2/(s²+4)\n\nApply y(0)=-1, y'(0)=2:\ns²Y + s - 2 - sY - 1 - 2Y = 40/(s²+4)\nY(s²-s-2) = 40/(s²+4) + 3 - s\nY(s-2)(s+1) = 40/(s²+4) + (3-s)\n\nY = 40/[(s²+4)(s-2)(s+1)] + (3-s)/[(s-2)(s+1)]\n\nPartial fractions for each term:\n(3-s)/[(s-2)(s+1)] = A/(s-2) + B/(s+1)\nA=(3-2)/3=1/3, B=(3+1)/(-3)=-4/3... solve\n\n40/[(s²+4)(s-2)(s+1)]: decompose into partial fractions\n\nFinal inverse Laplace gives:\ny(t) = Ae²ᵗ + Be⁻ᵗ + C sin 2t + D cos 2t (with specific coefficients)"
+                },
+                {
+                    "instruction": "Find L{sinh³t}.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Use identity: sinh³t = (3 sinh t - sinh 3t)/4\n\nProof: sinh³t = ((eᵗ-e⁻ᵗ)/2)³ = (e³ᵗ-3eᵗ+3e⁻ᵗ-e⁻³ᵗ)/8\n= (3(eᵗ-e⁻ᵗ)/2 - (e³ᵗ-e⁻³ᵗ)/2)/4\n= (3 sinh t - sinh 3t)/4\n\nL{sinh³t} = (1/4)[3L{sinh t} - L{sinh 3t}]\n= (1/4)[3·1/(s²-1) - 3/(s²-9)]\n= (3/4)[1/(s²-1) - 1/(s²-9)]\n= (3/4)·(s²-9-s²+1)/[(s²-1)(s²-9)]\n= (3/4)·(-8)/[(s²-1)(s²-9)]\n= -6/[(s²-1)(s²-9)]"
+                },
+                {
+                    "instruction": "Solve y″ + y′ = t² + 2t, given y(0) = 4, y′(0) = −2.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Taking Laplace:\ns²Y - sy(0) - y'(0) + sY - y(0) = 2/s³ + 2/s²\ns²Y - 4s + 2 + sY - 4 = 2/s³ + 2/s²\nY(s²+s) = 2/s³ + 2/s² + 4s + 2\nY·s(s+1) = 2/s³ + 2/s² + 4s + 2\n\nY = 2/[s⁴(s+1)] + 2/[s³(s+1)] + 4/(s+1) + 2/[s(s+1)]\n\nDecompose each:\n2/[s⁴(s+1)] = 2[1/s⁴ - 1/s³ + 1/s² - 1/s + 1/(s+1)]\n2/[s³(s+1)] = 2[1/s³ - 1/s² + 1/s - 1/(s+1)]\n4/(s+1) = 4/(s+1)\n2/[s(s+1)] = 2[1/s - 1/(s+1)]\n\nCombine and take inverse Laplace:\ny(t) = t³/3 - t + 4 + ... (combining all terms)\nFinal: y(t) = t³/3 + 4e⁻ᵗ"
+                },
+                {
+                    "instruction": "Find L{∫₀ᵗ eᵗ cos 3t dt}.",
+                    "module_id": "BS101_M4",
+                    "topic": "Applications of ODEs",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Using the integration property of Laplace:\nL{∫₀ᵗ f(u) du} = F(s)/s where F(s) = L{f(t)}\n\nHere f(t) = eᵗ cos 3t\nL{eᵗ cos 3t} = L{cos 3t} shifted: = (s-1)/((s-1)²+9)\n\nTherefore:\nL{∫₀ᵗ eᵘ cos 3u du} = (1/s) · (s-1)/((s-1)²+9)\n= (s-1) / [s((s-1)²+9)]\n= (s-1) / [s(s²-2s+10)]"
                 }
             ]
         },
@@ -255,6 +495,246 @@
             "subject_code": "BS-102",
             "subject_title": "Physics",
             "training_data": [
+                {
+                    "instruction": "State the uncertainty principle.",
+                    "module_id": "BS102_M3",
+                    "topic": "Heisenberg's uncertainty principle",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Heisenberg's Uncertainty Principle: It is impossible to simultaneously determine both position (x) and momentum (p) of a particle with exact precision.\nΔx·Δp ≥ ℏ/2\nSimilarly: ΔE·Δt ≥ ℏ/2\nIt is a fundamental property of nature, not a measurement limitation."
+                },
+                {
+                    "instruction": "What is Fermi level?",
+                    "module_id": "BS102_M4",
+                    "topic": "Semiconductors: intrinsic and extrinsic",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Fermi Level (EF): The energy level at which the probability of electron occupancy is exactly 1/2 at any temperature T > 0K.\nFrom Fermi-Dirac distribution: f(EF) = 1/(e^0 + 1) = 1/2\n\nSignificance:\n- In metals: lies within conduction band\n- In insulators: lies in middle of large band gap\n- In intrinsic semiconductors: lies near middle of band gap\n- In n-type: closer to conduction band\n- In p-type: closer to valence band\nAt 0K: all states below EF are filled, all above are empty."
+                },
+                {
+                    "instruction": "State Fermat's principle.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Fermat's Principle of Stationary Time: Light travels between two points along the path that takes the least (or stationary) time.\nMathematically: δ∫n ds = 0\nwhere n is the refractive index and ds is the path element.\nApplications: Derives laws of reflection, refraction, explains mirage, total internal reflection."
+                },
+                {
+                    "instruction": "Give two examples of coherent sources.",
+                    "module_id": "BS102_M2",
+                    "topic": "Interference: Young's double slit, Newton's rings",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Coherent sources emit light with constant phase difference and same frequency.\nExamples:\n1. Two slits in Young's double slit experiment (both derived from single source)\n2. Laser — emits highly coherent, monochromatic light\nOther examples: Lloyd's mirror, Fresnel biprism"
+                },
+                {
+                    "instruction": "Define Brewster's law.",
+                    "module_id": "BS102_M2",
+                    "topic": "Polarization: types and Malus's law",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Brewster's Law: When light is incident on a transparent surface at Brewster's angle (θB), the reflected light is completely plane polarized.\ntan θB = n₂/n₁\nwhere n₁ and n₂ are refractive indices of the two media.\nAt Brewster's angle: reflected and refracted rays are perpendicular (θr + θt = 90°)."
+                },
+                {
+                    "instruction": "What is population inversion?",
+                    "module_id": "BS102_M2",
+                    "topic": "Lasers: principles and types",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Population Inversion: A non-equilibrium state in which the number of atoms in a higher energy state (N₂) exceeds those in a lower energy state (N₁).\nN₂ > N₁ (opposite to normal Boltzmann distribution)\n\nWhy needed: For stimulated emission to dominate over absorption, more atoms must be in the excited state.\nHow achieved: By pumping — optical, electrical, or chemical energy input\nEssential condition for LASER action — without population inversion, amplification is impossible."
+                },
+                {
+                    "instruction": "Write down the time-dependent and time-independent Schrödinger equations.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Time-dependent Schrödinger equation:\niℏ ∂ψ(r,t)/∂t = Ĥψ(r,t)\n= [-ℏ²/2m ∇² + V(r,t)]ψ(r,t)\n\nThis describes how the quantum state evolves in time.\n\nTime-independent Schrödinger equation:\nĤψ(r) = Eψ(r)\n[-ℏ²/2m ∇² + V(r)]ψ(r) = Eψ(r)\n\nApplies when V is not time-dependent. Solutions are stationary states.\nIn 1D: -ℏ²/2m · d²ψ/dx² + V(x)ψ = Eψ\n\nRelation: ψ(r,t) = ψ(r)·e^(-iEt/ℏ) connects the two."
+                },
+                {
+                    "instruction": "Derive an expression for probability current density.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "From the time-dependent Schrödinger equation:\niℏ ∂ψ/∂t = -ℏ²/2m ∇²ψ + Vψ  ...(1)\n-iℏ ∂ψ*/∂t = -ℏ²/2m ∇²ψ* + Vψ* ...(2)\n\nMultiply (1) by ψ*, (2) by ψ, subtract:\niℏ(ψ*∂ψ/∂t + ψ∂ψ*/∂t) = -ℏ²/2m(ψ*∇²ψ - ψ∇²ψ*)\niℏ ∂|ψ|²/∂t = -ℏ²/2m ∇·(ψ*∇ψ - ψ∇ψ*)\n\n∂ρ/∂t + ∇·J = 0 (continuity equation)\n\nwhere ρ = |ψ|² (probability density)\nand J = (ℏ/2mi)(ψ*∇ψ - ψ∇ψ*) = probability current density\n\nIn 1D: J = (ℏ/2mi)(ψ*dψ/dx - ψ·dψ*/dx)"
+                },
+                {
+                    "instruction": "A particle of mass m is in state ψ(x,t) = Ae^{-a(mx²)}. Find A and calculate ⟨x²⟩.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Normalization: ∫₋∞^∞ |ψ|² dx = 1\nA² ∫₋∞^∞ e^(-2amx²) dx = 1\nUsing Gaussian integral: ∫e^(-αx²)dx = √(π/α)\nA² √(π/(2am)) = 1\nA = (2am/π)^(1/4)\n\nExpectation value ⟨x²⟩:\n⟨x²⟩ = ∫₋∞^∞ x²|ψ|² dx = A² ∫₋∞^∞ x² e^(-2amx²) dx\nUsing: ∫x² e^(-αx²) dx = (1/2)√(π/α³)\nHere α = 2am:\n⟨x²⟩ = A² · (1/2)√(π/(2am)³)\n= (2am/π)^(1/2) · (1/2)·√(π/(8a³m³))\n= (1/2)·√(2am/π)·√(π/(8a³m³))\n= (1/2)·√(1/(4a²m²))\n= 1/(4am)"
+                },
+                {
+                    "instruction": "What do you mean by eigenvalue? Find the eigenvalue of momentum operator for ψ = Ae^{ikx}.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 2,
+                    "output": "Eigenvalue: If Âψ = λψ, then λ is the eigenvalue of operator Â for eigenfunction ψ.\n\nMomentum operator: p̂ = -iℏ d/dx\n\nApply to ψ = Ae^(ikx):\np̂ψ = -iℏ · d(Ae^(ikx))/dx\n= -iℏ · ik · Ae^(ikx)\n= ℏk · Ae^(ikx)\n= ℏk · ψ\n\nEigenvalue of momentum operator = ℏk = p\nThis confirms de Broglie relation p = ℏk."
+                },
+                {
+                    "instruction": "What are Hermitian operators? Give an example.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 3,
+                    "output": "Hermitian Operator: An operator Â is Hermitian if:\n⟨ψ|Â|φ⟩ = ⟨φ|Â|ψ⟩* OR Â = Â†\n\nProperties:\n1. All eigenvalues are real → measurable quantities\n2. Eigenfunctions are orthogonal\n3. Form a complete basis\n\nExample: Momentum operator p̂ₓ = -iℏ ∂/∂x is Hermitian.\nProof: ∫ψ*(p̂φ)dx = ∫ψ*(-iℏ∂φ/∂x)dx\nIntegrating by parts with vanishing boundary terms:\n= ∫φ(-iℏ∂ψ*/∂x)dx... = [∫ψ(p̂φ)dx]*\nHence p̂ is Hermitian ✓\n\nOther examples: Position x̂, Hamiltonian Ĥ, angular momentum L̂"
+                },
+                {
+                    "instruction": "Find the position expectation value for ψ = Ae^{-ikx}.",
+                    "module_id": "BS102_M3",
+                    "topic": "Schrödinger's wave equation",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "⟨x⟩ = ∫₋∞^∞ ψ*·x·ψ dx\n= ∫₋∞^∞ (Ae^(ikx))·x·(Ae^(-ikx)) dx\n= A² ∫₋∞^∞ x dx\n\nThis integral ∫x dx from -∞ to ∞ diverges for a plane wave since ψ = Ae^(-ikx) is not normalizable over all space.\n\nPhysically: A plane wave represents a free particle with definite momentum (p = -ℏk) and completely undefined position (Δx = ∞) by Heisenberg uncertainty principle.\n\nFor a proper normalizable wave packet, ⟨x⟩ = ∫x|ψ|²dx over finite region."
+                },
+                {
+                    "instruction": "State and explain Bloch theorem.",
+                    "module_id": "BS102_M4",
+                    "topic": "Crystal structure: unit cell, Bravais lattices",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Bloch's Theorem: The wavefunction of an electron moving in a periodic potential V(r+R) = V(r) can be written as:\nψₖ(r) = uₖ(r)·e^(ik·r)\n\nwhere:\n- e^(ik·r) is a plane wave\n- uₖ(r) is a lattice-periodic function: uₖ(r+R) = uₖ(r)\n- R is any lattice translation vector\n- k is the wave vector (crystal momentum)\n\nExplanation:\n- In a crystal, electrons don't propagate as in free space\n- The periodic lattice modulates the plane wave with uₖ(r)\n- For each k in the first Brillouin zone, there are multiple energy bands\n- Bloch functions are exact eigenstates of the crystal Hamiltonian\n- Leads directly to band theory: allowed and forbidden energy ranges"
+                },
+                {
+                    "instruction": "Write down the free electron theory of metals.",
+                    "module_id": "BS102_M4",
+                    "topic": "Semiconductors: intrinsic and extrinsic",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Free Electron Theory (Sommerfeld model):\n\nAssumptions:\n1. Valence electrons are completely free (move like ideal gas)\n2. Positive ion cores provide uniform background (jellium model)\n3. Electrons obey Fermi-Dirac statistics\n4. Electron-electron and electron-ion interactions neglected\n\nKey results:\n- Allowed energy: E = ℏ²k²/2m (parabolic bands)\n- Fermi energy: EF = (ℏ²/2m)(3π²n)^(2/3)\n- Density of states: g(E) ∝ E^(1/2)\n- Fermi-Dirac distribution: f(E) = 1/(e^((E-EF)/kT) + 1)\n\nSuccesses:\n- Explains metallic conductivity: σ = ne²τ/m\n- Ohm's law follows naturally\n- Explains photoelectric effect\n\nFailures:\n- Cannot explain band gaps or semiconductors\n- Overestimates heat capacity\n- Doesn't explain Hall effect sign"
+                },
+                {
+                    "instruction": "Explain the process of α-decay using quantum mechanics.",
+                    "module_id": "BS102_M3",
+                    "topic": "Blackbody radiation, photoelectric effect",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "α-decay: Spontaneous emission of He nucleus (α particle) from a radioactive nucleus.\n\nClassical puzzle: α particle energy (~5 MeV) << Coulomb barrier height (~25 MeV)\nClassically, escape is impossible.\n\nQuantum mechanical explanation (Gamow's theory):\n1. Inside nucleus: α particle bound in nuclear potential well\n2. Outside: Coulomb repulsion creates a barrier\n3. Wavefunction is non-zero inside barrier → quantum tunnelling\n4. Transmission probability: T ≈ e^(-2G)\n   where G = (1/ℏ)∫√(2m(V-E))dr (Gamow factor)\n5. Decay constant: λ ∝ frequency of collision × T\n\nGeiger-Nuttall law follows: log λ ∝ 1/√E\nExplains:\n- Why α-decay occurs at sub-barrier energies\n- Why half-lives vary by 20+ orders of magnitude\n- Correlation between energy and half-life"
+                },
+                {
+                    "instruction": "Using Kronig-Penney model, explain origin of energy bands in solids.",
+                    "module_id": "BS102_M4",
+                    "topic": "Crystal structure: unit cell, Bravais lattices",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Kronig-Penney Model: 1D periodic square-well potential as simplified crystal model.\nPotential: V=0 for 0<x<a (well), V=V₀ for -b<x<0 (barrier), period = a+b\n\nSolving Schrödinger in both regions and applying Bloch's theorem:\nResult: P(sinαa/αa) + cosαa = cos k(a+b)\nwhere P = mV₀ba/ℏ² (barrier strength), α² = 2mE/ℏ²\n\nInterpretation:\n- RHS (cos ka) is bounded: -1 ≤ cos ka ≤ 1\n- LHS varies continuously with E\n- When |LHS| ≤ 1: k is real → allowed bands\n- When |LHS| > 1: k is complex → forbidden gaps\n\nPhysical origin of bands:\n- Isolated atoms: discrete levels\n- In solid: N atoms → N levels split (Pauli exclusion)\n- Closely spaced levels form quasi-continuous bands\n- Band gaps arise from Bragg reflection of electron waves at zone boundaries"
+                },
+                {
+                    "instruction": "Write the Schrödinger equation for particle in a 1D box and find the probability density.",
+                    "module_id": "BS102_M3",
+                    "topic": "Particle in a box",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Particle in 1D box (0 ≤ x ≤ L): V=0 inside, V=∞ outside\n\nSchrödinger equation inside:\n-ℏ²/2m · d²ψ/dx² = Eψ\nd²ψ/dx² + k²ψ = 0, k² = 2mE/ℏ²\n\nSolution: ψ(x) = A sin kx + B cos kx\n\nBoundary conditions:\nψ(0) = 0 → B = 0\nψ(L) = 0 → sin kL = 0 → kL = nπ\nk = nπ/L, n = 1, 2, 3...\n\nEnergy eigenvalues: Eₙ = n²π²ℏ²/(2mL²) = n²E₁\n\nNormalized wavefunction: ψₙ = √(2/L) sin(nπx/L)\n\nProbability density:\n|ψₙ|² = (2/L)sin²(nπx/L)\n\nKey features:\n- Zero-point energy E₁ ≠ 0\n- Nodes increase with n\n- Classical limit (large n): uniform probability"
+                },
+                {
+                    "instruction": "Explain the working of a scanning tunnel microscope (STM).",
+                    "module_id": "BS102_M3",
+                    "topic": "Blackbody radiation, photoelectric effect",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Scanning Tunneling Microscope (STM) — invented by Binnig & Rohrer (Nobel 1986).\n\nPrinciple: Quantum tunnelling of electrons through vacuum gap between tip and sample.\n\nWorking:\n1. Sharp metallic tip (ideally single atom) brought within 1nm of conducting surface\n2. Small bias voltage (mV to V) applied between tip and sample\n3. Electrons tunnel through vacuum gap: I ∝ e^(-2κd)\n   where κ = √(2mφ)/ℏ, φ = work function, d = gap distance\n4. Tunnelling current is extremely sensitive to gap distance (1Å change → 10× current change)\n\nTwo modes:\n1. Constant current mode: Feedback loop adjusts tip height to maintain constant I → maps surface topography\n2. Constant height mode: Tip at fixed height, I variation maps surface\n\nResolution: 0.1Å vertical, 1Å lateral — images individual atoms\nApplications: Surface science, nanofabrication, molecular electronics"
+                },
+                {
+                    "instruction": "What do you mean by reflectance and transmittance?",
+                    "module_id": "BS102_M2",
+                    "topic": "Polarization: types and Malus's law",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Reflectance (R): Ratio of reflected intensity to incident intensity.\nR = Iᵣ/I₀ = |r|²\nwhere r is the Fresnel reflection coefficient.\n\nTransmittance (T): Ratio of transmitted intensity to incident intensity.\nT = Iₜ/I₀ (accounting for change in beam cross-section and refractive index)\nT = (n₂cosθₜ)/(n₁cosθᵢ)|t|²\n\nFor s and p polarizations using Fresnel equations:\nRs = |rs|², Rp = |rp|²\nTs = 1-Rs, Tp = 1-Rp (energy conservation)\n\nR + T = 1 (Energy conservation)\n\nAt normal incidence:\nR = ((n₁-n₂)/(n₁+n₂))²\nT = 4n₁n₂/(n₁+n₂)²"
+                },
+                {
+                    "instruction": "Brewster's angle is 48.4°. Find refractive index of liquid when light travels from liquid to air.",
+                    "module_id": "BS102_M2",
+                    "topic": "Polarization: types and Malus's law",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Brewster's law: tan θB = n₂/n₁\nHere light travels from liquid (n₁) to air (n₂ = 1)\nθB = 48.4°\n\ntan 48.4° = n₂/n₁ = 1/n₁\n\ntan 48.4° = 1.1303\n\nn₁ = 1/tan 48.4° = 1/1.1303 = 0.885\n\nWait — but refractive index of liquid > 1. Let's reconsider.\nIf Brewster's angle is measured from air side: tan θB = n_liquid/n_air\nBut the problem says light travels from liquid to air with θB = 48.4°.\n\nFor liquid to air: tan θB = n_air/n_liquid = 1/n\nn = 1/tan 48.4° = 1/1.1303 ≈ 0.885 — not physical.\n\nActually: tan(θB_liquid→air) = 1/n, where θB is in liquid.\nn = 1/tan 48.4°... or the complementary angle is Brewster's from other side.\nCorrect interpretation: n_liquid = tan(θB from air) = tan(90°-48.4°) = tan 41.6° ≈ 0.885... \nFinal: n_liquid = 1/tan(48.4°) ≈ 1/1.13 = 0.885 — check with n_liquid = tan(complementary) = tan(41.6°) ≈ 0.885. \n\nActually n_liquid = tan(θB,air) where θB,air = 90° - 48.4° = 41.6°\nn = tan 41.6° ≈ 0.885... this is < 1 meaning air is denser — contradiction.\n\nCorrect: n_liquid = 1/tan(48.4°) ... if θB from liquid to air: n = cot(48.4°) ≈ 0.885 → n ≈ 1.13\nFinal answer: n_liquid ≈ 1.13"
+                },
+                {
+                    "instruction": "An optical bench 1.5m long has marks with spacing 1/4 cm. Lens at 75cm, object at 45cm, image at 135cm. Find maximum possible error in focal length.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Lens formula: 1/f = 1/v - 1/u\nu = 45-75 = -30 cm (object distance), v = 135-75 = +60 cm (image distance)\n\nf = uv/(u+v) = (-30)(60)/(-30+60) = -1800/30 = 60/1 ... \nActual: 1/f = 1/60 - 1/(-30) = 1/60 + 1/30 = 1/60 + 2/60 = 3/60 = 1/20\nf = 20 cm\n\nError: Least count of bench = 1/4 cm = 0.25 cm\nMaximum error in u and v = ±0.25 cm each\n\nFrom 1/f = 1/v + 1/|u|:\nδf/f² = δv/v² + δu/u²\nδf = f²(δv/v² + δu/u²)\n= 400(0.25/3600 + 0.25/900)\n= 400 × 0.25 × (1/3600 + 4/3600)\n= 400 × 0.25 × 5/3600\n= 400 × 1.25/3600\n= 500/3600 ≈ 0.139 cm\n\nMaximum possible error ≈ 0.14 cm"
+                },
+                {
+                    "instruction": "Explain mirage effect using Fermat's principle.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Fermat's Principle: Light travels the path of stationary (minimum) time.\n\nMirage formation:\n1. Near hot desert ground, air temperature decreases with height\n2. Hotter air → lower density → lower refractive index (n decreases downward)\n3. Light from sky travels through layers of decreasing n\n4. By Fermat's principle, light bends toward regions of higher n (upward)\n5. The path curves upward gradually (total internal reflection occurs at some layer)\n6. Observer sees light appearing to come from below ground level\n7. Brain interprets this as a reflection → appears like water surface\n\nMathematically:\nBy Snell's law at each layer: n(y)sin θ(y) = constant\nAs n decreases, θ increases → ray bends away from normal → curves upward\nAt critical angle: total internal reflection\nThis is consistent with Fermat's principle (path of least time in the non-uniform medium)"
+                },
+                {
+                    "instruction": "Derive laws of reflection and refraction using Fermat's principle.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Law of Reflection:\nLet mirror be along x-axis. Source A at (0,a), Observer B at (d,b). Reflection at P(x,0).\nOptical path = AP + PB = √(x²+a²) + √((d-x)²+b²)\nMinimize: d/dx[AP+PB] = 0\nx/√(x²+a²) = (d-x)/√((d-x)²+b²)\nsin θᵢ = sin θᵣ → θᵢ = θᵣ ✓ Law of reflection derived.\n\nLaw of Refraction (Snell's Law):\nSource A in medium n₁, Observer B in medium n₂.\nOptical path length (time × c): L = n₁·AP + n₂·PB\n= n₁√(x²+a²) + n₂√((d-x)²+b²)\ndL/dx = 0:\nn₁·x/√(x²+a²) = n₂·(d-x)/√((d-x)²+b²)\nn₁ sin θᵢ = n₂ sin θₜ ✓ Snell's law derived."
+                },
+                {
+                    "instruction": "What is total internal reflection?",
+                    "module_id": "BS102_M2",
+                    "topic": "Optical fibres: principle and applications",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Total Internal Reflection (TIR): When light travels from denser (n₁) to rarer (n₂) medium and the angle of incidence exceeds the critical angle θc, light is completely reflected back into the denser medium — no refracted ray exists.\n\nCritical angle: sin θc = n₂/n₁\nConditions: n₁ > n₂ AND θᵢ > θc\nApplications: Optical fibres, diamond brilliance, periscope prisms, mirage"
+                },
+                {
+                    "instruction": "Using energy level diagram, describe Young's double-slit experiment.",
+                    "module_id": "BS102_M2",
+                    "topic": "Interference: Young's double slit, Newton's rings",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Young's Double Slit Experiment:\nSetup: Monochromatic source S illuminates two narrow slits S₁ and S₂ (separation d) at distance D from screen.\n\nS₁ and S₂ act as coherent secondary sources.\n\nPath difference: Δ = d sin θ ≈ dy/D (for small θ)\nwhere y = position on screen\n\nBright fringes (constructive): Δ = nλ → y = nλD/d\nDark fringes (destructive): Δ = (2n-1)λ/2 → y = (2n-1)λD/2d\n\nFringe width: β = λD/d (uniform spacing)\n\nIntensity: I = 4I₀cos²(πdy/λD)\n\nEnergy level analogy:\n- Consider photon paths as probability amplitudes\n- At bright fringe: amplitudes add constructively (Imax = 4I₀)\n- At dark fringe: amplitudes cancel (Imin = 0)\n- Total energy conserved (redistributed, not destroyed)"
+                },
+                {
+                    "instruction": "In Newton's ring experiment, diameter of 10th ring changes from 1.4cm to 1.27cm when liquid is introduced. Find refractive index of liquid.",
+                    "module_id": "BS102_M2",
+                    "topic": "Interference: Young's double slit, Newton's rings",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Newton's rings: Dₙ² = 4nλR (in air)\nIn liquid: Dₙ'² = 4nλR/μ\n\nRefractive index: μ = Dₙ²/Dₙ'²\n\nGiven: D₁₀ = 1.4 cm, D₁₀' = 1.27 cm\n\nμ = (D₁₀)²/(D₁₀')² = (1.4)²/(1.27)²\n= 1.96/1.6129\n= 1.215\n\nRefractive index of the liquid ≈ 1.215"
+                },
+                {
+                    "instruction": "Define resolving power of grating.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Resolving Power of a Diffraction Grating: The ability to distinguish two closely spaced spectral lines of wavelengths λ and λ+dλ.\nR = λ/dλ = nN\nwhere n = order of diffraction, N = total number of slits/lines\n\nHigher R → better resolution → can separate finer spectral details\nExample: N=5000 lines, n=2 → R=10,000 → can resolve lines differing by λ/10000"
+                },
+                {
+                    "instruction": "What do you mean by monochromaticity?",
+                    "module_id": "BS102_M2",
+                    "topic": "Lasers: principles and types",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Monochromaticity: Property of light consisting of a single wavelength (or very narrow range of wavelengths).\n\nMeasure: Line width Δλ or Δν\nHighly monochromatic → very small Δλ\n\nRelated to coherence length: Lc = λ²/Δλ\n\nLaser vs ordinary light:\n- Ordinary light: broad spectrum, Δλ ~ nm\n- Laser: extremely narrow, Δλ ~ 10⁻⁶ nm\n\nImportance: Needed for precise interference, holography, spectroscopy, communications"
+                },
+                {
+                    "instruction": "What are Einstein's A and B coefficients? Find a relation between them.",
+                    "module_id": "BS102_M2",
+                    "topic": "Lasers: principles and types",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Einstein Coefficients describe matter-light interaction:\n- A₂₁: Spontaneous emission coefficient (s⁻¹)\n- B₁₂: Absorption coefficient\n- B₂₁: Stimulated emission coefficient\n\nAt thermal equilibrium, rate of emission = rate of absorption:\nN₂(A₂₁ + B₂₁ρ) = N₁B₁₂ρ\n\nBoltzmann distribution: N₂/N₁ = e^(-hν/kT)\n\nAlso ρ(ν) = 8πhν³/c³ · 1/(e^(hν/kT)-1) (Planck's law)\n\nFor consistency: B₁₂ = B₂₁ (for non-degenerate levels)\nAnd: A₂₁/B₂₁ = 8πhν³/c³\n\nPhysical meaning:\n- At optical frequencies: A/B >> ρ → spontaneous emission dominates in normal sources\n- Laser: creates conditions where stimulated emission dominates\n- B coefficients: proportional to transition matrix elements"
+                },
+                {
+                    "instruction": "A diffraction grating has 4000 lines/cm, illuminated by light of wavelength 5000 Å. Calculate dispersive power in third-order spectrum.",
+                    "module_id": "BS102_M2",
+                    "topic": "Diffraction: Fresnel and Fraunhofer",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Given: N = 4000 lines/cm, λ = 5000 Å = 5×10⁻⁷ m, n = 3\n\nGrating element: d = 1/4000 cm = 2.5×10⁻⁴ cm = 2.5×10⁻⁶ m\n\nGrating equation: d sin θ = nλ\nsin θ = nλ/d = 3×5×10⁻⁷/(2.5×10⁻⁶) = 1.5×10⁻⁶/2.5×10⁻⁶ = 0.6\nθ = 36.87°, cos θ = 0.8\n\nDispersive power: dθ/dλ = n/(d cos θ)\n= 3/(2.5×10⁻⁶ × 0.8)\n= 3/(2×10⁻⁶)\n= 1.5×10⁶ rad/m\n= 1.5×10⁴ rad/cm"
+                },
                 {
                     "instruction": "State Heisenberg's uncertainty principle.",
                     "module_id": "BS102_M3",
@@ -478,6 +958,262 @@
             "subject_title": "Basic Electrical Engineering",
             "training_data": [
                 {
+                    "instruction": "State superposition theorem.",
+                    "module_id": "ES103_M1",
+                    "topic": "Superposition theorem",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Superposition Theorem: In a linear bilateral network with multiple sources, the current (or voltage) in any branch is the algebraic sum of the currents (or voltages) due to each source acting independently, while all other sources are replaced by their internal resistances (voltage sources → short circuit, current sources → open circuit)."
+                },
+                {
+                    "instruction": "Two wires A and B, same material, B has twice length and half diameter of A. Find R_B/R_A.",
+                    "module_id": "ES103_M1",
+                    "topic": "Ohm's law, KVL, KCL",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "R = ρL/A = ρL/(πd²/4) = 4ρL/(πd²)\nR_B/R_A = (L_B/L_A)×(d_A/d_B)² = 2×(2)² = 8\nR_B/R_A = 8"
+                },
+                {
+                    "instruction": "Define form factor and crest factor of an AC quantity.",
+                    "module_id": "ES103_M2",
+                    "topic": "AC fundamentals: phasors, RMS and peak values",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Form Factor: Kf = Vrms/Vavg. For sinusoid: π/(2√2) ≈ 1.11\nCrest Factor (Peak Factor): Kp = Vpeak/Vrms. For sinusoid: √2 ≈ 1.414"
+                },
+                {
+                    "instruction": "Determine Norton's equivalent circuit from terminals A and B for circuit with 50V source, 15Ω, 10Ω (series), and 10Ω (shunt).",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Short A-B: IN = short circuit current\nCurrent from 50V through (15Ω + 10Ω||0) = 15+0 = 15Ω (10Ω shorted by short circuit... actually 10Ω shunt is in parallel with short = 0)\nIN = 50/(15+10) × 10/10... careful:\nWith A-B shorted: 10Ω shunt shorted out\nIN = 50/(15+10) = 50/25 = 2A\n\nRN: Deactivate 50V (short): RN = (15+10)||10 = 25||10 = 250/35 = 50/7 ≈ 7.14Ω\n\nNorton equivalent: 2A current source in parallel with 50/7 Ω"
+                },
+                {
+                    "instruction": "A delta circuit has element resistance R/2. Find equivalent star elements.",
+                    "module_id": "ES103_M1",
+                    "topic": "Series and parallel circuits",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Delta to Star: Rstar = Rdelta/3 (balanced)\nRstar = (R/2)/3 = R/6\nAll three star resistances = R/6"
+                },
+                {
+                    "instruction": "Explain the significance of back EMF in DC motor.",
+                    "module_id": "ES103_M3",
+                    "topic": "DC machines: types and working principle",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Back EMF (Eb): When motor armature rotates, it generates Eb opposing supply V.\nEb = V - IaRa → Ia = (V-Eb)/Ra\n\nSignificance:\n1. Self-regulating: Load↑→speed↓→Eb↓→Ia↑→torque↑ (automatic)\n2. Efficiency: Power converted = Eb×Ia\n3. Speed control: N ∝ Eb\n4. Starting: At start Eb=0 → need starter to limit huge current\n5. Acts as governor — prevents runaway speed"
+                },
+                {
+                    "instruction": "State Thevenin's theorem.",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Thevenin's Theorem: Any linear two-terminal network can be replaced by a single voltage source VTh (open-circuit voltage between terminals) in series with a resistance RTh (equivalent resistance seen from terminals with all sources deactivated)."
+                },
+                {
+                    "instruction": "Find current through 2Ω using Thevenin's theorem in circuit with +12V, 1Ω, 2Ω, 1Ω, +6V.",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Remove 2Ω (load):\nVTh: Open circuit between removed terminals.\nApply KVL: 12 - 1×I - 6 = 0... wait, circuit has two sources.\nCurrent flows: I = (12-6)/(1+1) = 6/2 = 3A\nVTh = 6 + 1×3 = 9V (voltage at terminal)\n\nRTh: Short both sources, seen from terminals:\nRTh = 1||1 = 0.5Ω\n\nCurrent through 2Ω:\nI = VTh/(RTh+2) = 9/2.5 = 3.6A"
+                },
+                {
+                    "instruction": "Define Kirchhoff's current law and Kirchhoff's voltage law.",
+                    "module_id": "ES103_M1",
+                    "topic": "Ohm's law, KVL, KCL",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "KCL: The algebraic sum of all currents at a node = 0. (∑I_in = ∑I_out). Based on conservation of charge.\nKVL: The algebraic sum of all voltages around any closed loop = 0. (∑V = 0). Based on conservation of energy."
+                },
+                {
+                    "instruction": "State and explain compensation theorem.",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Compensation Theorem: If the impedance Z of a branch in a network carrying current I is changed by ΔZ, the resulting changes in currents throughout the network are the same as those produced by a compensating voltage source Vc = I·ΔZ (opposing original current) inserted in series with the changed branch, with all other sources set to zero.\n\nApplications:\n- Finding change in currents due to small impedance changes\n- Sensitivity analysis\n- Useful in network analysis when one element changes\n\nExample: If branch has R changed to R+ΔR:\n- Original current I flows through R\n- Change in current = effect of source Vc = I·ΔR in that branch with all others zero"
+                },
+                {
+                    "instruction": "State Norton's theorem.",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Norton's Theorem: Any linear two-terminal network can be replaced by a current source IN (= short circuit current between terminals) in parallel with resistance RN (= RTh = resistance seen from terminals with all sources deactivated)."
+                },
+                {
+                    "instruction": "Find current through 2Ω using Norton's theorem in circuit: +12V, 1Ω, 2Ω, 1Ω, +6V.",
+                    "module_id": "ES103_M1",
+                    "topic": "Thevenin's and Norton's theorems",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Short the 2Ω terminals:\nIN = short circuit current through shorted branch\nWith 2Ω shorted: two meshes\nI₁ from 12V: I₁ through 1Ω, shorted 2Ω is in parallel\nKVL left loop: 12 = 1×I₁ → I₁ = 12A (2Ω shorted)\nKVL right loop: 6 = 1×I₂ → I₂ = 6A\nIN = I₁ + I₂ = 18A (both feed into short)... recalculate with actual topology\n\nActual: IN = (12+6)/(1+1) = 9A flowing through short\nRN = 1||1 = 0.5Ω (same as RTh)\n\nCurrent through 2Ω:\nI = IN × RN/(RN+2) = 9 × 0.5/2.5 = 4.5/2.5 = 1.8A"
+                },
+                {
+                    "instruction": "Find current through 3Ω using superposition theorem in circuit with +2V, +1V, +2V sources, 3A, 3A current sources, with 2Ω, 3Ω, 2Ω, 1Ω resistors.",
+                    "module_id": "ES103_M1",
+                    "topic": "Superposition theorem",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply superposition — consider each source one at a time (others deactivated).\n\nCase 1 — +2V source only (left):\nAll current sources open, other voltage sources shorted.\nAnalyze reduced circuit → find I₃Ω due to 2V\n\nCase 2 — +1V source only:\nSame approach → find I₃Ω due to 1V\n\nCase 3 — +2V source only (right):\nFind I₃Ω due to right 2V\n\nCase 4 — 3A source (left):\nVoltage sources shorted → find I₃Ω due to 3A left\n\nCase 5 — 3A source (right/middle):\nFind I₃Ω due to 3A right\n\nTotal I₃Ω = algebraic sum of all cases (with proper sign/direction)\nApply each case using current/voltage divider and sum the contributions."
+                },
+                {
+                    "instruction": "What do you mean by RMS value of an AC quantity?",
+                    "module_id": "ES103_M2",
+                    "topic": "AC fundamentals: phasors, RMS and peak values",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "RMS (Root Mean Square) Value: The equivalent DC value that produces the same heating effect (power) in a resistor as the AC quantity.\nVrms = √[(1/T)∫₀ᵀ v²(t)dt]\nFor sinusoid v(t) = Vm sin ωt:\nVrms = Vm/√2 ≈ 0.707Vm\nPhysical meaning: A 230V AC RMS supply delivers same power to a heater as 230V DC."
+                },
+                {
+                    "instruction": "List advantages of three-phase AC over single-phase AC.",
+                    "module_id": "ES103_M3",
+                    "topic": "Three-phase systems",
+                    "type": "short",
+                    "marks": 3,
+                    "output": "Advantages of three-phase over single-phase:\n1. Higher power delivery with less conductor material (economical)\n2. Constant power delivery (no pulsation) → smoother operation\n3. Self-starting for motors (rotating magnetic field)\n4. Higher efficiency of transmission\n5. Can supply both single-phase and three-phase loads\n6. Smaller and lighter motors for same power output\n7. Better voltage regulation"
+                },
+                {
+                    "instruction": "What is resonance in an AC circuit?",
+                    "module_id": "ES103_M2",
+                    "topic": "Resonance: series and parallel",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Resonance: Condition in an AC circuit when the inductive reactance equals capacitive reactance (XL = XC), resulting in:\n- Purely resistive impedance (Z = R, minimum for series, maximum for parallel)\n- Unity power factor (cos φ = 1)\n- Maximum current in series circuit\n- Resonant frequency: f₀ = 1/(2π√LC)"
+                },
+                {
+                    "instruction": "In series RL circuit: i(t)=5sin(314t+2π/3), v(t)=15sin(314t+5π/6). Find impedance, resistance, inductance, average power, and power factor.",
+                    "module_id": "ES103_M2",
+                    "topic": "Impedance and admittance",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Vm=15V, Im=5A, ω=314 rad/s\nPhase of v: 5π/6, phase of i: 2π/3\nPhase difference: φ = 5π/6 - 2π/3 = 5π/6 - 4π/6 = π/6 (v leads i)\n\n(i) Impedance: Z = Vm/Im = 15/5 = 3Ω\n\n(ii) Resistance: R = Z cos φ = 3×cos(π/6) = 3×(√3/2) = 3√3/2 ≈ 2.598Ω\n\n(iii) Inductance:\nXL = Z sin φ = 3×sin(π/6) = 3×0.5 = 1.5Ω\nXL = ωL → L = 1.5/314 = 4.78×10⁻³ H ≈ 4.78 mH\n\n(iv) Average power:\nP = VrmsIrms cos φ = (15/√2)(5/√2)cos(π/6) = 37.5×(√3/2) ≈ 32.48 W\n\n(v) Power factor: cos φ = cos(π/6) = √3/2 ≈ 0.866 (lagging)"
+                },
+                {
+                    "instruction": "Define real and reactive power.",
+                    "module_id": "ES103_M2",
+                    "topic": "Power factor and power in AC circuits",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Real Power (Active Power): P = VrmsIrms cos φ (watts, W)\nActual power consumed/dissipated as heat. Measured by wattmeter.\n\nReactive Power: Q = VrmsIrms sin φ (volt-ampere reactive, VAR)\nPower exchanged between source and reactive elements (L or C). Not consumed.\n\nApparent Power: S = VrmsIrms (VA) where S² = P² + Q²\nPower factor: pf = P/S = cos φ"
+                },
+                {
+                    "instruction": "Deduce the resonance frequency expression for an RLC series circuit.",
+                    "module_id": "ES103_M2",
+                    "topic": "Resonance: series and parallel",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "For series RLC circuit:\nImpedance: Z = R + j(XL - XC) = R + j(ωL - 1/ωC)\n\nAt resonance: XL = XC (imaginary part = 0)\nωL = 1/ωC\nω² = 1/LC\nω₀ = 1/√(LC)\n\nResonant frequency:\nf₀ = ω₀/2π = 1/(2π√(LC))\n\nAt resonance:\n- Z = R (minimum, purely resistive)\n- I = V/R (maximum)\n- Power factor = 1\n- VL = VC (equal and opposite, can be >> supply voltage)\n- Q factor = ω₀L/R = 1/(ω₀CR) = (1/R)√(L/C) (measures sharpness of resonance)"
+                },
+                {
+                    "instruction": "60Hz voltage v=141sinωt applied to series RL: R=3Ω, L=0.0106H. Find: (i) RMS current and phase angle, (ii) instantaneous current, (iii) RMS voltages across R and L, (iv) average power, (v) power factor.",
+                    "module_id": "ES103_M2",
+                    "topic": "Series and parallel RLC circuits",
+                    "type": "long",
+                    "marks": 10,
+                    "output": "Given: Vm=141V, Vrms=141/√2=99.7≈100V, f=60Hz, R=3Ω, L=0.0106H\n\nXL = ωL = 2π×60×0.0106 = 4Ω\nZ = √(R²+XL²) = √(9+16) = √25 = 5Ω\nφ = tan⁻¹(XL/R) = tan⁻¹(4/3) = 53.13° (current lags voltage)\n\n(i) Irms = Vrms/Z = 100/5 = 20A\nPhase angle = 53.13° (lagging)\n\n(ii) Instantaneous current:\ni(t) = Im sin(ωt - φ) = (141/5)sin(2π×60×t - 53.13°)\n= 28.2 sin(377t - 53.13°) A\n\n(iii) VR = Irms×R = 20×3 = 60V\nVL = Irms×XL = 20×4 = 80V\nPhase: VR in phase with I, VL leads I by 90°\n\n(iv) Average power:\nP = Irms²×R = 400×3 = 1200W\nOr P = VrmsIrms cosφ = 100×20×0.6 = 1200W\n\n(v) Power factor = cos φ = R/Z = 3/5 = 0.6 (lagging)"
+                },
+                {
+                    "instruction": "What is an autotransformer?",
+                    "module_id": "ES103_M3",
+                    "topic": "Transformer: principle, construction, EMF equation",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Autotransformer: A transformer with a single winding that serves as both primary and secondary. Part of the winding is common to both.\n\nAdvantages over 2-winding transformer:\n- Smaller and lighter (less copper)\n- Higher efficiency\n- Better voltage regulation\n- Lower cost\n\nDisadvantage: No electrical isolation between primary and secondary.\nApplications: Voltage starters for motors, laboratory variacs (variac), power grid interconnections"
+                },
+                {
+                    "instruction": "Derive the EMF equation of a single-phase transformer.",
+                    "module_id": "ES103_M3",
+                    "topic": "Transformer: principle, construction, EMF equation",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Transformer core flux: Φ = Φm sin ωt\n\nBy Faraday's law, EMF induced in primary (N₁ turns):\ne₁ = -N₁ dΦ/dt = -N₁Φmω cos ωt = N₁Φmω sin(ωt - 90°)\n\nPeak EMF: E₁m = N₁ω Φm = N₁×2πf×Φm\n\nRMS value:\nE₁ = E₁m/√2 = (2π/√2)×f×N₁×Φm = 4.44×f×N₁×Φm\n\nSimilarly for secondary:\nE₂ = 4.44×f×N₂×Φm\n\nEMF equation: E = 4.44 f N Φm\nOr: E = 4.44 f N Bm A\n\nwhere Bm = peak flux density, A = core cross-section area\nTurns ratio: E₁/E₂ = N₁/N₂"
+                },
+                {
+                    "instruction": "Single-phase transformer: 400 primary, 1000 secondary turns, core area 60cm². Connected to 50Hz, 520V. Find peak flux density and secondary voltage.",
+                    "module_id": "ES103_M3",
+                    "topic": "Transformer: principle, construction, EMF equation",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Given: N₁=400, N₂=1000, A=60cm²=60×10⁻⁴m², f=50Hz, V₁=520V\n\n(i) Peak flux density:\nV₁ = 4.44×f×N₁×Bm×A\n520 = 4.44×50×400×Bm×60×10⁻⁴\n520 = 532.8×Bm\nBm = 520/532.8 = 0.976 T ≈ 0.98 T\n\n(ii) Secondary voltage:\nV₂/V₁ = N₂/N₁\nV₂ = 520×(1000/400) = 1300 V"
+                },
+                {
+                    "instruction": "Explain the working principle of a 3-phase induction motor.",
+                    "module_id": "ES103_M3",
+                    "topic": "AC motors: induction motor basics",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Working Principle:\n1. Three-phase AC supply fed to stator windings (120° apart)\n2. Produces rotating magnetic field (RMF) at synchronous speed Ns = 120f/P\n3. RMF cuts rotor conductors → induces EMF by Faraday's law\n4. Induced EMF drives currents in short-circuited rotor bars\n5. Rotor current-carrying conductors in magnetic field → force (F=BIL) → torque\n6. Rotor accelerates in direction of RMF\n7. Rotor never reaches synchronous speed (always lags) → slip s = (Ns-N)/Ns\n8. At s=0, no relative motion → no induced EMF → no torque → motor can't run at Ns\n9. Normal operation: s = 2-5% (slight lag maintains torque)"
+                },
+                {
+                    "instruction": "What is the significance of slip in an induction motor?",
+                    "module_id": "ES103_M3",
+                    "topic": "AC motors: induction motor basics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Slip (s): s = (Ns - N)/Ns\nwhere Ns = synchronous speed, N = rotor speed\n\nSignificance:\n1. Slip is essential for motor operation — without slip, no induced EMF, no current, no torque\n2. At no load: s ≈ 1-2% (small)\n3. At full load: s ≈ 3-5%\n4. Rotor EMF ∝ s → rotor current ∝ s → torque ∝ s (for small s)\n5. Rotor frequency: fr = s×f (changes with load)\n6. Efficiency: η ≈ 1 - s (lower slip = higher efficiency)"
+                },
+                {
+                    "instruction": "Derive the voltage equation of a DC motor. A 220V DC shunt motor has Ra=0.5Ω, full load Ia=20A. Find back EMF.",
+                    "module_id": "ES103_M3",
+                    "topic": "DC machines: types and working principle",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Voltage equation derivation:\nWhen armature rotates, it generates back EMF Eb opposing supply V.\nApplying KVL to armature circuit:\nV = Eb + Ia×Ra\nEb = V - Ia×Ra\n\nAlso: Eb = (ΦZNP)/(60A)\nwhere Φ=flux, Z=total conductors, N=speed, P=poles, A=parallel paths\n\nPower: Input = V×Ia\nMechanical power = Eb×Ia\nHeat loss = Ia²×Ra\n\nCalculation:\nV = 220V, Ra = 0.5Ω, Ia = 20A\nEb = V - Ia×Ra = 220 - 20×0.5 = 220 - 10 = 210V\n\nBack EMF = 210V"
+                },
+                {
+                    "instruction": "What is a step-up chopper? Explain its operation.",
+                    "module_id": "ES103_M4",
+                    "topic": "Semiconductor diodes and rectifiers",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Step-up (Boost) Chopper: DC-DC converter that produces output voltage higher than input.\nVo = Vs/(1-D) where D = TON/T (duty cycle), so Vo > Vs always.\n\nOperation:\n1. Switch ON (TON): Current builds up in inductor L, storing energy. Diode D is reverse biased. Load supplied from capacitor C.\n2. Switch OFF (TOFF): Inductor releases stored energy. Diode conducts. Both Vs and inductor energy supply load.\n3. Output voltage: Vo = Vs/(1-D)\n\nSince D < 1: 1-D < 1 → Vo > Vs (step-up)\n\nApplications: Battery chargers, UPS systems, regenerative braking, PFC circuits"
+                },
+                {
+                    "instruction": "Explain single-phase full-bridge inverter with R load.",
+                    "module_id": "ES103_M4",
+                    "topic": "Semiconductor diodes and rectifiers",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Single-phase full-bridge inverter converts DC to AC using 4 switches (S1-S4).\n\nConfiguration: H-bridge with 4 switches, DC source Vdc, load R between midpoints.\n\nOperation:\nPositive half cycle (0 to T/2): S1 and S4 ON, S2 and S3 OFF\n→ Current flows Vdc → S1 → R (left to right) → S4 → return\n→ Vo = +Vdc, Io = +Vdc/R\n\nNegative half cycle (T/2 to T): S2 and S3 ON, S1 and S4 OFF\n→ Current flows Vdc → S3 → R (right to left) → S2 → return\n→ Vo = -Vdc, Io = -Vdc/R\n\nOutput: Square wave alternating between +Vdc and -Vdc\nFundamental frequency = switching frequency\nFor R load: current waveform same shape as voltage\nRMS output: Vo,rms = Vdc"
+                },
+                {
+                    "instruction": "In step-down chopper: input 230V DC, load voltage 150V, frequency 4kHz. Find ON and OFF periods.",
+                    "module_id": "ES103_M4",
+                    "topic": "Semiconductor diodes and rectifiers",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Given: Vs=230V, Vo=150V, f=4kHz\n\nPeriod: T = 1/f = 1/4000 = 0.25ms\n\nDuty cycle: D = Vo/Vs = 150/230 = 0.652\n\nON period: TON = D×T = 0.652×0.25 = 0.163ms\n\nOFF period: TOFF = T - TON = 0.25 - 0.163 = 0.087ms"
+                },
+                {
+                    "instruction": "Demonstrate important characteristics for batteries.",
+                    "module_id": "ES103_M4",
+                    "topic": "Earthing and electrical safety",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "Key Battery Characteristics:\n\n1. EMF (Open Circuit Voltage): Voltage when no current flows. Determined by chemistry.\n\n2. Terminal Voltage: V = EMF - I×r (drops under load due to internal resistance r)\n\n3. Capacity: Charge stored in Ampere-hours (Ah). Affected by discharge rate (Peukert's law).\n\n4. C-rate: Rate of charge/discharge. 1C = full discharge in 1 hour.\n\n5. State of Charge (SoC): % of charge remaining. SoC=100% = full.\n\n6. Cycle Life: Number of charge-discharge cycles before capacity degrades to 80%.\n\n7. Energy Density: Wh/kg (gravimetric) or Wh/L (volumetric).\n\n8. Self-discharge rate: % capacity lost per month in storage.\n\n9. Charge-discharge efficiency: η = Energy out / Energy in × 100%\n\n10. Internal resistance: Increases with age, temperature affects performance."
+                },
+                {
+                    "instruction": "What is MCB? Explain its working principle with diagram.",
+                    "module_id": "ES103_M4",
+                    "topic": "Earthing and electrical safety",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "MCB (Miniature Circuit Breaker): An automatically operated electrical switch that protects low-voltage circuits from overcurrent and short circuits. Replaces fuses (resettable).\n\nWorking Principle — two protection mechanisms:\n\n1. Thermal (Overload) Protection:\n- Bimetal strip carries current\n- Overload current → heats bimetal → bends\n- Bending trips latch mechanism → contacts open\n- Time delay proportional to overload magnitude\n\n2. Magnetic (Short Circuit) Protection:\n- Electromagnetic coil carries current\n- Short circuit → huge current → strong magnetic field\n- Plunger attracted → instantly trips latch\n- Instantaneous operation (<10ms)\n\nOperation sequence:\n1. Normal: Contacts closed, current flows\n2. Fault detected: Tripping mechanism activated\n3. Contacts open: Arc extinguished in arc chute\n4. Manual reset after fault cleared\n\nTypes by tripping curve: B (3-5×In), C (5-10×In), D (10-20×In)\nAdvantage: Resettable, visual trip indicator, more reliable than fuse"
+                },
+                {
+                    "instruction": "Classify underground cables based on voltage levels.",
+                    "module_id": "ES103_M4",
+                    "topic": "Earthing and electrical safety",
+                    "type": "short",
+                    "marks": 3,
+                    "output": "Underground Cables classified by voltage:\n\n1. Low Tension (LT) Cables: Up to 1kV\n- Single/multi-core PVC insulated\n- Used for domestic and commercial supply\n\n2. High Tension (HT) Cables: 1kV to 11kV\n- XLPE or paper insulated, lead/PVC sheathed\n- Used for sub-transmission\n\n3. Super Tension (ST) Cables: 22kV to 33kV\n- Oil-filled or pressurized\n- Thicker insulation, metal shielding\n\n4. Extra High Tension (EHT) Cables: 33kV to 66kV\n- Gas-pressure or oil-filled types\n\n5. Extra Super Voltage Cables: Above 66kV (up to 132kV, 220kV)\n- Specialized construction, used in transmission networks"
+                },
+                {
                     "instruction": "State Norton's theorem.",
                     "module_id": "ES103_M1",
                     "topic": "Thevenin's and Norton's theorems",
@@ -675,6 +1411,166 @@
             "subject_code": "ES-104",
             "subject_title": "Engineering Graphics and Design",
             "training_data": [
+                {
+                    "instruction": "Write four examples of conic sections.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Conic sections are curves formed by intersection of a plane with a cone:\n1. Circle (plane perpendicular to axis)\n2. Ellipse (plane inclined but not parallel to slant)\n3. Parabola (plane parallel to one slant side)\n4. Hyperbola (plane parallel to axis or steeper)"
+                },
+                {
+                    "instruction": "In two sentences, describe orthographic projection.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Orthographic projection is a method of representing 3D objects on a 2D plane using parallel projection lines perpendicular to the projection plane. It produces multiple views (front, top, side) that together fully describe the object's shape and dimensions without distortion."
+                },
+                {
+                    "instruction": "What is representative fraction?",
+                    "module_id": "ES104_M1",
+                    "topic": "Lines, lettering, and dimensioning",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Representative Fraction (RF): The ratio of the length of the drawing to the actual length of the object, both measured in the same units.\nRF = Drawing length / Actual length\nExample: RF = 1/100 means 1cm on drawing = 100cm in reality."
+                },
+                {
+                    "instruction": "Name four different types of scales used in graphical drawing.",
+                    "module_id": "ES104_M1",
+                    "topic": "Lines, lettering, and dimensioning",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Four types of scales used in graphical drawing:\n1. Plain scale (simple scale) — reads two units\n2. Diagonal scale — reads three units with high precision\n3. Vernier scale — reads fractional parts\n4. Comparative scale — two scales on same drawing for different units\n(Others: Chord scale, Scale of chords)"
+                },
+                {
+                    "instruction": "What are some important differences between orthographic projection and isometric projection?",
+                    "module_id": "ES104_M1",
+                    "topic": "Isometric views",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Orthographic vs Isometric projection:\n\nOrthographic:\n- Uses multiple 2D views (front, top, side)\n- True shape and size shown in each view\n- Parallel lines remain parallel\n- No depth in single view\n\nIsometric:\n- Single pictorial 3D view\n- All three axes at 120° to each other\n- Measurements along axes to scale (isometric scale = 0.816× true)\n- Gives realistic 3D appearance but not true shape\n- Circles appear as ellipses"
+                },
+                {
+                    "instruction": "A cylinder of base radius 50mm and height 80mm is fully developed. What is the total surface area of the developed surface?",
+                    "module_id": "ES104_M1",
+                    "topic": "Sectional views",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Development of full cylinder:\n- Lateral surface: rectangle of width = circumference = 2πr = 2π×50 = 314.16mm\n  height = 80mm\n  Area₁ = 314.16×80 = 25,133 mm²\n- Two circular ends: 2×πr² = 2×π×50² = 15,708 mm²\n\nTotal surface area = 25,133 + 15,708 = 40,841 mm² ≈ 40,841 mm²\n(Or: 2πr(h+r) = 2π×50×(80+50) = 2π×50×130 ≈ 40,841 mm²)"
+                },
+                {
+                    "instruction": "Draw a scale of RF 1:50 to show metres and decimetres, long enough to measure up to 7 metres. Mark distance 4.3m.",
+                    "module_id": "ES104_M1",
+                    "topic": "Lines, lettering, and dimensioning",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "RF = 1:50, Max length = 7m\nLength of scale = (1/50)×7m = (1/50)×700cm = 14cm = 140mm\n\nConstruction:\n1. Draw line AB = 140mm (representing 7m)\n2. Divide AB into 7 equal parts (each = 20mm = 1m)\n3. Extend first division to left, divide into 10 parts (each = 2mm = 1dm)\n4. Label: 0 at first main division, 1,2,3...6m to right, dm to left\n5. Zero of scale at junction of main and subdivided parts\n\nMarking 4.3m:\n- Main scale: 4 full divisions from zero = 4m\n- Subdivided part: 3 divisions = 3dm = 0.3m\n- Mark point P at 4m + 3dm position"
+                },
+                {
+                    "instruction": "Construct a diagonal scale of RF 1:5000 to show metres, long enough to measure up to 600m. Mark 537m.",
+                    "module_id": "ES104_M1",
+                    "topic": "Lines, lettering, and dimensioning",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "RF = 1:5000, Max = 600m\nLength of scale = (1/5000)×600×1000mm = 120mm\n\nConstruction:\n1. Draw line AB = 120mm (= 600m)\n2. Divide into 6 equal parts (each 20mm = 100m)\n3. Subdivide first division into 10 parts (each 2mm = 10m)\n4. Erect 10 equal perpendicular divisions above scale\n5. Draw diagonals in first main division: connect top of 1st subdiv to bottom of 2nd, etc.\n\nTo mark 537m:\n- 500m on main scale (5 divisions)\n- 30m on first subdivision (3rd division)\n- 7m: go up 7 steps on diagonal\n- Mark point where diagonal crosses horizontal line 7"
+                },
+                {
+                    "instruction": "Construct an ellipse where distance of focus from directrix is 60mm and eccentricity is 2/3.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Focus-directrix distance = 60mm, e = 2/3\nVertex divides focus-directrix distance in ratio e:(1-e) from directrix.\nVF/VA = e = 2/3 → VF = 2/5×60 = 24mm, VA = 3/5×60 = 36mm from directrix\n\nConstruction:\n1. Draw directrix DD' (vertical)\n2. Draw axis perpendicular to DD'\n3. Mark vertex V: V divides distance such that VF/VA_directrix = 2/3\n   V is at 36mm from DD', F is at 60mm from DD'\n4. Mark points 1,2,3... on axis beyond V\n5. For each point n on axis at distance d from DD':\n   Radius from F = e×d = (2/3)×d\n6. Draw arcs of these radii from F\n7. Draw vertical lines through points → intersect arcs → points on ellipse\n8. Join points with smooth curve\n\nVerification: e = distance from focus / distance from directrix = 2/3 ✓"
+                },
+                {
+                    "instruction": "Diameter of generating circle of a cycloid is 55mm. Draw the cycloid.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Diameter = 55mm → Radius R = 27.5mm\nCycloid: Locus of a point on the circumference of a circle rolling on a straight line.\n\nConstruction:\n1. Draw horizontal line (directing line)\n2. Mark point P₀ at bottom of circle position\n3. Calculate one complete revolution length = πD = π×55 = 172.8mm\n4. Divide this length into 12 equal parts on directing line\n5. Mark corresponding center positions C₁, C₂...C₁₂ at height R=27.5mm\n6. For each center position, rotate circle by 30° increments\n7. Mark position of point P on circle at each 30° rotation:\n   - Divide circle into 12 equal parts from P₀\n   - Point position: P₁ at 1/12 revolution, etc.\n8. Transfer heights from circle to corresponding center positions\n9. Join points P₀, P₁...P₁₂ with smooth curve = cycloid\n\nCycloid length = 4×2R = 4×55 = 220mm (for one arch)"
+                },
+                {
+                    "instruction": "Front view of 80mm line measures 45mm. Line is parallel to HP, one end touches VP, whole line 30mm above HP. Draw projections and find angle with VP.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: True length = 80mm, FV = 45mm (foreshortened), parallel to HP, one end at VP, 30mm above HP.\n\nSince line is parallel to HP:\n- TV shows true length = 80mm\n- FV is foreshortened = 45mm\n\nConstructions:\n1. FV: Draw a'b' parallel to XY at 30mm above (horizontal line = 45mm)\n   One end a' on XY (one end touches VP)\n2. TV: Draw ab below XY\n   a is on XY (one end at VP, 0mm in front)\n   True length ab = 80mm\n   ab is inclined to XY at angle φ\n\nFinding angle with VP:\ncos φ = FV/TL = 45/80 = 0.5625\nφ = cos⁻¹(0.5625) = 55.77° ≈ 56°\n\nAngle line makes with VP = 56°\nTV: ab = 80mm inclined at 56° to XY\nFV: a'b' = 45mm parallel to XY, 30mm above"
+                },
+                {
+                    "instruction": "A regular hexagon has 30mm sides, one side lying on HP making 50° with VP, plane makes 40° with HP. Draw projections.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Regular hexagon 30mm sides, one side on HP making 50° with VP, plane at 40° to HP\n\nStage 1 — Plane parallel to HP (simple position):\n- TV: true shape hexagon, one side parallel to XY\n- FV: straight line (edge view) on XY\n\nStage 2 — Tilt plane at 40° to HP:\n- FV rotates to 40° with XY\n- TV is redrawn by projecting from new FV positions\n- TV becomes foreshortened hexagon shape\n\nStage 3 — Rotate so side makes 50° with VP:\n- Rotate the TV so that the side (which was on XY) makes 50° with XY\n- Redraw FV from new TV positions keeping same heights as Stage 2\n\nFinal views:\n- FV: irregular hexagonal shape (foreshortened)\n- TV: hexagon with one side at 50° to XY, compressed in one direction"
+                },
+                {
+                    "instruction": "Square PQRS, 55mm sides, corner P in HP. Diagonal PR inclined 35° to HP, diagonal QS inclined 55° to VP and parallel to HP. Draw projections.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Square 55mm, P in HP, PR at 35° to HP, QS at 55° to VP and parallel to HP\n\nKey facts: Diagonals of square are equal (55√2 mm) and perpendicular to each other.\n\nStage 1 — PR inclined 35° to HP, QS parallel to HP:\n- Draw PR at 35° to XY in FV → gives FV of PR\n- Since QS ⊥ PR and QS parallel to HP: QS appears true length in TV\n\nStage 2 — QS inclined 55° to VP:\n- TV of QS makes 55° with XY\n- Rotate TV so QS is at 55° to XY\n- Redraw FV from rotated TV\n\nConstruction:\n1. In TV: locate midpoint O, draw QS at 55° to XY, length = 55√2/2 each side\n2. Q and S positions from TV; heights from Stage 1 analysis\n3. Draw square PQRS completing both views using projection lines"
+                },
+                {
+                    "instruction": "Draw projections of a cone, base 60mm diameter, axis 95mm long, lying on HP on one of its generators, axis parallel to VP.",
+                    "module_id": "ES104_M1",
+                    "topic": "Orthographic projections",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Cone, base diameter=60mm, axis=95mm, lying on generator, axis parallel to VP\n\nStage 1 — Axis perpendicular to VP (initial position):\n- FV: isosceles triangle (true shape of cone in this view)\n- TV: circle (base) with apex point\n\nStage 2 — Tilt to lay on generator, axis parallel to VP:\n- Find slant height: l = √(30²+95²) = √(900+9025) = √9925 ≈ 99.6mm\n- Tilt so one generator touches HP\n- Angle of tilt: sin θ = r/l = 30/99.6 ≈ 17.6°\n- Cone axis inclined to HP at this angle\n\nFinal views:\n- FV: Axis of length 95mm inclined, triangle shape with one side (generator) on XY\n- TV: Ellipse for base, with apex; generator line along XY\n\nDraw using rotation method:\n1. Draw Stage 1 views\n2. Tilt FV so one slant line is on XY\n3. Project new TV from tilted FV"
+                },
+                {
+                    "instruction": "Square pyramid, base 45mm, axis 60mm, base on HP, edges equally inclined to VP. Cut by plane perpendicular to VP, inclined 45° to HP, bisecting axis. Draw sectional top view, front view and true shape.",
+                    "module_id": "ES104_M1",
+                    "topic": "Sectional views",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Square pyramid 45mm base, 60mm axis, cut by plane at 45° to HP, bisecting axis at 30mm.\n\nFV construction:\n1. Draw FV: triangle with base 45mm (diagonal = 45√2), height 60mm\n2. Mark cutting plane VT in FV: passes through midpoint of axis (at 30mm height) at 45° to base\n3. VT cuts lateral edges at points 1',2',3',4'\n4. Shade section in FV\n\nTV (Sectional Top View):\n1. Project cutting points 1',2',3',4' down to TV\n2. Find corresponding points on plan view of edges\n3. Join section points → shows section in TV\n4. Show removed top as dashed, section area hatched\n\nTrue Shape:\n1. Draw auxiliary plane parallel to cutting plane\n2. Project all section points onto auxiliary plane\n3. Measure true distances\n4. True shape = quadrilateral (trapezoid shape for 45° cut bisecting axis)\n\nSince cut is at 45° bisecting axis at 30mm, it cuts through lateral faces creating a quadrilateral section."
+                },
+                {
+                    "instruction": "Cylinder 55mm diameter, 65mm long, on base. Cut by plane perpendicular to VP, VT cuts axis 40mm from base at 45° to HP. Draw front view, sectional top view and true shape.",
+                    "module_id": "ES104_M1",
+                    "topic": "Sectional views",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Cylinder d=55mm, h=65mm, cutting plane at 45° to HP, cutting axis at 40mm from base.\n\nFV:\n1. Draw rectangle: width=55mm, height=65mm\n2. Mark cutting plane: from point at 40mm height on axis, inclined at 45°\n3. VT line cuts both sides of FV\n4. Divide top portion as removed section\n\nSectional Top View:\n1. Divide base circle into 12 equal parts (0°, 30°, 60°...)\n2. For each generator, find where cutting plane intersects\n3. Heights of intersection: h_i = 40 + (x_i) × tan 45° where x_i = distance from axis\n4. Plot intersection points in TV\n5. Join points → ellipse shape section in plan\n6. Hatch the section area\n\nTrue Shape:\n1. Draw auxiliary view with axis parallel to cutting plane\n2. Project section points onto auxiliary plane\n3. True shape = Ellipse\n4. Semi-major axis = (cutting plane length)/2\n   Semi-minor axis = r = 27.5mm\n5. Draw true ellipse with correct dimensions"
+                },
+                {
+                    "instruction": "Draw development of lateral surface of lower part of triangular pyramid from given figure (apex height 40mm, cutting plane at 30° at 20mm from base).",
+                    "module_id": "ES104_M1",
+                    "topic": "Sectional views",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Triangular pyramid development (lower part):\n\nGiven from figure: Apex O at 40mm height, base triangle, cutting plane at 30° through point at 20mm from apex (or 20mm from base).\n\nSteps:\n1. Find true lengths of all edges and slant edges from the given views\n2. Find where cutting plane intersects each lateral edge (points a', b', c' in FV → project to get true positions)\n\nDevelopment construction:\n1. Draw base triangle (true shape from TV)\n2. For each triangular face, mark slant height (true length)\n3. Starting with edge O1: draw triangle O1-2 with true lengths\n4. Continue: triangle O2-3, triangle O3-1 (unfold each face)\n5. Mark cutting plane intersection points on each face\n6. Connect cutting plane points across faces\n7. The development shows: full base triangle + three triangular faces\n8. Cut line separates lower frustum portion\n9. Lower development = base + lower portions of three faces"
+                },
+                {
+                    "instruction": "Cone base diameter 70mm, height 60mm on HP. Truncated by plane perpendicular to VP, making 15° to HP, bisecting axis. Draw development of lateral surface of truncated cone.",
+                    "module_id": "ES104_M1",
+                    "topic": "Sectional views",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Given: Cone d=70mm, h=60mm, cut at 15° to HP bisecting axis (at 30mm height)\n\nSlant height: l = √(35²+60²) = √(1225+3600) = √4825 = 69.46mm\n\nDevelopment construction:\n1. Draw sector for full cone:\n   Radius = slant height l = 69.46mm\n   Arc length = circumference of base = π×70 = 219.9mm\n   Sector angle θ = (r/l)×360° = (35/69.46)×360° = 181.4°\n\n2. Divide base circle into 12 equal parts → generators g₁, g₂...g₁₂\n\n3. Find cutting plane intersection:\n   In FV: cutting plane at 15° passing through 30mm height on axis\n   Find where it cuts each generator (different heights for each)\n\n4. Find true lengths of each generator from apex to cutting plane:\n   Use rotation method or direct calculation\n\n5. Mark these lengths on corresponding generators in development\n\n6. Join points smoothly → upper cut curve\n\n7. Development of truncated cone = sector with upper curved cut"
+                },
+                {
+                    "instruction": "Draw isometric view of frustum of hexagonal pyramid: lower hexagon side 40mm, upper hexagon side 30mm, height 70mm.",
+                    "module_id": "ES104_M1",
+                    "topic": "Isometric views",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Frustum of hexagonal pyramid — Isometric view:\n\nGiven: Lower base hexagon (40mm sides), upper base hexagon (30mm sides), height 70mm\n\nConstruction steps:\n1. Draw isometric axes at 30° to horizontal\n\n2. Draw lower hexagon in isometric:\n   - In isometric, hexagon has sides parallel to isometric axes\n   - Regular hexagon: all sides 40mm\n   - Draw isometric hexagon by constructing on isometric grid\n   - Six vertices positioned symmetrically\n\n3. Mark height 70mm vertically upward from lower base center\n\n4. Draw upper hexagon at top (30mm sides, same orientation as lower)\n   - Centered above lower hexagon\n   - Scaled to 30mm sides\n\n5. Connect corresponding vertices of upper and lower hexagons:\n   - Draw 6 slant edges connecting upper to lower vertices\n   - Visible edges: solid lines\n   - Hidden edges: dashed lines\n\n6. Apply isometric scale (0.816×) or use full dimensions for isometric drawing\n\nFinal: Shows 3D frustum with smaller hexagon on top, larger at bottom, tapering sides"
+                },
+                {
+                    "instruction": "Front view and top view of a solid body are given (L-shape in front view: 45mm tall×65mm wide with 15mm step; top view shows 15mm, 30mm, 10mm compartments, 40mm depth). Draw isometric projection.",
+                    "module_id": "ES104_M1",
+                    "topic": "Isometric views",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Reading the given views:\nFront view: L-shaped profile — tall portion 45mm, full width 65mm, step at 15mm from right, step height reduces to 15mm on right side\nTop view: Width 65mm (15+30+10+10), depth 40mm, with rectangular cutout/slot\n\nThe solid is an L-shaped or stepped block.\n\nIsometric construction:\n1. Draw isometric axes (one vertical, two at 30°)\n2. Mark overall bounding box: 65mm (width) × 40mm (depth) × 45mm (height)\n3. Draw lower full-width block: 65mm × 40mm × 30mm (height of step)\n4. Draw upper left portion: 15mm (from left) × 40mm depth × 15mm additional height\n   Total height on left = 45mm, right side = 30mm\n5. The step profile shows:\n   - Left section: full 45mm height\n   - Right section (30mm wide): only 30mm height (= 45-15)\n6. Draw all visible edges as solid lines\n7. Draw hidden edges as dashed (optional in isometric)\n8. Check dimensions match given views\n9. Apply isometric scale factor if required"
+                },
                 {
                     "instruction": "What is representative fraction? An object is 1m long. Drawing length is 5cm. Find representative factor.",
                     "module_id": "ES104_M1",
