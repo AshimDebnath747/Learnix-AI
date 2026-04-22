@@ -1,0 +1,2178 @@
+{
+    "university": "Tripura University",
+    "semester": 3,
+    "exam": "B.Tech 3rd Semester Exam 2025",
+    "format": "alpaca",
+    "subjects": [
+        {
+            "subject_code": "HU-301",
+            "subject_title": "Effective Technical Communication",
+            "training_data": [
+                {
+                    "instruction": "What do you mean by technical communication?",
+                    "module_id": "HU301_M1",
+                    "topic": "Technical communication",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Technical communication is the process of conveying technical information in a clear, precise, and structured manner for a specific audience."
+                },
+                {
+                    "instruction": "Write the difference between general and technical communication.",
+                    "module_id": "HU301_M1",
+                    "topic": "Types of communication",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "General communication is informal and broad, while technical communication is formal, precise, and focused on specific technical information."
+                },
+                {
+                    "instruction": "Write the importance of choosing right words and phrases in technical communication.",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical writing",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Choosing correct words ensures clarity, avoids ambiguity, improves readability, and enhances professional communication."
+                },
+                {
+                    "instruction": "Mention any two steps one should follow while applying for a job.",
+                    "module_id": "HU301_M3",
+                    "topic": "Job application",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Steps: (1) Prepare a proper resume, (2) Write a formal job application letter."
+                },
+                {
+                    "instruction": "Define any two types of interview.",
+                    "module_id": "HU301_M3",
+                    "topic": "Interview types",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Types: (1) Personal interview – face-to-face interaction, (2) Telephonic interview – conducted over phone."
+                },
+                {
+                    "instruction": "Write a brief about any two types of soft skill.",
+                    "module_id": "HU301_M4",
+                    "topic": "Soft skills",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Communication skill helps in expressing ideas clearly. Teamwork skill helps in working effectively with others."
+                },
+                {
+                    "instruction": "What do you understand by communication? Explain its importance in a professional context.",
+                    "module_id": "HU301_M1",
+                    "topic": "Communication process",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Communication is the exchange of information between sender and receiver. In professional context, it improves coordination, enhances productivity, reduces misunderstandings, builds relationships, and supports decision-making."
+                },
+                {
+                    "instruction": "Write short notes on any three barriers to communication.",
+                    "module_id": "HU301_M1",
+                    "topic": "Barriers",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Barriers include: (1) Physical barriers – noise, distance; (2) Psychological barriers – emotions, stress; (3) Semantic barriers – language misunderstanding."
+                },
+                {
+                    "instruction": "Write in short about any three uses of writing with communication purpose.",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical writing",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Uses include: (1) Documentation, (2) Information sharing, (3) Instruction delivery."
+                },
+                {
+                    "instruction": "Write a note on the impact of technology on communication process.",
+                    "module_id": "HU301_M1",
+                    "topic": "Technology communication",
+                    "type": "medium",
+                    "marks": 6,
+                    "output": "Technology enables fast communication, global connectivity, video conferencing, and digital collaboration, but may reduce personal interaction."
+                },
+                {
+                    "instruction": "What do you understand by non-verbal communication?",
+                    "module_id": "HU301_M1",
+                    "topic": "Non-verbal communication",
+                    "type": "medium",
+                    "marks": 6,
+                    "output": "Non-verbal communication includes body language, gestures, facial expressions, and posture used to convey messages without words."
+                },
+                {
+                    "instruction": "Discuss in brief about any three elements of effective writing.",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical writing",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Elements include clarity, conciseness, correctness, coherence, and proper structure."
+                },
+                {
+                    "instruction": "Draft a sales letter for a company.",
+                    "module_id": "HU301_M2",
+                    "topic": "Business letters",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Sales letter includes introduction of product, its benefits, persuasive content, and call to action in formal format."
+                },
+                {
+                    "instruction": "Name different types of business letters.",
+                    "module_id": "HU301_M2",
+                    "topic": "Business letters",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Sales letter, enquiry letter, complaint letter, order letter."
+                },
+                {
+                    "instruction": "What do you understand by a resume?",
+                    "module_id": "HU301_M3",
+                    "topic": "Resume",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A resume is a document summarizing a person’s education, skills, and experience for job application."
+                },
+                {
+                    "instruction": "What is an e-mail?",
+                    "module_id": "HU301_M2",
+                    "topic": "Email writing",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "E-mail is an electronic method of sending messages over the internet."
+                },
+                {
+                    "instruction": "Write down the reasons for increasing popularity of e-mail as a means of technical communication.",
+                    "module_id": "HU301_M2",
+                    "topic": "Email communication",
+                    "type": "medium",
+                    "marks": 6,
+                    "output": "Reasons include speed, cost-effectiveness, global reach, easy documentation, and attachment support."
+                },
+                {
+                    "instruction": "Explain in detail about essential part of job resume.",
+                    "module_id": "HU301_M3",
+                    "topic": "Resume",
+                    "type": "long",
+                    "marks": 12,
+                    "output": "Resume includes personal details, education, skills, experience, achievements, and references."
+                },
+                {
+                    "instruction": "What is group discussion? Why is it important?",
+                    "module_id": "HU301_M3",
+                    "topic": "Group discussion",
+                    "type": "medium",
+                    "marks": 6,
+                    "output": "Group discussion is a discussion among candidates to evaluate communication and thinking skills. It is important for teamwork and decision-making assessment."
+                },
+                {
+                    "instruction": "Explain evaluation components of group discussion process.",
+                    "module_id": "HU301_M3",
+                    "topic": "Group discussion",
+                    "type": "medium",
+                    "marks": 6,
+                    "output": "Evaluation is based on communication skills, confidence, leadership, knowledge, and teamwork."
+                },
+                {
+                    "instruction": "What are presentation strategies?",
+                    "module_id": "HU301_M3",
+                    "topic": "Presentation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Presentation strategies include planning, organizing, designing visuals, and delivering effectively."
+                },
+                {
+                    "instruction": "Explain steps for preparing a presentation.",
+                    "module_id": "HU301_M3",
+                    "topic": "Presentation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Steps: define objective, collect content, organize structure, prepare slides, practice delivery."
+                },
+                {
+                    "instruction": "Explain main purpose of presentation.",
+                    "module_id": "HU301_M3",
+                    "topic": "Presentation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Purpose is to inform, persuade, educate, or explain ideas clearly to audience."
+                },
+                {
+                    "instruction": "Mention any two essential elements of the communication process.",
+                    "module_id": "HU301_M1",
+                    "topic": "Communication process",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Two essential elements are: (1) Sender – the person who conveys the message, (2) Receiver – the person who interprets the message."
+                },
+                {
+                    "instruction": "Why is e-mail a popular medium for communication?",
+                    "module_id": "HU301_M1",
+                    "topic": "Technology-enabled communication",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "E-mail is popular because it is fast, cost-effective, allows global communication, supports attachments, and provides easy record keeping."
+                },
+                {
+                    "instruction": "What is a technical research paper?",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical research paper writing",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A technical research paper is a structured document that presents research findings, methodology, analysis, and conclusions in a formal format."
+                },
+                {
+                    "instruction": "Mention two characteristics of a good presenter.",
+                    "module_id": "HU301_M3",
+                    "topic": "Business presentations",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Two characteristics are: (1) Clarity in communication, (2) Confidence while presenting."
+                },
+                {
+                    "instruction": "What is the significance of clarity in technical writing?",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical writing process",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Clarity ensures that the message is easily understood, avoids ambiguity, improves readability, and enhances communication effectiveness."
+                },
+                {
+                    "instruction": "What do you understand by teamwork and interpersonal skills?",
+                    "module_id": "HU301_M4",
+                    "topic": "Teamwork and interpersonal skills",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Teamwork is the ability to work collaboratively with others, while interpersonal skills involve effective communication and interaction with people."
+                },
+                {
+                    "instruction": "Define communication.",
+                    "module_id": "HU301_M1",
+                    "topic": "Communication process",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Communication is the process of exchanging information, ideas, or messages between a sender and receiver through a medium."
+                },
+                {
+                    "instruction": "List the main elements or components of communication process.",
+                    "module_id": "HU301_M1",
+                    "topic": "Communication process",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "The main components are: (1) Sender, (2) Message, (3) Encoding, (4) Channel, (5) Receiver, (6) Decoding, (7) Feedback."
+                },
+                {
+                    "instruction": "Explain the stages of the communication process with the help of a diagram.",
+                    "module_id": "HU301_M1",
+                    "topic": "Communication process",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Stages of communication:\n1. Sender – generates idea\n2. Encoding – converts idea into message\n3. Channel – medium of transmission\n4. Receiver – receives message\n5. Decoding – interprets message\n6. Feedback – response from receiver\n7. Noise – barriers affecting communication"
+                },
+                {
+                    "instruction": "Explain the different communication flows that take place within an organization with examples.",
+                    "module_id": "HU301_M1",
+                    "topic": "Flow of communication",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Types of communication flow:\n1. Downward – from management to employees (e.g., instructions)\n2. Upward – from employees to management (e.g., feedback)\n3. Horizontal – between colleagues at same level (e.g., teamwork communication)"
+                },
+                {
+                    "instruction": "Evaluate the impact of technology on communication effectiveness.",
+                    "module_id": "HU301_M1",
+                    "topic": "Technology-enabled communication",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Technology improves communication by enabling instant messaging, global connectivity, video conferencing, and easy data sharing. However, it may reduce face-to-face interaction and cause misunderstandings."
+                },
+                {
+                    "instruction": "What are the key differences between a project report and a research paper?",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical reports and research papers",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Project report focuses on practical implementation, while research paper focuses on theoretical research. Project reports are less formal, while research papers follow strict academic structure and include references."
+                },
+                {
+                    "instruction": "Write a short note on the importance of choosing the right words and sentence structure in technical writing.",
+                    "module_id": "HU301_M2",
+                    "topic": "Technical writing process",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Choosing correct words and sentence structure improves clarity, avoids ambiguity, ensures accuracy, and enhances professionalism in technical documents."
+                },
+                {
+                    "instruction": "What are the basic guidelines for writing business letters?",
+                    "module_id": "HU301_M2",
+                    "topic": "Business letters",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Guidelines include: use formal tone, proper format, clear subject, concise content, correct grammar, and polite language."
+                },
+                {
+                    "instruction": "Draft a letter requesting books for college library.",
+                    "module_id": "HU301_M2",
+                    "topic": "Business letters",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "To\nThe Principal\nSubject: Request for books\nRespected Sir/Madam,\nI request you to kindly purchase academic books for the college library to support students' learning.\nThank you.\nYours sincerely\n[Name]"
+                },
+                {
+                    "instruction": "What do you understand by skimming job advertisements?",
+                    "module_id": "HU301_M3",
+                    "topic": "Job applications",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Skimming means quickly reading job advertisements to identify key details like role, skills, and qualifications."
+                },
+                {
+                    "instruction": "Write about the key skills needed to succeed in a group discussion.",
+                    "module_id": "HU301_M3",
+                    "topic": "Group discussions",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Key skills include communication, listening, confidence, leadership, and clarity of thought."
+                },
+                {
+                    "instruction": "What are the stages involved in a job interview?",
+                    "module_id": "HU301_M3",
+                    "topic": "Job interviews",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Stages are: pre-interview preparation, interview process, and post-interview follow-up."
+                },
+                {
+                    "instruction": "Write about the importance of non-verbal communication during an interview.",
+                    "module_id": "HU301_M3",
+                    "topic": "Non-verbal communication",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Non-verbal communication like body language, eye contact, and posture helps create positive impression, conveys confidence, and supports verbal communication."
+                },
+                {
+                    "instruction": "What do you understand by visual aids used in presentations? Give two examples.",
+                    "module_id": "HU301_M3",
+                    "topic": "Presentations",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Visual aids are tools used to enhance presentations. Examples: charts and PowerPoint slides."
+                },
+                {
+                    "instruction": "Illustrate the main steps involved in preparing a business presentation.",
+                    "module_id": "HU301_M3",
+                    "topic": "Presentations",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Steps: planning, organizing content, designing visuals, delivering presentation, and getting feedback."
+                },
+                {
+                    "instruction": "Why is ethical communication important in the workplace?",
+                    "module_id": "HU301_M3",
+                    "topic": "Ethics in communication",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Ethical communication builds trust, ensures honesty, avoids misinformation, promotes respect, and maintains professional relationships."
+                },
+                {
+                    "instruction": "Define soft skills.",
+                    "module_id": "HU301_M4",
+                    "topic": "Soft skills",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Soft skills are personal attributes that help individuals interact effectively with others."
+                },
+                {
+                    "instruction": "Why are soft skills considered a competitive weapon today?",
+                    "module_id": "HU301_M4",
+                    "topic": "Soft skills importance",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Soft skills improve communication, teamwork, leadership, and adaptability, giving individuals an advantage in professional environments."
+                },
+                {
+                    "instruction": "Discuss the significance of time management, teamwork, and interpersonal skills.",
+                    "module_id": "HU301_M4",
+                    "topic": "Life skills",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Time management improves productivity, teamwork enhances collaboration, and interpersonal skills build strong professional relationships."
+                },
+                {
+                    "instruction": "Define self-confidence and describe techniques to build it.",
+                    "module_id": "HU301_M4",
+                    "topic": "Self-confidence",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Self-confidence is belief in one's abilities. It can be developed through practice, positive thinking, goal setting, and skill improvement."
+                },
+                {
+                    "instruction": "Write short notes on decision-making under pressure and personality development.",
+                    "module_id": "HU301_M4",
+                    "topic": "Personality development",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Decision-making under pressure involves quick and effective thinking in stressful situations. Personality development focuses on improving behavior, communication, and attitude for success."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-306",
+            "subject_title": "Data Structure and Algorithm",
+            "training_data": [
+                {
+                    "instruction": "Define data structure.",
+                    "module_id": "CS306_M1",
+                    "topic": "Basics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A data structure is a way of organizing and storing data efficiently for easy access and modification."
+                },
+                {
+                    "instruction": "Explain time and space complexity.",
+                    "module_id": "CS306_M1",
+                    "topic": "Complexity",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Time complexity measures execution time, while space complexity measures memory usage of an algorithm."
+                },
+                {
+                    "instruction": "Explain binary search.",
+                    "module_id": "CS306_M1",
+                    "topic": "Searching",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Binary search works on sorted arrays by repeatedly dividing the search space. Time complexity O(log n)."
+                },
+                {
+                    "instruction": "Explain stack operations.",
+                    "module_id": "CS306_M2",
+                    "topic": "Stack",
+                    "type": "short",
+                    "marks": 4,
+                    "output": "Operations include push, pop, peek, and isEmpty following LIFO principle."
+                },
+                {
+                    "instruction": "Explain queue and its types.",
+                    "module_id": "CS306_M2",
+                    "topic": "Queue",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Queue follows FIFO. Types: simple queue, circular queue, priority queue."
+                },
+                {
+                    "instruction": "Explain singly linked list.",
+                    "module_id": "CS306_M3",
+                    "topic": "Linked list",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "A singly linked list consists of nodes where each node contains data and a pointer to the next node."
+                },
+                {
+                    "instruction": "Explain binary search tree.",
+                    "module_id": "CS306_M3",
+                    "topic": "Trees",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "BST is a binary tree where left child is smaller and right child is larger than parent node."
+                },
+                {
+                    "instruction": "Explain AVL tree.",
+                    "module_id": "CS306_M3",
+                    "topic": "Trees",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "AVL tree is a self-balancing BST where height difference is at most 1. Rotations are used for balancing."
+                },
+                {
+                    "instruction": "Explain bubble sort.",
+                    "module_id": "CS306_M4",
+                    "topic": "Sorting",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Bubble sort repeatedly swaps adjacent elements if they are in wrong order. Time complexity O(n²)."
+                },
+                {
+                    "instruction": "Explain quick sort.",
+                    "module_id": "CS306_M4",
+                    "topic": "Sorting",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Quick sort uses divide and conquer by selecting a pivot and partitioning array. Average complexity O(n log n)."
+                },
+                {
+                    "instruction": "Explain hashing and collision handling.",
+                    "module_id": "CS306_M4",
+                    "topic": "Hashing",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Hashing maps keys to indices. Collisions are handled by chaining or open addressing."
+                },
+                {
+                    "instruction": "Explain BFS and DFS.",
+                    "module_id": "CS306_M4",
+                    "topic": "Graph traversal",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "BFS uses queue and explores level-wise. DFS uses stack/recursion and explores depth-wise."
+                },
+                {
+                    "instruction": "Explain quick sort and its complexity.",
+                    "module_id": "CS301_M4",
+                    "topic": "Sorting",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Quick Sort is a divide-and-conquer sorting algorithm. It works by selecting a pivot element from the array and partitioning the remaining elements into two subarrays: elements smaller than the pivot and elements greater than the pivot.\n\nSteps:\n1. Choose a pivot element.\n2. Partition the array into two halves.\n3. Recursively apply quick sort on both halves.\n\nExample:\nInput: [10, 7, 8, 9, 1, 5]\nPivot = 5 → Left: [1], Right: [10,7,8,9]\n\nPython Code:\ndef quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[0]\n    left = [x for x in arr[1:] if x <= pivot]\n    right = [x for x in arr[1:] if x > pivot]\n    return quick_sort(left) + [pivot] + quick_sort(right)\n\nComplexity:\nBest Case: O(n log n)\nAverage Case: O(n log n)\nWorst Case: O(n^2)"
+                },
+                {
+                    "instruction": "Explain merge sort with example.",
+                    "module_id": "CS301_M4",
+                    "topic": "Sorting",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Merge Sort is a stable divide-and-conquer algorithm that divides the array into halves, sorts each half, and then merges them.\n\nSteps:\n1. Divide array into two halves.\n2. Recursively sort each half.\n3. Merge sorted halves.\n\nExample:\nInput: [8, 3, 5, 2]\nDivide → [8,3] [5,2]\nSort → [3,8] [2,5]\nMerge → [2,3,5,8]\n\nPython Code:\ndef merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr)//2\n        left = arr[:mid]\n        right = arr[mid:]\n        merge_sort(left)\n        merge_sort(right)\n        i=j=k=0\n        while i < len(left) and j < len(right):\n            if left[i] < right[j]:\n                arr[k] = left[i]\n                i += 1\n            else:\n                arr[k] = right[j]\n                j += 1\n            k += 1\n\nComplexity:\nTime: O(n log n)\nSpace: O(n)"
+                },
+                {
+                    "instruction": "Explain binary search algorithm.",
+                    "module_id": "CS301_M1",
+                    "topic": "Searching",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Binary Search is an efficient searching algorithm used on sorted arrays. It works by repeatedly dividing the search space in half.\n\nSteps:\n1. Find middle element.\n2. If equal → return index.\n3. If smaller → search left.\n4. If larger → search right.\n\nExample:\nArray: [2,4,6,8,10]\nSearch 8 → mid=6 → go right → found at index 3\n\nPython Code:\ndef binary_search(arr, target):\n    left, right = 0, len(arr)-1\n    while left <= right:\n        mid = (left+right)//2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid+1\n        else:\n            right = mid-1\n    return -1\n\nComplexity:\nTime: O(log n)\nSpace: O(1)"
+                },
+                {
+                    "instruction": "Explain stack operations with example.",
+                    "module_id": "CS301_M2",
+                    "topic": "Stack",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "A stack is a linear data structure that follows LIFO (Last In First Out).\n\nOperations:\n1. Push → insert element\n2. Pop → remove element\n3. Peek → view top element\n\nExample:\nPush: 10 → 20 → 30\nStack: [10,20,30]\nPop → removes 30\n\nPython Code:\nstack = []\nstack.append(10)\nstack.append(20)\nstack.pop()\n\nApplications:\n- Expression evaluation\n- Function calls\n- Backtracking"
+                },
+                {
+                    "instruction": "Explain linked list with advantages and disadvantages.",
+                    "module_id": "CS301_M3",
+                    "topic": "Linked List",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "A linked list is a collection of nodes where each node contains data and a pointer to the next node.\n\nStructure:\n[Data | Next] → [Data | Next]\n\nAdvantages:\n- Dynamic size\n- Efficient insertion/deletion\n\nDisadvantages:\n- Extra memory for pointers\n- No random access\n\nPython Example:\nclass Node:\n    def _init_(self, data):\n        self.data = data\n        self.next = None"
+                },
+                {
+                    "instruction": "Convert infix expression to postfix using stack.",
+                    "module_id": "CS301_M2",
+                    "topic": "Expression",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Infix expression places operators between operands. Postfix places operators after operands.\n\nSteps:\n1. Use stack for operators.\n2. Output operands directly.\n3. Apply precedence rules.\n\nExample:\nA+B*C → ABC*+\n\nPython Code:\ndef infix_to_postfix(expr):\n    stack = []\n    output = ''\n    precedence = {'+':1,'-':1,'*':2,'/':2}\n    for ch in expr:\n        if ch.isalnum():\n            output += ch\n        else:\n            while stack and precedence.get(ch,0) <= precedence.get(stack[-1],0):\n                output += stack.pop()\n            stack.append(ch)\n    while stack:\n        output += stack.pop()\n    return output"
+                },
+                {
+                    "instruction": "Define linked list. State its advantages over array.",
+                    "module_id": "CS301_M1",
+                    "topic": "Linked List",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A linked list is a linear data structure consisting of nodes where each node contains data and a pointer to the next node.\n\nAdvantages over arrays:\n1. Dynamic size (no fixed memory)\n2. Efficient insertion and deletion\n3. No need for contiguous memory allocation\n\nExample Code:\nclass Node:\n    def _init_(self, data):\n        self.data = data\n        self.next = None"
+                },
+                {
+                    "instruction": "Explain time complexity of loop: for(i=1; i<=n; i=i*2).",
+                    "module_id": "CS301_M1",
+                    "topic": "Complexity",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "The loop increases i exponentially: 1,2,4,8,... until n.\n\nNumber of iterations ≈ log2(n)\n\nTherefore, Time Complexity = O(log n)"
+                },
+                {
+                    "instruction": "Explain binary search with algorithm and complexity.",
+                    "module_id": "CS301_M1",
+                    "topic": "Searching",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Binary search is used to find an element in a sorted array by repeatedly dividing the search space into halves.\n\nSteps:\n1. Find middle element\n2. If equal → return index\n3. If target < mid → search left\n4. Else → search right\n\nAlgorithm:\ndef binary_search(arr, key):\n    low, high = 0, len(arr)-1\n    while low <= high:\n        mid = (low + high)//2\n        if arr[mid] == key:\n            return mid\n        elif arr[mid] < key:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1\n\nComplexity:\nBest: O(1)\nWorst: O(log n)"
+                },
+                {
+                    "instruction": "Explain stack operations and applications.",
+                    "module_id": "CS301_M2",
+                    "topic": "Stack",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Stack is a LIFO data structure.\n\nOperations:\n1. Push → insert element\n2. Pop → remove element\n3. Peek → view top element\n\nExample:\nstack = []\nstack.append(10)\nstack.append(20)\nstack.pop()\n\nApplications:\n- Function calls (recursion)\n- Expression evaluation\n- Undo operations"
+                },
+                {
+                    "instruction": "Convert infix expression to postfix using stack.",
+                    "module_id": "CS301_M2",
+                    "topic": "Expression",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Infix expression: operator between operands.\nPostfix: operator after operands.\n\nSteps:\n1. Use stack for operators\n2. Output operands directly\n3. Apply precedence rules\n\nExample:\nA+B*C → ABC*+\n\nAlgorithm:\ndef infix_to_postfix(expr):\n    stack = []\n    output = ''\n    precedence = {'+':1,'-':1,'*':2,'/':2}\n    for ch in expr:\n        if ch.isalnum():\n            output += ch\n        else:\n            while stack and precedence.get(ch,0) <= precedence.get(stack[-1],0):\n                output += stack.pop()\n            stack.append(ch)\n    while stack:\n        output += stack.pop()\n    return output"
+                },
+                {
+                    "instruction": "Explain recursion with example.",
+                    "module_id": "CS301_M2",
+                    "topic": "Recursion",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Recursion is a technique where a function calls itself to solve smaller subproblems.\n\nExample: Factorial\n\ndef fact(n):\n    if n == 0:\n        return 1\n    return n * fact(n-1)"
+                },
+                {
+                    "instruction": "Explain linked list insertion before a given node.",
+                    "module_id": "CS301_M3",
+                    "topic": "Linked List",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Steps:\n1. Traverse list to find previous node\n2. Create new node\n3. Update pointers\n\nCode:\ndef insert_before(head, target, value):\n    if head.data == target:\n        new_node = Node(value)\n        new_node.next = head\n        return new_node\n    prev = None\n    curr = head\n    while curr and curr.data != target:\n        prev = curr\n        curr = curr.next\n    new_node = Node(value)\n    prev.next = new_node\n    new_node.next = curr"
+                },
+                {
+                    "instruction": "Explain quick sort with example and complexity.",
+                    "module_id": "CS301_M4",
+                    "topic": "Sorting",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Quick sort uses divide-and-conquer approach.\n\nSteps:\n1. Choose pivot\n2. Partition array\n3. Recursively sort subarrays\n\nExample:\n[10,7,8,9,1,5]\nPivot = 5 → [1] [10,7,8,9]\n\nCode:\ndef quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[0]\n    left = [x for x in arr[1:] if x <= pivot]\n    right = [x for x in arr[1:] if x > pivot]\n    return quick_sort(left) + [pivot] + quick_sort(right)\n\nComplexity:\nBest/Average: O(n log n)\nWorst: O(n^2)"
+                },
+                {
+                    "instruction": "Explain merge sort with example.",
+                    "module_id": "CS301_M4",
+                    "topic": "Sorting",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Merge sort divides array and merges sorted halves.\n\nSteps:\n1. Divide\n2. Sort recursively\n3. Merge\n\nExample:\n[8,3,5,2] → [2,3,5,8]\n\nCode:\ndef merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr)//2\n        left = arr[:mid]\n        right = arr[mid:]\n        merge_sort(left)\n        merge_sort(right)"
+                },
+                {
+                    "instruction": "Explain binary tree traversal techniques.",
+                    "module_id": "CS301_M3",
+                    "topic": "Tree",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Traversal types:\n1. Preorder → Root Left Right\n2. Inorder → Left Root Right\n3. Postorder → Left Right Root\n\nCode:\ndef inorder(root):\n    if root:\n        inorder(root.left)\n        print(root.data)\n        inorder(root.right)"
+                },
+                {
+                    "instruction": "Explain hashing and collision handling techniques.",
+                    "module_id": "CS301_M4",
+                    "topic": "Hashing",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Hashing maps keys to indices using hash function.\n\nCollision occurs when two keys map to same index.\n\nTechniques:\n1. Chaining → linked list\n2. Open addressing → linear probing\n\nExample:\nindex = key % size"
+                }
+            ]
+        },
+        {
+            "subject_code": "BS-302",
+            "subject_title": "Mathematics - III",
+            "training_data": [
+                {
+                    "instruction": "What is singular integral of a partial differential equation?",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A singular integral is a particular solution obtained by eliminating arbitrary constants from the complete integral of a PDE."
+                },
+                {
+                    "instruction": "Define Lagrangian multipliers.",
+                    "module_id": "BS302_M1",
+                    "topic": "Optimization",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Lagrangian multipliers are used to find extrema of functions subject to constraints by introducing auxiliary variables."
+                },
+                {
+                    "instruction": "Groups are formed of 4 persons out of 12. Find probability that one particular person is included.",
+                    "module_id": "BS302_M3",
+                    "topic": "Probability",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Required probability = 4/12 = 1/3"
+                },
+                {
+                    "instruction": "For a binomial distribution, mean is 3 and variance is 2. Find p and n.",
+                    "module_id": "BS302_M3",
+                    "topic": "Binomial distribution",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Mean = np = 3, Variance = npq = 2 ⇒ q=2/3, p=1/3, n=9"
+                },
+                {
+                    "instruction": "Write down the recursion formula of 4th order Runge-Kutta method.",
+                    "module_id": "BS302_M4",
+                    "topic": "Runge-Kutta",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "y_{n+1} = y_n + (1/6)(k1 + 2k2 + 2k3 + k4), where k1=h f(x,y), k2=h f(x+h/2, y+k1/2), k3=h f(x+h/2, y+k2/2), k4=h f(x+h, y+k3)"
+                },
+                {
+                    "instruction": "If P(A)=2/3 and P(B)=3/4, find P(A∩B) assuming independence.",
+                    "module_id": "BS302_M3",
+                    "topic": "Probability",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "P(A∩B) = P(A)P(B) = (2/3)*(3/4) = 1/2"
+                },
+                {
+                    "instruction": "Solve PDE by Lagrange multipliers: (y+z)p + (z+x)q = x² − y².",
+                    "module_id": "BS302_M1",
+                    "topic": "Lagrange PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use auxiliary equations: dx/(y+z) = dy/(z+x) = dz/(x²−y²) and solve to obtain general solution."
+                },
+                {
+                    "instruction": "Solve PDE ∂²z/∂x² + ∂²z/∂y² = cos(x+2y) + e^x.",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Solution consists of complementary function (CF) of homogeneous equation and particular integral (PI) using operator method."
+                },
+                {
+                    "instruction": "Form a PDE by eliminating arbitrary constants from z = ax² + by² + c.",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE formation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Differentiate partially and eliminate constants to obtain PDE."
+                },
+                {
+                    "instruction": "Find complete integral using Charpit’s method.",
+                    "module_id": "BS302_M1",
+                    "topic": "Charpit method",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use Charpit equations and solve system of differential equations to obtain complete integral."
+                },
+                {
+                    "instruction": "Find Fourier series of f(x)=x² in (-π,π).",
+                    "module_id": "BS302_M2",
+                    "topic": "Fourier series",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Compute coefficients a₀, aₙ, bₙ and express function as Fourier series."
+                },
+                {
+                    "instruction": "Solve heat equation using separation of variables.",
+                    "module_id": "BS302_M2",
+                    "topic": "Heat equation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Assume u(x,t)=X(x)T(t), separate variables, solve ODEs, and apply boundary conditions."
+                },
+                {
+                    "instruction": "Obtain Fourier series of x sin x.",
+                    "module_id": "BS302_M2",
+                    "topic": "Fourier series",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use integration formulas to compute Fourier coefficients."
+                },
+                {
+                    "instruction": "Solve wave equation with boundary conditions.",
+                    "module_id": "BS302_M2",
+                    "topic": "Wave equation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use separation of variables and apply initial/boundary conditions."
+                },
+                {
+                    "instruction": "Find k such that given function is a probability density function.",
+                    "module_id": "BS302_M3",
+                    "topic": "PDF",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Integrate f(x) over range and equate to 1 to find k."
+                },
+                {
+                    "instruction": "Find mean and variance of given distribution.",
+                    "module_id": "BS302_M3",
+                    "topic": "Expectation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Mean = ∫xf(x)dx, Variance = E(X²) − [E(X)]²."
+                },
+                {
+                    "instruction": "Solve normal distribution problem given mean and standard deviation.",
+                    "module_id": "BS302_M3",
+                    "topic": "Normal distribution",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Convert to standard normal variable and use Z-table."
+                },
+                {
+                    "instruction": "Using Newton’s forward interpolation formula, calculate f(5).",
+                    "module_id": "BS302_M4",
+                    "topic": "Interpolation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Construct difference table and apply interpolation formula."
+                },
+                {
+                    "instruction": "Find real root using Newton-Raphson method.",
+                    "module_id": "BS302_M4",
+                    "topic": "Numerical methods",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use iteration xₙ₊₁ = xₙ − f(x)/f'(x) until required accuracy."
+                },
+                {
+                    "instruction": "Evaluate integral using Simpson’s rule.",
+                    "module_id": "BS302_M4",
+                    "topic": "Numerical integration",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply Simpson’s 1/3 rule using given intervals."
+                },
+                {
+                    "instruction": "Using Lagrange interpolation formula, calculate value for given data.",
+                    "module_id": "BS302_M4",
+                    "topic": "Interpolation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply Lagrange formula and substitute values."
+                },
+                {
+                    "instruction": "Solve differential equation using Euler’s method.",
+                    "module_id": "BS302_M4",
+                    "topic": "Numerical methods",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use y_{n+1} = y_n + h f(x,y) iteratively."
+                },
+                {
+                    "instruction": "Find a partial differential equation by eliminating a and b from z = ax + by + a² + b².",
+                    "module_id": "BS302_M1",
+                    "topic": "First order PDE",
+                    "type": "medium",
+                    "marks": 2,
+                    "output": "Given z = ax + by + a² + b²\n∂z/∂x = a, ∂z/∂y = b\nSubstitute: z = x(∂z/∂x) + y(∂z/∂y) + (∂z/∂x)² + (∂z/∂y)²"
+                },
+                {
+                    "instruction": "A coin is tossed 6 times. Find the probability of getting exactly 2 heads.",
+                    "module_id": "BS302_M3",
+                    "topic": "Binomial distribution",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "P(X=2) = 6C2 (1/2)^6 = 15/64"
+                },
+                {
+                    "instruction": "What are the Dirichlet conditions in Fourier series?",
+                    "module_id": "BS302_M2",
+                    "topic": "Fourier series",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Conditions: (1) Function must be periodic, (2) Finite discontinuities, (3) Finite maxima/minima, (4) Absolutely integrable."
+                },
+                {
+                    "instruction": "Define Newton’s forward interpolation formula.",
+                    "module_id": "BS302_M4",
+                    "topic": "Interpolation",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "f(x) = y₀ + pΔy₀ + p(p-1)/2! Δ²y₀ + ... where p = (x-x₀)/h"
+                },
+                {
+                    "instruction": "Prove that 1 + Δ = e^D.",
+                    "module_id": "BS302_M4",
+                    "topic": "Finite difference operators",
+                    "type": "medium",
+                    "marks": 2,
+                    "output": "Using operator definition: Δ = e^D - 1 ⇒ 1 + Δ = e^D"
+                },
+                {
+                    "instruction": "Find the PI of (D² + 2DD' + D')z = e^(x+y).",
+                    "module_id": "BS302_M1",
+                    "topic": "Linear PDE",
+                    "type": "medium",
+                    "marks": 2,
+                    "output": "PI = e^(x+y) / (1² + 2·1·1 + 1²) = e^(x+y)/4"
+                },
+                {
+                    "instruction": "Solve ∂²z/∂x² + ∂²z/∂y² = cos(x−3y).",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "CF: complementary function of homogeneous equation\nPI: substitute RHS → solution involves sinusoidal form\nFinal solution = CF + PI"
+                },
+                {
+                    "instruction": "Find general solution of (y²z − y)p + x²(y − x)q = x²(x² + y²).",
+                    "module_id": "BS302_M1",
+                    "topic": "Lagrange PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Using Lagrange method: dx/(y²z − y) = dy/(x²(y−x)) = dz/(x²(x²+y²))\nSolve auxiliary equations to obtain general solution."
+                },
+                {
+                    "instruction": "Solve (D² − 2DD' + D'²)z = e^(2x+y).",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "CF from auxiliary equation\nPI = e^(2x+y)/(4 - 4 +1) = e^(2x+y)"
+                },
+                {
+                    "instruction": "Solve √p + √q = 1.",
+                    "module_id": "BS302_M1",
+                    "topic": "First order PDE",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Let p=a², q=b² ⇒ a+b=1 ⇒ solution obtained by integrating z = ax + by + c"
+                },
+                {
+                    "instruction": "Find complete integral using Charpit’s method for z = px + qy + p² + q².",
+                    "module_id": "BS302_M1",
+                    "topic": "Charpit method",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply Charpit equations and solve system to obtain complete integral."
+                },
+                {
+                    "instruction": "Find general solution of y²p − xyq = x(z − 2y).",
+                    "module_id": "BS302_M1",
+                    "topic": "PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use Lagrange auxiliary equations and integrate to find general solution."
+                },
+                {
+                    "instruction": "Expand f(x)=xcosx in Fourier series in (-π,π).",
+                    "module_id": "BS302_M2",
+                    "topic": "Fourier series",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use standard Fourier coefficients a₀, aₙ, bₙ and compute integrals over (-π,π)."
+                },
+                {
+                    "instruction": "Solve ∂²u/∂x² = ∂u/∂t with given conditions using separation of variables.",
+                    "module_id": "BS302_M2",
+                    "topic": "Heat equation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Assume u = X(x)T(t)\nSeparate variables → solve ODEs → apply boundary conditions."
+                },
+                {
+                    "instruction": "Find Fourier series of f(x)=x−x² in (-π,π).",
+                    "module_id": "BS302_M2",
+                    "topic": "Fourier series",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Compute coefficients using standard integrals and substitute into Fourier expansion."
+                },
+                {
+                    "instruction": "Solve ∂u/∂x = ∂²u/∂y² using separation of variables.",
+                    "module_id": "BS302_M2",
+                    "topic": "PDE",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Assume separable form and reduce to ODEs, then solve."
+                },
+                {
+                    "instruction": "A random variable X has pmf: P(X)=k·x. Find k.",
+                    "module_id": "BS302_M3",
+                    "topic": "PMF",
+                    "type": "medium",
+                    "marks": 2,
+                    "output": "Sum of probabilities =1 ⇒ k(1+2+3+4)=1 ⇒ k=1/10"
+                },
+                {
+                    "instruction": "Evaluate P(0 < X < 4).",
+                    "module_id": "BS302_M3",
+                    "topic": "Probability",
+                    "type": "medium",
+                    "marks": 2,
+                    "output": "Sum probabilities of values between 0 and 4 using pmf."
+                },
+                {
+                    "instruction": "Find mean and variance of binomial distribution.",
+                    "module_id": "BS302_M3",
+                    "topic": "Binomial distribution",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Mean = np, Variance = np(1−p)"
+                },
+                {
+                    "instruction": "Find probability of winning at least 3 games out of 5.",
+                    "module_id": "BS302_M3",
+                    "topic": "Binomial probability",
+                    "type": "long",
+                    "marks": 4,
+                    "output": "P(X≥3)=P(3)+P(4)+P(5) using binomial formula."
+                },
+                {
+                    "instruction": "Find expected values of X and var(X) for given pdf.",
+                    "module_id": "BS302_M3",
+                    "topic": "Expectation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "E(X)=∫xf(x)dx, Var(X)=E(X²)−[E(X)]²"
+                },
+                {
+                    "instruction": "Two urns problem – find probability ball drawn from urn II.",
+                    "module_id": "BS302_M3",
+                    "topic": "Conditional probability",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply Bayes theorem to compute probability."
+                },
+                {
+                    "instruction": "Find probability of observing more than 3 cars given Poisson distribution.",
+                    "module_id": "BS302_M3",
+                    "topic": "Poisson distribution",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use Poisson formula and compute P(X>3)=1−P(X≤3)."
+                },
+                {
+                    "instruction": "Using Newton’s forward interpolation formula, calculate value at given point.",
+                    "module_id": "BS302_M4",
+                    "topic": "Interpolation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Construct difference table and apply forward interpolation formula."
+                },
+                {
+                    "instruction": "Evaluate integral using trapezoidal rule.",
+                    "module_id": "BS302_M4",
+                    "topic": "Numerical integration",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use trapezoidal rule formula with given intervals."
+                },
+                {
+                    "instruction": "Use Runge-Kutta method to compute y(0.2).",
+                    "module_id": "BS302_M4",
+                    "topic": "Runge-Kutta method",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply RK4 formula step-by-step with given h."
+                },
+                {
+                    "instruction": "Using Lagrange interpolation, calculate value for given table.",
+                    "module_id": "BS302_M4",
+                    "topic": "Lagrange interpolation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply Lagrange formula and substitute values."
+                },
+                {
+                    "instruction": "Solve equation 3x − cosx − 1 = 0 using Newton-Raphson method.",
+                    "module_id": "BS302_M4",
+                    "topic": "Root finding",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use iteration formula xₙ₊₁ = xₙ − f(x)/f'(x) until convergence."
+                },
+                {
+                    "instruction": "Apply Runge-Kutta method to compute y(0.1) for y'=x+y².",
+                    "module_id": "BS302_M4",
+                    "topic": "Runge-Kutta method",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use RK4 method with given initial condition."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-305",
+            "subject_title": "Digital Logic and Microprocessor",
+            "training_data": [
+                {
+                    "instruction": "What is a logic gate?",
+                    "module_id": "CS305_M1",
+                    "topic": "Logic gates",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A logic gate is a basic digital circuit that performs a logical operation on one or more binary inputs to produce a single output."
+                },
+                {
+                    "instruction": "What are universal gates?",
+                    "module_id": "CS305_M1",
+                    "topic": "Universal gates",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "NAND and NOR gates are universal gates because any Boolean function can be implemented using only these gates."
+                },
+                {
+                    "instruction": "Explain K-map simplification.",
+                    "module_id": "CS305_M1",
+                    "topic": "K-map",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "K-map is a graphical method used to simplify Boolean expressions by grouping adjacent cells representing minterms to obtain minimal expression."
+                },
+                {
+                    "instruction": "Explain multiplexer.",
+                    "module_id": "CS305_M1",
+                    "topic": "Multiplexer",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "A multiplexer selects one input from multiple inputs and forwards it to a single output based on select lines."
+                },
+                {
+                    "instruction": "Explain encoder and decoder.",
+                    "module_id": "CS305_M1",
+                    "topic": "Encoder/Decoder",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Encoder converts multiple inputs into coded output, while decoder converts coded input into multiple outputs."
+                },
+                {
+                    "instruction": "What is a flip-flop?",
+                    "module_id": "CS305_M2",
+                    "topic": "Flip-flops",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A flip-flop is a bistable device used to store one bit of data."
+                },
+                {
+                    "instruction": "Differentiate between SR and JK flip-flop.",
+                    "module_id": "CS305_M2",
+                    "topic": "Flip-flops",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "SR flip-flop has invalid state, while JK flip-flop removes this issue and toggles when J=K=1."
+                },
+                {
+                    "instruction": "Explain shift registers.",
+                    "module_id": "CS305_M2",
+                    "topic": "Shift registers",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Shift registers store data and shift it left or right. Types: SISO, SIPO, PISO, PIPO."
+                },
+                {
+                    "instruction": "Explain counters.",
+                    "module_id": "CS305_M2",
+                    "topic": "Counters",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Counters are sequential circuits that count pulses. Types: ripple, synchronous, up-down counters."
+                },
+                {
+                    "instruction": "What is microprocessor?",
+                    "module_id": "CS305_M3",
+                    "topic": "Microprocessor basics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A microprocessor is an integrated circuit that performs arithmetic and logical operations and controls system functions."
+                },
+                {
+                    "instruction": "Explain 8085 architecture.",
+                    "module_id": "CS305_M3",
+                    "topic": "8085 architecture",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "8085 consists of ALU, registers, accumulator, control unit, buses, and instruction decoder. It is an 8-bit processor."
+                },
+                {
+                    "instruction": "List addressing modes of 8085.",
+                    "module_id": "CS305_M3",
+                    "topic": "Addressing modes",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Immediate, direct, register, register indirect, and implied addressing modes."
+                },
+                {
+                    "instruction": "What is stack in 8085?",
+                    "module_id": "CS305_M4",
+                    "topic": "Stack",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Stack is a memory structure used to store temporary data using LIFO principle."
+                },
+                {
+                    "instruction": "Explain interrupts in 8085.",
+                    "module_id": "CS305_M4",
+                    "topic": "Interrupts",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Interrupts are signals that temporarily halt normal execution. Types include TRAP, RST7.5, RST6.5, RST5.5."
+                },
+                {
+                    "instruction": "Explain memory mapped I/O.",
+                    "module_id": "CS305_M4",
+                    "topic": "I/O interfacing",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "In memory-mapped I/O, I/O devices are treated as memory locations and accessed using memory instructions."
+                }
+            ]
+        },
+        {
+            "subject_code": "BS-303",
+            "subject_title": "Biology for Engineers",
+            "training_data": [
+                {
+                    "instruction": "Who discovered cell? Give example of Eukaryotic cell.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell biology",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Cell was discovered by Robert Hooke. Example of eukaryotic cell: animal cell or plant cell."
+                },
+                {
+                    "instruction": "What are the functions of amino acids?",
+                    "module_id": "BS303_M1",
+                    "topic": "Biomolecules",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Amino acids are building blocks of proteins, help in enzyme formation, and support metabolism."
+                },
+                {
+                    "instruction": "Define zymogen.",
+                    "module_id": "BS303_M1",
+                    "topic": "Enzymes",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Zymogen is an inactive precursor of an enzyme that becomes active after modification."
+                },
+                {
+                    "instruction": "What do you mean by pure culture?",
+                    "module_id": "BS303_M3",
+                    "topic": "Microbiology",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A pure culture is a culture containing only one type of microorganism."
+                },
+                {
+                    "instruction": "Name two genetically modified crops.",
+                    "module_id": "BS303_M2",
+                    "topic": "Genetics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Examples: Bt cotton and Golden rice."
+                },
+                {
+                    "instruction": "What do you mean by equilibrium constant?",
+                    "module_id": "BS303_M4",
+                    "topic": "Thermodynamics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Equilibrium constant is the ratio of product concentration to reactant concentration at equilibrium."
+                },
+                {
+                    "instruction": "Describe different events of S-phase and Anaphase.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell cycle",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "S-phase involves DNA replication. In anaphase, chromosomes separate and move to opposite poles."
+                },
+                {
+                    "instruction": "Discuss two theories of enzyme mechanism.",
+                    "module_id": "BS303_M1",
+                    "topic": "Enzymes",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Lock-and-key model and induced-fit model explain enzyme-substrate interaction."
+                },
+                {
+                    "instruction": "State the functions of endoplasmic reticulum and nucleus.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell organelles",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "ER helps in protein and lipid synthesis. Nucleus controls cell activities and stores genetic material."
+                },
+                {
+                    "instruction": "Describe active transport system.",
+                    "module_id": "BS303_M1",
+                    "topic": "Transport",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Active transport moves substances against concentration gradient using energy (ATP)."
+                },
+                {
+                    "instruction": "Describe structure of DNA.",
+                    "module_id": "BS303_M2",
+                    "topic": "DNA",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "DNA is a double helix structure made of nucleotides with sugar-phosphate backbone and base pairing."
+                },
+                {
+                    "instruction": "Explain classification of carbohydrates.",
+                    "module_id": "BS303_M1",
+                    "topic": "Biomolecules",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Carbohydrates are classified into monosaccharides, disaccharides, and polysaccharides."
+                },
+                {
+                    "instruction": "What is recombinant DNA technology? Give examples.",
+                    "module_id": "BS303_M2",
+                    "topic": "Recombinant DNA",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Recombinant DNA technology involves combining DNA from different organisms. Examples: insulin production, gene therapy."
+                },
+                {
+                    "instruction": "What is independent assortment?",
+                    "module_id": "BS303_M2",
+                    "topic": "Genetics",
+                    "type": "short",
+                    "marks": 3,
+                    "output": "Law of independent assortment states that genes of different traits are inherited independently."
+                },
+                {
+                    "instruction": "Discuss steps of gene mapping.",
+                    "module_id": "BS303_M2",
+                    "topic": "Gene mapping",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Steps include identifying markers, measuring recombination frequency, and constructing genetic maps."
+                },
+                {
+                    "instruction": "What are causes of mutation?",
+                    "module_id": "BS303_M2",
+                    "topic": "Mutation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Causes include radiation, chemicals, replication errors, and environmental factors."
+                },
+                {
+                    "instruction": "Explain substitution mutation and nonsense mutation.",
+                    "module_id": "BS303_M2",
+                    "topic": "Mutation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Substitution mutation replaces one base with another. Nonsense mutation creates a stop codon, terminating protein synthesis."
+                },
+                {
+                    "instruction": "Briefly describe isolation techniques of microorganisms.",
+                    "module_id": "BS303_M3",
+                    "topic": "Isolation",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Techniques include streak plate, pour plate, and spread plate methods."
+                },
+                {
+                    "instruction": "Explain impact of microorganisms in ecology.",
+                    "module_id": "BS303_M3",
+                    "topic": "Ecology",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Microorganisms help in nutrient cycling, decomposition, and maintaining ecological balance."
+                },
+                {
+                    "instruction": "What are methods used for chemical sterilization?",
+                    "module_id": "BS303_M3",
+                    "topic": "Sterilization",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Methods include use of alcohol, formaldehyde, and disinfectants."
+                },
+                {
+                    "instruction": "What do you mean by growth kinetics of bacteria?",
+                    "module_id": "BS303_M3",
+                    "topic": "Growth kinetics",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Growth kinetics describes phases of bacterial growth: lag, log, stationary, and death phase."
+                },
+                {
+                    "instruction": "Write characteristics of pure culture.",
+                    "module_id": "BS303_M3",
+                    "topic": "Pure culture",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Pure culture contains only one species, shows uniform growth, and has consistent characteristics."
+                },
+                {
+                    "instruction": "Discuss nutrition process of microorganisms.",
+                    "module_id": "BS303_M3",
+                    "topic": "Nutrition",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Microorganisms obtain nutrients through autotrophic or heterotrophic modes including photosynthesis and absorption."
+                },
+                {
+                    "instruction": "Describe management system of toxic industrial wastes.",
+                    "module_id": "BS303_M3",
+                    "topic": "Waste management",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Management includes treatment, recycling, safe disposal, and use of bioremediation techniques."
+                },
+                {
+                    "instruction": "What is thermodynamics? Mention applications in biology.",
+                    "module_id": "BS303_M4",
+                    "topic": "Thermodynamics",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Thermodynamics studies energy changes. In biology, it explains metabolism and energy transfer."
+                },
+                {
+                    "instruction": "Explain role of ATP in energy change.",
+                    "module_id": "BS303_M4",
+                    "topic": "ATP",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "ATP stores and transfers energy required for cellular processes."
+                },
+                {
+                    "instruction": "What do you mean by neurotransmitter?",
+                    "module_id": "BS303_M4",
+                    "topic": "Neurobiology",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Neurotransmitters are chemicals that transmit signals between nerve cells."
+                },
+                {
+                    "instruction": "Discuss solute transport.",
+                    "module_id": "BS303_M4",
+                    "topic": "Transport",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Solute transport occurs via diffusion, facilitated diffusion, and active transport."
+                },
+                {
+                    "instruction": "Mention importance of TCA cycle.",
+                    "module_id": "BS303_M4",
+                    "topic": "Metabolism",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "TCA cycle generates ATP, NADH, and FADH2 for energy production."
+                },
+                {
+                    "instruction": "Describe different types of muscles.",
+                    "module_id": "BS303_M4",
+                    "topic": "Muscles",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Types: skeletal (voluntary), smooth (involuntary), and cardiac muscles."
+                },
+                {
+                    "instruction": "What are functions of neuron?",
+                    "module_id": "BS303_M4",
+                    "topic": "Neurons",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Neurons transmit electrical signals and coordinate body functions."
+                },
+                {
+                    "instruction": "What is biology?",
+                    "module_id": "BS303_M1",
+                    "topic": "Introduction to Biology",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Biology is the scientific study of living organisms, including their structure, function, growth, evolution, and interactions."
+                },
+                {
+                    "instruction": "Differentiate between prokaryotic and eukaryotic cells.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell structure",
+                    "type": "short",
+                    "marks": 4,
+                    "output": "Prokaryotic cells lack a nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and organelles. Prokaryotes are simpler and smaller than eukaryotes."
+                },
+                {
+                    "instruction": "Explain the structure and function of cell membrane.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell structure",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Cell membrane is a phospholipid bilayer with embedded proteins. It regulates movement of substances, maintains cell integrity, and facilitates communication."
+                },
+                {
+                    "instruction": "Describe the cell cycle.",
+                    "module_id": "BS303_M1",
+                    "topic": "Cell cycle",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Cell cycle includes interphase (G1, S, G2) and mitotic phase (mitosis + cytokinesis). It ensures growth, DNA replication, and division into daughter cells."
+                },
+                {
+                    "instruction": "What are biomolecules?",
+                    "module_id": "BS303_M1",
+                    "topic": "Biomolecules",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Biomolecules are organic molecules such as carbohydrates, proteins, lipids, and nucleic acids essential for life."
+                },
+                {
+                    "instruction": "Explain protein structure.",
+                    "module_id": "BS303_M1",
+                    "topic": "Proteins",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Protein structure has four levels: primary (sequence), secondary (α-helix, β-sheet), tertiary (3D folding), and quaternary (multiple polypeptides)."
+                },
+                {
+                    "instruction": "State Mendel’s laws of inheritance.",
+                    "module_id": "BS303_M2",
+                    "topic": "Genetics",
+                    "type": "short",
+                    "marks": 4,
+                    "output": "Mendel’s laws: (1) Law of segregation, (2) Law of independent assortment."
+                },
+                {
+                    "instruction": "What is DNA?",
+                    "module_id": "BS303_M2",
+                    "topic": "DNA",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "DNA (Deoxyribonucleic Acid) is the genetic material that carries hereditary information in living organisms."
+                },
+                {
+                    "instruction": "Explain genetic code.",
+                    "module_id": "BS303_M2",
+                    "topic": "Genetic code",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Genetic code is a set of rules by which nucleotide sequences in DNA are translated into proteins. It is universal, degenerate, and non-overlapping."
+                },
+                {
+                    "instruction": "Describe mutation and recombination.",
+                    "module_id": "BS303_M2",
+                    "topic": "Mutation",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Mutation is a change in DNA sequence, while recombination is exchange of genetic material during meiosis. Both contribute to genetic variation."
+                },
+                {
+                    "instruction": "What is microbiology?",
+                    "module_id": "BS303_M3",
+                    "topic": "Microbiology",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Microbiology is the study of microorganisms such as bacteria, viruses, fungi, and protozoa."
+                },
+                {
+                    "instruction": "Explain sterilization methods.",
+                    "module_id": "BS303_M3",
+                    "topic": "Sterilization",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Sterilization methods include heat (autoclaving), filtration, radiation, and chemical agents to eliminate microorganisms."
+                },
+                {
+                    "instruction": "Describe growth phases of microorganisms.",
+                    "module_id": "BS303_M3",
+                    "topic": "Growth kinetics",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Growth phases: lag phase, log (exponential) phase, stationary phase, and death phase."
+                },
+                {
+                    "instruction": "Explain control of microorganisms.",
+                    "module_id": "BS303_M3",
+                    "topic": "Control methods",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Microorganisms are controlled by sterilization, disinfection, antiseptics, antibiotics, and maintaining hygiene."
+                },
+                {
+                    "instruction": "What is metabolism?",
+                    "module_id": "BS303_M4",
+                    "topic": "Metabolism",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Metabolism is the sum of all biochemical reactions occurring in a living organism."
+                },
+                {
+                    "instruction": "Explain glycolysis.",
+                    "module_id": "BS303_M4",
+                    "topic": "Glycolysis",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Glycolysis is the breakdown of glucose into pyruvate in the cytoplasm, producing ATP and NADH."
+                },
+                {
+                    "instruction": "Describe Krebs cycle.",
+                    "module_id": "BS303_M4",
+                    "topic": "Krebs cycle",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Krebs cycle occurs in mitochondria and produces ATP, NADH, and FADH2 through oxidation of acetyl-CoA."
+                },
+                {
+                    "instruction": "Explain role of ATP.",
+                    "module_id": "BS303_M4",
+                    "topic": "ATP",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "ATP is the energy currency of the cell used for metabolic processes."
+                },
+                {
+                    "instruction": "Describe thermodynamics in biological systems.",
+                    "module_id": "BS303_M4",
+                    "topic": "Thermodynamics",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Biological systems follow thermodynamic laws: energy conservation (1st law) and entropy increase (2nd law). Energy transformations occur during metabolism."
+                }
+            ]
+        },
+        {
+            "subject_code": "ES-304",
+            "subject_title": "Engineering Mechanics",
+            "training_data": [
+                {
+                    "instruction": "Explain the concept of equilibrium in engineering mechanics.",
+                    "module_id": "ES304_M1",
+                    "topic": "Equilibrium",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A body is in equilibrium when the resultant force and moment acting on it are zero."
+                },
+                {
+                    "instruction": "What is the principle of virtual work?",
+                    "module_id": "ES304_M3",
+                    "topic": "Virtual work",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "If a system is in equilibrium, the total virtual work done by all forces is zero."
+                },
+                {
+                    "instruction": "Explain the significance of friction in engineering mechanics.",
+                    "module_id": "ES304_M1",
+                    "topic": "Friction",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Friction opposes motion, provides grip, and is essential in mechanical systems like brakes and clutches."
+                },
+                {
+                    "instruction": "What is the principle of conservation of angular momentum?",
+                    "module_id": "ES304_M4",
+                    "topic": "Dynamics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Angular momentum remains constant if no external torque acts on a system."
+                },
+                {
+                    "instruction": "What is the difference between dynamic and static equilibrium?",
+                    "module_id": "ES304_M4",
+                    "topic": "Dynamics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Static equilibrium occurs when the body is at rest, while dynamic equilibrium occurs when the body moves with constant velocity."
+                },
+                {
+                    "instruction": "What is the purpose of a free-body diagram in statics?",
+                    "module_id": "ES304_M1",
+                    "topic": "FBD",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A free-body diagram shows all forces acting on a body to simplify analysis."
+                },
+                {
+                    "instruction": "State and prove Lami’s theorem.",
+                    "module_id": "ES304_M1",
+                    "topic": "Force systems",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Lami’s theorem states that if three forces acting at a point are in equilibrium, each force is proportional to the sine of the angle between the other two. Proof is based on triangle law of forces."
+                },
+                {
+                    "instruction": "What is a couple? Explain the arm of a couple.",
+                    "module_id": "ES304_M1",
+                    "topic": "Moments",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "A couple is a pair of equal and opposite forces. The arm is the perpendicular distance between their lines of action."
+                },
+                {
+                    "instruction": "Find least pull required to just turn a block over one edge.",
+                    "module_id": "ES304_M1",
+                    "topic": "Friction",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Take moments about pivot edge and equate resisting and applied moments to find minimum force."
+                },
+                {
+                    "instruction": "Two cylinders placed in a channel – find reactions.",
+                    "module_id": "ES304_M1",
+                    "topic": "Equilibrium",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Resolve forces and apply equilibrium equations ΣFx=0 and ΣFy=0 to determine reactions."
+                },
+                {
+                    "instruction": "Cylinder between surfaces – find reactions at points of contact.",
+                    "module_id": "ES304_M1",
+                    "topic": "Friction",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use equilibrium equations and geometry of contact to calculate normal reactions."
+                },
+                {
+                    "instruction": "Ladder problem with friction – prove equilibrium condition.",
+                    "module_id": "ES304_M1",
+                    "topic": "Friction",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Apply equilibrium equations and friction laws at contact points to verify condition."
+                },
+                {
+                    "instruction": "Find centre of gravity of given section.",
+                    "module_id": "ES304_M2",
+                    "topic": "Centroid",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Divide into simple shapes, calculate centroid of each, and apply weighted average formula."
+                },
+                {
+                    "instruction": "Find moment of inertia of a composite section.",
+                    "module_id": "ES304_M2",
+                    "topic": "Moment of inertia",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use standard formulas and apply parallel axis theorem for composite bodies."
+                },
+                {
+                    "instruction": "Analyze truss and find forces in members.",
+                    "module_id": "ES304_M3",
+                    "topic": "Truss analysis",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Use method of joints or sections and solve equilibrium equations."
+                },
+                {
+                    "instruction": "Explain principle of virtual work and its applications.",
+                    "module_id": "ES304_M3",
+                    "topic": "Virtual work",
+                    "type": "long",
+                    "marks": 7,
+                    "output": "Virtual work principle states total work is zero in equilibrium. Used in solving beams, trusses, and mechanisms."
+                },
+                {
+                    "instruction": "Beam supported at two points – find reactions using virtual work.",
+                    "module_id": "ES304_M3",
+                    "topic": "Virtual work",
+                    "type": "long",
+                    "marks": 7,
+                    "output": "Apply virtual displacement and equate work done by forces to zero."
+                },
+                {
+                    "instruction": "Cantilever truss problem – find stresses in members.",
+                    "module_id": "ES304_M3",
+                    "topic": "Truss",
+                    "type": "long",
+                    "marks": 7,
+                    "output": "Use equilibrium equations and method of joints to determine member forces."
+                },
+                {
+                    "instruction": "What are free and forced vibrations? Differentiate.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Free vibration occurs without external force, forced vibration occurs due to external force."
+                },
+                {
+                    "instruction": "Describe basic elements of single degree of freedom system.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Elements include mass, spring, and damper."
+                },
+                {
+                    "instruction": "What is mechanical vibration?",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Mechanical vibration is oscillatory motion of a body about equilibrium position."
+                },
+                {
+                    "instruction": "Define forced vibration.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Forced vibration occurs when an external periodic force acts on a system."
+                },
+                {
+                    "instruction": "Differentiate longitudinal and transverse vibrations.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "medium",
+                    "marks": 3,
+                    "output": "Longitudinal vibration occurs along axis, transverse occurs perpendicular to axis."
+                },
+                {
+                    "instruction": "Explain resonance and its importance.",
+                    "module_id": "ES304_M4",
+                    "topic": "Resonance",
+                    "type": "long",
+                    "marks": 5,
+                    "output": "Resonance occurs when forcing frequency equals natural frequency, causing large amplitude. It is important to avoid structural failure."
+                },
+                {
+                    "instruction": "What is significance of damper in vibration?",
+                    "module_id": "ES304_M4",
+                    "topic": "Damping",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Damper reduces vibration amplitude and stabilizes system."
+                },
+                {
+                    "instruction": "Define force.",
+                    "module_id": "ES304_M1",
+                    "topic": "Force systems",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Force is an external action that changes or tends to change the state of rest or motion of a body."
+                },
+                {
+                    "instruction": "What is equilibrium of a particle?",
+                    "module_id": "ES304_M1",
+                    "topic": "Equilibrium",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A particle is in equilibrium when the net force acting on it is zero."
+                },
+                {
+                    "instruction": "Explain free body diagram (FBD).",
+                    "module_id": "ES304_M1",
+                    "topic": "Free body diagram",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "A free body diagram represents a body isolated from surroundings showing all forces acting on it, used for solving equilibrium problems."
+                },
+                {
+                    "instruction": "State and explain laws of friction.",
+                    "module_id": "ES304_M1",
+                    "topic": "Friction",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Laws: (1) Friction opposes motion, (2) proportional to normal reaction, (3) independent of area of contact, (4) depends on nature of surfaces."
+                },
+                {
+                    "instruction": "Explain moments and couples.",
+                    "module_id": "ES304_M1",
+                    "topic": "Moments",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Moment is the turning effect of a force about a point. Couple consists of two equal and opposite forces causing rotation without translation."
+                },
+                {
+                    "instruction": "Define centroid.",
+                    "module_id": "ES304_M2",
+                    "topic": "Centroid",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Centroid is the geometric center of a plane figure."
+                },
+                {
+                    "instruction": "Explain moment of inertia.",
+                    "module_id": "ES304_M2",
+                    "topic": "Moment of inertia",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Moment of inertia is the resistance of a body to rotational motion about an axis."
+                },
+                {
+                    "instruction": "State parallel axis theorem.",
+                    "module_id": "ES304_M2",
+                    "topic": "Moment of inertia",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Moment of inertia about any axis = moment of inertia about centroidal axis + mass × square of distance between axes."
+                },
+                {
+                    "instruction": "Explain mass moment of inertia for simple bodies.",
+                    "module_id": "ES304_M2",
+                    "topic": "Mass moment of inertia",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Mass moment of inertia depends on distribution of mass. For example: solid cylinder = MR²/2, sphere = 2MR²/5."
+                },
+                {
+                    "instruction": "Explain centroid of composite figures.",
+                    "module_id": "ES304_M2",
+                    "topic": "Centroid",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Centroid of composite body is calculated by dividing into simple shapes and using weighted average of their centroids."
+                },
+                {
+                    "instruction": "Define truss.",
+                    "module_id": "ES304_M3",
+                    "topic": "Trusses",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "A truss is a structure composed of members connected at joints to form a rigid framework."
+                },
+                {
+                    "instruction": "Explain method of joints.",
+                    "module_id": "ES304_M3",
+                    "topic": "Truss analysis",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Method of joints analyzes forces at each joint using equilibrium equations ΣFx=0 and ΣFy=0."
+                },
+                {
+                    "instruction": "Explain method of sections.",
+                    "module_id": "ES304_M3",
+                    "topic": "Truss analysis",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Method of sections involves cutting the truss and applying equilibrium equations to determine member forces."
+                },
+                {
+                    "instruction": "Explain virtual work principle.",
+                    "module_id": "ES304_M3",
+                    "topic": "Virtual work",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Principle states that for a system in equilibrium, total virtual work done by forces is zero."
+                },
+                {
+                    "instruction": "Define velocity and acceleration.",
+                    "module_id": "ES304_M4",
+                    "topic": "Kinematics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Velocity is rate of change of displacement, while acceleration is rate of change of velocity."
+                },
+                {
+                    "instruction": "Explain D’Alembert’s principle.",
+                    "module_id": "ES304_M4",
+                    "topic": "Dynamics",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "It converts dynamic problems into static equilibrium by introducing inertia force."
+                },
+                {
+                    "instruction": "State work-energy principle.",
+                    "module_id": "ES304_M4",
+                    "topic": "Work-energy",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Work done by forces equals change in kinetic energy of a body."
+                },
+                {
+                    "instruction": "Explain types of vibrations.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Types: free vibration, forced vibration, damped vibration, undamped vibration."
+                },
+                {
+                    "instruction": "Explain resonance and damping.",
+                    "module_id": "ES304_M4",
+                    "topic": "Vibrations",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Resonance occurs when frequency matches natural frequency causing large amplitude. Damping reduces amplitude of vibrations over time."
+                }
+            ]
+        },
+        {
+            "subject_code": "MC-310",
+            "subject_title": "Indian Constitution",
+            "training_data": [
+                {
+                    "instruction": "Why is the Constitution called the highest law?",
+                    "module_id": "MC310_M1",
+                    "topic": "Constitution basics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "The Constitution is the supreme law because all laws and actions must conform to it, and it defines the structure and powers of government."
+                },
+                {
+                    "instruction": "Differentiate between Constitution and Constitutional law.",
+                    "module_id": "MC310_M1",
+                    "topic": "Constitution basics",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "The Constitution is the fundamental legal document, while constitutional law refers to laws derived from and interpreting the Constitution."
+                },
+                {
+                    "instruction": "Mention any four Fundamental Duties.",
+                    "module_id": "MC310_M2",
+                    "topic": "Fundamental duties",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Respect the Constitution, protect sovereignty, promote harmony, safeguard public property."
+                },
+                {
+                    "instruction": "What do you mean by Federalism in India?",
+                    "module_id": "MC310_M3",
+                    "topic": "Federal structure",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Federalism in India refers to division of powers between central and state governments."
+                },
+                {
+                    "instruction": "What do you mean by urban local government?",
+                    "module_id": "MC310_M4",
+                    "topic": "Urban governance",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Urban local government refers to municipal bodies managing cities and towns."
+                },
+                {
+                    "instruction": "Mention the six Fundamental Rights.",
+                    "module_id": "MC310_M2",
+                    "topic": "Fundamental rights",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Right to equality, freedom, against exploitation, religious freedom, cultural & educational rights, constitutional remedies."
+                },
+                {
+                    "instruction": "Discuss the meaning of the Constitution.",
+                    "module_id": "MC310_M1",
+                    "topic": "Constitution",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "The Constitution is a legal framework that defines the structure, powers, and functions of government and guarantees rights to citizens."
+                },
+                {
+                    "instruction": "Differentiate between Constitution and Constitutionalism.",
+                    "module_id": "MC310_M1",
+                    "topic": "Constitution",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Constitution is the legal document, while constitutionalism refers to principles of limited government and rule of law."
+                },
+                {
+                    "instruction": "Write short notes on Parliamentary form of government.",
+                    "module_id": "MC310_M3",
+                    "topic": "Government system",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Parliamentary system is where executive is responsible to legislature. Prime Minister is head of government."
+                },
+                {
+                    "instruction": "Explain Indian secularism.",
+                    "module_id": "MC310_M1",
+                    "topic": "Secularism",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Indian secularism ensures equal respect for all religions and no official state religion."
+                },
+                {
+                    "instruction": "Explain three-tier government.",
+                    "module_id": "MC310_M4",
+                    "topic": "Local government",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Three-tier system includes central, state, and local governments."
+                },
+                {
+                    "instruction": "What do you mean by Amendment of the Indian Constitution?",
+                    "module_id": "MC310_M3",
+                    "topic": "Amendment",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Amendment is the process of modifying the Constitution as per Article 368."
+                },
+                {
+                    "instruction": "Write short notes on Cooperative societies.",
+                    "module_id": "MC310_M4",
+                    "topic": "Local governance",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Cooperative societies are voluntary organizations formed to promote economic interests of members."
+                },
+                {
+                    "instruction": "Explain why Indian Constitution is lengthy.",
+                    "module_id": "MC310_M1",
+                    "topic": "Features",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "It is lengthy due to detailed provisions, inclusion of rights, duties, and administrative details."
+                },
+                {
+                    "instruction": "Explain emergency provisions.",
+                    "module_id": "MC310_M3",
+                    "topic": "Emergency",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Emergency provisions allow central government to take control during national, state, or financial crises."
+                },
+                {
+                    "instruction": "What do you mean by liberal intellectual principles?",
+                    "module_id": "MC310_M1",
+                    "topic": "Principles",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "These principles include liberty, equality, democracy, and rule of law."
+                },
+                {
+                    "instruction": "Discuss significance of Directive Principles of State Policy.",
+                    "module_id": "MC310_M2",
+                    "topic": "DPSP",
+                    "type": "long",
+                    "marks": 7,
+                    "output": "DPSPs guide the state in policy-making to ensure social and economic justice and welfare of citizens."
+                },
+                {
+                    "instruction": "What do you mean by holding together federation?",
+                    "module_id": "MC310_M3",
+                    "topic": "Federalism",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "It is a type of federation where power is divided but central authority remains strong."
+                },
+                {
+                    "instruction": "Explain powers and functions of President of India.",
+                    "module_id": "MC310_M3",
+                    "topic": "President",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "President has executive, legislative, judicial, and emergency powers."
+                },
+                {
+                    "instruction": "What do you mean by coming together federation?",
+                    "module_id": "MC310_M3",
+                    "topic": "Federalism",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "It is a federation where independent states come together to form a union."
+                },
+                {
+                    "instruction": "Explain parliamentary form of government.",
+                    "module_id": "MC310_M3",
+                    "topic": "Government",
+                    "type": "medium",
+                    "marks": 4,
+                    "output": "Executive is responsible to legislature, and Prime Minister leads the government."
+                },
+                {
+                    "instruction": "State financial relation between Union and States.",
+                    "module_id": "MC310_M3",
+                    "topic": "Finance",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Financial relations include tax distribution, grants, and finance commission recommendations."
+                },
+                {
+                    "instruction": "Discuss emergency provisions mentioned in Constitution.",
+                    "module_id": "MC310_M3",
+                    "topic": "Emergency",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Includes national emergency, state emergency, and financial emergency."
+                },
+                {
+                    "instruction": "Explain Panchayati Raj system.",
+                    "module_id": "MC310_M4",
+                    "topic": "Panchayati Raj",
+                    "type": "long",
+                    "marks": 6,
+                    "output": "Panchayati Raj is a system of local self-government in rural areas with three-tier structure."
+                },
+                {
+                    "instruction": "What do you mean by Nagar Panchayat?",
+                    "module_id": "MC310_M4",
+                    "topic": "Urban governance",
+                    "type": "short",
+                    "marks": 2,
+                    "output": "Nagar Panchayat is a local body for areas transitioning from rural to urban."
+                },
+                {
+                    "instruction": "Write short notes on TTAADC.",
+                    "module_id": "MC310_M4",
+                    "topic": "TTAADC",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Tripura Tribal Areas Autonomous District Council provides self-governance to tribal areas."
+                },
+                {
+                    "instruction": "Explain economic planning in India.",
+                    "module_id": "MC310_M3",
+                    "topic": "Planning",
+                    "type": "medium",
+                    "marks": 5,
+                    "output": "Economic planning involves government strategies for economic development."
+                }
+            ]
+        }
+    ]
+}
