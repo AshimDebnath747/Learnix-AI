@@ -1,0 +1,919 @@
+{
+    "university": "Tripura University",
+    "semester": 5,
+    "exam": "B.Tech 3rd Semester Exam 2025",
+    "format": "alpaca",
+    "subjects": [
+        {
+            "subject_code": "HU-501",
+            "subject_title": "Professional Practice, Ethics and Law",
+            "training_data": [
+                {
+                    "instruction": "Define professional ethics.",
+                    "marks": 2,
+                    "output": "Professional ethics are moral principles guiding behavior in a professional environment."
+                },
+                {
+                    "instruction": "Define piece rate work.",
+                    "marks": 2,
+                    "output": "Payment system where workers are paid based on units produced."
+                },
+                {
+                    "instruction": "Define cess (levy).",
+                    "marks": 2,
+                    "output": "Cess is a tax imposed for a specific purpose like education or health."
+                },
+                {
+                    "instruction": "What is conflict of interest?",
+                    "marks": 2,
+                    "output": "A situation where personal interest interferes with professional duties."
+                },
+                {
+                    "instruction": "What is a patent?",
+                    "marks": 2,
+                    "output": "A legal right granted to an inventor to exclude others from using an invention."
+                },
+                {
+                    "instruction": "What is whistleblowing?",
+                    "marks": 2,
+                    "output": "Reporting unethical or illegal activities within an organization."
+                },
+                {
+                    "instruction": "What is code of ethics? What are its limitations?",
+                    "marks": 4,
+                    "output": "Code of ethics defines acceptable professional conduct.\nLimitations: not exhaustive, may be vague, depends on enforcement."
+                },
+                {
+                    "instruction": "How will you solve conflict problems?",
+                    "marks": 5,
+                    "output": "Identify issue, communicate openly, consider ethics, seek mediation, ensure fairness."
+                },
+                {
+                    "instruction": "Differentiate between bribe and gift.",
+                    "marks": 3,
+                    "output": "Bribe: illegal, influences decision\nGift: voluntary, no obligation"
+                },
+                {
+                    "instruction": "Discuss importance of virtue ethics in professional conduct.",
+                    "marks": 4,
+                    "output": "Focuses on character, honesty, integrity, promotes ethical decision-making."
+                },
+                {
+                    "instruction": "Analyze ethical challenges of maintaining privacy on internet.",
+                    "marks": 4,
+                    "output": "Data misuse, hacking, surveillance, identity theft."
+                },
+                {
+                    "instruction": "Discuss responsibilities of professionals in protecting privacy.",
+                    "marks": 4,
+                    "output": "Ensure data security, confidentiality, ethical handling of information."
+                },
+                {
+                    "instruction": "Describe general principles of contract (Indian Contract Act, 1872).",
+                    "marks": 4,
+                    "output": "Offer, acceptance, consideration, free consent, lawful object."
+                },
+                {
+                    "instruction": "Differentiate arbitration and court system.",
+                    "marks": 4,
+                    "output": "Arbitration: faster, private\nCourt: formal, public, time-consuming"
+                },
+                {
+                    "instruction": "What is ADR? Explain one method.",
+                    "marks": 4,
+                    "output": "Alternative Dispute Resolution resolves disputes outside court.\nExample: mediation."
+                },
+                {
+                    "instruction": "Define arbitration and types (Arbitration Act, 1940).",
+                    "marks": 4,
+                    "output": "Arbitration is dispute resolution by neutral party.\nTypes: voluntary, compulsory."
+                },
+                {
+                    "instruction": "Define free consent and when it is free.",
+                    "marks": 4,
+                    "output": "Consent without coercion, fraud, misrepresentation, undue influence."
+                },
+                {
+                    "instruction": "Define acceptance.",
+                    "marks": 2,
+                    "output": "Acceptance is agreement to the terms of an offer."
+                },
+                {
+                    "instruction": "Define liquidated damage.",
+                    "marks": 2,
+                    "output": "Pre-decided compensation for breach of contract."
+                },
+                {
+                    "instruction": "Explain industrial dispute.",
+                    "marks": 4,
+                    "output": "Conflict between employer and employees regarding work conditions."
+                },
+                {
+                    "instruction": "List duties of conciliation officer.",
+                    "marks": 4,
+                    "output": "Mediate disputes, promote settlement, report outcomes."
+                },
+                {
+                    "instruction": "Explain retrenchment procedure.",
+                    "marks": 4,
+                    "output": "Notice, compensation, fair selection, legal compliance."
+                },
+                {
+                    "instruction": "Explain notice of change.",
+                    "marks": 4,
+                    "output": "Employer must notify workers before changing service conditions."
+                },
+                {
+                    "instruction": "Explain NBC-2017 briefly.",
+                    "marks": 4,
+                    "output": "National Building Code provides safety and construction standards."
+                },
+                {
+                    "instruction": "Explain wage calculation under Workmen’s Compensation Act.",
+                    "marks": 5,
+                    "output": "Based on wage rate, injury type, and compensation rules."
+                },
+                {
+                    "instruction": "Explain forms of intellectual property with examples.",
+                    "marks": 5,
+                    "output": "Patent, copyright, trademark, industrial design."
+                },
+                {
+                    "instruction": "Explain patentability criteria.",
+                    "marks": 3,
+                    "output": "Novelty, non-obviousness, industrial applicability."
+                },
+                {
+                    "instruction": "Discuss intellectual property importance.",
+                    "marks": 3,
+                    "output": "Encourages innovation, protects creators, boosts economy."
+                },
+                {
+                    "instruction": "Discuss challenges of IP laws in digital age.",
+                    "marks": 3,
+                    "output": "Piracy, data copying, enforcement difficulty."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-502",
+            "subject_title": "Design and Analysis of Algorithm",
+            "training_data": [
+                {
+                    "instruction": "Which function has maximum asymptotic complexity among n^(3/2), n log n, n log n, 2^n?",
+                    "marks": 2,
+                    "output": "2^n has the highest asymptotic complexity."
+                },
+                {
+                    "instruction": "Find time and space complexity of nested loops code.",
+                    "marks": 2,
+                    "output": "Time complexity: O(n^2)\nSpace complexity: O(1)"
+                },
+                {
+                    "instruction": "Find true statements:\nI. Binary search is faster than linear search\nII. Binary search cannot be applied to all inputs",
+                    "marks": 2,
+                    "output": "Both statements are true."
+                },
+                {
+                    "instruction": "Time complexity of brute-force knapsack.",
+                    "marks": 2,
+                    "output": "O(2^n)"
+                },
+                {
+                    "instruction": "Give example of NP-hard and NP-complete problem.",
+                    "marks": 2,
+                    "output": "NP-hard: Traveling Salesman Problem\nNP-complete: SAT problem"
+                },
+                {
+                    "instruction": "Which algorithm uses dynamic programming among given?",
+                    "marks": 2,
+                    "output": "Bellman-Ford algorithm"
+                },
+                {
+                    "instruction": "Define Big-O and Omega notation with representation.",
+                    "marks": 3,
+                    "output": "Big-O: upper bound\nOmega: lower bound\nGraphically shows growth rates"
+                },
+                {
+                    "instruction": "Solve recurrence using master theorem: T(n)=2T(n/2)+10n",
+                    "marks": 4,
+                    "output": "a=2, b=2, f(n)=O(n)\nCase 2 → T(n)=O(n log n)"
+                },
+                {
+                    "instruction": "Prove if f(n) ∈ O(n), then f(n)^2 ∈ O(n^2).",
+                    "marks": 5,
+                    "output": "Since f(n) ≤ cn, squaring gives f(n)^2 ≤ c^2 n^2 → O(n^2)"
+                },
+                {
+                    "instruction": "Write properties of Omega notation.",
+                    "marks": 3,
+                    "output": "Reflexivity, transitivity, symmetry (for Θ), scaling property"
+                },
+                {
+                    "instruction": "Why worst-case analysis is used?",
+                    "marks": 3,
+                    "output": "Provides guaranteed upper bound regardless of input."
+                },
+                {
+                    "instruction": "Solve recurrence using recursion tree: T(n)=2T(n/2)+k",
+                    "marks": 6,
+                    "output": "Each level cost = k\nLevels = log n\nTotal = O(n)"
+                },
+                {
+                    "instruction": "Show quicksort average complexity.",
+                    "marks": 4,
+                    "output": "Recurrence: T(n)=2T(n/2)+n → O(n log n)"
+                },
+                {
+                    "instruction": "Matrix multiplication using Strassen and complexity.",
+                    "marks": 5,
+                    "output": "Strassen reduces multiplications to 7\nTime complexity: O(n^2.81)"
+                },
+                {
+                    "instruction": "Advantages and disadvantages of divide and conquer.",
+                    "marks": 3,
+                    "output": "Advantages: efficient, parallelizable\nDisadvantages: recursion overhead"
+                },
+                {
+                    "instruction": "Convert array into max heap with minimum changes.",
+                    "marks": 5,
+                    "output": "Use heapify from bottom-up\nTime complexity O(n)"
+                },
+                {
+                    "instruction": "Find maximum input size for merge sort given time constraint.",
+                    "marks": 4,
+                    "output": "Use T(n)=n log n\nSolve for n using given time ratio"
+                },
+                {
+                    "instruction": "Apply binary search for given array.",
+                    "marks": 3,
+                    "output": "Repeatedly divide array until element found\nTime: O(log n)"
+                },
+                {
+                    "instruction": "Find shortest path using Floyd-Warshall.",
+                    "marks": 5,
+                    "output": "Use DP formula: dist[i][j]=min(dist[i][j], dist[i][k]+dist[k][j])"
+                },
+                {
+                    "instruction": "Time complexity of traveling salesman problem.",
+                    "marks": 3,
+                    "output": "O(n!) for brute-force"
+                },
+                {
+                    "instruction": "Longest common subsequence length.",
+                    "marks": 2,
+                    "output": "Use DP table\nTime complexity O(n*m)"
+                },
+                {
+                    "instruction": "Disadvantages of dynamic programming.",
+                    "marks": 2,
+                    "output": "High memory usage, overlapping subproblems required"
+                },
+                {
+                    "instruction": "Fractional knapsack solution.",
+                    "marks": 5,
+                    "output": "Sort by profit/weight ratio\nTake items greedily\nTime O(n log n)"
+                },
+                {
+                    "instruction": "Explain rod cutting problem.",
+                    "marks": 4,
+                    "output": "Maximize revenue by cutting rod into pieces\nSolved using DP"
+                },
+                {
+                    "instruction": "Time and space complexity of 8-queens backtracking.",
+                    "marks": 3,
+                    "output": "Time: O(N!)\nSpace: O(N)"
+                },
+                {
+                    "instruction": "Prove Kruskal’s algorithm finds MST.",
+                    "marks": 4,
+                    "output": "Uses greedy choice and cut property ensuring minimal spanning tree"
+                },
+                {
+                    "instruction": "Compute Huffman coding.",
+                    "marks": 3,
+                    "output": "Build tree using frequency\nAssign codes based on traversal"
+                },
+                {
+                    "instruction": "Explain Dijkstra’s algorithm.",
+                    "marks": 5,
+                    "output": "Greedy algorithm for shortest path with non-negative weights\nTime: O(E log V)"
+                },
+                {
+                    "instruction": "Construct MST using Prim’s algorithm.",
+                    "marks": 6,
+                    "output": "Start from any node\nAdd minimum edge repeatedly\nTotal cost = sum of edges"
+                },
+                {
+                    "instruction": "Solve assignment problem using branch and bound.",
+                    "marks": 6,
+                    "output": "Use cost matrix\nBranch and prune using lower bound to find optimal assignment"
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-503",
+            "subject_title": "Database Management System",
+            "training_data": [
+                {
+                    "instruction": "Define database.",
+                    "marks": 2,
+                    "output": "A database is an organized collection of data for easy access and management."
+                },
+                {
+                    "instruction": "Define DBMS.",
+                    "marks": 2,
+                    "output": "DBMS is software that manages databases and provides data access."
+                },
+                {
+                    "instruction": "Define schema and instance.",
+                    "marks": 2,
+                    "output": "Schema: structure of database\nInstance: actual data at a given time"
+                },
+                {
+                    "instruction": "Define primary key.",
+                    "marks": 2,
+                    "output": "Primary key uniquely identifies each record in a table."
+                },
+                {
+                    "instruction": "Define foreign key.",
+                    "marks": 2,
+                    "output": "Foreign key references primary key of another table."
+                },
+                {
+                    "instruction": "Define normalization.",
+                    "marks": 2,
+                    "output": "Process of organizing data to reduce redundancy."
+                },
+                {
+                    "instruction": "Explain different data models.",
+                    "marks": 4,
+                    "output": "Hierarchical, network, relational, object-oriented models."
+                },
+                {
+                    "instruction": "Explain three-schema architecture.",
+                    "marks": 4,
+                    "output": "External, conceptual, internal levels provide data abstraction."
+                },
+                {
+                    "instruction": "Explain ER model with diagram.",
+                    "marks": 4,
+                    "output": "Entities, attributes, relationships used to model database structure."
+                },
+                {
+                    "instruction": "Differentiate weak and strong entity.",
+                    "marks": 4,
+                    "output": "Strong entity has primary key\nWeak entity depends on strong entity"
+                },
+                {
+                    "instruction": "Explain relational algebra operations.",
+                    "marks": 6,
+                    "output": "Select, project, union, intersection, difference, join operations."
+                },
+                {
+                    "instruction": "Explain relational calculus.",
+                    "marks": 4,
+                    "output": "Declarative query language using logical expressions."
+                },
+                {
+                    "instruction": "Define functional dependency.",
+                    "marks": 2,
+                    "output": "Relationship where one attribute determines another."
+                },
+                {
+                    "instruction": "Explain 1NF, 2NF, 3NF.",
+                    "marks": 6,
+                    "output": "1NF: atomic values\n2NF: remove partial dependency\n3NF: remove transitive dependency"
+                },
+                {
+                    "instruction": "Explain BCNF.",
+                    "marks": 4,
+                    "output": "Stronger form of 3NF where every determinant is candidate key."
+                },
+                {
+                    "instruction": "Explain transaction and its properties.",
+                    "marks": 4,
+                    "output": "Transaction is unit of work\nACID: Atomicity, Consistency, Isolation, Durability"
+                },
+                {
+                    "instruction": "Explain concurrency control.",
+                    "marks": 4,
+                    "output": "Ensures consistency using locking and scheduling."
+                },
+                {
+                    "instruction": "Explain serializability.",
+                    "marks": 4,
+                    "output": "Schedule equivalent to serial execution."
+                },
+                {
+                    "instruction": "Explain two-phase locking.",
+                    "marks": 6,
+                    "output": "Growing phase: acquire locks\nShrinking phase: release locks"
+                },
+                {
+                    "instruction": "Explain deadlock in DBMS.",
+                    "marks": 4,
+                    "output": "Transactions waiting indefinitely for each other."
+                },
+                {
+                    "instruction": "Explain recovery techniques.",
+                    "marks": 6,
+                    "output": "Log-based recovery, checkpointing, shadow paging."
+                },
+                {
+                    "instruction": "Explain indexing.",
+                    "marks": 4,
+                    "output": "Improves search speed using data structures like B-tree."
+                },
+                {
+                    "instruction": "Explain B+ tree.",
+                    "marks": 4,
+                    "output": "Balanced tree structure used in indexing."
+                },
+                {
+                    "instruction": "Write SQL queries (basic select, join).",
+                    "marks": 6,
+                    "output": "SELECT * FROM table\nJOIN used to combine tables based on condition"
+                },
+                {
+                    "instruction": "Explain view and its advantages.",
+                    "marks": 4,
+                    "output": "Virtual table\nProvides security and abstraction"
+                },
+                {
+                    "instruction": "Explain triggers.",
+                    "marks": 4,
+                    "output": "Automatic procedure executed on events like insert/update."
+                },
+                {
+                    "instruction": "Explain stored procedures.",
+                    "marks": 4,
+                    "output": "Precompiled SQL code stored in database."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-504",
+            "subject_title": "Computer Networks",
+            "training_data": [
+                {
+                    "instruction": "Define data communication.",
+                    "marks": 2,
+                    "output": "Data communication is the exchange of data between devices through a transmission medium."
+                },
+                {
+                    "instruction": "Define protocol.",
+                    "marks": 2,
+                    "output": "A protocol is a set of rules governing data communication."
+                },
+                {
+                    "instruction": "Define bandwidth.",
+                    "marks": 2,
+                    "output": "Bandwidth is the maximum data transfer rate of a network."
+                },
+                {
+                    "instruction": "Define latency.",
+                    "marks": 2,
+                    "output": "Latency is the delay in data transmission."
+                },
+                {
+                    "instruction": "Define packet switching.",
+                    "marks": 2,
+                    "output": "Packet switching divides data into packets and transmits them independently."
+                },
+                {
+                    "instruction": "Define OSI model.",
+                    "marks": 2,
+                    "output": "OSI model is a 7-layer framework for network communication."
+                },
+                {
+                    "instruction": "Explain OSI layers.",
+                    "marks": 4,
+                    "output": "Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+                },
+                {
+                    "instruction": "Explain TCP/IP model.",
+                    "marks": 4,
+                    "output": "4 layers: Network, Internet, Transport, Application."
+                },
+                {
+                    "instruction": "Differentiate OSI and TCP/IP.",
+                    "marks": 4,
+                    "output": "OSI: 7 layers, theoretical\nTCP/IP: 4 layers, practical implementation."
+                },
+                {
+                    "instruction": "Explain transmission media.",
+                    "marks": 4,
+                    "output": "Guided: twisted pair, coaxial, fiber\nUnguided: radio, microwave, infrared"
+                },
+                {
+                    "instruction": "Explain error detection techniques.",
+                    "marks": 6,
+                    "output": "Parity check, checksum, CRC used to detect errors."
+                },
+                {
+                    "instruction": "Explain flow control.",
+                    "marks": 4,
+                    "output": "Controls data rate between sender and receiver.\nExample: stop-and-wait."
+                },
+                {
+                    "instruction": "Explain sliding window protocol.",
+                    "marks": 6,
+                    "output": "Allows multiple frames before acknowledgment.\nImproves efficiency."
+                },
+                {
+                    "instruction": "Explain congestion control.",
+                    "marks": 4,
+                    "output": "Controls network traffic to avoid overload."
+                },
+                {
+                    "instruction": "Explain IP addressing.",
+                    "marks": 4,
+                    "output": "Assigns unique address to each device.\nIPv4 and IPv6."
+                },
+                {
+                    "instruction": "Explain subnetting.",
+                    "marks": 6,
+                    "output": "Divides network into smaller subnets for efficiency."
+                },
+                {
+                    "instruction": "Explain routing algorithms.",
+                    "marks": 6,
+                    "output": "Distance vector and link state routing algorithms."
+                },
+                {
+                    "instruction": "Explain DNS.",
+                    "marks": 4,
+                    "output": "Domain Name System maps domain names to IP addresses."
+                },
+                {
+                    "instruction": "Explain HTTP.",
+                    "marks": 4,
+                    "output": "HyperText Transfer Protocol used for web communication."
+                },
+                {
+                    "instruction": "Explain FTP.",
+                    "marks": 4,
+                    "output": "File Transfer Protocol used for file transfer between systems."
+                },
+                {
+                    "instruction": "Explain email protocols.",
+                    "marks": 4,
+                    "output": "SMTP for sending, POP3/IMAP for receiving emails."
+                },
+                {
+                    "instruction": "Explain socket programming.",
+                    "marks": 4,
+                    "output": "Interface for communication between processes over network."
+                },
+                {
+                    "instruction": "Explain firewall.",
+                    "marks": 4,
+                    "output": "Security system that monitors and controls network traffic."
+                },
+                {
+                    "instruction": "Explain network security threats.",
+                    "marks": 6,
+                    "output": "Includes hacking, phishing, malware, DoS attacks."
+                },
+                {
+                    "instruction": "Explain encryption techniques.",
+                    "marks": 6,
+                    "output": "Symmetric and asymmetric encryption used for secure communication."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-505",
+            "subject_title": "Artificial Intelligence",
+            "training_data": [
+                {
+                    "instruction": "Define uncertain knowledge in Artificial Intelligence.",
+                    "marks": 2,
+                    "output": "Uncertain knowledge in Artificial Intelligence refers to situations where information is incomplete, imprecise, or probabilistic, making exact conclusions difficult."
+                },
+                {
+                    "instruction": "What is probabilistic reasoning?",
+                    "marks": 2,
+                    "output": "Probabilistic reasoning is a method of reasoning that uses probability theory to handle uncertainty in decision making."
+                },
+                {
+                    "instruction": "Explain Bayes' theorem in the context of reasoning under uncertainty.",
+                    "marks": 2,
+                    "output": "Bayes' theorem is used to update the probability of a hypothesis based on new evidence. It relates prior probability, likelihood, and posterior probability."
+                },
+                {
+                    "instruction": "What are the key components of an expert system?",
+                    "marks": 2,
+                    "output": "The key components of an expert system are knowledge base, inference engine, user interface, and explanation system."
+                },
+                {
+                    "instruction": "What is a genetic algorithm?",
+                    "marks": 2,
+                    "output": "A genetic algorithm is an optimization technique inspired by natural selection that uses operations like selection, crossover, and mutation."
+                },
+                {
+                    "instruction": "Define fuzzy set.",
+                    "marks": 2,
+                    "output": "A fuzzy set is a set in which elements have degrees of membership ranging between 0 and 1."
+                },
+                {
+                    "instruction": "How many different input patterns can a node receive if it has n binary inputs?",
+                    "marks": 5,
+                    "output": "If a node has n binary inputs, each input can take either 0 or 1. Therefore, for each input there are 2 possibilities. Since inputs are independent, total possible input patterns are calculated as 2 × 2 × ... × 2 (n times), which equals 2^n. Hence, a node with n binary inputs can receive 2^n different input patterns."
+                },
+                {
+                    "instruction": "Simplify the propositional logic statement (A → B) ∧ (A → C) and translate into English.",
+                    "marks": 3,
+                    "output": "The expression (A → B) ∧ (A → C) can be simplified using logical equivalence to A → (B ∧ C). In English, this means: If A is true, then both B and C must also be true. This shows that A implies the conjunction of B and C."
+                },
+                {
+                    "instruction": "If p and q are true and r and s are false, determine the truth value of (p ∧ r) ∨ (q ↔ s).",
+                    "marks": 2,
+                    "output": "Given p = true, q = true, r = false, s = false. First evaluate p ∧ r = true ∧ false = false. Next evaluate q ↔ s = true ↔ false = false. Finally, (p ∧ r) ∨ (q ↔ s) = false ∨ false = false. Hence, the final truth value is false."
+                },
+                {
+                    "instruction": "What are normal forms in logic? Explain their importance.",
+                    "marks": 4,
+                    "output": "Normal forms in logic refer to standardized ways of representing logical expressions. The two most common forms are Conjunctive Normal Form (CNF) and Disjunctive Normal Form (DNF). In CNF, a formula is expressed as a conjunction of clauses, where each clause is a disjunction of literals. In DNF, a formula is expressed as a disjunction of conjunctions of literals. Normal forms are important because they simplify logical expressions, make automated reasoning easier, and are widely used in theorem proving, logic programming, and artificial intelligence systems."
+                },
+                {
+                    "instruction": "How does the inclusion of quantifiers ∀ and ∃ make predicate calculus more powerful?",
+                    "marks": 4,
+                    "output": "Quantifiers such as ∀ (for all) and ∃ (there exists) extend the expressive power of predicate calculus beyond propositional logic. They allow statements about entire domains of objects rather than individual propositions. The universal quantifier (∀) expresses that a property holds for all elements in a domain, while the existential quantifier (∃) indicates that there exists at least one element satisfying a condition. This makes predicate logic capable of representing complex relationships, rules, and generalizations, which are essential in knowledge representation and reasoning systems."
+                },
+                {
+                    "instruction": "Show that ¬(P ∨ Q) is logically equivalent to (¬P ∧ ¬Q).",
+                    "marks": 4,
+                    "output": "To prove ¬(P ∨ Q) ≡ (¬P ∧ ¬Q), we use De Morgan's Law. According to this law, the negation of a disjunction is equal to the conjunction of the negations. That is, ¬(P ∨ Q) = (¬P ∧ ¬Q). This can also be verified using a truth table, where both expressions yield identical truth values for all combinations of P and Q. Hence, the two expressions are logically equivalent."
+                },
+                {
+                    "instruction": "Trace the constraint satisfaction procedure for a cryptarithmetic problem.",
+                    "marks": 12,
+                    "output": "A cryptarithmetic problem is a type of constraint satisfaction problem where letters are assigned digits such that arithmetic operations are valid. Step 1: Identify variables (letters) and their domains (digits 0–9). Step 2: Apply constraints such as no leading digit being zero and all letters having unique digit assignments. Step 3: Formulate the arithmetic equation and enforce column-wise addition constraints. Step 4: Use backtracking search to assign values systematically while checking constraints at each step. Step 5: If a constraint is violated, backtrack and try a different assignment. Step 6: Continue until a consistent assignment is found. Step 7: Once a valid mapping is obtained, compute required values like T+H+E+E by substituting digits. This method ensures a correct and consistent solution."
+                },
+                {
+                    "instruction": "What is a training set and how is it used to train neural networks?",
+                    "marks": 4,
+                    "output": "A training set is a collection of labeled data used to train a neural network. Each example consists of input features and the corresponding correct output. During training, the neural network processes inputs, produces outputs, and compares them with actual outputs to compute error. Using algorithms like backpropagation, the network adjusts its weights to minimize this error. Repeated training over the dataset improves the model's ability to generalize and make accurate predictions on new data."
+                },
+                {
+                    "instruction": "Explain the minimax search technique with a game-based example.",
+                    "marks": 4,
+                    "output": "Minimax is a search algorithm used in decision-making for two-player games. It assumes one player (MAX) tries to maximize the score while the opponent (MIN) tries to minimize it. The algorithm explores all possible game states using a tree structure. Terminal states are assigned utility values, and these values are propagated upward. MAX nodes choose the maximum value, while MIN nodes choose the minimum. For example, in Tic-Tac-Toe, Minimax helps a player choose the best move assuming the opponent also plays optimally."
+                },
+                {
+                    "instruction": "Construct a decision tree for predicting edibility using information gain.",
+                    "marks": 4,
+                    "output": "A decision tree is constructed by selecting the attribute with the highest information gain as the root node. Step 1: Calculate entropy of the dataset. Step 2: Compute information gain for each attribute. Step 3: Choose the attribute with maximum gain and split the dataset. Step 4: Repeat recursively for each subset until all data is classified or no attributes remain. Step 5: Label leaf nodes with class outcomes such as edible or non-edible. This method ensures efficient classification based on maximum reduction in uncertainty."
+                },
+                {
+                    "instruction": "If p and q are true and r and s are false, determine the truth value of (p ∧ r) ∨ (q ↔️ s).",
+                    "marks": 2,
+                    "output": "The expression evaluates to false."
+                },
+                {
+                    "instruction": "What are normal forms in logic? Explain their importance.",
+                    "marks": 4,
+                    "output": "Normal forms are standardized ways of expressing logical formulas, such as CNF and DNF. They are important for simplifying logical reasoning and automated theorem proving."
+                },
+                {
+                    "instruction": "How does the inclusion of quantifiers ∀ and ∃ make predicate calculus more powerful?",
+                    "marks": 4,
+                    "output": "Quantifiers allow statements about all or some elements in a domain, making predicate logic more expressive than propositional logic."
+                },
+                {
+                    "instruction": "Show that ¬(P ∨ Q) is logically equivalent to (¬P ∧ ¬Q).",
+                    "marks": 4,
+                    "output": "Using De Morgan’s law, ¬(P ∨ Q) is equivalent to (¬P ∧ ¬Q)."
+                },
+                {
+                    "instruction": "Explain the concept of conceptual dependency in structured knowledge representation.",
+                    "marks": 4,
+                    "output": "Conceptual dependency is a framework for representing the meaning of natural language sentences using a set of primitive actions and relationships."
+                },
+                {
+                    "instruction": "Sketch the components of an expert system shell and define them.",
+                    "marks": 4,
+                    "output": "An expert system shell includes inference engine, knowledge base, user interface, and explanation facility, each responsible for reasoning, storing knowledge, interaction, and justification."
+                },
+                {
+                    "instruction": "What is knowledge acquisition in expert systems?",
+                    "marks": 2,
+                    "output": "Knowledge acquisition is the process of gathering and structuring knowledge from experts for use in an expert system."
+                },
+                {
+                    "instruction": "What is blackboard architecture in expert systems?",
+                    "marks": 2,
+                    "output": "Blackboard architecture is a problem-solving model where multiple knowledge sources collaborate via a shared data structure called a blackboard."
+                },
+                {
+                    "instruction": "What is a fuzzy expert system? Provide an example.",
+                    "marks": 3,
+                    "output": "A fuzzy expert system uses fuzzy logic to handle uncertainty. Example: temperature control systems in air conditioners."
+                },
+                {
+                    "instruction": "Explain how fuzzy logic is applied in expert systems.",
+                    "marks": 3,
+                    "output": "Fuzzy logic is applied by defining membership functions and rules to handle imprecise inputs and produce approximate outputs."
+                },
+                {
+                    "instruction": "Differentiate between rule-based and model-based expert systems.",
+                    "marks": 3,
+                    "output": "Rule-based systems use IF-THEN rules, while model-based systems use underlying system models for reasoning."
+                },
+                {
+                    "instruction": "Describe hybrid expert systems and their applications.",
+                    "marks": 3,
+                    "output": "Hybrid expert systems combine multiple AI techniques such as rule-based and neural networks. They are used in medical diagnosis and financial analysis."
+                },
+                {
+                    "instruction": "Explain how Bayes' theorem can be used to develop learning systems.",
+                    "marks": 4,
+                    "output": "Bayesian learning updates the probability of hypotheses as new data arrives, enabling adaptive and probabilistic learning systems."
+                },
+                {
+                    "instruction": "What is the difference between fuzzy logic and crisp logic?",
+                    "marks": 4,
+                    "output": "Crisp logic has binary truth values (0 or 1), while fuzzy logic allows degrees of truth between 0 and 1."
+                },
+                {
+                    "instruction": "How does fuzzy logic control differ from traditional control systems?",
+                    "marks": 4,
+                    "output": "Fuzzy control uses linguistic rules and approximate reasoning, while traditional control uses precise mathematical models."
+                },
+                {
+                    "instruction": "Explain Dempster-Shafer theory with example.",
+                    "marks": 4,
+                    "output": "Dempster-Shafer theory is a framework for reasoning with uncertainty that combines evidence from different sources to calculate belief functions."
+                },
+                {
+                    "instruction": "Find the membership function μA(x) = 1/(1 + 4/(10 - 4x^2)), where x ∈ {0,1,4}.",
+                    "marks": 4,
+                    "output": "Substituting values: μA(0)=1/(1+4/10), μA(1)=1/(1+4/6), μA(4)=1/(1+4/(-54))."
+                },
+                {
+                    "instruction": "Describe the components of a Hidden Markov Model (HMM) and its applications.",
+                    "marks": 4,
+                    "output": "HMM consists of states, transition probabilities, emission probabilities, and initial probabilities. It is used in speech recognition, bioinformatics, and NLP."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-504",
+            "subject_title": "Formal Language and Automata Theory",
+            "training_data": [
+                {
+                    "instruction": "Find the number of substrings (inclusive) that can be formed from a string of length n where all characters are same.",
+                    "marks": 2,
+                    "output": "The number of substrings is n(n+1)/2."
+                },
+                {
+                    "instruction": "State the definition of language in formal language theory.",
+                    "marks": 2,
+                    "output": "A language is a set of strings formed from an alphabet."
+                },
+                {
+                    "instruction": "Find the language generated by grammar G = ({S}, {a}, {S→SS, S→a}).",
+                    "marks": 2,
+                    "output": "The language consists of all strings of 'a' with length ≥ 1, i.e., {a, aa, aaa, ...}."
+                },
+                {
+                    "instruction": "Find the highest type number applicable for productions S → Aa and A → aA.",
+                    "marks": 2,
+                    "output": "The productions belong to Type-2 (Context-Free Grammar)."
+                },
+                {
+                    "instruction": "Describe the language represented by the given regular expression.",
+                    "marks": 2,
+                    "output": "The language includes strings over {0,1} that satisfy the given pattern, such as containing specific substrings or constraints based on the expression."
+                },
+                {
+                    "instruction": "Provide the 8-tuple representation of Linear Bounded Automata (LBA).",
+                    "marks": 2,
+                    "output": "An LBA is represented as an 8-tuple (Q, Σ, Γ, δ, q0, q_accept, q_reject, b)."
+                },
+                {
+                    "instruction": "Construct an FA which accepts all strings over {a, b} ending with 'bb' and convert it to equivalent DFA.",
+                    "marks": 12,
+                    "output": "Construct an NFA with states tracking last two symbols and convert it to DFA using subset construction. The DFA accepts strings ending in 'bb'."
+                },
+                {
+                    "instruction": "Find the regular expression accepted by the given automaton using Arden's theorem.",
+                    "marks": 4,
+                    "output": "Apply Arden’s theorem on state equations to derive the regular expression representing the language of the automaton."
+                },
+                {
+                    "instruction": "Write the steps required for minimization of a DFA.",
+                    "marks": 4,
+                    "output": "Steps include removing unreachable states, partitioning states into equivalence classes, and merging indistinguishable states."
+                },
+                {
+                    "instruction": "Construct a regular grammar for the language of all strings starting with 'b' where Σ = {a, b}.",
+                    "marks": 4,
+                    "output": "A possible grammar is: S → bA, A → aA | bA | ε."
+                },
+                {
+                    "instruction": "Discuss the Chomsky hierarchy of languages.",
+                    "marks": 4,
+                    "output": "Chomsky hierarchy classifies languages into Type-0 (recursively enumerable), Type-1 (context-sensitive), Type-2 (context-free), and Type-3 (regular)."
+                },
+                {
+                    "instruction": "Prove that L = {a^i b^i | i ≥ 0} is not a regular language using pumping lemma.",
+                    "marks": 4,
+                    "output": "Using pumping lemma, assume L is regular, derive contradiction by pumping string a^p b^p, showing unequal counts of a and b."
+                },
+                {
+                    "instruction": "Construct a pushdown automaton accepting L = {w c w^R | w ∈ {a,b}*}.",
+                    "marks": 4,
+                    "output": "The PDA pushes symbols of w onto stack, reads 'c', then pops and matches reverse string w^R."
+                },
+                {
+                    "instruction": "Convert the given grammar into Chomsky Normal Form (CNF).",
+                    "marks": 4,
+                    "output": "Steps include eliminating ε-productions, unit productions, and converting rules into A → BC or A → a form."
+                },
+                {
+                    "instruction": "Discuss closure properties of context-free languages.",
+                    "marks": 4,
+                    "output": "CFLs are closed under union, concatenation, and Kleene star but not under intersection and complement."
+                },
+                {
+                    "instruction": "Find a grammar in Chomsky normal form equivalent to S → aABB, A → aA | a, B → bB | b.",
+                    "marks": 4,
+                    "output": "Convert rules into CNF by introducing new variables and ensuring productions follow CNF format."
+                },
+                {
+                    "instruction": "Construct a grammar in Greibach normal form equivalent to S → Aa | a, A → SS | b.",
+                    "marks": 4,
+                    "output": "Transform grammar so each production starts with a terminal followed by variables."
+                },
+                {
+                    "instruction": "What is ambiguity in CFG? Define non-deterministic pushdown automata.",
+                    "marks": 4,
+                    "output": "Ambiguity occurs when a string has more than one parse tree. NPDA allows multiple transitions for same input and stack symbol."
+                },
+                {
+                    "instruction": "Design a Turing machine to recognize strings with even number of 1's.",
+                    "marks": 6,
+                    "output": "The TM scans input and toggles between states representing even and odd count of 1s, accepting in even state."
+                },
+                {
+                    "instruction": "Explain context-sensitive grammars and their relation to context-free grammars.",
+                    "marks": 3,
+                    "output": "Context-sensitive grammars allow rules where length of output is greater or equal to input, and they are more powerful than context-free grammars."
+                },
+                {
+                    "instruction": "How can a Turing machine be treated as an enumerator?",
+                    "marks": 3,
+                    "output": "A Turing machine can generate all strings of a language sequentially, thus acting as an enumerator."
+                },
+                {
+                    "instruction": "Explain variants of Turing machine.",
+                    "marks": 4,
+                    "output": "Variants include multi-tape TM, non-deterministic TM, multi-head TM, and universal TM."
+                },
+                {
+                    "instruction": "Discuss Turing recognizable and decidable languages.",
+                    "marks": 4,
+                    "output": "Recognizable languages are accepted by TM but may not halt for all inputs, while decidable languages always halt."
+                },
+                {
+                    "instruction": "Design a TM that concatenates two strings over {1, b}.",
+                    "marks": 4,
+                    "output": "The TM scans first string, moves to second, and combines them by shifting symbols appropriately."
+                },
+                {
+                    "instruction": "Show that a DFA is decidable.",
+                    "marks": 2,
+                    "output": "A DFA always halts after finite steps, hence it is decidable."
+                },
+                {
+                    "instruction": "Show that a CFG is decidable.",
+                    "marks": 2,
+                    "output": "Membership problem for CFG can be solved using CYK algorithm, hence it is decidable."
+                },
+                {
+                    "instruction": "State the properties of Rice's theorem.",
+                    "marks": 4,
+                    "output": "Rice's theorem states that all non-trivial semantic properties of recursively enumerable languages are undecidable."
+                },
+                {
+                    "instruction": "What is Universal Turing Machine?",
+                    "marks": 2,
+                    "output": "A Universal Turing Machine simulates any other Turing machine given its description and input."
+                },
+                {
+                    "instruction": "Define recursive and recursively enumerable languages.",
+                    "marks": 2,
+                    "output": "Recursive languages are decidable, while recursively enumerable languages are those accepted by a Turing machine."
+                },
+                {
+                    "instruction": "Show that ATM is undecidable.",
+                    "marks": 3,
+                    "output": "Using diagonalization or reduction, it is proven that ATM cannot be decided by any Turing machine."
+                }
+            ]
+        }
+    ]
+}
