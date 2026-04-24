@@ -1,0 +1,754 @@
+{
+    "university": "Tripura University",
+    "semester": 3,
+    "exam": "B.Tech 3rd Semester Exam 2025",
+    "format": "alpaca",
+    "subjects": [
+        {
+            "subject_code": "PCCS-403",
+            "subject_title": "Discrete Mathematics",
+            "training_data": [
+                {
+                    "instruction": "Is it possible for a planar graph to have 6 vertices, 10 edges and 5 faces?",
+                    "marks": 2,
+                    "output": "Using Euler’s formula: V - E + F = 2\n6 - 10 + 5 = 1 ≠ 2\nHence, not possible."
+                },
+                {
+                    "instruction": "Define poset.",
+                    "marks": 2,
+                    "output": "A poset is a set with a binary relation that is reflexive, antisymmetric and transitive."
+                },
+                {
+                    "instruction": "Define tautology.",
+                    "marks": 2,
+                    "output": "A tautology is a logical expression that is always true for all inputs."
+                },
+                {
+                    "instruction": "Define existential and universal quantifiers.",
+                    "marks": 2,
+                    "output": "Universal (∀): true for all elements.\nExistential (∃): true for at least one element."
+                },
+                {
+                    "instruction": "Define quotient group.",
+                    "marks": 2,
+                    "output": "A quotient group G/N is formed by cosets of a normal subgroup N."
+                },
+                {
+                    "instruction": "Write power set of {2, φ}.",
+                    "marks": 2,
+                    "output": "P = {∅, {2}, {φ}, {2, φ}}"
+                },
+                {
+                    "instruction": "Find f∘f, g∘g, f∘g, g∘f for f(x)=3x²−5x+1 and g(x)=x−3.",
+                    "marks": 4,
+                    "output": "f∘g(x)=3(x−3)^2−5(x−3)+1=3x^2−23x+43\n\ng∘f(x)=3x^2−5x+1−3=3x^2−5x−2\n\nSimilarly compute f∘f and g∘g by substitution."
+                },
+                {
+                    "instruction": "Show that if p is prime and p|ab then p|a or p|b.",
+                    "marks": 6,
+                    "output": "Given p is prime and p|ab\nIf p does not divide a, then gcd(p,a)=1\nBy Euclid’s lemma → p|b\nHence p|a or p|b"
+                },
+                {
+                    "instruction": "Show f(x)=(x+1)/(x−1) is bijective and find inverse.",
+                    "marks": 6,
+                    "output": "Injective: f(a)=f(b) ⇒ a=b\nSurjective: solve y=(x+1)/(x−1)\n⇒ x=(y+1)/(y−1)\nHence bijective\nInverse = (x+1)/(x−1)"
+                },
+                {
+                    "instruction": "Using induction prove 2·7^n + 3·5^n − 5 divisible by 24.",
+                    "marks": 6,
+                    "output": "Base: n=1 → 24 (divisible)\nAssume true for n=k\nProve for n=k+1 using substitution\nExpression remains divisible by 24\nHence proved"
+                },
+                {
+                    "instruction": "How many committees of 5 from 20 men and 12 women with exactly 3 men?",
+                    "marks": 6,
+                    "output": "Choose 3 men: C(20,3)\nChoose 2 women: C(12,2)\nTotal = C(20,3) × C(12,2)"
+                },
+                {
+                    "instruction": "Verify ((P∨¬Q)∧(¬P∨¬Q))∨Q is tautology.",
+                    "marks": 6,
+                    "output": "Construct truth table for P,Q\nFinal column always TRUE\nHence tautology"
+                },
+                {
+                    "instruction": "Find DNF of given expression.",
+                    "marks": 6,
+                    "output": "Construct truth table\nTake rows where output=1\nWrite sum of minterms → DNF"
+                },
+                {
+                    "instruction": "Define homomorphism and isomorphism.",
+                    "marks": 4,
+                    "output": "Homomorphism: f(a*b)=f(a)f(b)\nIsomorphism: bijective homomorphism"
+                },
+                {
+                    "instruction": "Check whether given matrix set forms a field.",
+                    "marks": 6,
+                    "output": "Verify closure, identity, inverse, associativity, distributive law\nIf all satisfied → field"
+                },
+                {
+                    "instruction": "Find CNF and DNF from truth table.",
+                    "marks": 6,
+                    "output": "DNF: sum of minterms (output=1)\nCNF: product of maxterms (output=0)"
+                },
+                {
+                    "instruction": "Draw graph with six vertices each degree 3.",
+                    "marks": 4,
+                    "output": "Construct 3-regular graph (e.g., hexagon with diagonals)."
+                },
+                {
+                    "instruction": "Prove number of odd degree vertices is even.",
+                    "marks": 6,
+                    "output": "Sum of degrees = 2E (even)\nOdd degrees must occur in pairs\nHence count is even"
+                },
+                {
+                    "instruction": "Explain planar graph and Euler’s formula.",
+                    "marks": 6,
+                    "output": "Planar graph can be drawn without edge crossing\nEuler formula: V - E + F = 2\nUsed to check planarity"
+                },
+                {
+                    "instruction": "Explain equivalence relation with example.",
+                    "marks": 4,
+                    "output": "Relation that is reflexive, symmetric, transitive\nExample: congruence mod n"
+                },
+                {
+                    "instruction": "Explain lattice.",
+                    "marks": 4,
+                    "output": "A poset where every pair has least upper bound and greatest lower bound."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-404",
+            "subject_title": "Computer Organization and Architecture",
+            "training_data": [
+                {
+                    "instruction": "Convert −(23)10 − (9)10 into 8-bit signed binary using 2’s complement.",
+                    "marks": 2,
+                    "output": "23 = 00010111, 9 = 00001001\n2’s complement of 9 = 11110111\nAdd → 00010111 + 11110111 = 00001110"
+                },
+                {
+                    "instruction": "How many memory references occur in indirect addressing?",
+                    "marks": 2,
+                    "output": "Two: one to get effective address, one to fetch operand."
+                },
+                {
+                    "instruction": "Define ISA.",
+                    "marks": 2,
+                    "output": "Instruction Set Architecture defines operations, formats, and addressing modes."
+                },
+                {
+                    "instruction": "List types of ISA based on operand storage.",
+                    "marks": 2,
+                    "output": "Stack, Accumulator, Register, Memory."
+                },
+                {
+                    "instruction": "Advantages of hardwired control unit.",
+                    "marks": 2,
+                    "output": "Faster, low latency, simple hardware."
+                },
+                {
+                    "instruction": "Define locality of reference.",
+                    "marks": 2,
+                    "output": "Programs access nearby memory locations (temporal and spatial locality)."
+                },
+                {
+                    "instruction": "Explain addressing modes with example.",
+                    "marks": 4,
+                    "output": "Immediate: value in instruction\nDirect: address given\nIndirect: address stored\nRegister: operand in register\nIndexed: base + offset"
+                },
+                {
+                    "instruction": "Explain instruction cycle.",
+                    "marks": 4,
+                    "output": "Fetch → Decode → Execute\nRegisters used: PC, IR, MAR, MDR"
+                },
+                {
+                    "instruction": "Explain ripple carry adder.",
+                    "marks": 4,
+                    "output": "Carry propagates through stages sequentially causing delay proportional to bits."
+                },
+                {
+                    "instruction": "Explain Booth’s multiplication algorithm.",
+                    "marks": 6,
+                    "output": "Steps:\n1. Check multiplier bits\n2. Add/subtract multiplicand\n3. Arithmetic right shift\nEfficient for signed multiplication"
+                },
+                {
+                    "instruction": "Explain register transfer language.",
+                    "marks": 4,
+                    "output": "Describes data movement between registers\nExample: R1 ← R2 + R3"
+                },
+                {
+                    "instruction": "Differentiate hardwired and microprogrammed control unit.",
+                    "marks": 4,
+                    "output": "Hardwired: fast, fixed logic\nMicroprogrammed: flexible, slower"
+                },
+                {
+                    "instruction": "Explain memory hierarchy.",
+                    "marks": 6,
+                    "output": "Registers → Cache → Main memory → Secondary storage\nHigher level faster but costly, lower level slower but cheaper"
+                },
+                {
+                    "instruction": "Differentiate isolated I/O and memory-mapped I/O.",
+                    "marks": 4,
+                    "output": "Isolated: separate address space\nMemory-mapped: shared with memory"
+                },
+                {
+                    "instruction": "Define interrupt and types.",
+                    "marks": 4,
+                    "output": "Interrupt: signal to CPU\nTypes: hardware, software"
+                },
+                {
+                    "instruction": "Explain DMA.",
+                    "marks": 4,
+                    "output": "Transfers data between memory and I/O without CPU intervention"
+                },
+                {
+                    "instruction": "Explain Flynn’s classification.",
+                    "marks": 4,
+                    "output": "SISD, SIMD, MISD, MIMD"
+                },
+                {
+                    "instruction": "Explain pipeline hazards.",
+                    "marks": 4,
+                    "output": "Structural: resource conflict\nData: dependency\nControl: branch issue"
+                },
+                {
+                    "instruction": "Calculate pipeline speed-up.",
+                    "marks": 6,
+                    "output": "Speed-up = Non-pipeline time / Pipeline time\nDepends on number of stages and cycles"
+                },
+                {
+                    "instruction": "Explain shared memory and NUMA.",
+                    "marks": 4,
+                    "output": "Shared memory: all processors share memory\nNUMA: memory access time varies"
+                },
+                {
+                    "instruction": "Explain MESI protocol.",
+                    "marks": 6,
+                    "output": "Cache states:\nModified, Exclusive, Shared, Invalid\nEnsures cache coherence"
+                },
+                {
+                    "instruction": "Explain cache write policies.",
+                    "marks": 4,
+                    "output": "Write-through: update memory immediately\nWrite-back: update later"
+                },
+                {
+                    "instruction": "Design memory using RAM and ROM chips.",
+                    "marks": 6,
+                    "output": "Use address decoding and combine chips to achieve required capacity"
+                },
+                {
+                    "instruction": "Calculate average memory access time.",
+                    "marks": 6,
+                    "output": "AMAT = Hit time + Miss rate × Miss penalty"
+                },
+                {
+                    "instruction": "Define page fault and replacement policies.",
+                    "marks": 4,
+                    "output": "Page fault: page not in memory\nPolicies: FIFO, LRU, Optimal"
+                },
+                {
+                    "instruction": "Explain demand paging.",
+                    "marks": 4,
+                    "output": "Pages are loaded only when required"
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-405",
+            "subject_title": "Operating System",
+            "training_data": [
+                {
+                    "instruction": "Define operating system.",
+                    "marks": 2,
+                    "output": "An operating system is system software that manages hardware resources and provides services to programs."
+                },
+                {
+                    "instruction": "Define process.",
+                    "marks": 2,
+                    "output": "A process is a program in execution with its own memory space."
+                },
+                {
+                    "instruction": "Define thread.",
+                    "marks": 2,
+                    "output": "A thread is a lightweight process sharing memory with other threads."
+                },
+                {
+                    "instruction": "What is context switching?",
+                    "marks": 2,
+                    "output": "Switching CPU from one process to another by saving and loading states."
+                },
+                {
+                    "instruction": "Define deadlock.",
+                    "marks": 2,
+                    "output": "Deadlock is a condition where processes wait indefinitely for resources held by each other."
+                },
+                {
+                    "instruction": "Define paging.",
+                    "marks": 2,
+                    "output": "Paging divides memory into fixed-size blocks called pages and frames."
+                },
+                {
+                    "instruction": "Explain process states.",
+                    "marks": 4,
+                    "output": "States:\n1. New\n2. Ready\n3. Running\n4. Waiting\n5. Terminated"
+                },
+                {
+                    "instruction": "Explain CPU scheduling.",
+                    "marks": 4,
+                    "output": "CPU scheduling selects next process for execution.\nTypes: FCFS, SJF, Priority, Round Robin"
+                },
+                {
+                    "instruction": "Explain FCFS scheduling.",
+                    "marks": 4,
+                    "output": "First Come First Serve executes processes in arrival order.\nSimple but causes long waiting time."
+                },
+                {
+                    "instruction": "Explain SJF scheduling.",
+                    "marks": 4,
+                    "output": "Shortest Job First executes process with minimum burst time.\nOptimal but requires prediction."
+                },
+                {
+                    "instruction": "Explain Round Robin scheduling.",
+                    "marks": 6,
+                    "output": "Each process gets fixed time quantum.\nIf not finished, moved to end of queue.\nEnsures fairness but increases overhead."
+                },
+                {
+                    "instruction": "Explain priority scheduling.",
+                    "marks": 4,
+                    "output": "Processes executed based on priority.\nMay cause starvation."
+                },
+                {
+                    "instruction": "Explain critical section problem.",
+                    "marks": 6,
+                    "output": "Occurs when multiple processes access shared resource.\nConditions:\n1. Mutual exclusion\n2. Progress\n3. Bounded waiting"
+                },
+                {
+                    "instruction": "Explain semaphore.",
+                    "marks": 4,
+                    "output": "Semaphore is a synchronization tool using integer variable.\nTypes: binary and counting"
+                },
+                {
+                    "instruction": "Explain deadlock conditions.",
+                    "marks": 4,
+                    "output": "1. Mutual exclusion\n2. Hold and wait\n3. No preemption\n4. Circular wait"
+                },
+                {
+                    "instruction": "Explain deadlock prevention.",
+                    "marks": 6,
+                    "output": "Break one of four conditions:\nExample: allow preemption, avoid hold and wait"
+                },
+                {
+                    "instruction": "Explain Banker's algorithm.",
+                    "marks": 6,
+                    "output": "Used for deadlock avoidance.\nChecks safe state before allocation using need and available matrices."
+                },
+                {
+                    "instruction": "Explain paging.",
+                    "marks": 4,
+                    "output": "Memory divided into pages and frames.\nEliminates external fragmentation."
+                },
+                {
+                    "instruction": "Explain segmentation.",
+                    "marks": 4,
+                    "output": "Memory divided into variable-size segments based on logical divisions."
+                },
+                {
+                    "instruction": "Differentiate paging and segmentation.",
+                    "marks": 4,
+                    "output": "Paging: fixed size, no external fragmentation\nSegmentation: variable size, logical view"
+                },
+                {
+                    "instruction": "Explain page replacement algorithms.",
+                    "marks": 6,
+                    "output": "Algorithms:\nFIFO, LRU, Optimal\nUsed to replace pages when memory is full"
+                },
+                {
+                    "instruction": "Explain thrashing.",
+                    "marks": 4,
+                    "output": "High paging activity causing low CPU utilization."
+                },
+                {
+                    "instruction": "Explain file system.",
+                    "marks": 4,
+                    "output": "Manages files on storage devices.\nProvides storage, retrieval, and organization."
+                },
+                {
+                    "instruction": "Explain disk scheduling algorithms.",
+                    "marks": 6,
+                    "output": "FCFS, SSTF, SCAN, C-SCAN\nOptimizes disk head movement."
+                },
+                {
+                    "instruction": "Explain I/O system.",
+                    "marks": 4,
+                    "output": "Manages input-output devices and data transfer."
+                }
+            ]
+        },
+        {
+            "subject_code": "PCCS-406",
+            "subject_title": "Object Oriented Programming",
+            "training_data": [
+                {
+                    "instruction": "Define object.",
+                    "marks": 2,
+                    "output": "An object is an instance of a class containing data and methods."
+                },
+                {
+                    "instruction": "Define class.",
+                    "marks": 2,
+                    "output": "A class is a blueprint for creating objects."
+                },
+                {
+                    "instruction": "Define encapsulation.",
+                    "marks": 2,
+                    "output": "Encapsulation is wrapping data and methods into a single unit."
+                },
+                {
+                    "instruction": "Define inheritance.",
+                    "marks": 2,
+                    "output": "Inheritance allows a class to acquire properties of another class."
+                },
+                {
+                    "instruction": "Define polymorphism.",
+                    "marks": 2,
+                    "output": "Polymorphism allows same function to behave differently in different contexts."
+                },
+                {
+                    "instruction": "Define abstraction.",
+                    "marks": 2,
+                    "output": "Abstraction hides implementation details and shows only essential features."
+                },
+                {
+                    "instruction": "Explain types of inheritance.",
+                    "marks": 4,
+                    "output": "Single, Multiple, Multilevel, Hierarchical, Hybrid inheritance."
+                },
+                {
+                    "instruction": "Explain function overloading.",
+                    "marks": 4,
+                    "output": "Same function name with different parameters.\nResolved at compile time."
+                },
+                {
+                    "instruction": "Explain function overriding.",
+                    "marks": 4,
+                    "output": "Derived class redefines base class method.\nResolved at runtime."
+                },
+                {
+                    "instruction": "Explain constructor and destructor.",
+                    "marks": 4,
+                    "output": "Constructor initializes object.\nDestructor frees resources when object is destroyed."
+                },
+                {
+                    "instruction": "Explain access specifiers.",
+                    "marks": 4,
+                    "output": "Public: accessible everywhere\nPrivate: accessible within class\nProtected: accessible in derived class"
+                },
+                {
+                    "instruction": "Explain virtual function.",
+                    "marks": 4,
+                    "output": "Function declared with virtual keyword for runtime polymorphism."
+                },
+                {
+                    "instruction": "Explain pure virtual function.",
+                    "marks": 4,
+                    "output": "Function with no implementation in base class.\nUsed to create abstract class."
+                },
+                {
+                    "instruction": "Explain dynamic binding.",
+                    "marks": 4,
+                    "output": "Binding of function call resolved at runtime using virtual functions."
+                },
+                {
+                    "instruction": "Explain static binding.",
+                    "marks": 4,
+                    "output": "Binding resolved at compile time."
+                },
+                {
+                    "instruction": "Explain operator overloading.",
+                    "marks": 6,
+                    "output": "Allows redefining operators for user-defined types.\nExample: + for objects.\nImproves readability."
+                },
+                {
+                    "instruction": "Explain exception handling.",
+                    "marks": 6,
+                    "output": "Handles runtime errors using try, catch, throw.\nEnsures program stability."
+                },
+                {
+                    "instruction": "Explain file handling.",
+                    "marks": 4,
+                    "output": "Used to read/write files.\nOperations: open, read, write, close."
+                },
+                {
+                    "instruction": "Explain templates.",
+                    "marks": 4,
+                    "output": "Generic programming using templates.\nWorks for any data type."
+                },
+                {
+                    "instruction": "Explain friend function.",
+                    "marks": 4,
+                    "output": "Function that can access private members of a class."
+                },
+                {
+                    "instruction": "Differentiate structure and class.",
+                    "marks": 4,
+                    "output": "Structure: default public\nClass: default private\nOtherwise similar."
+                },
+                {
+                    "instruction": "Explain multiple inheritance with example.",
+                    "marks": 6,
+                    "output": "Class inherits from multiple base classes.\nExample:\nclass C : public A, public B {}"
+                },
+                {
+                    "instruction": "Explain runtime polymorphism.",
+                    "marks": 4,
+                    "output": "Achieved using virtual functions and overriding."
+                },
+                {
+                    "instruction": "Explain compile-time polymorphism.",
+                    "marks": 4,
+                    "output": "Achieved using function/operator overloading."
+                }
+            ]
+        },
+        {
+            "subject_code": "HSMC-401",
+            "subject_title": "Economics for Engineers",
+            "training_data": [
+                {
+                    "instruction": "Define utility.",
+                    "marks": 2,
+                    "output": "Utility is the satisfaction derived from consumption of goods or services."
+                },
+                {
+                    "instruction": "Define demand.",
+                    "marks": 2,
+                    "output": "Demand is the quantity of a good consumers are willing to buy at a given price."
+                },
+                {
+                    "instruction": "Define supply.",
+                    "marks": 2,
+                    "output": "Supply is the quantity of a good producers are willing to sell at a given price."
+                },
+                {
+                    "instruction": "Define inflation.",
+                    "marks": 2,
+                    "output": "Inflation is the general rise in prices of goods and services over time."
+                },
+                {
+                    "instruction": "Define GDP.",
+                    "marks": 2,
+                    "output": "GDP is the total value of goods and services produced within a country."
+                },
+                {
+                    "instruction": "Define elasticity of demand.",
+                    "marks": 2,
+                    "output": "Elasticity measures responsiveness of demand to price changes."
+                },
+                {
+                    "instruction": "Explain law of demand.",
+                    "marks": 4,
+                    "output": "Demand decreases when price increases and vice versa, keeping other factors constant."
+                },
+                {
+                    "instruction": "Explain law of supply.",
+                    "marks": 4,
+                    "output": "Supply increases with price, other factors constant."
+                },
+                {
+                    "instruction": "Explain types of elasticity of demand.",
+                    "marks": 4,
+                    "output": "Price elasticity, income elasticity, cross elasticity."
+                },
+                {
+                    "instruction": "Explain market equilibrium.",
+                    "marks": 6,
+                    "output": "Occurs when demand equals supply.\nDetermines equilibrium price and quantity."
+                },
+                {
+                    "instruction": "Explain consumer surplus.",
+                    "marks": 4,
+                    "output": "Difference between willingness to pay and actual price paid."
+                },
+                {
+                    "instruction": "Explain production function.",
+                    "marks": 4,
+                    "output": "Shows relationship between inputs and output."
+                },
+                {
+                    "instruction": "Explain law of returns.",
+                    "marks": 6,
+                    "output": "States how output changes with increase in input.\nIncludes increasing, constant, and diminishing returns."
+                },
+                {
+                    "instruction": "Explain cost concepts.",
+                    "marks": 4,
+                    "output": "Fixed cost, variable cost, total cost, average cost."
+                },
+                {
+                    "instruction": "Explain break-even analysis.",
+                    "marks": 6,
+                    "output": "Point where total cost equals total revenue.\nNo profit, no loss."
+                },
+                {
+                    "instruction": "Explain types of market structures.",
+                    "marks": 6,
+                    "output": "Perfect competition, monopoly, oligopoly, monopolistic competition."
+                },
+                {
+                    "instruction": "Explain functions of commercial banks.",
+                    "marks": 4,
+                    "output": "Accept deposits, provide loans, create credit."
+                },
+                {
+                    "instruction": "Explain monetary policy.",
+                    "marks": 4,
+                    "output": "Controls money supply using tools like repo rate, CRR."
+                },
+                {
+                    "instruction": "Explain fiscal policy.",
+                    "marks": 4,
+                    "output": "Government policy using taxation and expenditure."
+                },
+                {
+                    "instruction": "Explain national income concepts.",
+                    "marks": 6,
+                    "output": "GDP, GNP, NNP, per capita income measure economic performance."
+                },
+                {
+                    "instruction": "Explain inflation types.",
+                    "marks": 4,
+                    "output": "Demand-pull inflation and cost-push inflation."
+                },
+                {
+                    "instruction": "Explain economic growth vs development.",
+                    "marks": 4,
+                    "output": "Growth: increase in output\nDevelopment: improvement in living standards."
+                },
+                {
+                    "instruction": "Explain business cycle.",
+                    "marks": 4,
+                    "output": "Phases: expansion, peak, recession, depression."
+                }
+            ]
+        },
+        {
+            "subject_code": "MC-401",
+            "subject_title": "Human Values and EIKT (2023)",
+            "training_data": [
+                {
+                    "instruction": "Define human values.",
+                    "marks": 2,
+                    "output": "Human values are principles that guide behavior towards harmony, respect, and ethical living."
+                },
+                {
+                    "instruction": "Define ethics.",
+                    "marks": 2,
+                    "output": "Ethics are moral principles that govern right and wrong conduct."
+                },
+                {
+                    "instruction": "Define morality.",
+                    "marks": 2,
+                    "output": "Morality refers to standards of behavior based on cultural and societal norms."
+                },
+                {
+                    "instruction": "Define professional ethics.",
+                    "marks": 2,
+                    "output": "Professional ethics are guidelines for ethical behavior in a professional environment."
+                },
+                {
+                    "instruction": "Define value education.",
+                    "marks": 2,
+                    "output": "Value education teaches moral values and ethical decision-making."
+                },
+                {
+                    "instruction": "Define sustainable development.",
+                    "marks": 2,
+                    "output": "Development that meets present needs without harming future generations."
+                },
+                {
+                    "instruction": "Explain importance of human values.",
+                    "marks": 4,
+                    "output": "Promotes harmony, ethical behavior, social responsibility, and peaceful living."
+                },
+                {
+                    "instruction": "Explain types of values.",
+                    "marks": 4,
+                    "output": "Personal values, social values, ethical values, professional values."
+                },
+                {
+                    "instruction": "Explain professional ethics.",
+                    "marks": 4,
+                    "output": "Ensures honesty, integrity, responsibility, and accountability in profession."
+                },
+                {
+                    "instruction": "Explain code of conduct.",
+                    "marks": 4,
+                    "output": "Set of rules guiding behavior in an organization."
+                },
+                {
+                    "instruction": "Explain environmental ethics.",
+                    "marks": 4,
+                    "output": "Ethical responsibility towards environment protection and sustainability."
+                },
+                {
+                    "instruction": "Explain corporate social responsibility.",
+                    "marks": 6,
+                    "output": "CSR refers to a company's responsibility towards society.\nIncludes environmental protection, social welfare, ethical business practices."
+                },
+                {
+                    "instruction": "Explain role of engineers in society.",
+                    "marks": 6,
+                    "output": "Engineers must ensure safety, sustainability, ethical practices, and contribute to social welfare."
+                },
+                {
+                    "instruction": "Explain concept of right understanding.",
+                    "marks": 6,
+                    "output": "Right understanding is clarity about harmony in self, family, society, and nature."
+                },
+                {
+                    "instruction": "Explain harmony in family and society.",
+                    "marks": 6,
+                    "output": "Maintaining mutual respect, trust, and cooperation among individuals."
+                },
+                {
+                    "instruction": "Explain EIKT (Entrepreneurship, Innovation, Knowledge and Technology).",
+                    "marks": 6,
+                    "output": "EIKT promotes innovation, entrepreneurship, skill development, and technological growth."
+                },
+                {
+                    "instruction": "Explain entrepreneurship.",
+                    "marks": 4,
+                    "output": "Process of starting and managing a business with innovation and risk-taking."
+                },
+                {
+                    "instruction": "Explain innovation.",
+                    "marks": 4,
+                    "output": "Creating new ideas, products, or improving existing systems."
+                },
+                {
+                    "instruction": "Explain knowledge management.",
+                    "marks": 4,
+                    "output": "Process of creating, sharing, and using knowledge effectively."
+                },
+                {
+                    "instruction": "Explain role of technology in society.",
+                    "marks": 4,
+                    "output": "Improves efficiency, communication, and quality of life."
+                },
+                {
+                    "instruction": "Explain ethical issues in technology.",
+                    "marks": 6,
+                    "output": "Issues include privacy, security, data misuse, and digital divide."
+                },
+                {
+                    "instruction": "Explain sustainability in engineering.",
+                    "marks": 4,
+                    "output": "Using resources efficiently without harming environment."
+                },
+                {
+                    "instruction": "Explain social responsibility of engineers.",
+                    "marks": 4,
+                    "output": "Ensure safety, ethical practices, and public welfare."
+                }
+            ]
+        }
+    ]
+}
