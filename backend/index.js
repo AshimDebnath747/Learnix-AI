@@ -1,3 +1,6 @@
+import dotenv from "dotenv"
+
+dotenv.config({ path: ".env.development" })
 import express from 'express';
 import cors from 'cors';
 import cookieParser from "cookie-parser";
@@ -7,6 +10,7 @@ import morgan from 'morgan';
 import registerRoutes from './routes/auth/register.routes.js'
 import routineRoutes from './routes/routine/routine.route.js';
 import errorMiddleware from './middlewares/errorMiddleware.js';
+
 //import { initSocket } from './sockets/index.js';
 const app = express();
 app.use(morgan("dev"))

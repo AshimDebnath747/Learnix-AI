@@ -5,8 +5,7 @@ import {
     integer,
     index,
 } from "drizzle-orm/pg-core";
-
-import { subjects } from "./subjects"; // assuming you already have this
+import { subjects } from "./subjects";
 
 export const questions = pgTable(
     "questions",
@@ -31,11 +30,11 @@ export const questions = pgTable(
 
         output: text("output")
     },
-    (table) => ({
+    (table) => [
         // composite index
-        semModuleIdx: index("idx_questions_sem_module").on(
+        index("idx_questions_sem_module").on(
             table.semester,
             table.moduleId
         )
-    })
+    ]
 );
