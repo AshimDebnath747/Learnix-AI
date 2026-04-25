@@ -1,7 +1,7 @@
 {
   "university": "Tripura Institute of Technology / Tripura University (A Central University)",
   "semester": 2,
-  "exam": "B.Tech 2nd Semester Exam 2022 + Mid-Term Exam 2022",
+  "exam": "B.Tech 2nd Semester Exam",
   "purpose": "fine-tuning training data",
   "format": "alpaca",
   "subjects": [

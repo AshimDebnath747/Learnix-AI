@@ -1,7 +1,7 @@
 {
     "university": "Tripura University (A Central University)",
     "semester": 1,
-    "exam": "B.Tech 1st Semester Exam 2023",
+    "exam": "B.Tech 1st Semester Exam",
     "purpose": "fine-tuning training data",
     "format": "alpaca",
     "subjects": [

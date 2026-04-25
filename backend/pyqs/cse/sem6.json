@@ -1,0 +1,716 @@
+{
+    "university": "Tripura University",
+    "semester": 6,
+    "exam": "B.Tech 3rd Semester Exam",
+    "format": "alpaca",
+    "subjects": [
+        {
+            "subject_code": "CS-622",
+            "subject_title": "Compiler Design",
+            "training_data": [
+                {
+                    "instruction": "Define tokens and lexemes with examples.",
+                    "marks": 2,
+                    "output": "A token is a meaningful unit in a programming language such as keyword, identifier, operator, etc. A lexeme is the actual sequence of characters in the source code that matches a token. Example: In 'int x = 10;', 'int' is a token (keyword) and 'int' is also its lexeme, 'x' is a lexeme of identifier token."
+                },
+                {
+                    "instruction": "Give an example of ambiguous grammar showing two different parse trees for same input.",
+                    "marks": 2,
+                    "output": "Grammar: E → E + E | E * E | id. For input 'id + id * id', two parse trees exist: (id + id) * id and id + (id * id), showing ambiguity."
+                },
+                {
+                    "instruction": "What are the functional differences among assembler, interpreter and compiler?",
+                    "marks": 2,
+                    "output": "Assembler converts assembly code to machine code. Compiler translates entire high-level program into machine code before execution. Interpreter translates and executes code line by line."
+                },
+                {
+                    "instruction": "Define peep-hole optimization.",
+                    "marks": 2,
+                    "output": "Peep-hole optimization is a local optimization technique that examines a small set of instructions and replaces inefficient sequences with more efficient ones."
+                },
+                {
+                    "instruction": "Write example of S-attributed grammar.",
+                    "marks": 2,
+                    "output": "Example: E → E1 + T {E.val = E1.val + T.val}. All attributes are synthesized, making it S-attributed grammar."
+                },
+                {
+                    "instruction": "Mention the benefits of generating intermediate code.",
+                    "marks": 2,
+                    "output": "Intermediate code provides machine independence, simplifies optimization, and enables easier translation to different target architectures."
+                },
+                {
+                    "instruction": "Eliminate left recursion from S → A | B, A → Aa | ε, B → Bb | Sc | ε.",
+                    "marks": 4,
+                    "output": "Left recursion exists in A → Aa and B → Bb. Transform: A → A' and A' → aA' | ε. Similarly, B → B' and B' → bB' | cB' | ε. The grammar is rewritten without left recursion to allow top-down parsing."
+                },
+                {
+                    "instruction": "Design DFA to accept strings ending with 011.",
+                    "marks": 3,
+                    "output": "Construct states representing progress toward '011': q0 (start), q1 (seen 0), q2 (seen 01), q3 (seen 011). Transitions update based on input bits. Accepting state is q3."
+                },
+                {
+                    "instruction": "Convert CFG S → ASA | aB, A → B | S, B → b into CNF.",
+                    "marks": 5,
+                    "output": "Steps: Remove unit productions (A → B, A → S), eliminate useless symbols, and convert rules to CNF form (A → BC or A → a). Final grammar contains only binary productions and terminal productions."
+                },
+                {
+                    "instruction": "Design regular expression for strings over {0,1} having 101 as substring and ending with 10.",
+                    "marks": 4,
+                    "output": "Regular expression: (0|1)*101(0|1)*10. It ensures substring '101' exists and string ends with '10'."
+                },
+                {
+                    "instruction": "Explain minimization of DFA with example.",
+                    "marks": 3,
+                    "output": "DFA minimization reduces number of states by merging equivalent states. Example: states with identical future behavior are grouped into equivalence classes."
+                },
+                {
+                    "instruction": "Explain phases of compilation using example C = a + b.",
+                    "marks": 5,
+                    "output": "Phases include lexical analysis (tokens: id, +, id), syntax analysis (parse tree), semantic analysis (type checking), intermediate code generation (e.g., t1=a+b), optimization, and code generation (machine code)."
+                },
+                {
+                    "instruction": "Eliminate left recursion from S → Aa | b, A → Ac | Sd | ε.",
+                    "marks": 4,
+                    "output": "Rewrite A → Ac | Sd | ε as A → SdA' | A' and A' → cA' | ε. Then substitute into S and remove recursion accordingly."
+                },
+                {
+                    "instruction": "Find FIRST and FOLLOW sets for grammar E → TA, A → +TA | ε, T → FB, B → *FB | ε, F → (E) | id.",
+                    "marks": 3,
+                    "output": "FIRST(E)={(,id}, FIRST(A)={+,ε}, FIRST(T)={(,id}. FOLLOW(E)={),$}, FOLLOW(T)={+,),$}, FOLLOW(F)={*,+,),$}."
+                },
+                {
+                    "instruction": "Explain basic actions of shift-reduce parser with example.",
+                    "marks": 5,
+                    "output": "Shift-reduce parser performs shift (push input), reduce (apply production), accept, and error. Example: For input id+id, parser shifts id, reduces to E, shifts '+', shifts id, reduces again."
+                },
+                {
+                    "instruction": "Explain elimination of unit production.",
+                    "marks": 4,
+                    "output": "Unit productions like A → B are removed by replacing them with productions of B. This simplifies grammar and helps in CNF conversion."
+                },
+                {
+                    "instruction": "Generate predictive parsing table.",
+                    "marks": 3,
+                    "output": "Using FIRST and FOLLOW sets, fill table entries for each production. If FIRST contains terminal, place production; if ε, use FOLLOW."
+                },
+                {
+                    "instruction": "Explain synthesized and inherited attributes with example.",
+                    "marks": 5,
+                    "output": "Synthesized attributes are computed from children (bottom-up), while inherited attributes are passed from parent or siblings (top-down). Example: expression evaluation uses synthesized attributes."
+                },
+                {
+                    "instruction": "Generate three-address code for given program segment.",
+                    "marks": 4,
+                    "output": "Example: sum=0; for(i=1;i<=100;i++) → generate TAC like t1=i<=100, if false goto end, t2=a[i]*b[i], sum=sum+t2."
+                },
+                {
+                    "instruction": "Convert expression into quadruples, triples and indirect triples.",
+                    "marks": 3,
+                    "output": "Quadruples: (op,arg1,arg2,result). Triples: index-based representation. Indirect triples use pointers to triples."
+                },
+                {
+                    "instruction": "Explain intermediate code generation for control flow.",
+                    "marks": 5,
+                    "output": "Control flow uses labels and jumps. Example: if (a<b) goto L1 else goto L2. Backpatching is used to handle forward jumps."
+                },
+                {
+                    "instruction": "Explain optimization strategies for basic blocks.",
+                    "marks": 4,
+                    "output": "Strategies include common subexpression elimination, dead code elimination, constant folding, and strength reduction."
+                },
+                {
+                    "instruction": "Explain dependency graph and evaluation order.",
+                    "marks": 3,
+                    "output": "Dependency graph represents dependencies between statements. Evaluation order is determined by topological sorting of the graph."
+                },
+                {
+                    "instruction": "Explain DAG representation of basic blocks.",
+                    "marks": 5,
+                    "output": "DAG represents expressions as nodes, merging common subexpressions to avoid recomputation. It helps in optimization."
+                },
+                {
+                    "instruction": "Why is context-free grammar used for syntax checking?",
+                    "marks": 2,
+                    "output": "Context-free grammar (CFG) is used for syntax checking because it can represent the hierarchical and nested structure of programming languages. Constructs like expressions, loops, and conditional statements require recursive definitions, which CFGs can naturally express. This allows parsers to verify whether a program follows correct syntactic rules."
+                },
+                {
+                    "instruction": "Mention the benefits of generating intermediate code.",
+                    "marks": 2,
+                    "output": "Intermediate code provides machine independence, enabling the same source code to be compiled for different architectures. It also simplifies optimization and debugging, and acts as a bridge between source code and target machine code."
+                },
+                {
+                    "instruction": "Eliminate ambiguity in grammar S → iEtS | iEtSeS | a.",
+                    "marks": 2,
+                    "output": "The ambiguity arises due to the dangling else problem. It can be removed by distinguishing matched and unmatched statements. For example: S → M | U, M → iEtM eM | a, U → iEtS | iEtM eU. This ensures each 'else' is matched with the nearest 'if'."
+                },
+                {
+                    "instruction": "Define left recursion.",
+                    "marks": 4,
+                    "output": "Left recursion occurs when a non-terminal symbol appears as the leftmost symbol in its own production. For example, A → Aα is directly left recursive, and A → Bα, B → Aβ represents indirect left recursion. Left recursion is problematic for top-down parsers because it can lead to infinite recursion during parsing."
+                },
+                {
+                    "instruction": "Why must left recursion be eliminated?",
+                    "marks": 3,
+                    "output": "Left recursion must be eliminated because recursive descent and LL(1) parsers cannot handle it. When such parsers encounter left-recursive rules, they repeatedly expand the same non-terminal, leading to infinite loops. Eliminating left recursion ensures termination and enables predictive parsing."
+                },
+                {
+                    "instruction": "Eliminate left recursion from A → Aα | β.",
+                    "marks": 5,
+                    "output": "To eliminate left recursion, we transform the grammar into a non-left-recursive form. Given A → Aα | β, we rewrite it as: A → βA' and A' → αA' | ε. Here, A' is a new non-terminal. This transformation removes left recursion while preserving the language generated by the grammar."
+                },
+                {
+                    "instruction": "Define FIRST set with example.",
+                    "marks": 4,
+                    "output": "The FIRST set of a symbol is the set of terminals that can appear at the beginning of strings derived from that symbol. For example, if A → aB | ε, then FIRST(A) = {a, ε}. If A → BC and FIRST(B) contains ε, then FIRST(A) also includes FIRST(C). FIRST sets are essential for constructing predictive parsing tables."
+                },
+                {
+                    "instruction": "Define FOLLOW set.",
+                    "marks": 3,
+                    "output": "The FOLLOW set of a non-terminal contains all terminals that can appear immediately to the right of that non-terminal in some sentential form. For the start symbol, the end marker '$' is included. FOLLOW sets help determine parsing actions in LL(1) parsing."
+                },
+                {
+                    "instruction": "Explain use of FIRST and FOLLOW in parsing.",
+                    "marks": 5,
+                    "output": "FIRST and FOLLOW sets are used to construct LL(1) parsing tables. FIRST determines which production to use based on the next input symbol, while FOLLOW is used when ε-productions are involved. Together, they ensure that parsing decisions are deterministic and conflicts are avoided."
+                },
+                {
+                    "instruction": "What are operator precedence relations?",
+                    "marks": 4,
+                    "output": "Operator precedence relations define the relative priority between operators in expressions. They are represented using relations such as less than (<·), equal (=), and greater than (·>). These relations help determine the correct order of evaluation in expressions without ambiguity."
+                },
+                {
+                    "instruction": "Why are precedence relations needed?",
+                    "marks": 3,
+                    "output": "Precedence relations are needed to resolve ambiguity in arithmetic expressions and ensure correct evaluation order. For example, multiplication should be evaluated before addition. These relations guide parsers in handling expressions correctly."
+                },
+                {
+                    "instruction": "Construct precedence table.",
+                    "marks": 5,
+                    "output": "A precedence table is constructed by analyzing grammar rules and determining relations between terminals. For each pair of terminals, relations like <·, =, or ·> are assigned based on production patterns. This table is then used by operator precedence parsers to decide shift or reduce actions."
+                },
+                {
+                    "instruction": "What is LR parsing?",
+                    "marks": 4,
+                    "output": "LR parsing is a bottom-up parsing technique that reads input from left to right and constructs a rightmost derivation in reverse. It uses a stack and parsing table to decide shift, reduce, accept, or error actions. LR parsers are powerful and can handle a wide class of grammars."
+                },
+                {
+                    "instruction": "What are LR items?",
+                    "marks": 3,
+                    "output": "LR items are grammar productions with a dot indicating how much of the production has been parsed. For example, A → α·β means α has been seen and β is yet to be parsed. They are used to construct parser states."
+                },
+                {
+                    "instruction": "Explain LR parsing table construction.",
+                    "marks": 5,
+                    "output": "LR parsing table construction involves augmenting the grammar, generating LR(0) items, computing closure and goto functions, and building a DFA of item sets. The ACTION and GOTO tables are then filled based on transitions and reductions."
+                },
+                {
+                    "instruction": "What is shift-reduce parsing?",
+                    "marks": 4,
+                    "output": "Shift-reduce parsing is a bottom-up parsing technique where input symbols are shifted onto a stack and reduced using grammar rules. The process continues until the start symbol is obtained. It forms the basis of LR parsing."
+                },
+                {
+                    "instruction": "What are parsing conflicts?",
+                    "marks": 3,
+                    "output": "Parsing conflicts occur when a parser cannot decide between multiple actions, such as shift-reduce conflict or reduce-reduce conflict. These arise due to ambiguous or unsuitable grammars."
+                },
+                {
+                    "instruction": "Construct parse tree using shift-reduce method.",
+                    "marks": 5,
+                    "output": "In shift-reduce parsing, symbols are shifted onto the stack until a handle is recognized. Then a reduction is applied, replacing the handle with a non-terminal. This continues until the start symbol remains, forming the parse tree that represents the structure of the input."
+                }
+            ]
+        },
+        {
+            "subject_code": "CS-624",
+            "subject_title": "Software Engineering and UML",
+            "training_data": [
+                {
+                    "instruction": "Differentiate between verification and validation.",
+                    "marks": 2,
+                    "output": "Verification checks whether the software is built correctly according to specifications (process-oriented), while validation checks whether the correct software is built as per user needs (product-oriented)."
+                },
+                {
+                    "instruction": "Define feasibility study.",
+                    "marks": 2,
+                    "output": "Feasibility study evaluates the practicality of a proposed system in terms of technical, economic, and operational aspects before development begins."
+                },
+                {
+                    "instruction": "Justify whether detecting design phase errors during acceptance testing is most costly.",
+                    "marks": 2,
+                    "output": "True. Errors detected late in SDLC (like acceptance testing) are more expensive to fix due to rework, redesign, and system-wide impact."
+                },
+                {
+                    "instruction": "State the three kinds of testing activities.",
+                    "marks": 2,
+                    "output": "The three main testing activities are unit testing, integration testing, and system testing."
+                },
+                {
+                    "instruction": "Define perfective maintenance.",
+                    "marks": 2,
+                    "output": "Perfective maintenance involves improving system performance or adding new features after deployment."
+                },
+                {
+                    "instruction": "What is SDLC model?",
+                    "marks": 2,
+                    "output": "SDLC model is a structured framework describing phases of software development such as analysis, design, coding, testing, and maintenance."
+                },
+                {
+                    "instruction": "Define abstraction and decomposition in software engineering.",
+                    "marks": 4,
+                    "output": "Abstraction focuses on essential features while hiding implementation details, whereas decomposition breaks a system into smaller manageable modules. Example: a banking system can be decomposed into account, transaction, and reporting modules."
+                },
+                {
+                    "instruction": "State characteristics of software.",
+                    "marks": 3,
+                    "output": "Software is intangible, developed (not manufactured), does not wear out, and is highly complex and changeable."
+                },
+                {
+                    "instruction": "Explain waterfall model with diagram.",
+                    "marks": 5,
+                    "output": "Waterfall model is a linear SDLC approach with sequential phases: requirements, design, implementation, testing, and maintenance. Each phase must be completed before the next begins. Example: traditional government systems use waterfall due to fixed requirements."
+                },
+                {
+                    "instruction": "Select suitable life cycle model for game and compiler with justification.",
+                    "marks": 4,
+                    "output": "Game development requires iterative or agile model due to frequent changes. Compiler development requires waterfall or V-model due to well-defined requirements."
+                },
+                {
+                    "instruction": "Define SRS and explain why it is called black-box specification.",
+                    "marks": 3,
+                    "output": "Software Requirement Specification (SRS) defines system requirements without describing implementation, hence called black-box specification."
+                },
+                {
+                    "instruction": "Explain equivalence class partitioning with example.",
+                    "marks": 5,
+                    "output": "Equivalence class partitioning divides input domain into valid and invalid classes. Example: for input range 1–100, valid class is 1–100, invalid classes are <1 and >100. Testing one value from each class reduces test cases."
+                },
+                {
+                    "instruction": "List problems due to high coupling between modules.",
+                    "marks": 4,
+                    "output": "High coupling leads to reduced modularity, difficult maintenance, increased dependency, and higher risk of error propagation."
+                },
+                {
+                    "instruction": "Define coupling and explain its types.",
+                    "marks": 3,
+                    "output": "Coupling measures interdependence between modules. Types include data coupling, control coupling, common coupling, and content coupling."
+                },
+                {
+                    "instruction": "Explain need of software prototype.",
+                    "marks": 5,
+                    "output": "Prototyping helps understand requirements, reduce risks, and improve user feedback. Example: UI prototypes help users visualize system before development."
+                },
+                {
+                    "instruction": "Differentiate alpha, beta and acceptance testing.",
+                    "marks": 4,
+                    "output": "Alpha testing is done by developers, beta testing by limited users, and acceptance testing by customers to validate requirements."
+                },
+                {
+                    "instruction": "Differentiate black-box and white-box testing.",
+                    "marks": 3,
+                    "output": "Black-box testing checks functionality without internal knowledge, while white-box testing examines internal code structure."
+                },
+                {
+                    "instruction": "Define modularization.",
+                    "marks": 5,
+                    "output": "Modularization divides software into independent modules to improve maintainability, scalability, and reusability. Example: separating login module from payment module."
+                },
+                {
+                    "instruction": "Explain COCOMO model and its categories.",
+                    "marks": 4,
+                    "output": "COCOMO estimates software cost based on size. Categories include organic, semi-detached, and embedded projects."
+                },
+                {
+                    "instruction": "Compute effort and development time for 100000 LOC using organic mode.",
+                    "marks": 3,
+                    "output": "Effort = 2.4*(KLOC)^1.05, Time = 2.5*(Effort)^0.38. Substitute KLOC=100 to compute approximate values."
+                },
+                {
+                    "instruction": "Explain responsibilities of software project manager.",
+                    "marks": 5,
+                    "output": "Responsibilities include planning, scheduling, resource allocation, risk management, and ensuring project completion within time and budget."
+                },
+                {
+                    "instruction": "Determine critical path and project completion time from given data.",
+                    "marks": 4,
+                    "output": "Construct network diagram, calculate earliest and latest times, identify longest path (critical path), and determine total project duration."
+                },
+                {
+                    "instruction": "List shortcomings of LOC as software size metric.",
+                    "marks": 3,
+                    "output": "LOC depends on coding style, does not measure complexity, and is language-dependent."
+                },
+                {
+                    "instruction": "Explain PERT with example.",
+                    "marks": 5,
+                    "output": "PERT uses optimistic, most likely, and pessimistic times to estimate project duration. Example: expected time = (O + 4M + P)/6. It helps manage uncertainty in scheduling."
+                },
+                {
+                    "instruction": "Define software engineering.",
+                    "marks": 2,
+                    "output": "Software engineering is the systematic, disciplined, and quantifiable approach to the development, operation, and maintenance of software systems."
+                },
+                {
+                    "instruction": "What is software process?",
+                    "marks": 2,
+                    "output": "A software process is a structured set of activities required to develop a software system, including specification, design, implementation, testing, and maintenance."
+                },
+                {
+                    "instruction": "Define feasibility study.",
+                    "marks": 2,
+                    "output": "Feasibility study is the evaluation of a proposed system to determine its practicality in terms of technical, economic, and operational aspects."
+                },
+                {
+                    "instruction": "Explain Software Development Life Cycle (SDLC).",
+                    "marks": 4,
+                    "output": "SDLC is a structured process used to develop high-quality software systematically. It consists of phases such as requirement analysis, system design, implementation (coding), testing, deployment, and maintenance. Each phase has specific deliverables and ensures that software is developed in a controlled and efficient manner. For example, in requirement analysis, user needs are gathered, while in testing, defects are identified and fixed."
+                },
+                {
+                    "instruction": "What is requirement engineering?",
+                    "marks": 3,
+                    "output": "Requirement engineering is the process of identifying, analyzing, documenting, and validating user requirements for a software system. It ensures that the final product meets user expectations."
+                },
+                {
+                    "instruction": "Explain types of requirements with example.",
+                    "marks": 5,
+                    "output": "Requirements are classified into functional and non-functional. Functional requirements specify what the system should do, such as 'user login' or 'payment processing'. Non-functional requirements define system qualities like performance, security, and usability. For example, a system should respond within 2 seconds (performance requirement) and ensure encrypted transactions (security requirement)."
+                },
+                {
+                    "instruction": "Explain waterfall model.",
+                    "marks": 4,
+                    "output": "The waterfall model is a linear and sequential SDLC model where each phase must be completed before the next begins. Phases include requirement analysis, design, implementation, testing, and maintenance. It is simple and easy to understand but lacks flexibility for changes once development starts."
+                },
+                {
+                    "instruction": "What are limitations of waterfall model?",
+                    "marks": 3,
+                    "output": "Limitations include lack of flexibility, difficulty in accommodating changes, late testing phase, and poor suitability for complex or evolving projects."
+                },
+                {
+                    "instruction": "Explain spiral model with example.",
+                    "marks": 5,
+                    "output": "The spiral model combines iterative development with risk analysis. It consists of repeated cycles (spirals), each involving planning, risk analysis, development, and evaluation. For example, in a banking system, each iteration can focus on a module like login, transactions, and reports, while continuously assessing risks."
+                },
+                {
+                    "instruction": "Explain UML.",
+                    "marks": 4,
+                    "output": "Unified Modeling Language (UML) is a standardized graphical language used to visualize, specify, construct, and document software systems. It provides various diagrams to represent system structure and behavior."
+                },
+                {
+                    "instruction": "What is use case diagram?",
+                    "marks": 3,
+                    "output": "A use case diagram represents interactions between users (actors) and the system, showing functionalities provided by the system."
+                },
+                {
+                    "instruction": "Explain use case diagram with example.",
+                    "marks": 5,
+                    "output": "A use case diagram includes actors, use cases, and relationships. For example, in an online shopping system, actors like 'Customer' interact with use cases such as 'Browse Products', 'Add to Cart', and 'Make Payment'. It helps in understanding system functionality from the user's perspective."
+                },
+                {
+                    "instruction": "Explain class diagram.",
+                    "marks": 4,
+                    "output": "A class diagram represents the static structure of a system, showing classes, attributes, methods, and relationships like inheritance and association."
+                },
+                {
+                    "instruction": "What is association in UML?",
+                    "marks": 3,
+                    "output": "Association is a relationship between classes that indicates how objects of one class are related to objects of another class."
+                },
+                {
+                    "instruction": "Explain class diagram with example.",
+                    "marks": 5,
+                    "output": "A class diagram includes classes with attributes and methods, and relationships such as inheritance or aggregation. For example, a 'Student' class may have attributes like name and ID, and a relationship with 'Course' class indicating enrollment."
+                },
+                {
+                    "instruction": "Explain sequence diagram.",
+                    "marks": 4,
+                    "output": "A sequence diagram shows how objects interact in a particular sequence of time, illustrating message flow between objects."
+                },
+                {
+                    "instruction": "What is message in sequence diagram?",
+                    "marks": 3,
+                    "output": "A message represents communication between objects, indicating method calls or data exchange."
+                },
+                {
+                    "instruction": "Explain sequence diagram with example.",
+                    "marks": 5,
+                    "output": "In a login system, the user sends login credentials to the server, which verifies them with the database and returns a response. This interaction is shown step-by-step in a sequence diagram."
+                },
+                {
+                    "instruction": "Explain software testing.",
+                    "marks": 4,
+                    "output": "Software testing is the process of evaluating a system to identify defects and ensure it meets specified requirements. It includes various testing methods such as unit, integration, and system testing."
+                },
+                {
+                    "instruction": "What is unit testing?",
+                    "marks": 3,
+                    "output": "Unit testing involves testing individual components or modules of a program in isolation to verify correctness."
+                },
+                {
+                    "instruction": "Explain types of testing with example.",
+                    "marks": 5,
+                    "output": "Types include unit testing (testing individual modules), integration testing (testing combined modules), system testing (testing complete system), and acceptance testing (validating against user requirements). For example, testing login functionality individually is unit testing, while testing login with database is integration testing."
+                },
+                {
+                    "instruction": "Explain software maintenance.",
+                    "marks": 4,
+                    "output": "Software maintenance involves modifying and updating software after deployment to fix bugs, improve performance, or adapt to new requirements."
+                },
+                {
+                    "instruction": "What are types of maintenance?",
+                    "marks": 3,
+                    "output": "Types include corrective (bug fixes), adaptive (environment changes), perfective (enhancements), and preventive (future improvements)."
+                },
+                {
+                    "instruction": "Explain maintenance types with example.",
+                    "marks": 5,
+                    "output": "Corrective maintenance fixes errors, adaptive adjusts to new platforms, perfective improves features, and preventive enhances reliability. For example, fixing a crash is corrective, updating software for a new OS is adaptive, adding new features is perfective, and refactoring code is preventive."
+                }
+            ]
+        },
+        {
+            "subject_code": "CS-623",
+            "subject_title": "Digital Image Processing",
+            "training_data": [
+                {
+                    "instruction": "Find the convolution and correlation of the sequences {1,7,9,6} and {1,3,5}.",
+                    "marks": 2,
+                    "output": "Convolution is computed by flipping second sequence and sliding: result = {1,10,38,70,69,30}. Correlation is computed without flipping: result = {5,26,56,66,51,6}."
+                },
+                {
+                    "instruction": "Apply Shannon-Fano coding to given probabilities and find code word for A.",
+                    "marks": 2,
+                    "output": "Using Shannon-Fano, symbols are split based on probabilities. From the table, code for A = 000."
+                },
+                {
+                    "instruction": "Find encoding range of message AB using arithmetic coding.",
+                    "marks": 2,
+                    "output": "Initial range [0,1]. After A: [0,0.4]. After B: [0.4×0.3=0.12 range inside], final range = [0.12, 0.24]."
+                },
+                {
+                    "instruction": "Compute MSE, SNR and PSNR for given images.",
+                    "marks": 4,
+                    "output": "MSE = (1/N)∑(f-g)^2. SNR = signal power / noise power. PSNR = 10 log10(MAX²/MSE). Substitute pixel values from matrices and compute stepwise to obtain results."
+                },
+                {
+                    "instruction": "Compute distances D4, D8, and Dm between pixels (3,0) and (2,3).",
+                    "marks": 3,
+                    "output": "D4 = |3-2| + |0-3| = 1+3=4. D8 = max(|1|,|3|)=3. Dm = combination distance depending on connectivity, here = 4."
+                },
+                {
+                    "instruction": "Perform gray-level slicing and compute variance and entropy of image.",
+                    "marks": 5,
+                    "output": "Gray-level slicing highlights selected intensity ranges. Variance = average squared deviation from mean. Entropy = -∑p log2 p. Compute histogram probabilities, then apply formulas to obtain numerical results."
+                },
+                {
+                    "instruction": "Explain key stages of digital image processing.",
+                    "marks": 4,
+                    "output": "Stages include image acquisition, preprocessing, segmentation, representation, description, and recognition. Each stage refines data for further analysis."
+                },
+                {
+                    "instruction": "What is unitary transform?",
+                    "marks": 3,
+                    "output": "A unitary transform preserves energy and satisfies U*U^T = I, such as Fourier transform."
+                },
+                {
+                    "instruction": "Explain Discrete Fourier Transform with example.",
+                    "marks": 5,
+                    "output": "DFT converts spatial data into frequency domain using F(u)=∑f(x)e^{-j2πux/N}. Example: applying DFT on small matrix reveals frequency components used for filtering."
+                },
+                {
+                    "instruction": "Explain boundary descriptors.",
+                    "marks": 4,
+                    "output": "Boundary descriptors describe shape using features like perimeter, curvature, and Fourier descriptors."
+                },
+                {
+                    "instruction": "What are advantages of FFT over DFT?",
+                    "marks": 3,
+                    "output": "FFT reduces computation complexity from O(N²) to O(N log N), making it faster."
+                },
+                {
+                    "instruction": "Compare FFT and DFT.",
+                    "marks": 5,
+                    "output": "DFT directly computes transform with high complexity, while FFT is an optimized algorithm. FFT is faster and widely used in real-time applications."
+                },
+                {
+                    "instruction": "Apply histogram equalization on given image.",
+                    "marks": 4,
+                    "output": "Compute histogram, cumulative distribution, normalize values, and map intensities to new values. Final equalized image is obtained by applying mapping function."
+                },
+                {
+                    "instruction": "Perform histogram specification.",
+                    "marks": 3,
+                    "output": "Match input histogram to target histogram by mapping cumulative distributions."
+                },
+                {
+                    "instruction": "Explain Hadamard transform with example.",
+                    "marks": 5,
+                    "output": "Hadamard transform uses orthogonal matrix of +1 and -1. Example: applying H matrix on image transforms it into frequency-like domain for compression."
+                },
+                {
+                    "instruction": "Compute first and second derivatives of image sequence {60,60,60,100,100,100}.",
+                    "marks": 4,
+                    "output": "First derivative: differences = {0,0,40,0,0}. Second derivative: differences of first derivative = {0,40,-40,0}."
+                },
+                {
+                    "instruction": "Differentiate Roberts and Sobel edge detectors.",
+                    "marks": 3,
+                    "output": "Roberts uses 2×2 kernels and detects edges diagonally, while Sobel uses 3×3 kernels and provides better noise resistance."
+                },
+                {
+                    "instruction": "Explain Hough transform with example.",
+                    "marks": 5,
+                    "output": "Hough transform detects shapes like lines by mapping points to parameter space. Example: points lying on a line correspond to intersection in parameter space."
+                },
+                {
+                    "instruction": "Explain region growing algorithm.",
+                    "marks": 4,
+                    "output": "Region growing starts from seed point and adds neighboring pixels satisfying similarity criteria."
+                },
+                {
+                    "instruction": "What is image restoration?",
+                    "marks": 3,
+                    "output": "Image restoration reconstructs original image from degraded version using mathematical models."
+                },
+                {
+                    "instruction": "Apply region growing on given image with threshold.",
+                    "marks": 5,
+                    "output": "Starting from seed, include neighbors within threshold difference. Continue until no new pixels satisfy condition, forming segmented region."
+                },
+                {
+                    "instruction": "Construct Shannon-Fano tree for given probabilities.",
+                    "marks": 4,
+                    "output": "Sort probabilities, split into equal halves, assign binary codes recursively to form tree."
+                },
+                {
+                    "instruction": "Explain predictive coding with example.",
+                    "marks": 3,
+                    "output": "Predictive coding encodes difference between actual and predicted pixel values, reducing redundancy."
+                },
+                {
+                    "instruction": "Explain Huffman coding with example.",
+                    "marks": 5,
+                    "output": "Huffman coding builds optimal prefix tree based on symbol frequencies. Example: symbols with higher frequency get shorter codes, reducing average code length."
+                },
+                {
+                    "instruction": "Define digital image.",
+                    "marks": 2,
+                    "output": "A digital image is a two-dimensional representation of a visual scene, stored as a matrix of pixel values where each pixel represents intensity or color information."
+                },
+                {
+                    "instruction": "What is image resolution?",
+                    "marks": 2,
+                    "output": "Image resolution refers to the number of pixels in an image, typically expressed as width × height, which determines the level of detail an image can display."
+                },
+                {
+                    "instruction": "Define pixel.",
+                    "marks": 2,
+                    "output": "A pixel is the smallest unit of a digital image that holds intensity or color information."
+                },
+                {
+                    "instruction": "Explain image acquisition.",
+                    "marks": 4,
+                    "output": "Image acquisition is the process of capturing a real-world scene and converting it into a digital image. It involves sensing (using cameras or scanners) and digitization, where analog signals are converted into digital form. For example, a digital camera captures light through sensors and converts it into pixel values."
+                },
+                {
+                    "instruction": "What is sampling?",
+                    "marks": 3,
+                    "output": "Sampling is the process of converting a continuous image into a discrete set of pixels by selecting values at regular intervals."
+                },
+                {
+                    "instruction": "Explain quantization with example.",
+                    "marks": 5,
+                    "output": "Quantization is the process of mapping continuous intensity values into discrete levels. For example, converting grayscale values (0–255) into fewer levels like 0–15 reduces image detail but saves storage. Higher quantization levels preserve more detail, while lower levels cause loss of information."
+                },
+                {
+                    "instruction": "Explain histogram of an image.",
+                    "marks": 4,
+                    "output": "An image histogram is a graphical representation of the distribution of pixel intensities in an image. It shows how many pixels have each intensity value, helping analyze brightness and contrast."
+                },
+                {
+                    "instruction": "What is histogram equalization?",
+                    "marks": 3,
+                    "output": "Histogram equalization is a technique used to improve image contrast by redistributing intensity values more evenly."
+                },
+                {
+                    "instruction": "Explain histogram equalization with example.",
+                    "marks": 5,
+                    "output": "Histogram equalization enhances contrast by spreading out frequent intensity values. For example, a dark image with most pixels clustered at low intensities can be adjusted so pixel values are distributed across the full range, making details more visible."
+                },
+                {
+                    "instruction": "Explain spatial domain processing.",
+                    "marks": 4,
+                    "output": "Spatial domain processing involves direct manipulation of pixel values to enhance images. Operations like smoothing, sharpening, and contrast adjustment are applied directly on pixels."
+                },
+                {
+                    "instruction": "What is filtering?",
+                    "marks": 3,
+                    "output": "Filtering is the process of modifying an image by applying a mask or kernel to enhance or suppress certain features."
+                },
+                {
+                    "instruction": "Explain smoothing and sharpening filters with example.",
+                    "marks": 5,
+                    "output": "Smoothing filters reduce noise by averaging pixel values, such as mean filter. Sharpening filters enhance edges by emphasizing intensity changes, such as Laplacian filter. For example, smoothing removes graininess, while sharpening highlights object boundaries."
+                },
+                {
+                    "instruction": "Explain frequency domain processing.",
+                    "marks": 4,
+                    "output": "Frequency domain processing involves transforming an image into frequency components using transforms like Fourier transform, allowing manipulation of high and low frequency components."
+                },
+                {
+                    "instruction": "What is Fourier transform?",
+                    "marks": 3,
+                    "output": "Fourier transform converts an image from spatial domain to frequency domain, representing it as a combination of sinusoidal functions."
+                },
+                {
+                    "instruction": "Explain frequency filtering with example.",
+                    "marks": 5,
+                    "output": "Frequency filtering modifies frequency components to enhance images. Low-pass filters remove noise by eliminating high frequencies, while high-pass filters enhance edges. For example, blurring uses low-pass filtering, while edge detection uses high-pass filtering."
+                },
+                {
+                    "instruction": "Explain image restoration.",
+                    "marks": 4,
+                    "output": "Image restoration aims to recover an image degraded by noise or distortion using mathematical models. It attempts to reconstruct the original image."
+                },
+                {
+                    "instruction": "What is noise?",
+                    "marks": 3,
+                    "output": "Noise is unwanted random variation in pixel values that degrades image quality."
+                },
+                {
+                    "instruction": "Explain noise models with example.",
+                    "marks": 5,
+                    "output": "Common noise models include Gaussian noise, salt-and-pepper noise, and Poisson noise. For example, salt-and-pepper noise appears as random black and white pixels in an image and is often removed using median filtering."
+                },
+                {
+                    "instruction": "Explain image segmentation.",
+                    "marks": 4,
+                    "output": "Image segmentation is the process of dividing an image into meaningful regions or objects to simplify analysis."
+                },
+                {
+                    "instruction": "What is thresholding?",
+                    "marks": 3,
+                    "output": "Thresholding is a segmentation technique that separates objects from background by comparing pixel values with a threshold."
+                },
+                {
+                    "instruction": "Explain segmentation methods with example.",
+                    "marks": 5,
+                    "output": "Segmentation methods include thresholding, edge detection, and region-based methods. For example, thresholding can separate foreground objects from background in a grayscale image by selecting a suitable intensity value."
+                },
+                {
+                    "instruction": "Explain image compression.",
+                    "marks": 4,
+                    "output": "Image compression reduces storage size by removing redundant or irrelevant information while maintaining acceptable quality."
+                },
+                {
+                    "instruction": "What is lossless compression?",
+                    "marks": 3,
+                    "output": "Lossless compression preserves all original image data, allowing exact reconstruction of the image."
+                },
+                {
+                    "instruction": "Explain lossy and lossless compression with example.",
+                    "marks": 5,
+                    "output": "Lossless compression (e.g., PNG) retains all data, while lossy compression (e.g., JPEG) removes less important information to reduce size. For example, JPEG achieves high compression but may introduce slight quality loss, whereas PNG maintains exact image quality."
+                }
+            ]
+        }
+    ]
+}
