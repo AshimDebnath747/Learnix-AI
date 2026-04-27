@@ -5,7 +5,7 @@ import {
     integer,
     index,
 } from "drizzle-orm/pg-core";
-import { subjects } from "./subjects";
+import { subjects } from "./subjectsSchema.js";
 
 export const questions = pgTable(
     "questions",

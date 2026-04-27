@@ -3,7 +3,7 @@ import { db } from "../config/db.js"; // your drizzle db
 import { questions } from "../model/questionsSchema.js";
 
 async function insertQuestions() {
-    const rawData = fs.readFileSync("../pyqs/cse/sem1.json", "utf-8");
+    const rawData = fs.readFileSync("./pyqs/cse/sem6.json", "utf-8");
     const data = JSON.parse(rawData);
 
     const semester = data.semester;
