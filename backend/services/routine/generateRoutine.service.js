@@ -2,23 +2,23 @@ import { db } from "../../config/db.js";
 import AppError from "../../utils/appError.js";
 import { eq } from "drizzle-orm";
 import { plans } from "../../model/routineSchema.js";
+import { questions } from "../../model/questionsSchema.js";
+
 export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
     // 1. Fetch questions
-    const { data: questions, error } = await db
+    const questionsData = await db
         .select()
         .from(questions)
         .where(eq(questions.semester, semester));
 
-    if (error) throw error;
-
-    if (!questions || questions.length === 0) {
+    if (!questionsData || questionsData.length === 0) {
         throw new AppError("No questions found");
     }
 
     // 2. Assign weights
     const weightMap = { 12: 4, 6: 3, 4: 2, 2: 1 };
 
-    const weighted = questions.map(q => ({
+    const weighted = questionsData.map(q => ({
         ...q,
         weight: weightMap[q.marks] || 1
     }));
@@ -39,7 +39,6 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
     for (let i = 0; i < weighted.length; i++) {
         const q = weighted[i];
 
-        // if limit reached → push day
         if (currentWeight + q.weight > dailyTarget) {
             plan.push({
                 day,
@@ -53,15 +52,14 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
         }
 
         tasks.push({
-            question_id: q.question_id,
-            module_id: q.module_id,
+            question_id: q.questionId,
+            module_id: q.moduleId,
             marks: q.marks
         });
 
         currentWeight += q.weight;
     }
 
-    // push last day
     if (tasks.length > 0) {
         plan.push({
             day,
@@ -74,34 +72,30 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
     let finalPlan = [];
 
     for (let i = 0; i < plan.length; i++) {
-        const currentDay = i + 1;
-
         finalPlan.push(plan[i]);
 
-        if (currentDay % 7 === 0) {
+        if ((i + 1) % 7 === 0) {
             const prevTasks = finalPlan
                 .slice(Math.max(0, i - 6), i + 1)
-                .flatMap(d => d.tasks.map(t => t.question_id));
+                .flatMap(d => d.tasks.map(t => typeof t === 'object' ? t.question_id : t));
 
             finalPlan.push({
-                day: currentDay + 0.5, // optional (or shift days)
+                day: plan[i].day + 0.5,
                 type: "revision",
-                tasks: prevTasks.slice(0, 10) // limit
+                tasks: prevTasks.slice(0, 10)
             });
         }
     }
 
-    // 7. Save plan (JSONB)
-    const { data: savedPlan, error: saveError } = await db.insert(plans).values({
+    // 7. Save plan
+    const savedPlan = await db.insert(plans).values({
         userId,
         semester,
         plan: finalPlan
     }).returning();
 
-    if (saveError) throw saveError;
-
     return {
-        message: "Routine generate successfully!",
+        message: "Routine generated successfully!",
         routine: savedPlan
     }
 }

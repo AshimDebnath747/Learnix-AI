@@ -1,5 +1,6 @@
 import { pgTable, uuid, integer, jsonb, timestamp } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
+import { users } from "./userschema.js";
 
 export const plans = pgTable("plans", {
     id: uuid("id")
