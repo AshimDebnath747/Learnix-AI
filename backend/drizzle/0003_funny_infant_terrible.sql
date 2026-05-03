@@ -1,0 +1,2 @@
+ALTER TABLE "routine_questions" DROP CONSTRAINT "routine_questions_question_id_unique";--> statement-breakpoint
+ALTER TABLE "routine_questions" ADD CONSTRAINT "routine_questions_plan_question_unique" UNIQUE("plan_id","question_id");

@@ -7,7 +7,8 @@ export const generateRoutine = async (req, res, next) => {
         return res.status(201).json({
             success: true,
             message: result.message,
-            routine: result.routine
+            routine: result.routine,
+            questionsInserted: result.questionsInserted
         });
     } catch (error) {
         next(error);
