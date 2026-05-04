@@ -1,4 +1,4 @@
-import * as testService from "../../services/test/test.service.js"
+import { testService, createFinalTestService } from "../../services/test/test.service.js"
 
 export const createWeeklyTest = async (req, res) => {
     try {
@@ -36,5 +36,18 @@ export const getResult = async (req, res) => {
         res.json(result)
     } catch (err) {
         res.status(500).json({ error: err.message })
+    }
+}
+
+export const createFinalTest = async (req, res) => {
+    try {
+        const userId = req.user.id
+        const { planId } = req.body
+
+        const result = await createFinalTestService(userId, planId)
+
+        res.status(200).json(result)
+    } catch (err) {
+        res.status(400).json({ error: err.message })
     }
 }
