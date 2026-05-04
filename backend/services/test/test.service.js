@@ -1,15 +1,29 @@
-import { db } from "../config/db.js"
+import { db } from "../../config/db.js"
 
 export const createTest = async (userId) => {
     // 1. check if user completed routine
-    const completed = await db.query.user_progress.findMany({
-        where: { user_id: userId, status: "completed" }
-    })
+    const completedWithTopics = await db
+        .select({
+            topic: questions.topic
+        })
+        .from(user_progress)
+        .innerJoin(
+            questions,
+            eq(user_progress.question_id, questions.question_id)
+        )
+        .where(
+            and(
+                eq(user_progress.user_id, userId),
+                eq(user_progress.completed, true)
+            )
+        )
 
-    if (!completed.length) throw new Error("Routine not completed")
+    if (!completedWithTopics.length) throw new Error("Routine not completed")
 
     // 2. extract topics
-    const topics = completed.map(q => q.topic)
+    const topics = [...new Set(completedWithTopics.map(q => q.topic))]
+
+    if (!topics.length) throw new Error("No completed topics found")
 
     // 3. fetch MCQs based on topics
     const mcqs = await db.query.mcq_questions.findMany({

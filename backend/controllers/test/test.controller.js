@@ -1,4 +1,4 @@
-import * as testService from "../services/test.service.js"
+import * as testService from "../../services/test/test.service.js"
 
 export const createWeeklyTest = async (req, res) => {
     try {

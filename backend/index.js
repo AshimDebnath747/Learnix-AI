@@ -6,6 +6,7 @@ import { Server } from 'socket.io';
 import morgan from 'morgan';
 import registerRoutes from './routes/auth/register.routes.js'
 import routineRoutes from './routes/routine/routine.route.js';
+import testRoutes from './routes/test/test.routes.js';
 import errorMiddleware from './middlewares/errorMiddleware.js';
 
 //import { initSocket } from './sockets/index.js';
@@ -40,7 +41,7 @@ app.set("io", io);
 
 app.use('/api/auth', registerRoutes)
 app.use('/api/routine', routineRoutes)
-
+app.use('/api/test', testRoutes);
 
 
 

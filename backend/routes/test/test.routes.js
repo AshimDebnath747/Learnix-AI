@@ -5,7 +5,7 @@ import {
     getWeeklyTest,
     submitAnswer,
     getResult
-} from "../controllers/test.controller.js"
+} from "../../controllers/test/test.controller.js";
 
 const router = express.Router()
 
