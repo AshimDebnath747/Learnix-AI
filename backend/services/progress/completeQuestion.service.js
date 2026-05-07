@@ -3,40 +3,6 @@ import { userProgress } from "../../model/userProgressSchema.js";
 import AppError from "../../utils/appError.js";
 import { eq, and, sql } from "drizzle-orm";
 
-/**
- * UPSERT (Insert or Update) user progress for a completed question
- *
- * SQL QUERY (Standard PostgreSQL UPSERT):
- * ====================================
- * INSERT INTO user_progress (user_id, question_id, completed, completed_at)
- * VALUES ($1, $2, true, NOW())
- * ON CONFLICT (user_id, question_id)
- * DO UPDATE SET
- *   completed = true,
- *   completed_at = NOW(),
- *   updated_at = NOW()
- * WHERE user_progress.user_id = $1 AND user_progress.question_id = $2
- * RETURNING *;
- *
- * DRIZZLE ORM EQUIVALENT:
- * =======================
- * db.insert(userProgress)
- *   .values({
- *     userId: $1,
- *     questionId: $2,
- *     completed: true,
- *     completedAt: sql`NOW()`
- *   })
- *   .onConflictDoUpdate({
- *     target: [userProgress.userId, userProgress.questionId],
- *     set: {
- *       completed: true,
- *       completedAt: sql`NOW()`,
- *       updatedAt: sql`NOW()`
- *     }
- *   })
- *   .returning();
- */
 
 export const completeQuestion = async ({ userId, questionId }) => {
   // Validate inputs
@@ -130,6 +96,7 @@ export const getQuestionProgress = async ({ userId, questionId }) => {
       message: "Progress retrieved successfully"
     };
   } catch (error) {
+    console.error("Error retrieving progress:", error);
     if (error instanceof AppError) {
       throw error;
     }
@@ -162,6 +129,7 @@ export const getUserProgress = async ({ userId }) => {
       count: result.length
     };
   } catch (error) {
+    
     if (error instanceof AppError) {
       throw error;
     }

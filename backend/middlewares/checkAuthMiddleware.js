@@ -16,6 +16,7 @@ export const checkAuthMiddleware = (req, res, next) => {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
+    
     // Add user object to request
     req.user = decoded;
     next();
