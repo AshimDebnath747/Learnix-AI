@@ -1,81 +1,87 @@
 import { db } from "../../config/db.js"
-export const createTest = async (userId, limit = 20) => {
+import { tests } from "../../model/testsSchema.js"
+import { questions } from "../../model/questionsSchema.js"
+import { routineQuestions } from "../../model/routineQuestionsSchema.js"
+import { mcqQuestions } from "../../model/mcqQuestionsSchema.js"
+import { eq, and, sql, inArray } from "drizzle-orm"
+import { testMcqs } from "../../model/testMcqsSchema.js"
+import { userProgress } from "../../model/userProgressSchema.js"
+import { checkIfRoutineCompleted } from "./checkIfRoutineComplete.service.js"
+
+export const createTestService = async (userId, limit = 20) => {
 
     // 1. get completed topics (no full completion check)
-    const completedWithTopics = await db
-        .select({
-            topic: questions.topic
-        })
-        .from(user_progress)
-        .innerJoin(
-            questions,
-            eq(user_progress.question_id, questions.question_id)
-        )
-        .where(
-            and(
-                eq(user_progress.user_id, userId),
-                eq(user_progress.completed, true)
+    return await db.transaction(async (tx) => {
+        const completedWithTopics = await tx
+            .select({
+                topic: questions.topic
+            })
+            .from(userProgress)
+            .innerJoin(
+                questions,
+                eq(userProgress.questionId, questions.questionId)
             )
+            .where(
+                and(
+                    eq(userProgress.userId, userId),
+                    eq(userProgress.completed, true)
+                )
+            )
+
+        if (!completedWithTopics.length) {
+            throw new Error("No completed topics found")
+        }
+
+        // 2. extract unique topics
+        const topics = [...new Set(completedWithTopics.map(q => q.topic))]
+
+        // 3. fetch MCQs based on topics
+        const mcqs = await tx
+            .select()
+            .from(mcqQuestions)
+            .where(inArray(mcqQuestions.topic, topics))
+            .orderBy(sql`RANDOM()`)
+            .limit(25);
+
+        if (!mcqs.length) {
+            throw new Error("No MCQs found for completed topics")
+        }
+
+
+        // 5. create test (type = practice)
+        const [test] = await tx.insert(tests)
+            .values({
+                user_id: userId,
+                type: "practice"
+            })
+            .returning()
+
+        // 6. map MCQs
+        await tx.insert(testMcqs).values(
+            mcqs.map(q => ({
+                testId: test.id,
+                mcqId: q.id
+            }))
         )
-
-    if (!completedWithTopics.length) {
-        throw new Error("No completed topics found")
-    }
-
-    // 2. extract unique topics
-    const topics = [...new Set(completedWithTopics.map(q => q.topic))]
-
-    // 3. fetch MCQs based on topics
-    const mcqs = await db.query.mcq_questions.findMany({
-        where: (mcq, { inArray }) => inArray(mcq.topic, topics)
-    })
-
-    if (!mcqs.length) {
-        throw new Error("No MCQs found for completed topics")
-    }
-
-    // 4. randomize + limit
-    const shuffled = mcqs.sort(() => 0.5 - Math.random())
-    const selected = shuffled.slice(0, limit)
-
-    // 5. create test (type = practice)
-    const [test] = await db.insert(tests)
-        .values({
-            user_id: userId,
-            type: "practice"
-        })
-        .returning()
-
-    // 6. map MCQs
-    await db.insert(test_mcqs).values(
-        selected.map(q => ({
-            test_id: test.id,
-            mcq_id: q.id
-        }))
-    )
-
-    return {
-        testId: test.id,
-        totalQuestions: selected.length
-    }
-}
-
-export const getTest = async (userId) => {
-    const test = await db.query.tests.findFirst({
-        where: { user_id: userId },
-        with: {
-            test_mcqs: {
-                with: {
-                    mcq: true
-                }
-            }
+        const safeMcqs = mcqs.map(({ correctOption, ...rest }) => rest);
+        return {
+            testId: test.id,
+            totalQuestions: selected.length,
+            safeMcqs: safeMcqs
         }
     })
+}
+
+export const getTestService = async (userId) => {
+    const test = await db
+        .select()
+        .from(tests)
+        .where(eq(tests.userId, userId))
 
     return test
 }
 
-export const submitAnswer = async ({ testId, mcqId, selectedOption }) => {
+export const submitAnswerService = async ({ testId, mcqId, selectedOption }) => {
     const mcq = await db.query.mcq_questions.findFirst({
         where: { id: mcqId }
     })
@@ -92,7 +98,7 @@ export const submitAnswer = async ({ testId, mcqId, selectedOption }) => {
     return { isCorrect }
 }
 
-export const getResult = async (testId) => {
+export const getResultService = async (testId) => {
     const answers = await db.query.user_answers.findMany({
         where: { test_id: testId }
     })
@@ -112,67 +118,73 @@ export const getResult = async (testId) => {
 export const createFinalTestService = async (userId, planId) => {
 
     // 1. prevent duplicate final test
-    const existing = await db.query.tests.findFirst({
-        where: (t, { and, eq }) =>
-            and(
-                eq(t.user_id, userId),
-                eq(t.plan_id, planId),
-                eq(t.type, "final")
+    return await db.transaction(async (tx) => {
+        const existing = await tx
+            .select()
+            .from(tests)
+            .where(
+                and(
+                    eq(tests.userId, userId),
+                    eq(tests.planId, planId),
+                    eq(tests.type, "final")
+                )
             )
-    })
+            .limit(1);
 
-    if (existing) {
-        return { testId: existing.id, message: "Final test already exists" }
-    }
+        if (existing.length) {
+            return { testId: existing[0].id, message: "Test already Exists" };
+        }
 
-    // 2. check completion
-    const isCompleted = await checkIfRoutineCompleted(userId, planId)
+        // 2. check completion[omitted for now 06 /05 / 26]
+        const isCompleted = await checkIfRoutineCompleted(userId, planId)
 
-    if (!isCompleted) {
-        throw new Error("Routine not fully completed")
-    }
+        if (!isCompleted) {
+            throw new Error("Routine not fully completed")
+        }
 
-    // 3. get all topics from plan
-    const topicsData = await db
-        .select({ topic: questions.topic })
-        .from(routine_questions)
-        .innerJoin(
-            questions,
-            eq(routine_questions.question_id, questions.question_id)
+        //3. get all topics from plan
+        const topicsData = await tx
+            .select({ topic: questions.topic })
+            .from(routineQuestions)
+            .innerJoin(
+                questions,
+                eq(routineQuestions.questionId, questions.questionId)
+            )
+            .where(eq(routineQuestions.planId, planId))
+
+        const topics = [...new Set(topicsData.map(t => t.topic))]
+
+        // 4. fetch MCQs
+        const mcqs = await tx
+            .select()
+            .from(mcqQuestions)
+            .where(inArray(mcqQuestions.topic, topics))
+            .orderBy(sql`RANDOM()`)
+            .limit(25);
+
+        // 5. randomize + limit
+        console.log("mcqs", mcqs)
+        // 6. create test
+        const [test] = await tx.insert(tests)
+            .values({
+                userId: userId,
+                planId: planId,
+                type: "final"
+            })
+            .returning()
+
+        // 7. map MCQs
+        await tx.insert(testMcqs).values(
+            mcqs.map(q => ({
+                testId: test.id,
+                mcqId: q.id
+            }))
         )
-        .where(eq(routine_questions.plan_id, planId))
-
-    const topics = [...new Set(topicsData.map(t => t.topic))]
-
-    // 4. fetch MCQs
-    const mcqs = await db.query.mcq_questions.findMany({
-        where: (mcq, { inArray }) => inArray(mcq.topic, topics)
+        const safeMcqs = mcqs.map(({ correctOption, ...rest }) => rest);
+        return {
+            testId: test.id,
+            totalQuestions: safeMcqs.length,
+            safeMcqs: safeMcqs
+        }
     })
-
-    // 5. randomize + limit
-    const selected = mcqs
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 25)
-
-    // 6. create test
-    const [test] = await db.insert(tests)
-        .values({
-            user_id: userId,
-            plan_id: planId,
-            type: "final"
-        })
-        .returning()
-
-    // 7. map MCQs
-    await db.insert(test_mcqs).values(
-        selected.map(q => ({
-            test_id: test.id,
-            mcq_id: q.id
-        }))
-    )
-
-    return {
-        testId: test.id,
-        totalQuestions: selected.length
-    }
 }

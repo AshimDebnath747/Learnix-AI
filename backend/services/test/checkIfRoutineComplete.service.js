@@ -1,6 +1,7 @@
-import { userProgress } from "../../model/userProgressSchema";
-import { routineQuestions } from "../../model/routineQuestionsSchema";
-
+import { db } from "../../config/db.js";
+import { userProgress } from "../../model/userProgressSchema.js";
+import { routineQuestions } from "../../model/routineQuestionsSchema.js";
+import { eq, count, and } from "drizzle-orm";
 export const checkIfRoutineCompleted = async (userId, planId) => {
     const total = await db
         .select({ count: count() })

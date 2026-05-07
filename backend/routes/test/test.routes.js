@@ -7,11 +7,12 @@ import {
     getResult,
     createFinalTest
 } from "../../controllers/test/test.controller.js";
-
+import { finalTestSchema } from "../../validators/finalTest.validator.js";
+import { validate } from "../../middlewares/zodvalidation.js";
 const router = express.Router()
 
 router.post("/create", createTest)
-router.post("/create/final", createFinalTest)         // create test after completion
+router.post("/create/final", validate(finalTestSchema), createFinalTest)         // create test after completion
 router.get("/:userId", getTest)             // get current test
 router.post("/answer", submitAnswer)              // submit answer
 router.get("/result/:testId", getResult)          // final result

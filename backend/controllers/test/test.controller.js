@@ -1,19 +1,26 @@
-import { testService, createFinalTestService } from "../../services/test/test.service.js"
+import {
+    createTestService,
+    getTestService,
+    getResultService,
+    submitAnswerService,
+    createFinalTestService
+}
+    from "../../services/test/test.service.js"
 
-export const createWeeklyTest = async (req, res) => {
+export const createTest = async (req, res) => {
     try {
         const { userId } = req.body
-        const test = await testService.createTest(userId)
+        const test = await createTestService(userId)
         res.json(test)
     } catch (err) {
         res.status(500).json({ error: err.message })
     }
 }
 
-export const getWeeklyTest = async (req, res) => {
+export const getTest = async (req, res) => {
     try {
         const { userId } = req.params
-        const test = await testService.getTest(userId)
+        const test = await getTestService(userId)
         res.json(test)
     } catch (err) {
         res.status(500).json({ error: err.message })
@@ -22,7 +29,7 @@ export const getWeeklyTest = async (req, res) => {
 
 export const submitAnswer = async (req, res) => {
     try {
-        const data = await testService.submitAnswer(req.body)
+        const data = await submitAnswerService(req.body)
         res.json(data)
     } catch (err) {
         res.status(500).json({ error: err.message })
@@ -32,7 +39,7 @@ export const submitAnswer = async (req, res) => {
 export const getResult = async (req, res) => {
     try {
         const { testId } = req.params
-        const result = await testService.getResult(testId)
+        const result = await getResultService(testId)
         res.json(result)
     } catch (err) {
         res.status(500).json({ error: err.message })
@@ -41,8 +48,11 @@ export const getResult = async (req, res) => {
 
 export const createFinalTest = async (req, res) => {
     try {
-        const userId = req.user.id
+        const userId = "48f620bd-104b-4b84-87ff-2f63047c594e" //it will req.user.id
         const { planId } = req.body
+        console.log("user id ", userId)
+        console.log("plan id ", planId)
+
 
         const result = await createFinalTestService(userId, planId)
 
