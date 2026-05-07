@@ -9,6 +9,7 @@ import routineRoutes from './routes/routine/routine.route.js';
 import progressRoutes from './routes/progress/progress.routes.js';
 import testRoutes from './routes/test/test.routes.js';
 import errorMiddleware from './middlewares/errorMiddleware.js';
+import checkAuthMiddleware from './middlewares/checkAuthMiddleware.js';
 
 //import { initSocket } from './sockets/index.js';
 const app = express();
@@ -40,9 +41,9 @@ app.set("io", io);
 
 // Registration, login, and progress endpoints
 app.use('/api/auth', registerRoutes)
-app.use('/api/routine', routineRoutes)
-app.use('/api/progress', progressRoutes)
-app.use('/api/test', testRoutes);
+app.use('/api/routine', checkAuthMiddleware, routineRoutes)
+app.use('/api/progress', checkAuthMiddleware, progressRoutes)
+app.use('/api/test', checkAuthMiddleware, testRoutes);
 
 
 

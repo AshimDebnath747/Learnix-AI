@@ -9,6 +9,8 @@ import {
 } from "../../controllers/test/test.controller.js";
 import { finalTestSchema } from "../../validators/finalTest.validator.js";
 import { validate } from "../../middlewares/zodvalidation.js";
+import wrapRoutes from "../../utils/wrapRoutes.js";
+
 const router = express.Router()
 
 router.post("/create", createTest)
@@ -17,4 +19,4 @@ router.get("/:userId", getTest)             // get current test
 router.post("/answer", submitAnswer)              // submit answer
 router.get("/result/:testId", getResult)          // final result
 
-export default router
+export default wrapRoutes(router)

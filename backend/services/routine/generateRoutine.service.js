@@ -118,7 +118,7 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
                 if (dayPlan.tasks && dayPlan.tasks.length > 0) {
                     dayPlan.tasks.forEach(task => {
                         allTasks.push({
-                            userId,
+                            
                             questionId: task.question_id,
                             dayNo,
                             planId

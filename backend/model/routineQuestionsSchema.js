@@ -10,7 +10,7 @@ export const routineQuestions = pgTable(
       .default(sql`gen_random_uuid()`)
       .primaryKey(),
 
-    userId: uuid("user_id").references(() => users.id),
+    
 
     questionId: text("question_id").notNull(),
 
@@ -25,7 +25,7 @@ export const routineQuestions = pgTable(
     unique("routine_questions_plan_question_unique").on(table.planId, table.questionId),
     // Index for faster queries by user and plan
     index("idx_routine_questions_user_plan").on(
-      table.userId,
+    
       table.planId
     ),
     // Index for day-based queries
