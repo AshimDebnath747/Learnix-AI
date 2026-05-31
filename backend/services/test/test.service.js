@@ -136,11 +136,11 @@ export const createFinalTestService = async (userId, planId) => {
         }
 
         // 2. check completion[omitted for now 06 /05 / 26]
-        const isCompleted = await checkIfRoutineCompleted(userId, planId)
+        // const isCompleted = await checkIfRoutineCompleted(userId, planId)
 
-        if (!isCompleted) {
-            throw new Error("Routine not fully completed")
-        }
+        // if (!isCompleted) {
+        //     throw new Error("Routine not fully completed")
+        // }
 
         //3. get all topics from plan
         const topicsData = await tx

@@ -1,8 +1,9 @@
 import { generateRoutineLogic } from "../../services/routine/generateRoutine.service.js";
 
-export const generateRoutine = async (req, res, next) => {
+export const generateRoutine = async (req, res) => {
     try {
-        const result = await generateRoutineLogic(req.validated);
+        const userId = req.user.id
+        const result = await generateRoutineLogic(userId, req.validated);
 
         return res.status(201).json({
             success: true,
@@ -10,7 +11,7 @@ export const generateRoutine = async (req, res, next) => {
             routine: result.routine,
             questionsInserted: result.questionsInserted
         });
-    } catch (error) {
-        next(error);
+    } catch (err) {
+        res.status(500).json({ error: err.message })
     }
 }

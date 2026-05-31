@@ -1,8 +1,5 @@
 import { z } from 'zod';
 export const generateRoutineSchema = z.object({
-    userId: z
-        .string()
-        .uuid({ message: "Invalid user_id (must be UUID)" }),
 
     semester: z
         .number()
