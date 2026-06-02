@@ -8,6 +8,7 @@ import registerRoutes from './routes/auth/register.routes.js'
 import routineRoutes from './routes/routine/routine.route.js';
 import progressRoutes from './routes/progress/progress.routes.js';
 import testRoutes from './routes/test/test.routes.js';
+import userRoutes from './routes/user/dashboard.routes.js'
 import errorMiddleware from './middlewares/errorMiddleware.js';
 import checkAuthMiddleware from './middlewares/checkAuthMiddleware.js';
 
@@ -40,6 +41,7 @@ app.set("io", io);
 //initSocket(io);
 
 // Registration, login, and progress endpoints
+app.use('/api/user', checkAuthMiddleware, userRoutes)
 app.use('/api/auth', registerRoutes)
 app.use('/api/routine', checkAuthMiddleware, routineRoutes)
 app.use('/api/progress', checkAuthMiddleware, progressRoutes)
@@ -53,5 +55,5 @@ app.use('/api/test', checkAuthMiddleware, testRoutes);
 //Error handling middleware
 app.use(errorMiddleware);
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8000
 server.listen(port, () => console.log('Server running on http://localhost:' + port));

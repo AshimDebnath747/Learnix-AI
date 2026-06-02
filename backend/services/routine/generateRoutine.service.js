@@ -4,9 +4,11 @@ import { eq } from "drizzle-orm";
 import { plans } from "../../model/routineSchema.js";
 import { questions } from "../../model/questionsSchema.js";
 import { routineQuestions } from "../../model/routineQuestionsSchema.js";
+import { number } from "zod";
 
-export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
+export const generateRoutineLogic = async (userId, { semester, daysLeft }) => {
     // 1. Fetch questions
+
     const questionsData = await db
         .select()
         .from(questions)
@@ -85,7 +87,7 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
                 .slice(0, 10);
 
             finalPlan.push({
-                day: plan[i].day + 0.5,
+                day: Math.floor(plan[i].day + 0.5),
                 type: "revision",
                 tasks: prevTasks
             });
@@ -95,7 +97,7 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
     // 7-8. TRANSACTION: Insert plan and routine_questions atomically
     // If either operation fails, both are rolled back
     console.log("Starting transaction with finalPlan:", finalPlan.length, "days");
-    
+
     try {
         const result = await db.transaction(async (tx) => {
             // Save plan
@@ -114,11 +116,11 @@ export const generateRoutineLogic = async ({ userId, semester, daysLeft }) => {
 
             finalPlan.forEach(dayPlan => {
                 const dayNo = dayPlan.day;
-                
+
                 if (dayPlan.tasks && dayPlan.tasks.length > 0) {
                     dayPlan.tasks.forEach(task => {
                         allTasks.push({
-                            
+
                             questionId: task.question_id,
                             dayNo,
                             planId

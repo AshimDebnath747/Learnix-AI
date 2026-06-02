@@ -1,4 +1,4 @@
-import { pgTable, uuid, uniqueIndex } from "drizzle-orm/pg-core";
+import { pgTable, uuid, uniqueIndex, numeric } from "drizzle-orm/pg-core";
 import { tests } from "./testsSchema.js";
 import { mcqQuestions } from "./mcqQuestionsSchema.js";
 export const testMcqs = pgTable(
@@ -13,6 +13,7 @@ export const testMcqs = pgTable(
         mcqId: uuid("mcq_id")
             .notNull()
             .references(() => mcqQuestions.id, { onDelete: "cascade" }),
+        isCorrect: numeric("is_correct").notNull()
     },
     (table) => ({
         uniqueTestMcq: uniqueIndex("unique_test_mcq").on(

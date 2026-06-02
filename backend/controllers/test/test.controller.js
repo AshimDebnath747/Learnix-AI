@@ -9,7 +9,7 @@ import {
 
 export const createTest = async (req, res) => {
     try {
-        const { userId } = req.body
+        const userId = req.user.id
         const test = await createTestService(userId)
         res.json(test)
     } catch (err) {
@@ -48,7 +48,7 @@ export const getResult = async (req, res) => {
 
 export const createFinalTest = async (req, res) => {
     try {
-        const userId = "48f620bd-104b-4b84-87ff-2f63047c594e" //it will req.user.id
+        const userId = req.user.id //it will req.user.id
         const { planId } = req.body
         console.log("user id ", userId)
         console.log("plan id ", planId)
