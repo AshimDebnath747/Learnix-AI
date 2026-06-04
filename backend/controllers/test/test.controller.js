@@ -29,7 +29,10 @@ export const getTest = async (req, res) => {
 
 export const submitAnswer = async (req, res) => {
     try {
-        const data = await submitAnswerService(req.body)
+        console.log(req.body.testId)
+        const testId = req.body.testId
+        const answers = req.body.answers
+        const data = await submitAnswerService(testId, answers)
         res.json(data)
     } catch (err) {
         res.status(500).json({ error: err.message })
