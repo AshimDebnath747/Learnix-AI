@@ -1,5 +1,5 @@
 import { email } from "zod";
-import { login, register } from "../../services/auth/register.service.js";
+import { login, register, changePassword } from "../../services/auth/register.service.js";
 
 export const registerUser = async (req, res,) => {
 
@@ -41,3 +41,16 @@ export const logout = (req, res) => {
   });
 };
 
+export const changePasswordUser = async (req, res) => {
+  
+  const result = await changePassword({
+    userId: req.user.id,  // From JWT token (checkAuthMiddleware)
+    currentPassword: req.validated.currentPassword,
+    newPassword: req.validated.newPassword
+  });
+
+  return res.status(200).json({
+    success: true,
+    message: result.message
+  });
+};

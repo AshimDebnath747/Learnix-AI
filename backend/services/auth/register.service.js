@@ -65,6 +65,49 @@ export const login = async ({email,password})=>{
     token
     
   }
+};
 
+export const changePassword = async ({ userId, currentPassword, newPassword }) => {
+  
+  // Get user from DB
+  const user = await db
+    .select()
+    .from(users)
+    .where(eq(users.id, userId))
+    .limit(1);
 
+  if (user.length === 0) {
+    throw new AppError("User not found", 404);
+  }
+
+  // Verify current password
+  const isPasswordValid = await comparePassword(
+    currentPassword, 
+    user[0].password
+  );
+
+  if (!isPasswordValid) {
+    throw new AppError("Current password is incorrect", 401);
+  }
+
+  // Check if new password is same as old
+  const isSamePassword = await comparePassword(
+    newPassword, 
+    user[0].password
+  );
+
+  if (isSamePassword) {
+    throw new AppError("New password cannot be the same as current password", 400);
+  }
+
+  // Hash and update password
+  const hashedNewPassword = await hashPassword(newPassword);
+
+  await db.update(users)
+    .set({ password: hashedNewPassword })
+    .where(eq(users.id, userId));
+
+  return {
+    message: "Password changed successfully"
+  };
 }

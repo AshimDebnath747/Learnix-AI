@@ -16,10 +16,6 @@ import checkAuthMiddleware from './middlewares/checkAuthMiddleware.js';
 const app = express();
 app.use(morgan("dev"))
 app.use(express.json())
-app.use((req, res, next) => {
-    console.log("Body:", req.body); // 👈 add this temporarily
-    next();
-});
 app.use(cors());
 app.use(cookieParser());
 
