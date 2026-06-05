@@ -8,7 +8,7 @@ import { testMcqs } from "../../model/testMcqsSchema.js"
 import { userProgress } from "../../model/userProgressSchema.js"
 import { checkIfRoutineCompleted } from "./checkIfRoutineComplete.service.js"
 
-export const createTestService = async (userId, limit = 20) => {
+export const createTestService = async (userId, limit = 20, planId) => {
 
     // 1. get completed topics (no full completion check)
     return await db.transaction(async (tx) => {
@@ -52,7 +52,8 @@ export const createTestService = async (userId, limit = 20) => {
         const [test] = await tx.insert(tests)
             .values({
                 user_id: userId,
-                type: "practice"
+                type: "practice",
+                planId: planId
             })
             .returning()
 
@@ -80,24 +81,58 @@ export const getTestService = async (userId) => {
 
     return test
 }
+//have not tested it yet , will test it when frontend is implemented!
+export const submitAnswerService = async (testId, answers) => {
+    console.log("test id:", testId)
+    const questions = await db.
+        select({
+            testMcqId: testMcqs.id,
+            mcqId: mcqQuestions.id,
+            correctOption: mcqQuestions.correctOption
+        })
+        .from(testMcqs)
+        .innerJoin(
+            mcqQuestions,
+            eq(testMcqs.mcqId, mcqQuestions.id)
+        )
+        .where(eq(testMcqs.testId, testId))
+    console.log(questions)
+    const questionMap = new Map();
 
-export const submitAnswerService = async ({ testId, mcqId, selectedOption }) => {
-    const mcq = await db.query.mcq_questions.findFirst({
-        where: { id: mcqId }
-    })
+    questions.forEach((q) => {
+        questionMap.set(q.mcqId, q);
+    });
 
-    const isCorrect = mcq.correct_option === selectedOption
+    const updates = [];
+    let correctAnswers = 0
+    for (const answer in answers) {
+        question = questionMap.get(answer.mcqId)
+        if (answer.selectedOption === question.correctOption) {
+            correctAnswers += 1
+        }
+        questions.push({
+            testMcqId: question.testMcqId,
+            selectedOption: answer.selectedOption,
+            isCorrect: answer.selectedOption === question.correctOption
+        })
+        await Promise.all(
+            updates.map((u) =>
+                db.update(testMcqs)
+                    .set({
+                        selectedOption: u.selectedOption,
+                        isCorrect: u.isCorrect,
+                    })
+                    .where(eq(testMcqs.id, u.testMcqId))
+            )
+        );
 
-    await db.insert(user_answers).values({
-        test_id: testId,
-        mcq_id: mcqId,
-        selected_option: selectedOption,
-        is_correct: isCorrect
-    })
-
-    return { isCorrect }
+        return {
+            correctAnswers: correctAnswers,
+            totalQuestions: questions.length,
+        }
+    }
 }
-
+//not being used!!
 export const getResultService = async (testId) => {
     const answers = await db.query.user_answers.findMany({
         where: { test_id: testId }
