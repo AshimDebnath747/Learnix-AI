@@ -7,11 +7,22 @@ import { eq, and, sql, inArray } from "drizzle-orm"
 import { testMcqs } from "../../model/testMcqsSchema.js"
 import { userProgress } from "../../model/userProgressSchema.js"
 import { checkIfRoutineCompleted } from "./checkIfRoutineComplete.service.js"
+import { duration } from "drizzle-orm/gel-core"
 
 export const createTestService = async (userId, limit = 20, planId) => {
 
-    // 1. get completed topics (no full completion check)
     return await db.transaction(async (tx) => {
+        //check for any active tests
+        const activeTest = await tx
+            .select()
+            .from(tests)
+        where(eq(tests.userId, userId),
+            eq(tests.active, true))
+
+        if (activeTest.lenght) {
+            throw new Error("An active test already exists!")
+        }
+        // 1. get completed topics (no full completion check)
         const completedWithTopics = await tx
             .select({
                 topic: questions.topic
@@ -46,14 +57,18 @@ export const createTestService = async (userId, limit = 20, planId) => {
         if (!mcqs.length) {
             throw new Error("No MCQs found for completed topics")
         }
+        const duration = mcqs.length * 180
+        const createdAt = new Date()
 
-
+        // we will assign 3 minutes = 180 secs for each question that's fixed for now
         // 5. create test (type = practice)
         const [test] = await tx.insert(tests)
             .values({
-                user_id: userId,
+                userId: userId,
+                createdAt: createdAt,
                 type: "practice",
-                planId: planId
+                planId: planId,
+                duration: duration
             })
             .returning()
 
@@ -67,6 +82,8 @@ export const createTestService = async (userId, limit = 20, planId) => {
         const safeMcqs = mcqs.map(({ correctOption, ...rest }) => rest);
         return {
             testId: test.id,
+            duration: duration,
+            createdAt: createdAt,
             totalQuestions: selected.length,
             safeMcqs: safeMcqs
         }
@@ -75,15 +92,40 @@ export const createTestService = async (userId, limit = 20, planId) => {
 
 export const getTestService = async (userId) => {
     const test = await db
-        .select()
+        .select({
+            testId: tests.testId,
+            createdAt: tests.createdAt,
+            duration: tests.duration
+        })
         .from(tests)
-        .where(eq(tests.userId, userId))
+        .where(
+            and(
+                eq(tests.userId, userId),
+                eq(tests.active, true)
+            )
+        )
 
-    return test
+    return {
+        testId,
+        createdAt,
+        duration
+    }
 }
 //have not tested it yet , will test it when frontend is implemented!
 export const submitAnswerService = async (testId, answers) => {
     console.log("test id:", testId)
+    const [submittedTest] = await db
+        .select()
+        .from(tests)
+        .where(eq(
+            tests.testId, testId
+        ))
+    const endTime =
+        new Date(submittedTest.createdAt).getTime() +
+        submittedTest.duration * 1000;
+
+    const submittedOnTime =
+        Date.now() <= endTime;
     const questions = await db.
         select({
             testMcqId: testMcqs.id,
@@ -199,12 +241,17 @@ export const createFinalTestService = async (userId, planId) => {
 
         // 5. randomize + limit
         console.log("mcqs", mcqs)
+
+        const duration = mcqs.length * 180
+        const createdAt = new Date()
         // 6. create test
         const [test] = await tx.insert(tests)
             .values({
                 userId: userId,
+                createdAt: createdAt,
                 planId: planId,
-                type: "final"
+                type: "final",
+                duration: duration
             })
             .returning()
 
@@ -218,6 +265,8 @@ export const createFinalTestService = async (userId, planId) => {
         const safeMcqs = mcqs.map(({ correctOption, ...rest }) => rest);
         return {
             testId: test.id,
+            duration: duration,
+            createdAt: createdAt,
             totalQuestions: safeMcqs.length,
             safeMcqs: safeMcqs
         }
