@@ -13,7 +13,7 @@ import wrapRoutes from "../../utils/wrapRoutes.js";
 
 const router = express.Router()
 router.post("/create", createTest)
-router.post("/create/final", validate(finalTestSchema), createFinalTest)  // create test after completion
+router.post("/create/final", validate(finalTestSchema), createFinalTest)  // create test after completion of routine
 router.get("/active", getTest)        // get active test -> useful for frontend
 router.post("/answer", submitAnswer)     // submit answer
 //router.get("/result/:testId", getResult)  // not needed for now because already the result will be returned after "/answer"

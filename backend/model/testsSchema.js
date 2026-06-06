@@ -4,12 +4,13 @@ import {
     uuid,
     timestamp,
     text,
-    boolean
+    boolean,
+    doublePrecision
 } from "drizzle-orm/pg-core";
 
 import { users } from "./userschema.js";
 import { plans } from "./routineSchema.js";
-import { timestamptz } from "drizzle-orm/gel-core";
+import { duration, timestamptz } from "drizzle-orm/gel-core";
 
 export const tests = pgTable("tests", {
     id: uuid("id").defaultRandom().primaryKey(),
@@ -23,5 +24,6 @@ export const tests = pgTable("tests", {
     type: text("type"), // better to convert to enum later
     active: boolean("active"),
     submittedAt: timestamptz("submitted_at"),
-    createdAt: timestamp("created_at").defaultNow()
+    createdAt: timestamp("created_at").defaultNow(),
+    duration: doublePrecision("duration")
 });

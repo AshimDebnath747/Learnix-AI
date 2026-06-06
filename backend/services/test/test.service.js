@@ -174,23 +174,22 @@ export const submitAnswerService = async (testId, answers) => {
         }
     }
 }
-//not being used!!
-export const getResultService = async (testId) => {
-    const answers = await db.query.user_answers.findMany({
-        where: { test_id: testId }
-    })
+//used when user checks test results on dashbaord - will do later
+// export const getResultService = async (testId) => {
+//     const answers = await db.query.userAnswers.findMany({
+//         where: { test_id: testId }
+//     })
 
-    const total = answers.length
-    const correct = answers.filter(a => a.is_correct).length
+//     const total = answers.length
+//     const correct = answers.filter(a => a.is_correct).length
 
-    return {
-        total,
-        correct,
-        score: (correct / total) * 100
-    }
-}
+//     return {
+//         total,
+//         correct,
+//         score: (correct / total) * 100
+//     }
+// }
 
-// services/test.service.js
 
 export const createFinalTestService = async (userId, planId) => {
 
@@ -203,7 +202,8 @@ export const createFinalTestService = async (userId, planId) => {
                 and(
                     eq(tests.userId, userId),
                     eq(tests.planId, planId),
-                    eq(tests.type, "final")
+                    eq(tests.type, "final"),
+                    eq(tests.active, true)
                 )
             )
             .limit(1);
