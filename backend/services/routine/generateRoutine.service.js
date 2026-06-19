@@ -1,6 +1,6 @@
 import { db } from "../../config/db.js";
 import AppError from "../../utils/appError.js";
-import { eq } from "drizzle-orm";
+import { eq, and } from "drizzle-orm";
 import { plans } from "../../model/routineSchema.js";
 import { questions } from "../../model/questionsSchema.js";
 import { routineQuestions } from "../../model/routineQuestionsSchema.js";
@@ -98,64 +98,80 @@ export const generateRoutineLogic = async (userId, { semester, daysLeft }) => {
     // If either operation fails, both are rolled back
     console.log("Starting transaction with finalPlan:", finalPlan.length, "days");
 
-    try {
-        const result = await db.transaction(async (tx) => {
-            // Save plan
-            console.log("Inserting plan...");
-            const savedPlan = await tx.insert(plans).values({
-                userId,
-                semester,
-                plan: finalPlan
-            }).returning();
+    const result = await db.transaction(async (tx) => {
+        // Check if user already has an active plan for the same semester
+        const existingActivePlan = await tx
+            .select({ id: plans.id })
+            .from(plans)
+            .where(
+                and(
+                    eq(plans.userId, userId),
+                    eq(plans.semester, semester),
+                    eq(plans.active, true)
+                )
+            )
+            .limit(1);
 
-            console.log("Plan saved:", savedPlan[0]?.id);
-            const planId = savedPlan[0].id;
+        // If active plan exists, toggle it to false
+        if (existingActivePlan.length > 0) {
+            console.log("Deactivating existing plan:", existingActivePlan[0].id);
+            await tx
+                .update(plans)
+                .set({ active: false })
+                .where(eq(plans.id, existingActivePlan[0].id));
+        }
 
-            // Parse and save all questions from the plan
-            const allTasks = [];
+        // Save new plan
+        console.log("Inserting new plan...");
+        const savedPlan = await tx.insert(plans).values({
+            userId,
+            semester,
+            plan: finalPlan,
+            active: true
+        }).returning();
 
-            finalPlan.forEach(dayPlan => {
-                const dayNo = dayPlan.day;
+        console.log("Plan saved:", savedPlan[0]?.id);
+        const planId = savedPlan[0].id;
 
-                if (dayPlan.tasks && dayPlan.tasks.length > 0) {
-                    dayPlan.tasks.forEach(task => {
-                        allTasks.push({
+        // Parse and save all questions from the plan
+        const allTasks = [];
 
-                            questionId: task.question_id,
-                            dayNo,
-                            planId
-                        });
+        finalPlan.forEach(dayPlan => {
+            const dayNo = dayPlan.day;
+
+            if (dayPlan.tasks && dayPlan.tasks.length > 0) {
+                dayPlan.tasks.forEach(task => {
+                    allTasks.push({
+                        questionId: task.question_id,
+                        dayNo,
+                        planId
                     });
-                }
-            });
-
-            console.log("Total tasks to insert:", allTasks.length);
-
-            // Bulk insert all tasks
-            let questionsInserted = 0;
-            if (allTasks.length > 0) {
-                console.log("Inserting routine questions...");
-                await tx.insert(routineQuestions).values(allTasks);
-                questionsInserted = allTasks.length;
-                console.log(`✅ Inserted ${questionsInserted} questions into routine_questions`);
+                });
             }
-
-            return {
-                savedPlan: savedPlan[0],
-                questionsInserted
-            };
         });
 
-        console.log("Transaction completed successfully");
+        console.log("Total tasks to insert:", allTasks.length);
+
+        // Bulk insert all tasks
+        let questionsInserted = 0;
+        if (allTasks.length > 0) {
+            console.log("Inserting routine questions...");
+            await tx.insert(routineQuestions).values(allTasks);
+            questionsInserted = allTasks.length;
+            console.log(`✅ Inserted ${questionsInserted} questions into routine_questions`);
+        }
 
         return {
-            message: "Routine generated successfully!",
-            routine: result.savedPlan,
-            questionsInserted: result.questionsInserted
+            savedPlan: savedPlan[0],
+            questionsInserted
         };
-    } catch (error) {
-        console.error("❌ Transaction failed with error:", error.message);
-        console.error("Full error details:", error);
-        throw error;
-    }
+    });
+
+    console.log("Transaction completed successfully");
+
+    return {
+        message: "Routine generated successfully!",
+        routine: result.savedPlan,
+        questionsInserted: result.questionsInserted
+    };
 }

@@ -1,4 +1,4 @@
-import { pgTable, uuid, integer, jsonb, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, uuid, integer, jsonb, timestamp, boolean } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import { users } from "./userschema.js";
 
@@ -14,6 +14,8 @@ export const plans = pgTable("plans", {
     semester: integer("semester").notNull(),
 
     plan: jsonb("plan").notNull(), // 👈 full routine JSON
+
+    active: boolean("active").notNull().default(true),
 
     createdAt: timestamp("created_at")
         .defaultNow()

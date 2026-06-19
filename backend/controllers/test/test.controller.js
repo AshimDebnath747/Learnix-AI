@@ -1,7 +1,7 @@
 import {
     createTestService,
     getTestService,
-    getResultService,
+    // getResultService,
     submitAnswerService,
     createFinalTestService
 }
